@@ -1,0 +1,287 @@
+.processMainSection {
+    padding: 90px 0px;
+}
+
+.lineTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.lineTitle::before {
+    background-color: #2C35CD;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+    margin-right: 38px;
+}
+
+.mainTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 67px;
+    color: #000;
+    margin-top: 25px;
+    width: 40%;
+}
+
+.Para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: #5E5E5E;
+    margin-top: 20px;
+}
+
+.dot {
+    color: var(--bg-blue);
+}
+
+.processContentBox {
+    background-color: var(--box-bg);
+    padding: 25px 20px 60px 20px;
+    border-radius: 10px;
+}
+
+.processContentBox p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 26px;
+    color: var(--text-gray);
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 29px;
+}
+
+.processContentBox:hover {
+    background-color: var(--bg-blue);
+    /* transform: scale(1.1); */
+    transform-origin: center;
+    transition-duration: 1s;
+    /* padding: 45px 20px 85px;   */
+}
+
+.processContentBox:hover p {
+    color: var(--text-white);
+}
+
+.processHoverableContentBox1 {
+    margin-top: 35px;
+}
+
+.processHoverableContentBox1 h6 {
+    color: var(--text-black);
+    font-size: 1.25rem;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.processContentBoxWrapper:hover .processHoverableContentBox1 h6 {
+    background-color: var(--light-bg);
+    border-radius: 5px;
+    padding: 6px 40px;
+    width: fit-content;
+    margin: auto;
+    transition-duration: 1.3s;
+}
+
+.processHoverableContentBox1 p {
+    visibility: hidden;
+    color: var(--text-black);
+    font-size: .875rem;
+    line-height: 26px;
+    width: 320%;
+    text-align: center;
+    font-weight: 500;
+    padding-left: 70px;
+    margin-top: 40px;
+    /* position: relative;
+    left: 40%; */
+}
+
+.processContentBoxWrapper:hover .processHoverableContentBox1 p {
+    visibility: visible;
+    transition-duration: 1.5s;
+}
+
+ .processHoverableBox4 p,
+ .processHoverableBox5 p,
+ .processHoverableBox6 p {
+    position: relative;
+    right: 230%;
+    padding-left: 0px;
+}
+
+/* .processContentBox span {
+    color: var(--text-white);
+    font-size: 0.625rem;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    border: 2px solid var(--bg-blue);
+    width: fit-content;
+    border-radius: 100%;
+    padding: 3px;
+    line-height: 10px;
+} */
+
+.processNumberLine::after {
+    content: '';
+    width: 6.3%;
+    height: 2px;
+    background-color: var(--bg-blue);
+    position: absolute;
+    left: 21.5%;
+    transform: translateY(9px);
+}
+
+.processNumberLineOne::after {
+    content: '';
+    width: 6.3%;
+    height: 2px;
+    background-color: var(--bg-blue);
+    position: absolute;
+    left: 26.2%;
+    transform: translateY(9px);
+}
+
+.processNumberLineOne::before {
+    content: '';
+    width: 10.9%;
+    height: 2px;
+    background-color: var(--bg-blue);
+    position: absolute;
+    left: 33%;
+    transform: translateY(9px);
+}
+
+.processNumberLineTwo::before {
+    content: '';
+    width: 10.9%;
+    height: 2px;
+    background-color: var(--bg-blue);
+    position: absolute;
+    left: 44.5%;
+    transform: translateY(9px);
+}
+
+.processNumberLineThree::before {
+    content: '';
+    width: 10.9%;
+    height: 2px;
+    background-color: var(--bg-blue);
+    position: absolute;
+    left: 56%;
+    transform: translateY(9px);
+}
+
+.processNumberLineFour::before {
+    content: '';
+    width: 10.9%;
+    height: 2px;
+    background-color: var(--bg-blue);
+    position: absolute;
+    left: 67.5%;
+    transform: translateY(9px);
+}
+
+.processNumberLine, .processNumberLineOne, .processNumberLineTwo,
+.processNumberLineThree, .processNumberLineFour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28px;
+}
+
+/* .processContentBoxWrapper:hover span {
+    color: var(--text-white);
+    border-color: var(--text-white) !important;
+} */
+
+/* .processNumberLine2::before, .processNumberLine3::before, .processNumberLine4::before {
+    content: '';
+    background-color: var(--bg-blue);
+    height: 2px;
+    display: block;
+    position: absolute;
+}
+
+.processNumberLine2::before {
+    left: 33.2%;
+    width: 7%;
+}
+
+.processNumberLine3::before {
+    width: 3.5%;
+}
+
+.processNumberLine2::after {
+    content: '';
+    
+    background-color: var(--bg-blue);
+    height: 2px;
+    display: block;
+    right: 67.7%;
+    position: absolute;
+}
+
+.processNumberLine2::after {
+    width: 6%;
+}
+
+.processNumberLine3::after {
+    width: 6%;
+} */
+
+
+.processNumberNormal {
+    border: 1px solid #000;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: relative;
+    top: 4px;
+    right: 1px;
+    opacity: 1;
+}
+
+.processNumberHover {
+    border: 1px solid var(--bg-white);
+    border-radius: 50%;
+    padding: 3px 5px;
+    font-size: 0.625rem;
+    color: var(--text-white);
+    position: absolute;
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.processContentBox:hover .processNumberNormal {
+    opacity: 0;
+}
+
+.processContentBox:hover .processNumberHover {
+    opacity: 1;
+    transition: all .8s;
+}
+
+/* .processNumberDivider {
+    background-color: var(--bg-blue);
+    width: 62.3%;
+    height: 2px;
+    position: absolute;
+    left: 21.5%;
+    transform: translateY(-3px);
+} */

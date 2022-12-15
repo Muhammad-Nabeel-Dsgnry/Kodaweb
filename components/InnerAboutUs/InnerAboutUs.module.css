@@ -1,0 +1,105 @@
+.innerAboutUsSection {
+    background-color: var(--light-bg);
+    padding: 98px 0px 200px 0px;
+  }
+  
+  .innerAboutUsSection h2,
+  .innerAboutUsSection h3 {
+    color: var(--text-black);
+  }
+  
+  .innerAboutUsSectionButton {
+    margin: 60px 0px 0px 0px;
+    background-color: transparent;
+    /* color: #fff; */
+  }
+    
+  .lineTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  
+  .lineTitle::before {
+    background-color: #2C35CD;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+    margin-right: 38px;
+  }
+  
+  .mainTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 67px;
+    color: #000;
+    margin-top: 25px;
+  }
+  
+  .Para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: #5E5E5E;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    color: var(--bg-blue);
+  }
+
+  .innerAboutImageOverlapCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .innerAboutImageOne {
+    position: relative;
+  }
+
+  .innerAboutImageTwo {
+     position: absolute;
+     right: 29%;
+     bottom: -52%;
+    }
+    
+.innerAboutImageOne, .innerAboutImageTwo {
+    box-shadow: 0px 4px 6px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.innerAboutUsPointsWrapper {
+    margin-top: 22px;
+}
+
+.innerAboutUsPointsWrapper li {
+    list-style: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 27px;
+    color: #5E5E5E;
+}
+
+.innerAboutUsPointsWrapper li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.innerAboutUsPointsWrapper ul {
+    padding: 0px;
+}
+
+.innerAboutUsPointsWrapper span {
+    margin-right: 40px;
+}

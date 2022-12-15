@@ -1,0 +1,133 @@
+.portfolio_section {
+  padding: 90px 0px;
+}
+
+.portfolioImage:hover {
+  cursor: pointer;
+}
+
+.lineTitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.lineTitle::before {
+  background-color: #2C35CD;
+  content: "";
+  display: inline-block;
+  height: 4px;
+  position: relative;
+  vertical-align: middle;
+  width: 25%;
+  margin-right: 38px;
+}
+
+.mainTitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 67px;
+  color: var(--text-black);
+  margin-top: 25px;
+}
+
+.formSectionPara {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #969696;
+}
+
+.colorBlack {
+  color: #000 !important;
+}
+
+.Para {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  color: #5E5E5E;
+  margin-top: 20px;
+}
+
+.blueButton {
+  padding: 16px 74px;
+  border: 1px solid #2C35CD;
+  color: #2C35CD;
+  border-radius: 100px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  margin-top: 75px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.blueButton:hover {
+  background-color: #2C35CD;
+  border: 1px solid #2C35CD;
+  color: #fff;
+  /* box-shadow: 0px 4px 5px rgb(0 0 0 / 30%); */
+  transition: 0.8s;
+}
+
+.dot {
+  color: var(--bg-blue);
+}
+
+/* .portfolioHover {
+  background-color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 380px;
+    height: 334px;
+    overflow: hidden;
+} */
+
+.portfolioImageWrap {
+
+}
+
+.testimonial {
+  /* height: 450px; */
+  overflow: hidden;
+}
+
+.box {
+  position: relative;
+  cursor: pointer;
+  /* height: 334px; */
+}
+
+.overlay {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(0,0%,7%,.612);
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.testimonial img:first-child {
+  transform: rotate(45deg);
+}

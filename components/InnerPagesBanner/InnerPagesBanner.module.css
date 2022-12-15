@@ -1,0 +1,64 @@
+.innerBannerMainWrapper {
+    /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/Assets/Assets/For Web/Banner-Service-Page.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 624px;
+    color: var(--text-white);
+    padding-top: 107px;
+}
+
+.services-bg-img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/Assets/Assets/For Web/Banner-Service-Page.jpg')
+}
+
+.contactUs-bg-img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/Assets/Assets/For Web/Banner-(Contact-Us).jpg')
+}
+
+.pricing-bg-img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/Assets/Assets/For Web/Banner-Pricing.jpg')
+}
+
+.aboutUs-bg-img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/Assets/Assets/For Web/Banner-About-Us.jpg')
+}
+
+.work-bg-img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/Assets/Assets/For Web/bannerOurWork.jpg');
+    height: 100vh;
+    padding-top: 0px;
+}
+.workBannerContentWrapper {
+    padding-top: 632px;
+}
+/* .workBannerContentWrapper p {
+    font-weight: 400 !important;
+    font-size: 1.375rem !important;
+    line-height: 35px !important;
+} */
+
+.innerBannerMainWrapper h2 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+.innerBannerMainWrapper p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 35px;
+    margin-top: 43px;
+}
+
+.innerBannerRigtImage {
+    
+}

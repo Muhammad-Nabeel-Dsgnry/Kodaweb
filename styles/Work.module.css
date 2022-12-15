@@ -1,0 +1,82 @@
+.lineTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.lineTitle::before {
+    background-color: #2C35CD;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+    margin-right: 38px;
+}
+
+.mainTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 67px;
+    color: #000;
+    margin-top: 25px;
+}
+
+.Para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: #5E5E5E;
+    margin-top: 20px;
+}
+
+.dot {
+    color: var(--bg-blue);
+}
+
+.workMainSection {
+    padding-top: 80px;
+}
+
+.pricingTabsBtn {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 1rem !important;
+    line-height: 30px !important;
+    color: #2C35CD;
+    border: 1px solid #2C35CD;
+    background-color: transparent;
+    padding: 8px 30px !important;
+    margin: 60px 0px 0px 0px !important;
+}
+
+.blueButton {
+    padding: 16px 74px;
+    border: 1px solid #2C35CD;
+    color: #2C35CD;
+    border-radius: 100px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-top: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: fit-content;
+}
+
+.blueButton:hover {
+    background-color: #2C35CD;
+    border: 1px solid #2C35CD;
+    color: #fff;
+    /* box-shadow: 0px 4px 5px rgb(0 0 0 / 30%); */
+    transition: 0.8s;
+}

@@ -1,0 +1,92 @@
+.homeAboutUsSection {
+    background-color: var(--bg-white);
+    padding: 84px 0px 120px 0px;
+}
+
+.homeAboutUsSection h2,
+.homeAboutUsSection h3 {
+    color: var(--text-black);
+}
+
+.servicesSectionImage {
+    box-shadow: 0px 4px 6px 3px rgba(0, 0, 0, 0.15);
+}
+
+.lineTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.lineTitle::before {
+    background-color: #2C35CD;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+    margin-right: 38px;
+}
+
+.mainTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 67px;
+    color: #000;
+    margin-top: 25px;
+}
+
+.Para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: #5E5E5E;
+    margin-top: 20px;
+}
+
+.dot {
+    color: var(--bg-blue);
+}
+
+.skillsMainWrapper {
+    background-color: #F5F5F5;
+    width: 40%;
+    position: absolute;
+    padding: 30px 30px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px 2px rgb(0 0 0 / 15%);
+}
+
+.skillsContainer {}
+
+.skillsSection:not(:last-child) {
+    margin-bottom: 38px;
+}
+
+.skillName, .skillNumber {
+    color: var(--text-black);
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 22px;
+}
+.skillsProgress {
+    height: 6px;
+    background-color: var(--skills-bg);
+}
+
+.skillsProgress .progress-bar {
+    background-color: var(--bg-blue);
+    border-radius: 50px;
+}
+
+.ProgressBarCol {
+    margin: auto;
+}

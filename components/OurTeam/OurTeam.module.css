@@ -1,0 +1,65 @@
+.lineTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.lineTitle::before {
+    background-color: #2C35CD;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+    margin-right: 38px;
+}
+
+.mainTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 67px;
+    color: #000;
+    margin-top: 25px;
+}
+
+.dot {
+    color: var(--bg-blue);
+}
+
+.teamBtn {
+    padding: 10px 55px;
+    border: 1px solid #2C35CD;
+    color: var(--text-blue);
+    border-radius: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 18px;
+    /* margin-top: 130px; */
+    display: block;
+    width: fit-content;
+}
+
+.teamBtn:hover {
+    background-color: #2C35CD;
+    border: 1px solid #2C35CD;
+    color: #fff;
+    /* box-shadow: 0px 4px 5px rgb(0 0 0 / 30%); */
+    transition: 0.8s;
+}
+
+.teamMainSection {
+    padding: 85px 90px;
+}
+
+.teamContentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

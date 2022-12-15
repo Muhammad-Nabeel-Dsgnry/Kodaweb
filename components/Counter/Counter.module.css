@@ -1,0 +1,31 @@
+.counter_Section {
+    background-color: var(--bg-dark);
+    padding: 50px 0px;
+  }
+  
+  .counter_Section__cardWrapper {
+    background-color: transparent;
+    color: var(--text-white);
+    text-align: center;
+  }
+  
+  .counter_Section__cardTitle {
+    margin-top: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+  }
+  
+  .counter_Section__cardText {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+  }
+  
+  .counter_Section__cardBody {
+    padding-bottom: 0px;
+  }
