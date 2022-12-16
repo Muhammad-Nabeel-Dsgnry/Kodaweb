@@ -3,7 +3,7 @@ import { PortalPackage } from './pricingData'
 import PackagesCard from './PackagesCard'
 import styles from './Packages.module.css'
 
-const Portal = () => {
+const WebApp = () => {
   return (
     <section className={styles.pricingBoxWrapper}>
       {
@@ -17,4 +17,4 @@ const Portal = () => {
   )
 }
 
-export default Portal
+export default WebApp

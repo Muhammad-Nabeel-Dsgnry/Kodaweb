@@ -75,11 +75,11 @@
     color: var(--text-white);
 }
 
-.processHoverableContentBox1 {
+.processHoverableContentBox1, .processHoverableContentBox2 {
     margin-top: 35px;
 }
 
-.processHoverableContentBox1 h6 {
+.processHoverableContentBox1 h6, .processHoverableContentBox2 h6 {
     color: var(--text-black);
     font-size: 1.25rem;
     line-height: 24px;
@@ -87,7 +87,8 @@
     font-weight: 400;
 }
 
-.processContentBoxWrapper:hover .processHoverableContentBox1 h6 {
+.processContentBoxWrapper:hover .processHoverableContentBox1 h6,
+.processContentBoxWrapper:hover .processHoverableContentBox2 h6 {
     background-color: var(--light-bg);
     border-radius: 5px;
     padding: 6px 40px;
@@ -96,21 +97,27 @@
     transition-duration: 1.3s;
 }
 
-.processHoverableContentBox1 p {
+.processHoverableContentBox1 p, .processHoverableContentBox2 p {
     visibility: hidden;
     color: var(--text-black);
     font-size: .875rem;
     line-height: 26px;
-    width: 320%;
+    width: 360%;
     text-align: center;
     font-weight: 500;
-    padding-left: 70px;
+    padding-left: 80px;
     margin-top: 40px;
     /* position: relative;
     left: 40%; */
 }
 
-.processContentBoxWrapper:hover .processHoverableContentBox1 p {
+.processHoverableContentBox2 p {
+    width: 320%;
+    padding-left: 70px;
+} 
+
+.processContentBoxWrapper:hover .processHoverableContentBox1 p,
+.processContentBoxWrapper:hover .processHoverableContentBox2 p {
     visibility: visible;
     transition-duration: 1.5s;
 }

@@ -21,7 +21,7 @@ import Packaging from '../packages/Packaging';
 import Html from '../packages/Html'
 import Cms from '../packages/Cms'
 import Ecommerce from '../packages/Ecommerce'
-import Portal from '../packages/Portal'
+import WebApp from '../packages/WebApp'
 import Seo from '../packages/Seo'
 import GoogleAdWords from '../packages/GoogleAdWords';
 import Retargeting from '../packages/Retargeting';
@@ -44,7 +44,7 @@ const Pricing = (props) => {
   const [_Html, set_Html] = useState(true)
   const [_Cms, set_Cms] = useState(false)
   const [_Ecommerce, set__Ecommerce] = useState(false)
-  const [_Portal, set__Portal] = useState(false)
+  const [_WebApp, set__WebApp] = useState(false)
   const [_Seo, set_Seo] = useState(true)
   const [_GoogleAdWords, set_GoogleAdWords] = useState(false)
   const [_Retargeting, set_Retargeting] = useState(false)
@@ -63,7 +63,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -83,7 +83,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -104,7 +104,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -125,7 +125,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -143,7 +143,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -161,7 +161,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -182,7 +182,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -203,7 +203,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -224,7 +224,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -245,7 +245,7 @@ const Pricing = (props) => {
     set_Html(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -266,7 +266,7 @@ const Pricing = (props) => {
     setLogo_BrandingIdentityWeb(false)
     set_Cms(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -287,7 +287,7 @@ const Pricing = (props) => {
     setLogo_BrandingIdentity(false)
     setLogo_BrandingIdentityWeb(false)
     set__Ecommerce(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
@@ -308,15 +308,15 @@ const Pricing = (props) => {
     setApp(false)
     setLogo_BrandingIdentity(false)
     setLogo_BrandingIdentityWeb(false)
-    set__Portal(false)
+    set__WebApp(false)
     set_Seo(false)
     set_GoogleAdWords(false)
     set_Retargeting(false)
     set_FacebookAdverts(false)
   }
 
-  const set_PortalHandler = () => {
-    set__Portal(true)
+  const set_WebAppHandler = () => {
+    set__WebApp(true)
     set__Ecommerce(false)
     set_Cms(false)
     set_Html(false)
@@ -338,7 +338,7 @@ const Pricing = (props) => {
 
   const set_SeoHandler = () => {
     set_Seo(true)
-    set__Portal(false)
+    set__WebApp(false)
     set__Ecommerce(false)
     set_Cms(false)
     set_Html(false)
@@ -360,7 +360,7 @@ const Pricing = (props) => {
   const set_GoogleAdWordsHandler = () => {
     set_GoogleAdWords(true)
     set_Seo(false)
-    set__Portal(false)
+    set__WebApp(false)
     set__Ecommerce(false)
     set_Cms(false)
     set_Html(false)
@@ -382,7 +382,7 @@ const Pricing = (props) => {
     set_Retargeting(true)
     set_GoogleAdWords(false)
     set_Seo(false)
-    set__Portal(false)
+    set__WebApp(false)
     set__Ecommerce(false)
     set_Cms(false)
     set_Html(false)
@@ -404,7 +404,7 @@ const Pricing = (props) => {
     set_Retargeting(false)
     set_GoogleAdWords(false)
     set_Seo(false)
-    set__Portal(false)
+    set__WebApp(false)
     set__Ecommerce(false)
     set_Cms(false)
     set_Html(false)
@@ -455,16 +455,16 @@ const Pricing = (props) => {
               pricingMainTitle == 'Choose the right plan for your business' ? 
               <Row id='logoRow'>
                 <div className='d-flex' style={{gap: '25px'}}>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={LogoDesignHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${logoDesign ? 'btnActive' : null}`} onClick={LogoDesignHandler}>
                     {logoDesign ? 'Logo Design' : 'Logo Design'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={BrandingIdentityHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${Branding ? 'btnActive' : null}`} onClick={BrandingIdentityHandler}>
                     {Branding ? 'Branding Identity' : 'Branding Identity'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={WebsiteHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${Web ? 'btnActive' : null}`} onClick={WebsiteHandler}>
                     {Web ? 'Website' : 'Website'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={AppHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${App ? 'btnActive' : null}`} onClick={AppHandler}>
                     {App ? 'App Development' : 'App Development'}
                   </Button>
                 </div>
@@ -483,19 +483,19 @@ const Pricing = (props) => {
 
           {/* Logo Design Packages End */}
 
-          {/* Logo Design Packages Start */}
+          {/* Inner Page Logo Design Packages Start */}
 
           {
               pricingMainTitle == 'Logo Design' ?
               <Row>
                 <div className='d-flex' style={{gap: '25px'}}>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${logoDesign ? 'highlightBtn' : null}`} onClick={LogoDesignHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${logoDesign ? 'btnActive' : null}`} onClick={LogoDesignHandler}>
                     {logoDesign ? 'Logo Design' : 'Logo Design'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={Logo_Branding_IdentityHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${Logo_BrandingIdentity ? 'btnActive' : null}`} onClick={Logo_Branding_IdentityHandler}>
                     {Logo_BrandingIdentity ? 'Logo + Branding & Identity' : 'Logo + Branding & Identity'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={Logo_BrandingIdentityWebHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${Logo_BrandingIdentityWeb ? 'btnActive' : null}`} onClick={Logo_BrandingIdentityWebHandler}>
                     {Logo_BrandingIdentityWeb ? 'Logo + Branding & Identity + Website' : 'Logo + Branding & Identity + Website'}
                   </Button>
                 </div>
@@ -511,7 +511,7 @@ const Pricing = (props) => {
               null
             }
 
-          {/* Logo Design Packages End */}
+          {/* Inner Page  Logo Design Packages End */}
 
           {/* Branding & Identity Packages Start */}
           
@@ -519,16 +519,16 @@ const Pricing = (props) => {
             pricingMainTitle == 'Branding & Identity' || isInnerPageLogoDesign == 'false' ?
             <Row>
               <div className='d-flex' style={{gap: '25px'}}>
-              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={_MockupsHandler}>
+              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Mockups ? 'btnActive' : null}`} onClick={_MockupsHandler}>
                 {_Mockups ? 'Mockups' : 'Mockups'}
               </Button>
-              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={_BusinessCardHandler}>
+              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_BusinessCard ? 'btnActive' : null}`} onClick={_BusinessCardHandler}>
                 {_BusinessCard ? 'Business card' : 'Business card'}
               </Button>
-              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={_LetterheadStationeryHandler}>
+              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_LetterheadStationery ? 'btnActive' : null}`} onClick={_LetterheadStationeryHandler}>
                 {_LetterheadStationery ? 'Letterhead & Stationery' : 'Letterhead & Stationery'}
               </Button>
-              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={set_PackagingHandler}>
+              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Packaging ? 'btnActive' : null}`} onClick={set_PackagingHandler}>
                 {_Packaging ? 'Packaging' : 'Packaging'}
               </Button>
             </div>
@@ -553,17 +553,17 @@ const Pricing = (props) => {
             pricingMainTitle == 'Website Design' || isInnerPageLogoDesign == 'false' ?
               <Row>
                 <div className='d-flex' style={{ gap: '25px' }}>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={set_HtmlHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Html ? 'btnActive' : null}`} onClick={set_HtmlHandler}>
                     {_Html ? 'HTML' : 'HTML'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={set_CmsHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Cms ? 'btnActive' : null}`} onClick={set_CmsHandler}>
                     {_Cms ? 'CMS' : 'CMS'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={set_EcommerceHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Ecommerce ? 'btnActive' : null}`} onClick={set_EcommerceHandler}>
                     {_Ecommerce ? 'E-commerce' : 'E-commerce'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={set_PortalHandler}>
-                    {_Portal ? 'Portal' : 'Portal'}
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_WebApp ? 'btnActive' : null}`} onClick={set_WebAppHandler}>
+                    {_WebApp ? 'Web App' : 'Web App'}
                   </Button>
                 </div>
                 <div className={styles.pricingContentWrapper}>
@@ -571,7 +571,7 @@ const Pricing = (props) => {
                     {_Html && <Html />}
                     {_Cms && <Cms />}
                     {_Ecommerce && <Ecommerce />}
-                    {_Portal && <Portal />}
+                    {_WebApp && <WebApp />}
                   </div>
                 </div>
               </Row>
@@ -585,19 +585,19 @@ const Pricing = (props) => {
           {/* Digital Marekting & SEO Start */}
 
           {
-            pricingMainTitle == 'Digital Marekting & SEO' || isInnerPageLogoDesign == 'false' ?
+            pricingMainTitle == 'Digital Marketing & SEO' || isInnerPageLogoDesign == 'false' ?
               <Row>
                 <div className='d-flex' style={{ gap: '25px' }}>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={set_SeoHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Seo ? 'btnActive' : null}`} onClick={set_SeoHandler}>
                     {_Seo ? 'SEO' : 'SEO'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={set_GoogleAdWordsHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_GoogleAdWords ? 'btnActive' : null}`} onClick={set_GoogleAdWordsHandler}>
                     {_GoogleAdWords ? 'Google AdWords' : 'Google AdWords'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={set_RetargetingHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Retargeting ? 'btnActive' : null}`} onClick={set_RetargetingHandler}>
                     {_Retargeting ? 'Retargeting' : 'Retargeting'}
                   </Button>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={set_FacebookAdvertsHandler}>
+                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_FacebookAdverts ? 'btnActive' : null}`} onClick={set_FacebookAdvertsHandler}>
                     {_FacebookAdverts ? 'Facebook Adverts' : 'Facebook Adverts'}
                   </Button>
                 </div>

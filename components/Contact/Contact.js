@@ -75,7 +75,7 @@ const Contact = () => {
                         />
                       </span>
                     </div>
-                    <h6 className={styles.formSectionSmTitle}>Contact Us:</h6>
+                    <h6 className={styles.formSectionSmTitle}>Mail Us:</h6>
                     <p className={`${styles['formSectionPara']} ${styles['formSectionContact']}`}>
                       <a className='mb-2' href='mailto:Support@logodsgnry.com'>Support@logodsgnry.com</a>
                       <a href='mailto:info@logodsgnry.com'>info@logodsgnry.com</a>

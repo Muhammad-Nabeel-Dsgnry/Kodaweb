@@ -140,3 +140,8 @@
   .dot {
     color: var(--bg-blue);
   }
+
+.cardWrapper:hover .imageBoxWrapper {
+    transform: translateY(-5px);
+    transition: all 1s;
+}

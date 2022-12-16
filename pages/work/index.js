@@ -70,27 +70,27 @@ const Work = () => {
           <Row>
             <div className='d-flex' style={{gap: '25px'}}>
               <Button
-                className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`}
+                className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_LogoPortfolio ? 'btnActive' : null}`}
                 onClick={logoDesign_Handler}
                 btn='Logo btn'
                 >
                 {_LogoPortfolio ? 'Logo Design' : 'Logo Design'}
               </Button>
               <Button
-                className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`}
+                className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_BrandingIdentityPortfolio ? 'btnActive' : null}`}
                 onClick={branding_Handler}
                 btn='Branding btn'
                 >
                 {_BrandingIdentityPortfolio ? 'branding & Identity' : 'branding & Identity'}
               </Button>
               <Button
-                className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`}
+                className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_WebsitePortfolio ? 'btnActive' : null}`}
                 onClick={website_Handler}
                 >
                 {_WebsitePortfolio ? 'Website' : 'Website'}
               </Button>
               <Button
-                className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`}
+                className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_AppPortfolio ? 'btnActive' : null}`}
                 onClick={app_Handler}
                 >
                 {_AppPortfolio ? 'App Development' : 'App Development'}

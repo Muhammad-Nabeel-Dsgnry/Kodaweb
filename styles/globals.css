@@ -93,3 +93,13 @@ a {
 #testimonialsId .slick-list {
   height: 450px;
 }
+
+#basic-navbar-nav a.active {
+  color: var(--text-blue) !important;
+  border-bottom: 2px solid var(--bg-blue);
+}
+
+button.btnActive {
+  background-color: var(--bg-blue);
+  color: var(--text-white);
+}

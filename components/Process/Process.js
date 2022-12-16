@@ -117,7 +117,7 @@ const Process = () => {
                                     <span>04</span>
                                 </div> */}
                             </div>
-                            <div className={`${styles['processHoverableContentBox1']} ${styles['processHoverableBox4']}`}>
+                            <div className={`${styles['processHoverableContentBox2']} ${styles['processHoverableBox4']}`}>
                                 <h6>Test</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                             </div>
@@ -143,7 +143,7 @@ const Process = () => {
                                     <span>05</span>
                                 </div> */}
                             </div>
-                            <div className={`${styles['processHoverableContentBox1']} ${styles['processHoverableBox5']}`}>
+                            <div className={`${styles['processHoverableContentBox2']} ${styles['processHoverableBox5']}`}>
                                 <h6>Deploy</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                             </div>
@@ -169,7 +169,7 @@ const Process = () => {
                                     <span>06</span>
                                 </div> */}
                             </div>
-                            <div className={`${styles['processHoverableContentBox1']} ${styles['processHoverableBox6']}`}>
+                            <div className={`${styles['processHoverableContentBox2']} ${styles['processHoverableBox6']}`}>
                                 <h6>Maintain</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                             </div>

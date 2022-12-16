@@ -45,7 +45,7 @@ const Pricing = () => {
 
       <PricingComponent
       pricingSmTitle='Pricing'
-      pricingMainTitle='Digital Marekting & SEO'
+      pricingMainTitle='Digital Marketing & SEO'
       pricingShortPara='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.'
       colorText=''
       isButton='false'

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css'
 import Button from 'react-bootstrap/Button';
+import { useRouter } from 'next/router';
 
 
 const menuLinks = [
@@ -41,9 +42,12 @@ const menuLinks = [
 // }
  
 const Header = () => {
+
+  const route = useRouter()
+
   // return <header className={`${styles['header']} ${styles['headerTwo']} `}>Header</header>
   return (
-    <Navbar bg="light" expand="lg" className='py-3' id="home">
+    <Navbar bg="light" expand="lg" className='py-3' id="home" fixed="top">
       <Container>
         <Navbar.Brand href="/">
           <Image
@@ -59,7 +63,7 @@ const Header = () => {
           <Nav className="ms-auto">
             {menuLinks.map(({ title, path }, index) => {
               return (
-                <Link href={path} key={index} className={styles.navMenu}>{title}</Link>
+                <Link href={path} key={index} className={`${styles['navMenu']} ${route.pathname == path ? 'active' : null}`}>{title}</Link>
               )
             })}
           </Nav>
