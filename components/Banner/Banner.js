@@ -19,6 +19,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
           <Image
             className="me-4 my-4"
             src='/Assets/Assets/For Web/facebook.svg'
+            alt="banner social media icon"
             width='30'
             height='30'
           />
@@ -27,6 +28,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
           <Image
             className="me-4 my-4"
             src='/Assets/Assets/For Web/Dribble.svg'
+            alt="banner social media icon"
             width='30'
             height='30'
           />
@@ -35,6 +37,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
           <Image
             className="me-4 my-4"
             src='/Assets/Assets/For Web/Twitter.svg'
+            alt="banner social media icon"
             width='30'
             height='30'
           />
@@ -43,6 +46,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
           <Image
             className="me-4 my-4"
             src='/Assets/Assets/For Web/Linked In.svg'
+            alt="banner social media icon"
             width='30'
             height='30'
           />
@@ -54,6 +58,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
           <Image
               className={`${styles['homeBannerScrollIcon']} ${'me-4 my-4'}`}
               src='/Assets/Assets/For Web/Scroll-down-Arrow (2).svg'
+              alt="banner social media icon"
               width='30'
               height='30'
           />

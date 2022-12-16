@@ -42,3 +42,7 @@ a.navMenu:hover {
     /* box-shadow: 0px 4px 5px rgb(0 0 0 / 30%); */
     transition: 0.8s;
 }
+
+#basic-navbar-nav a {
+    text-decoration: none !important;
+}

@@ -223,30 +223,35 @@ const Footer = () => {
               <Image
                 className="me-2 mt-2"
                 src='/Assets/Assets/For Web/JCB.png'
+                alt='footer social midea icon'
                 width='80'
                 height='50'
               />
               <Image
                 className="me-2 mt-2"
                 src='/Assets/Assets/For Web/Dicover.png'
+                alt='footer social midea icon'
                 width='80'
                 height='50'
               />
               <Image
                 className="me-2 mt-2"
                 src='/Assets/Assets/For Web/UnionPay.png'
+                alt='footer social midea icon'
                 width='80'
                 height='50'
               />
               <Image
                 className="me-2 mt-2"
                 src='/Assets/Assets/For Web/VISA.png'
+                alt='footer social midea icon'
                 width='80'
                 height='50'
               />
               <Image
                 className="me-2 mt-2"
                 src='/Assets/Assets/For Web/MasterCard.png'
+                alt='footer social midea icon'
                 width='80'
                 height='50'
               />
