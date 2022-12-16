@@ -92,15 +92,15 @@
 
 
 .blueButton {
-    padding: 16px 74px;
+    padding: 18px 67px;
     border: 1px solid #2C35CD;
     color: #2C35CD;
     border-radius: 100px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 1.25rem;
+    /* line-height: 35px; */
     margin-top: 130px;
     display: block;
     margin-right: auto;

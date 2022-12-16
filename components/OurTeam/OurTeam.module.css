@@ -63,3 +63,60 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+.teamMainSection p {
+    color: var(--text-black);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+p.teamScrollDown {
+    transform: rotate(-90deg);
+    cursor: vertical-text;
+    color: var(--text-gray);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 17px;
+    letter-spacing: 1em;
+    white-space: nowrap;
+}
+
+
+
+
+.AnimationImgBoxOne, .AnimationImgBoxTwo {
+    position: relative;
+}
+
+.AnimationImgBoxTwo {
+
+}
+
+.AnimationImgBoxOne .imgOne,
+.AnimationImgBoxTwo .imgOne {
+  animation: test 10s linear infinite;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 4px 6px 2px rgb(26 26 26 / 15%);
+  border-radius: 10px;
+  filter: brightness(0.6);
+}
+
+@keyframes test {
+    0% {
+    opacity: 0;
+    }
+    25% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    }
+}

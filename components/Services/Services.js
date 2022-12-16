@@ -30,19 +30,6 @@ const Services = (props) => {
               <Col>
                 <Card className={styles.cardWrapper}>
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For Web/Graphic-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
-                  </div>
-                  <Card.Body className={styles.cardBody}>
-                    <Card.Title className={styles.cardTitle}>Logo Design</Card.Title>
-                    <Card.Text className={styles.cardText}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card className={styles.cardWrapper}>
-                  <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Branding-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
@@ -73,6 +60,19 @@ const Services = (props) => {
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Web Application</Card.Title>
+                    <Card.Text className={styles.cardText}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card className={styles.cardWrapper}>
+                  <div className={styles.imageBoxWrapper}>
+                    <Card.Img variant="top" src="/Assets/Assets/For Web/Graphic-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
+                  </div>
+                  <Card.Body className={styles.cardBody}>
+                    <Card.Title className={styles.cardTitle}>Video Production</Card.Title>
                     <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>

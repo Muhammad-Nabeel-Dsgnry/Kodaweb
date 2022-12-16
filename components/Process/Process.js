@@ -49,7 +49,7 @@ const Process = () => {
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Plan.svg'
+                                    src='/Assets/Assets/For Web/Design.svg'
                                     alt='plan'
                                     width='38'
                                     height='30'
@@ -75,7 +75,7 @@ const Process = () => {
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Plan.svg'
+                                    src='/Assets/Assets/For Web/Develop.svg'
                                     alt='plan'
                                     width='38'
                                     height='30'
@@ -101,7 +101,7 @@ const Process = () => {
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Plan.svg'
+                                    src='/Assets/Assets/For Web/Test.svg'
                                     alt='plan'
                                     width='38'
                                     height='30'
@@ -127,7 +127,7 @@ const Process = () => {
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Plan.svg'
+                                    src='/Assets/Assets/For Web/Deploy.svg'
                                     alt='plan'
                                     width='38'
                                     height='30'
@@ -153,7 +153,7 @@ const Process = () => {
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Plan.svg'
+                                    src='/Assets/Assets/For Web/Maintaince.svg'
                                     alt='plan'
                                     width='38'
                                     height='30'
