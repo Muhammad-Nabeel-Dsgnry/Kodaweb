@@ -21,6 +21,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -43,6 +44,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -65,6 +67,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -87,6 +90,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -109,6 +113,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -134,6 +139,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -156,6 +162,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -178,6 +185,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -200,6 +208,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -222,6 +231,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app-portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -247,6 +257,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -269,6 +280,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -291,6 +303,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -313,6 +326,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -335,6 +349,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -360,6 +375,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -382,6 +398,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -404,6 +421,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -426,6 +444,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -448,6 +467,7 @@ const AppPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
+                                        alt='app portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -473,6 +493,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -495,6 +516,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -517,6 +539,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -539,6 +562,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -561,6 +585,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -586,6 +611,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -608,6 +634,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -630,6 +657,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -652,6 +680,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'
@@ -674,6 +703,7 @@ const AppPortfolio = () => {
                                     <div className={`${styles.overlay}`}>
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
+                                            alt='app portfolio'
                                                 src='/Assets/Assets/For Web/cross.svg'
                                                 width='20'
                                                 height='20'

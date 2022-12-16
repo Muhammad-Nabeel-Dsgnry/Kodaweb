@@ -28,6 +28,7 @@ const AboutUs = () => {
               <Image
                 className={styles.homeAboutUsSectionImage}
                 src='/Assets/Assets/For Web/About Us (Home page).png'
+                alt='kodaweb-about-us'
                 width='646'
                 height='632'
               />

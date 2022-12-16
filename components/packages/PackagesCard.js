@@ -11,9 +11,9 @@ const PackagesCard = ({ item }) => {
                 <hr className={styles.packagesDivider}></hr>
                 <div className={styles.PackagesCardBoxBody}>
                     {
-                        item.packageDetails.map(item => {
+                        item.packageDetails.map((item, key) => {
                             return (
-                                <p>{item}</p>
+                                <p key={key}>{item}</p>
                             )
                         })
                     }

@@ -22,6 +22,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -44,6 +45,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -66,6 +68,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -88,6 +91,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -110,6 +114,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -135,6 +140,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -157,6 +163,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -179,6 +186,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -201,6 +209,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -223,6 +232,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -248,6 +258,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -270,6 +281,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -292,6 +304,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -314,6 +327,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -336,6 +350,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -361,6 +376,7 @@ const WebsitePortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                                 src='/Assets/Assets/For Web/cross.svg'
+                                                alt='website portfolio'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
@@ -383,6 +399,7 @@ const WebsitePortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                                 src='/Assets/Assets/For Web/cross.svg'
+                                                alt='website portfolio'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
@@ -405,6 +422,7 @@ const WebsitePortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                                 src='/Assets/Assets/For Web/cross.svg'
+                                                alt='website portfolio'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
@@ -427,6 +445,7 @@ const WebsitePortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                                 src='/Assets/Assets/For Web/cross.svg'
+                                                alt='website portfolio'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
@@ -449,6 +468,7 @@ const WebsitePortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                                 src='/Assets/Assets/For Web/cross.svg'
+                                                alt='website portfolio'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
@@ -474,6 +494,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -496,6 +517,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -518,6 +540,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -540,6 +563,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -562,6 +586,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -587,6 +612,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -609,6 +635,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -631,6 +658,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -653,6 +681,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
@@ -675,6 +704,7 @@ const WebsitePortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             src='/Assets/Assets/For Web/cross.svg'
+                                            alt='website portfolio'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"

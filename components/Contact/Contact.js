@@ -28,6 +28,7 @@ const Contact = () => {
                     <div className='mb-4'>
                       <span className={styles.formSectionImageWrapper}>
                         <Image
+                        alt='contact icons'
                           className={styles.formSectionIcon}
                           src='/Assets/Assets/For Web/location(Bold).svg'
                           width='22'
@@ -44,6 +45,7 @@ const Contact = () => {
                     <div className='mb-4'>
                       <span className={styles.formSectionImageWrapper}>
                         <Image
+                        alt='contact icons'
                           className={styles.formSectionIcon}
                           src='/Assets/Assets/For Web/call(Bold).svg'
                           width='22'
@@ -65,6 +67,7 @@ const Contact = () => {
                     <div className='mb-4'>
                       <span className={styles.formSectionImageWrapper}>
                         <Image
+                        alt='contact icons'
                           className={styles.formSectionIcon}
                           src='/Assets/Assets/For Web/mail(Bold).svg'
                           width='22'
@@ -85,6 +88,7 @@ const Contact = () => {
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
                 <InputGroup.Text id="inputGroup-sizing-lg" className={styles.inputFieldIcon}>
                   <Image
+                  alt='contact icons'
                     src='/Assets/Assets/For Web/profile.svg'
                     width='25'
                     height='23'
@@ -100,6 +104,7 @@ const Contact = () => {
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
                 <InputGroup.Text id="inputGroup-sizing-lg" className={styles.inputFieldIcon}>
                   <Image
+                  alt='contact icons'
                     src='/Assets/Assets/For Web/email.svg'
                     width='25'
                     height='23'
@@ -115,6 +120,7 @@ const Contact = () => {
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
                 <InputGroup.Text id="inputGroup-sizing-lg" className={styles.inputFieldIcon}>
                   <Image
+                  alt='contact icons'
                     src='/Assets/Assets/For Web/message-2.svg'
                     width='25'
                     height='23'

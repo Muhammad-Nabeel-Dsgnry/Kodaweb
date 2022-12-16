@@ -27,6 +27,7 @@ const InnerPagesBanner = (props) => {
                         innerBannerSideImage ? 
                         <Image
                             src={innerBannerSideImage}
+                            alt='kodaweb-banner-image'
                             width='100'
                             height='100'
                         />
@@ -57,6 +58,7 @@ const InnerPagesBanner = (props) => {
                         <Image
                             className={`${styles['innerBannerRigtImage']}`}
                             src={innerBannerSideImage}
+                            alt='kodaweb-banner-image'
                             width='451'
                             height='368'
                         />
@@ -86,6 +88,7 @@ const InnerPagesBanner = (props) => {
                         innerBannerSideImage ? 
                         <Image
                             src={innerBannerSideImage}
+                            alt='kodaweb-banner-image'
                             width='100'
                             height='100'
                         />
@@ -115,6 +118,7 @@ const InnerPagesBanner = (props) => {
                         innerBannerSideImage ? 
                         <Image
                             src={innerBannerSideImage}
+                            alt='kodaweb-banner-image'
                             width='100'
                             height='100'
                         />
@@ -144,6 +148,7 @@ const InnerPagesBanner = (props) => {
                         innerBannerSideImage ? 
                         <Image
                             src={innerBannerSideImage}
+                            alt='kodaweb-banner-image'
                             width='100'
                             height='100'
                         />

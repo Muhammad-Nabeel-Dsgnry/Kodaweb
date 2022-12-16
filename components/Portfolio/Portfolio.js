@@ -18,7 +18,7 @@ const Portfolio = () => {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
@@ -71,6 +71,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -93,6 +94,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -115,6 +117,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -137,6 +140,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -159,6 +163,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -181,6 +186,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -203,6 +209,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -228,6 +235,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -250,6 +258,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -272,6 +281,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -294,6 +304,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -316,6 +327,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -338,6 +350,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -360,6 +373,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -384,6 +398,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -406,6 +421,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -428,6 +444,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -450,6 +467,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -472,6 +490,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -494,6 +513,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
@@ -516,6 +536,7 @@ const Portfolio = () => {
                 <div className={`${styles.overlay}`}>
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
+                    alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'

@@ -47,6 +47,7 @@ const Header = () => {
       <Container>
         <Navbar.Brand href="/">
           <Image
+          alt='header logo'
             src='/Assets/Assets/For Web/LogoHeader.png'
             width='235'
             height='60'

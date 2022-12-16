@@ -136,6 +136,7 @@ const Footer = () => {
             <div className={styles.footerMenuWrapper}>
               <Link href='mailto:Info@kodawebstudio.com'>
                 <Image
+                alt='footer icons'
                   className="me-3"
                   src='/Assets/Assets/For Web/message.svg'
                   width='21'
@@ -147,6 +148,7 @@ const Footer = () => {
             <div className={styles.footerMenuWrapper}>
               <Link href='tel:(+1-870-555-000)'>
                 <Image
+                alt='footer icons'
                   className="me-3"
                   src='/Assets/Assets/For Web/call.svg'
                   width='21'
@@ -158,6 +160,7 @@ const Footer = () => {
             <div className={styles.footerMenuWrapper}>
               <Link href='#' className="d-flex align-items-center">
                 <Image
+                alt='footer icons'
                   className="me-3"
                   src='/Assets/Assets/For Web/location.svg'
                   width='21'
@@ -169,6 +172,7 @@ const Footer = () => {
             <div className={styles.footerSocialLinkWrapper}>
               <Link href='#'>
                 <Image
+                alt='footer icons'
                   className="me-4 my-4"
                   src='/Assets/Assets/For Web/facebook.svg'
                   width='30'
@@ -177,6 +181,7 @@ const Footer = () => {
               </Link>
               <Link href='#'>
                 <Image
+                alt='footer icons'
                   className="me-4 my-4"
                   src='/Assets/Assets/For Web/Dribble.svg'
                   width='30'
@@ -185,6 +190,7 @@ const Footer = () => {
               </Link>
               <Link href='#'>
                 <Image
+                alt='footer icons'
                   className="me-4 my-4"
                   src='/Assets/Assets/For Web/Twitter.svg'
                   width='30'
@@ -193,6 +199,7 @@ const Footer = () => {
               </Link>
               <Link href='#'>
                 <Image
+                alt='footer icons'
                   className="me-4 my-4"
                   src='/Assets/Assets/For Web/Linked In.svg'
                   width='30'

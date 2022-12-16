@@ -25,6 +25,7 @@ const WhoWeAre = () => {
                             <span className={styles.WhoWeAreCounterBoxDivider}></span>
                             <Image
                                 src='/Assets/Assets/For Web/Project-completed-blue.svg'
+                                alt='Who We Are icon'
                                 width='33'
                                 height='40'
                             />
@@ -45,6 +46,7 @@ const WhoWeAre = () => {
                         <div className={styles.WhoWeAreCounterBox}>
                             <Image
                                 src='/Assets/Assets/For Web/Satisfied-customer-blue.svg'
+                                alt='Who We Are icon'
                                 width='33'
                                 height='40'
                             />
@@ -66,6 +68,7 @@ const WhoWeAre = () => {
                     <span className={styles.WhoWeAreCounterBoxDivider2}></span>
                             <Image
                                 src='/Assets/Assets/For Web/national-award-blue.svg'
+                                alt='Who We Are icon'
                                 width='33'
                                 height='40'
                             />

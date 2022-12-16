@@ -83,6 +83,7 @@ const Skills = () => {
               <Image
                 className={styles.servicesSectionImage}
                 src='/Assets/Assets/For Web/Best Skill.jpg'
+                alt='best skills'
                 width='646'
                 height='632'
               />
