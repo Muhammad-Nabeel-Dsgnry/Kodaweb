@@ -21,7 +21,7 @@ const InnerAboutUs = () => {
                             </div>
                             <div className={styles.innerAboutUsPointsWrapper}>
                                 <ul>
-                                    <li>
+                                    <li data-aos="fade-down" data-aos-duration='1000'>
                                         <span>
                                             <Image
                                                 src='/Assets/Assets/For Web/accept_1.svg'
@@ -32,7 +32,7 @@ const InnerAboutUs = () => {
                                         </span>
                                         Digital Creative Agency
                                     </li>
-                                    <li>
+                                    <li data-aos="fade-down" data-aos-duration='1500'>
                                         <span>
                                             <Image
                                                 src='/Assets/Assets/For Web/accept_1.svg'
@@ -43,7 +43,7 @@ const InnerAboutUs = () => {
                                         </span>
                                         Digital Creative Agency
                                     </li>
-                                    <li>
+                                    <li data-aos="fade-down" data-aos-duration='2000'>
                                         <span>
                                             <Image
                                                 src='/Assets/Assets/For Web/accept_1.svg'
@@ -64,6 +64,8 @@ const InnerAboutUs = () => {
                                 width='455'
                                 height='514'
                                 alt='About Us image 1'
+                                data-aos="fade-left"
+                                data-aos-duration='1000'
                             />
                             <Image
                                 className={styles.innerAboutImageTwo}
@@ -71,6 +73,8 @@ const InnerAboutUs = () => {
                                 width='387'
                                 height='443'
                                 alt='About Us image 2'
+                                data-aos="fade-left"
+                                data-aos-duration='1500'
                             />
                         </Col>
                     </Row>

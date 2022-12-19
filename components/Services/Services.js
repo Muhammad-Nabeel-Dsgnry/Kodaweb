@@ -28,7 +28,7 @@ const Services = (props) => {
             </Row>
             <Row className='mt-5'>
               <Col>
-                <Card className={styles.cardWrapper}>
+                <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Branding-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
                   </div>
@@ -41,7 +41,7 @@ const Services = (props) => {
                 </Card>
               </Col>
               <Col>
-                <Card className={styles.cardWrapper}>
+                <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="1500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/web-development-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
                   </div>
@@ -54,7 +54,7 @@ const Services = (props) => {
                 </Card>
               </Col>
               <Col>
-                <Card className={styles.cardWrapper}>
+                <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="2000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Web-App-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
                   </div>
@@ -67,7 +67,7 @@ const Services = (props) => {
                 </Card>
               </Col>
               <Col>
-                <Card className={styles.cardWrapper}>
+                <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="2500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Graphic-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
                   </div>
@@ -86,7 +86,7 @@ const Services = (props) => {
               :
             <Row className='mt-5 pt-4 mb-5'>
               <Col>
-                <Card className={styles.cardWrapper}>
+                <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/UX-UI-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
                   </div>
@@ -99,7 +99,7 @@ const Services = (props) => {
                 </Card>
               </Col>
               <Col>
-                <Card className={styles.cardWrapper}>
+                <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Digital-marketing-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
                   </div>
@@ -112,7 +112,7 @@ const Services = (props) => {
                 </Card>
               </Col>
               <Col>
-                <Card className={styles.cardWrapper}>
+                <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="2000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/SEO-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
                   </div>
@@ -125,7 +125,7 @@ const Services = (props) => {
                 </Card>
               </Col>
               <Col>
-                <Card className={styles.cardWrapper}>
+                <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="2500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/App-Dev-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
                   </div>

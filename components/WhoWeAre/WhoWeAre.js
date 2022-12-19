@@ -19,7 +19,7 @@ const WhoWeAre = () => {
                     <h2 className={styles.mainTitle}>DWe Are [Trusted] By First & Best In The World<span className={styles.dot}>.</span></h2>
                     <p className={styles.Para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat,</p>
                 </div>
-                <Row className={styles.WhoWeAreCounterWrapper}>
+                <Row className={styles.WhoWeAreCounterWrapper} >
                     <Col md={4} className='p-0'>
                         <div className={styles.WhoWeAreCounterBox}>
                             <span className={styles.WhoWeAreCounterBoxDivider}></span>
@@ -99,6 +99,7 @@ const WhoWeAre = () => {
                     alt='who We Are'
                     width='646'
                     height='710'
+                    
                 />
                 </Col>
             </Row>

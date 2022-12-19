@@ -132,7 +132,7 @@ const BrandingIdentityPortfolio = () => {
                     {/* </Row> */}
 
                     <Row>
-                    <Stack direction="horizontal" gap={0} className='justify-content-between w-100'>
+                    <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-up" data-aos-duration="2000">
                         <div className={`${styles['testimonial']}`}>
                             <div className={`${styles['box']}`}>
                                 <div className={`${styles.overlay}`}>
@@ -250,7 +250,7 @@ const BrandingIdentityPortfolio = () => {
                         </div>
                         </Stack>
 
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100'>
+                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-down" data-aos-duration="2000">
                             <div className={`${styles['testimonial']}`}>
                                 <div className={`${styles['box']}`}>
                                     <div className={`${styles.overlay}`}>
@@ -368,7 +368,7 @@ const BrandingIdentityPortfolio = () => {
                             </div>
                         </Stack>
 
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100'>
+                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-up" data-aos-duration="2000">
                         <div className={`${styles['testimonial']}`}>
                             <div className={`${styles['box']}`}>
                                 <div className={`${styles.overlay}`}>
@@ -486,7 +486,7 @@ const BrandingIdentityPortfolio = () => {
                         </div>
                         </Stack>
 
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100'>
+                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-down" data-aos-duration="2000">
                         <div className={`${styles['testimonial']}`}>
                             <div className={`${styles['box']}`}>
                                 <div className={`${styles.overlay}`}>
@@ -604,7 +604,7 @@ const BrandingIdentityPortfolio = () => {
                         </div>
                         </Stack>
 
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100'>
+                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-up" data-aos-duration="2000">
                         <div className={`${styles['testimonial']}`}>
                             <div className={`${styles['box']}`}>
                                 <div className={`${styles.overlay}`}>
@@ -722,7 +722,7 @@ const BrandingIdentityPortfolio = () => {
                         </div>
                         </Stack>
 
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100'>
+                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-down" data-aos-duration="2000">
                         <div className={`${styles['testimonial']}`}>
                             <div className={`${styles['box']}`}>
                                 <div className={`${styles.overlay}`}>

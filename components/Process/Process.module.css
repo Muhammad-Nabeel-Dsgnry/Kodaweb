@@ -254,7 +254,7 @@
 
 
 .processNumberNormal {
-    border: 1px solid #000;
+    border: 1px solid var(--bg-blue);
     width: 12px;
     height: 12px;
     border-radius: 50%;
