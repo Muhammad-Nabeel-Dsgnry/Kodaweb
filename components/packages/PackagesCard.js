@@ -4,7 +4,7 @@ import styles from './PackagesCard.module.css'
 
 const PackagesCard = ({ item }) => {
     return (
-        <div className={styles.PackagesCardBoxWrapper} data-aos="zoom-in" data-aos-easing="linear"  data-aos-duration="1000">
+        <div className={styles.PackagesCardBoxWrapper} data-aos="fade-in" data-aos-duration="2000">
             <div className={styles.PackagesCardBoxHeader}>
                 <h2 className={styles.packagesTitle}>{item.title}</h2>
                 <h3 className={styles.packagesPrice}>{item.price}</h3>

@@ -13,7 +13,7 @@ const Testimonials = () => {
       <section className={styles.testimonialsSection}>
           <Container>
             <Row>
-              <Col>
+              <Col className={styles.testimonialsCol}>
               <div className='w-50'>
                 <h3 className={styles.lineTitle}>Testimonial</h3>
                 <h2 className={styles.mainTitle}>What Our Clients Say<span className={styles.dot}>.</span></h2>
@@ -22,7 +22,7 @@ const Testimonials = () => {
               </Col>
             </Row>
 
-            <Row className='mt-5'>
+            <Row className={`${'mt-5'} ${styles.TestimonialSliderRow}`}>
              <TestimonialSlider />
             </Row>
           </Container>

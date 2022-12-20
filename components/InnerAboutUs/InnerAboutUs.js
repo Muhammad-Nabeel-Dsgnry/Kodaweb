@@ -13,7 +13,7 @@ const InnerAboutUs = () => {
             <section className={styles.innerAboutUsSection}>
                 <Container>
                     <Row>
-                        <Col lg={6}>
+                        <Col lg={6} xs={12}>
                             <div className='w-80'>
                                 <h3 className={styles.lineTitle}>About Us</h3>
                                 <h2 className={styles.mainTitle}>Best Digital Solutiuon Provider Agency<span className={styles.dot}>.</span></h2>
@@ -57,7 +57,7 @@ const InnerAboutUs = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={6} className={styles.innerAboutImageOverlapCol}>
+                        <Col lg={6} xs={12} className={styles.innerAboutImageOverlapCol}>
                             <Image
                                 className={styles.innerAboutImageOne}
                                 src='/Assets/Assets/For Web/About Us image 1.jpg'

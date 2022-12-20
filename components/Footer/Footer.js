@@ -94,7 +94,7 @@ const Footer = () => {
           <Col lg={3}>
             <Link href='/'>
               <Image
-                src='/Assets/Assets/For Web/LogoFooter.png'
+                src='/Assets/Assets/For Web/Logo for footer(2).png'
                 width='239'
                 height='104'
               />
@@ -133,7 +133,7 @@ const Footer = () => {
           </Col>
           <Col lg={3} className={styles.footerlinksMainCol}>
             <h5 className="mb-4">Company Info</h5>
-            <div className={styles.footerMenuWrapper}>
+            <div className={`${styles['footerMenuWrapper']} ${styles['footerCompanyInfo']}`}>
               <Link href='mailto:Info@kodawebstudio.com'>
                 <Image
                 alt='footer icons'
@@ -145,7 +145,7 @@ const Footer = () => {
                 <span>Info@kodawebstudio.com</span>
               </Link>
             </div>
-            <div className={styles.footerMenuWrapper}>
+            <div className={`${styles['footerMenuWrapper']} ${styles['footerCompanyInfo']}`}>
               <Link href='tel:(+1-870-555-000)'>
                 <Image
                 alt='footer icons'
@@ -157,7 +157,7 @@ const Footer = () => {
                 <span>(+1-870-555-000)</span>
               </Link>
             </div>
-            <div className={styles.footerMenuWrapper}>
+            <div className={`${styles['footerMenuWrapper']} ${styles['footerCompanyInfo']}`}>
               <Link href='#' className="d-flex align-items-center">
                 <Image
                 alt='footer icons'

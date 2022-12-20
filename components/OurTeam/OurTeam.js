@@ -23,7 +23,7 @@ const OurTeam = () => {
                     </Col>
                     <Col md={8}>
                         <Row>
-                            <Col md={5} style={{display: 'flex', justifyContent: 'end'}}>
+                            <Col md={5} xs={6} style={{display: 'flex', justifyContent: 'end'}}>
                             <div className={styles.AnimationImgBoxOne}>
                                 <Image
                                     className={styles.imgOne}
@@ -41,7 +41,7 @@ const OurTeam = () => {
                                 />
                             </div>
                             </Col>
-                            <Col md={3} className='p-0'>
+                            <Col md={3} className={`${styles['hideAnimatedSec']} ${'p-0'}`}>
                             <div className={styles.AnimationImgBoxOne}>
                                 <Image
                                     className={styles.imgOne}
@@ -59,7 +59,7 @@ const OurTeam = () => {
                                 />
                             </div>
                             </Col>
-                            <Col md={4} style={{display: 'flex', justifyContent: 'end'}}>
+                            <Col md={4} xs={6} style={{display: 'flex', justifyContent: 'end'}}>
                             <div className={styles.AnimationImgBoxOne}>
                                 <Image
                                     className={styles.imgOne}
@@ -79,7 +79,7 @@ const OurTeam = () => {
                             </Col>
                         </Row>
                         <Row className='mt-2'>
-                            <Col md={4} style={{display: 'flex', justifyContent: 'end'}}>
+                            <Col md={4} xs={6} style={{display: 'flex', justifyContent: 'end'}}>
                                 <div className={styles.AnimationImgBoxOne}>
                                     <Image
                                         className={styles.imgOne}
@@ -97,7 +97,7 @@ const OurTeam = () => {
                                     />
                                 </div>
                             </Col>
-                            <Col md={2} className='p-0'>
+                            <Col md={2} className={`${styles['hideAnimatedSec']} ${'p-0'}`}>
                             <div className={styles.AnimationImgBoxOne}>
                                 <Image
                                     className={styles.imgOne}
@@ -115,8 +115,8 @@ const OurTeam = () => {
                                 />
                             </div>
                             </Col>
-                            <Col md={6} className='pl-0' style={{display: 'flex', flexDirection: 'column', justifyContent: 'end'}}>
-                            <div >
+                            <Col md={6} xs={6} className='pl-0' style={{display: 'flex', flexDirection: 'column', justifyContent: 'end'}}>
+                            <div className={`${styles['ourTeamAnimationTextOne']}`}>
                                 <p>Our team explores, experiments, and finds inspiration everywhere.</p>
                             </div>
                             <div className={styles.AnimationImgBoxOne} style={{display: 'flex', justifyContent: 'end'}}>
@@ -137,11 +137,11 @@ const OurTeam = () => {
                             </div>
                             </Col>
                         </Row>
-                        <Row style={{justifyContent: 'center'}}>
-                            <Col md={3} style={{display: 'flex', alignItems: 'center'}}>
+                        <Row style={{justifyContent: 'center'}} className={`${styles['hideAnimatedSec']}`}>
+                            <Col md={3} xs={12} style={{display: 'flex', alignItems: 'center'}} className={`${styles['teamScrollDownCol']}`}>
                                 <p className={styles.teamScrollDown}>Scroll Down</p>
                             </Col>
-                            <Col md={4} style={{display: 'flex', justifyContent: 'end'}} className='pe-0'>
+                            <Col md={4} xs={3} style={{display: 'flex', justifyContent: 'end'}} className='pe-0'>
                             <div className={`${styles['AnimationImgBoxOne']}`}>
                                 <Image
                                     className={styles.imgOne}
@@ -159,8 +159,8 @@ const OurTeam = () => {
                                 />
                             </div>
                             </Col>
-                            <Col md={4} style={{display: 'flex', alignItems: 'center'}}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.</p>
+                            <Col md={4} xs={9} style={{display: 'flex', alignItems: 'center'}}>
+                            <p className={`${styles['teamAnimatedPara']}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.</p>
                             </Col>
                         </Row>
                     </Col>

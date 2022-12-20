@@ -15,7 +15,7 @@ const Skills = () => {
       <section className={styles.homeAboutUsSection}>
         <Container>
           <Row>
-            <Col lg={6}>
+            <Col lg={6} xs={12}>
               <div className='w-80'>
                 <h3 className={styles.lineTitle}>Best Skills</h3>
                 <h2 className={styles.mainTitle}>Experience Team to Provide Ideas<span className={styles.dot}>.</span></h2>
@@ -26,52 +26,52 @@ const Skills = () => {
                 <div className={styles.skillsContainer}>
                     <div className={`${styles['skillsSection']}`}>
                       <Row>
-                        <Col md={4}>
+                        <Col md={4} xs={5}>
                         <span className={styles.skillName}>UX UI Designing</span>
                         </Col>
-                        <Col md={7} className={styles.ProgressBarCol}>
+                        <Col md={7} xs={5} className={styles.ProgressBarCol}>
                          <ProgressBar now={82}  className={styles['skillsProgress']} /> 
                         </Col>
-                        <Col md={1}>
+                        <Col md={1} xs={2}>
                         <span className={styles.skillNumber}>82%</span>
                         </Col>
                       </Row>
                     </div>
                     <div className={`${styles['skillsSection']}`}>
                       <Row>
-                        <Col md={4}>
+                        <Col md={4} xs={5}>
                         <span className={styles.skillName}>Web Development</span>
                         </Col>
-                        <Col md={7} className={styles.ProgressBarCol}>
+                        <Col md={7} xs={5} className={styles.ProgressBarCol}>
                          <ProgressBar now={78}  className={styles['skillsProgress']} /> 
                         </Col>
-                        <Col md={1}>
+                        <Col md={1} xs={2}>
                         <span className={styles.skillNumber}>78%</span>
                         </Col>
                       </Row>
                     </div>
                     <div className={`${styles['skillsSection']}`}>
                       <Row>
-                        <Col md={4}>
+                        <Col md={4} xs={5}>
                         <span className={styles.skillName}>Product Development</span>
                         </Col>
-                        <Col md={7} className={styles.ProgressBarCol}>
+                        <Col md={7} xs={5} className={styles.ProgressBarCol}>
                          <ProgressBar now={80}  className={styles['skillsProgress']} /> 
                         </Col>
-                        <Col md={1}>
+                        <Col md={1} xs={2}>
                         <span className={styles.skillNumber}>80%</span>
                         </Col>
                       </Row>
                     </div>
                     <div className={`${styles['skillsSection']}`}>
                       <Row>
-                        <Col md={4}>
+                        <Col md={4} xs={5}>
                         <span className={styles.skillName}>Software Development</span>
                         </Col>
-                        <Col md={7} className={styles.ProgressBarCol}>
+                        <Col md={7} xs={5} className={styles.ProgressBarCol}>
                          <ProgressBar now={65}  className={styles['skillsProgress']} /> 
                         </Col>
-                        <Col md={1}>
+                        <Col md={1} xs={2}>
                         <span className={styles.skillNumber}>65%</span>
                         </Col>
                       </Row>
@@ -79,7 +79,7 @@ const Skills = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={6}>
+            <Col lg={6} xs={12}>
               <Image
                 className={styles.servicesSectionImage}
                 src='/Assets/Assets/For Web/Best Skill.jpg'

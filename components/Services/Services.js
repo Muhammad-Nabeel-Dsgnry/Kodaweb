@@ -18,7 +18,7 @@ const Services = (props) => {
         <section className={styles.home_services_section}>
           <Container>
             <Row>
-              <Col>
+              <Col className={styles.content_Section}>
                 <div className='w-50'>
                   <h3 className={styles.lineTitle}>Our Services</h3>
                   <h2 className={styles.mainTitle}>Design Creative That Generate Result<span className={styles.dot}>.</span></h2>
@@ -26,8 +26,8 @@ const Services = (props) => {
                 </div>
               </Col>
             </Row>
-            <Row className='mt-5'>
-              <Col>
+            <Row className={`${styles.cardRow} ${'mt-5'}`}>
+              <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Branding-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -40,7 +40,7 @@ const Services = (props) => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="1500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/web-development-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -53,7 +53,7 @@ const Services = (props) => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="2000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Web-App-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -66,7 +66,7 @@ const Services = (props) => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="2500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Graphic-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -84,8 +84,8 @@ const Services = (props) => {
               isTwoRows == 'false' ?
               null
               :
-            <Row className='mt-5 pt-4 mb-5'>
-              <Col>
+            <Row className={`${styles.cardRow} ${'mt-5 pt-4 mb-5'}`}>
+              <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/UX-UI-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -98,7 +98,7 @@ const Services = (props) => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Digital-marketing-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -111,7 +111,7 @@ const Services = (props) => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="2000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/SEO-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -124,7 +124,7 @@ const Services = (props) => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="2500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/App-Dev-blue.svg" width='60' height='60' className={styles.serviceCardImage} />

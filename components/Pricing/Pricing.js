@@ -426,19 +426,20 @@ const Pricing = (props) => {
       <section className={styles.pricingSection}>
         <Container>
           <Row>
-            <Col>
+            <Col xs={12} lg={6}>
               <div>
                 <h3 className={styles.lineTitle}>{pricingSmTitle}</h3>
                 {/* <h2 className={styles.mainTitle}>Choose the right plan for your business<span className={styles.dot}>.</span></h2> */}
                 {/* <h2 className={styles.mainTitle}>{pricingMainTitle}</h2> */}
                 <h2 className={styles.mainTitle}>{pricingMainTitle}<span className={colorText ? styles.dot : ''}>{colorText}</span></h2>
-                <p className={`${styles['Para']} ${styles['colorBlack']} ${isImage == 'true' ? 'w-100' : 'w-50'}`}>{pricingShortPara}</p>
+                <p className={`${styles['Para']} ${styles['colorBlack']} ${isImage == 'true' ? 'w-100' : 'w-100'}`}>{pricingShortPara}</p>
               </div>
             </Col>
             {
               isImage == 'true' ?
-                <Col className='d-flex justify-content-end'>
+                <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={6}>
                   <Image
+                    className={styles.guaranteeImage}
                     src='/Assets/Assets/For Web/moneyBack.png'
                     alt='money back guarantee'
                     width='345'
@@ -453,7 +454,7 @@ const Pricing = (props) => {
 
             {
               pricingMainTitle == 'Choose the right plan for your business' ? 
-              <Row id='logoRow'>
+              <Row className={`${styles.logoRow}`}>
                 <div className='d-flex' style={{gap: '25px'}}>
                   <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${logoDesign ? 'btnActive' : null}`} onClick={LogoDesignHandler}>
                     {logoDesign ? 'Logo Design' : 'Logo Design'}
@@ -487,7 +488,7 @@ const Pricing = (props) => {
 
           {
               pricingMainTitle == 'Logo Design' ?
-              <Row>
+              <Row className={`${styles.logoRow}`}>
                 <div className='d-flex' style={{gap: '25px'}}>
                   <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${logoDesign ? 'btnActive' : null}`} onClick={LogoDesignHandler}>
                     {logoDesign ? 'Logo Design' : 'Logo Design'}
@@ -517,7 +518,7 @@ const Pricing = (props) => {
           
           {
             pricingMainTitle == 'Branding & Identity' || isInnerPageLogoDesign == 'false' ?
-            <Row>
+            <Row className={`${styles.logoRow}`}>
               <div className='d-flex' style={{gap: '25px'}}>
               <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Mockups ? 'btnActive' : null}`} onClick={_MockupsHandler}>
                 {_Mockups ? 'Mockups' : 'Mockups'}
@@ -551,7 +552,7 @@ const Pricing = (props) => {
 
           {
             pricingMainTitle == 'Website Design' || isInnerPageLogoDesign == 'false' ?
-              <Row>
+              <Row className={`${styles.logoRow}`}>
                 <div className='d-flex' style={{ gap: '25px' }}>
                   <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Html ? 'btnActive' : null}`} onClick={set_HtmlHandler}>
                     {_Html ? 'HTML' : 'HTML'}
@@ -586,7 +587,7 @@ const Pricing = (props) => {
 
           {
             pricingMainTitle == 'Digital Marketing & SEO' || isInnerPageLogoDesign == 'false' ?
-              <Row>
+              <Row className={`${styles.logoRow}`}>
                 <div className='d-flex' style={{ gap: '25px' }}>
                   <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Seo ? 'btnActive' : null}`} onClick={set_SeoHandler}>
                     {_Seo ? 'SEO' : 'SEO'}
@@ -648,7 +649,7 @@ const Pricing = (props) => {
           {
             isButton == 'false' ?
               null :
-              <Link href='/pricing' className={`${styles['blueButton']} ${'mb-3'}`}>
+              <Link href='/pricing' className={`${styles['blueButton']} ${'mb-3'} ${styles['morePriceBtn']}`}>
                 View More Prices
               </Link>
           }

@@ -139,3 +139,56 @@
   /* box-shadow: 0px 4px 5px rgb(0 0 0 / 30%); */
   transition: 0.8s;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .formSection {
+    padding: 30px 0px 30px 0px;
+  }
+  h3.lineTitle::before {
+    width: 18%;
+    margin-right: 15px;
+    height: 3px;
+  }
+  h3.lineTitle {
+      font-size: 16px;
+      line-height: 17px;
+      font-weight: 500;
+  }
+  h2.mainTitle {
+      font-size: 1.5rem;
+      line-height: 29px;
+  }
+  .Para {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+  }
+  .formSectionPara {
+    font-size: 0.625rem;
+    line-height: 15px;
+  }
+  .formSectionPara a {
+    margin-bottom: 0px !important;
+  }
+  .formSectionSmTitle {
+    font-size: 1.125rem;
+    line-height: 27px;
+    margin: 20px 0px 10px 0px;
+  }
+  .formSectionImageWrapper {
+    border-radius: 5px;
+    padding: 13px 14px;
+  }
+  .formContactInfoRowTwo {
+    margin-top: 20px !important;
+  }
+  .blueButton {
+    margin-top: 40px;
+    padding: 15px 50px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 15px;
+  }
+
+}

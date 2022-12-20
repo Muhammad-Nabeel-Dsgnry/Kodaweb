@@ -21,7 +21,7 @@ const Process = () => {
                     </Row>
 
                     <Row className='mt-5'>
-                        <Col lg={2}>
+                        <Col lg={2} className={`${styles['processBoxes']}`}>
                             <div className={styles.processContentBoxWrapper}>
                                 <div className={styles.processContentBox}>
                                     <Image
@@ -45,7 +45,7 @@ const Process = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={2}>
+                        <Col lg={2} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
@@ -71,7 +71,7 @@ const Process = () => {
                             </div>
                         </div>
                         </Col>
-                        <Col lg={2}>
+                        <Col lg={2} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
@@ -97,7 +97,7 @@ const Process = () => {
                             </div>
                         </div>
                         </Col>
-                        <Col lg={2}>
+                        <Col lg={2} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
@@ -123,7 +123,7 @@ const Process = () => {
                             </div>
                         </div>
                         </Col>
-                        <Col lg={2}>
+                        <Col lg={2} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
@@ -149,7 +149,7 @@ const Process = () => {
                             </div>
                         </div>
                         </Col>
-                        <Col lg={2}>
+                        <Col lg={2} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image

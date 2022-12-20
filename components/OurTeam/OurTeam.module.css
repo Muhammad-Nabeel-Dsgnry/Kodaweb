@@ -120,3 +120,44 @@ p.teamScrollDown {
     opacity: 0;
     }
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .teamMainSection {
+        padding: 35px 10px;
+    }
+    h3.lineTitle::before {
+        width: 18%;
+        margin-right: 15px;
+        height: 3px;
+    }
+    h3.lineTitle {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 500;
+    }
+    h2.mainTitle {
+        font-size: 1.5rem;
+        line-height: 29px;
+    }
+    .Para {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .AnimationImgBoxOne img {
+        width: 100%;
+        height: auto;
+        margin: 0px 0px 10px 0px;
+    }
+    .ourTeamAnimationTextOne,
+    .teamScrollDownCol p,
+    .hideAnimatedSec {
+        display: none
+    }
+    .teamAnimatedPara {
+        font-size: 0.875rem !important;
+        line-height: 20px !important;
+    }
+}

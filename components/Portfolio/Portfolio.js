@@ -22,7 +22,20 @@ const Portfolio = () => {
     speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    pauseOnHover: true
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true,
+          autoplay: false,
+        }
+      },
+    ]
   };
 
   const settings2 = {
@@ -35,7 +48,19 @@ const Portfolio = () => {
     autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
-    rtl: true
+    rtl: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          autoplay: false
+        }
+      },
+    ]
   };
 
   const settings3 = {
@@ -48,6 +73,18 @@ const Portfolio = () => {
     autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          autoplay: false
+        }
+      },
+    ]
   };
 
   return (
@@ -55,7 +92,7 @@ const Portfolio = () => {
       <section className={styles.portfolio_section}>
         <Container>
           <Row>
-            <Col>
+            <Col className={styles.portfolioCol}>
               <div className='w-50'>
                 <h3 className={styles.lineTitle}>Our Portfolio</h3>
                 <h2 className={styles.mainTitle}>Our Latest Project<span className={styles.dot}>.</span></h2>

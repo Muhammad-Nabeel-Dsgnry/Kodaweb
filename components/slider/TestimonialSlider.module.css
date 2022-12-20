@@ -70,3 +70,34 @@
     content: url('/Assets/Assets/For Web/right-arrow.svg');
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+   
+    .slickprev, .slicknext {
+        display: none !important;
+    }
+    .testimonialsBoxInfo h3 {
+        font-size: 1.125rem;
+        line-height: 22px;
+        margin-bottom: 1px;
+    }
+    .testimonialsBoxBody p {
+        font-size: 0.9rem;
+        line-height: 26px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    .testimonialsBoxBody img {
+        width: 13px;
+        height: 13px;
+    }
+    .testimonialsBoxHeader {
+        align-items: flex-start;
+    }
+    .testimonialsBoxHeader img {
+        width: 50px;
+        height: 50px;
+    }
+    
+}

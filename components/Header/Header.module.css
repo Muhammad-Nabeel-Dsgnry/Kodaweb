@@ -47,3 +47,22 @@ a.navMenu:hover {
     text-decoration: none !important;
 }
 
+@media only screen and (max-width: 600px) {
+
+    .navMenu {
+        font-size: 1.125rem;
+        line-height: 22px;
+        margin: 0px 0px 40px 0px;
+        width: fit-content;
+    }
+    .navMenu:nth-child(1) {
+        margin-top: 40px;
+    }
+    .navButton {
+        margin-left: 0px;
+        font-size: 0.875rem;
+        line-height: 17px;
+        padding: 16px 25px;
+    }
+    
+}

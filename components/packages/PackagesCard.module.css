@@ -79,3 +79,21 @@
     box-shadow: 0px 4px 5px rgb(0 0 0 / 30%);
     transition: 0.8s;
   }
+
+
+
+  @media only screen and (max-width: 600px) {
+
+    .PackagesCardBoxWrapper {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pricingBoxBtn {
+        font-size: 0.75rem;
+        line-height: 20px;
+        padding: 13px 42px;
+        margin-top: 50px;
+    }
+
+  }

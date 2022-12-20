@@ -13,7 +13,7 @@ const AboutUs = () => {
       <section className={styles.homeAboutUsSection}>
         <Container>
           <Row>
-            <Col lg={6}>
+            <Col lg={6} xs={12}>
               <div className='w-80'>
                 <h3 className={styles.lineTitle}>About Us</h3>
                 <h2 className={styles.mainTitle}>Dreamit Is The Best IT Agency In World<span className={styles.dot}>.</span></h2>
@@ -24,7 +24,7 @@ const AboutUs = () => {
                 </Link>
               </div>
             </Col>
-            <Col lg={6}>
+            <Col lg={6} xs={12}>
               <Image
                 className={styles.homeAboutUsSectionImage}
                 src='/Assets/Assets/For Web/About Us (Home page).png'

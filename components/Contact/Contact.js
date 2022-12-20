@@ -63,7 +63,7 @@ const Contact = () => {
               </Row>
               <Row>
                 <Col lg={6}>
-                  <div className='w-75 mt-5'>
+                  <div className={`${'w-75 mt-5'} ${styles.formContactInfoRowTwo}`}>
                     <div className='mb-4'>
                       <span className={styles.formSectionImageWrapper}>
                         <Image

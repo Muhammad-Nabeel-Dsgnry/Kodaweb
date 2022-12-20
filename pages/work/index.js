@@ -68,7 +68,7 @@ const Work = () => {
           </Row>
 
           <Row>
-            <div className='d-flex' style={{gap: '25px'}}>
+            <div className={`${'d-flex'} ${styles['workBtnWrapper']}`} style={{gap: '25px'}}>
               <Button
                 className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_LogoPortfolio ? 'btnActive' : null}`}
                 onClick={logoDesign_Handler}

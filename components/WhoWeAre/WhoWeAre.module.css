@@ -114,3 +114,59 @@
 .WhoWeAreCounterBoxDivider2 {
     left: 62%;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+  h3.lineTitle::before {
+    width: 18%;
+    margin-right: 15px;
+    height: 3px;
+  }
+  h3.lineTitle {
+      font-size: 16px;
+      line-height: 17px;
+      font-weight: 500;
+  }
+  h2.mainTitle {
+      font-size: 1.5rem;
+      line-height: 29px;
+  }
+  .Para {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+  }
+  .WhoWeAreCounterWrapper {
+    padding: 15px;
+    width: 92%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(250%);
+  }
+  .WhoWeAreCounterBoxDivider, .WhoWeAreCounterBoxDivider2 {
+    display: none;
+  }
+  .WhoWeAreCounterBoxContent span {
+    font-size: 1.563rem;
+    line-height: 30px;
+  }
+  .WhoWeAreCounterBoxContent p {
+    font-size: 0.625rem;
+    line-height: 12px;
+  }
+  .WhoWeAreCounterBoxContent p::before {
+    margin-right: 2px;
+  }
+  .WhoWeAreCounterBoxContent div {
+    height: 30px !important;
+  }
+  .WhoWeAreSectionImage {
+    width: 100%;
+    height: auto;
+  }
+
+}

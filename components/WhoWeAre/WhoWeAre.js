@@ -20,7 +20,7 @@ const WhoWeAre = () => {
                     <p className={styles.Para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat,</p>
                 </div>
                 <Row className={styles.WhoWeAreCounterWrapper} >
-                    <Col md={4} className='p-0'>
+                    <Col md={4} xs={4} className='p-0'>
                         <div className={styles.WhoWeAreCounterBox}>
                             <span className={styles.WhoWeAreCounterBoxDivider}></span>
                             <Image
@@ -42,7 +42,7 @@ const WhoWeAre = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col md={4} className='p-0'>
+                    <Col md={4} xs={4} className='p-0'>
                         <div className={styles.WhoWeAreCounterBox}>
                             <Image
                                 src='/Assets/Assets/For Web/Satisfied-customer-blue.svg'
@@ -63,7 +63,7 @@ const WhoWeAre = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col md={4} className='p-0'>
+                    <Col md={4} xs={4} className='p-0'>
                         <div className={styles.WhoWeAreCounterBox}>
                     <span className={styles.WhoWeAreCounterBoxDivider2}></span>
                             <Image

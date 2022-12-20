@@ -2,3 +2,17 @@
     display: flex;
     margin-top: 70px;
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .pricingBoxWrapper {
+        margin-top: 50px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    
+
+}

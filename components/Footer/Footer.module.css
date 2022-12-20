@@ -59,4 +59,39 @@
 
 .footerlinksMainCol {
     margin-top: 5rem;
+    font-family: 'Inter';
+}
+
+@media only screen and (max-width: 600px) {
+
+    .footerMainWrapper {
+        padding: 36px 0px 60px 0px;
+    }
+    .footerPara {
+        margin-top: 0px;
+    } 
+    .footerlinksMainCol {
+        margin-top: 40px;
+    }
+    .footerMenuWrapper {
+        margin-top: 30px;
+    }
+    .footerCompanyInfo {
+        margin-top: 5px !important;
+    }
+    .paymentImages img {
+        width: 40px;
+        height: 25px;
+    }
+    .copyrightsSectionSubTitle, .copyrightsSectionPara {
+        font-size: 1rem;
+        line-height: 19px;
+    }
+    .copyrightsSectionSubTitle {
+        margin-bottom: 4px;
+    }
+    .copyrightsSectionPara {
+        margin-bottom: 30px;
+    }
+
 }

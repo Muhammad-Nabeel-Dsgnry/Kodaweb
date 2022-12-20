@@ -29,3 +29,33 @@
   .counter_Section__cardBody {
     padding-bottom: 0px;
   }
+
+
+
+  /* Reponsive Start */
+
+  @media only screen and (max-width: 600px) {
+    .counter_Section__cardTitle div {
+      height: 50px !important;
+    }
+
+    .counter_Section__cardTitle {
+      margin-top: 0px;
+    }
+
+    .counter_Section__cardTitle div span {
+      font-size: 1.625rem;
+      line-height: 30px;
+    }
+
+    .counter_Section__cardText {
+      font-size: 0.85rem;
+      line-height: 31px;
+    }
+
+    .counterCol {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* Reponsive End */

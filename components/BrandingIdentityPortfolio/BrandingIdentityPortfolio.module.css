@@ -135,3 +135,25 @@
   .testimonial img:first-child {
     transform: rotate(45deg);
   }
+  
+  .portfolioImage {
+    /* width: 100%; */
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .testimonial {
+      pointer-events: none;
+      width: 50%;
+      height: auto;
+    }
+    .ourWorkImageRow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+
+  }

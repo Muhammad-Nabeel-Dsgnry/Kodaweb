@@ -145,3 +145,65 @@
     transform: translateY(-5px);
     transition: all 1s;
 }
+
+
+/* Responsive Start */
+
+@media only screen and (max-width: 600px) {
+    .home_services_section {
+        padding: 40px 0px 60px 0px;
+    }
+    .home_services_section .content_Section div {
+        width: 100% !important;
+    }
+    h3.lineTitle::before {
+        width: 18%;
+        margin-right: 15px;
+        height: 3px;
+    }
+    h3.lineTitle {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 500;
+    }
+    h2.mainTitle {
+        font-size: 1.5rem;
+        line-height: 29px;
+    }
+    .Para {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .cardRow {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .cardCol {
+        min-width: 100%;
+        min-height: 450px;
+    }
+
+    .cardBody {
+        height: 320px;
+    }
+
+    .cardText {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    .blueButton {
+        margin-top: 50px;
+        padding: 15px 50px;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 15px;
+    }
+}
+
+/* Responsive End */

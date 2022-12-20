@@ -16,7 +16,7 @@ const Counter = () => {
         <section className={styles.counter_Section}>
           <Container>
             <Row>
-              <Col>
+              <Col xs={6} md={3} className={styles.counterCol}>
                 <Card className={styles.counter_Section__cardWrapper}>
                   <div className={styles.counter_Section__ImageWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Project completed.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -37,7 +37,7 @@ const Counter = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col xs={6} md={3} className={styles.counterCol}>
                 <Card className={styles.counter_Section__cardWrapper}>
                   <div className={styles.counter_Section__ImageWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Satisfied Customer.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -58,7 +58,7 @@ const Counter = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col xs={6} md={3}>
                 <Card className={styles.counter_Section__cardWrapper}>
                   <div className={styles.counter_Section__ImageWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/working hour.svg" width='60' height='60' className={styles.serviceCardImage} />
@@ -79,7 +79,7 @@ const Counter = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col xs={6} md={3}>
                 <Card className={styles.counter_Section__cardWrapper}>
                   <div className={styles.counter_Section__ImageWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For Web/Paid ads.svg" width='60' height='60' className={styles.serviceCardImage} />

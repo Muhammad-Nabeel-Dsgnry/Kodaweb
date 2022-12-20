@@ -15,7 +15,7 @@ const Client = () => {
         <section className={styles.clients_section}>
           <Container>
             <Row>
-              <Col>
+              <Col className={styles.content_Section}>
                 <div className='w-75'>
                   <h3 className={styles.lineTitle}>Our Clients</h3>
                   <h2 className={styles.mainTitle}>From Startups To The World’s Largest Companies<span className={styles.dot}>.</span></h2>
@@ -23,30 +23,30 @@ const Client = () => {
               </Col>
             </Row>
             <Row className='pt-5'>
-              <Col>
+              <Col xs={3}>
                 <Image src='/Assets/Assets/For Web/CocaCola.png' width='174' height='76' alt='portfolio 1' />
               </Col>
-              <Col>
+              <Col xs={3}>
                 <Image src='/Assets/Assets/For Web/Hyundai.png' width='174' height='76' alt='portfolio 1' />
               </Col>
-              <Col>
+              <Col xs={3}>
                 <Image src='/Assets/Assets/For Web/Apple.png' width='174' height='76' alt='portfolio 1' />
               </Col>
-              <Col>
+              <Col xs={3}>
                 <Image src='/Assets/Assets/For Web/Verizon.png' width='174' height='76' alt='portfolio 1' />
               </Col>
             </Row>
             <Row className='pt-5'>
-              <Col>
+              <Col xs={3}>
                 <Image src='/Assets/Assets/For Web/MicroSoft.png' width='174' height='76' alt='portfolio 1' />
               </Col>
-              <Col>
+              <Col xs={3}>
                 <Image src='/Assets/Assets/For Web/Nestle.png' width='174' height='76' alt='portfolio 1' />
               </Col>
-              <Col>
+              <Col xs={3}>
                 <Image src='/Assets/Assets/For Web/Prada.png' width='174' height='76' alt='portfolio 1' />
               </Col>
-              <Col>
+              <Col xs={3}>
                 <Image src='/Assets/Assets/For Web/wellcare.png' width='174' height='76' alt='portfolio 1' />
               </Col>
             </Row>

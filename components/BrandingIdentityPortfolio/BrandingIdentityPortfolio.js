@@ -132,367 +132,13 @@ const BrandingIdentityPortfolio = () => {
                     {/* </Row> */}
 
                     <Row>
-                    <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-up" data-aos-duration="2000">
+                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
                         <div className={`${styles['testimonial']}`}>
                             <div className={`${styles['box']}`}>
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 136.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 136.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 3.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 3.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 2.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 2.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 139.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 139.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 140.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 140.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        </Stack>
-
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-down" data-aos-duration="2000">
-                            <div className={`${styles['testimonial']}`}>
-                                <div className={`${styles['box']}`}>
-                                    <div className={`${styles.overlay}`}>
-                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                            <Image
-                                            alt='branding portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
-                                                width='20'
-                                                height='20'
-                                                data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Group 1.jpg'
-                                            />
-                                        </div>
-                                    </div>
-                                    <Image
-                                        className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Group 1.jpg'
-                                        alt='portfolio1'
-                                        width='383'
-                                        height='334'
-                                    />
-                                </div>
-                            </div>
-                            <div className={`${styles['testimonial']}`}>
-                                <div className={`${styles['box']}`}>
-                                    <div className={`${styles.overlay}`}>
-                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                            <Image
-                                            alt='branding portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
-                                                width='20'
-                                                height='20'
-                                                data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Rectangle 152.jpg'
-                                            />
-                                        </div>
-                                    </div>
-                                    <Image
-                                        className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Rectangle 152.jpg'
-                                        alt='portfolio1'
-                                        width='383'
-                                        height='334'
-                                    />
-                                </div>
-                            </div>
-                            <div className={`${styles['testimonial']}`}>
-                                <div className={`${styles['box']}`}>
-                                    <div className={`${styles.overlay}`}>
-                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                            <Image
-                                            alt='branding portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
-                                                width='20'
-                                                height='20'
-                                                data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Group 4.jpg'
-                                            />
-                                        </div>
-                                    </div>
-                                    <Image
-                                        className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Group 4.jpg'
-                                        alt='portfolio1'
-                                        width='383'
-                                        height='334'
-                                    />
-                                </div>
-                            </div>
-                            <div className={`${styles['testimonial']}`}>
-                                <div className={`${styles['box']}`}>
-                                    <div className={`${styles.overlay}`}>
-                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                            <Image
-                                            alt='branding portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
-                                                width='20'
-                                                height='20'
-                                                data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Rectangle 134.jpg'
-                                            />
-                                        </div>
-                                    </div>
-                                    <Image
-                                        className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Rectangle 134.jpg'
-                                        alt='portfolio1'
-                                        width='383'
-                                        height='334'
-                                    />
-                                </div>
-                            </div>
-                            <div className={`${styles['testimonial']}`}>
-                                <div className={`${styles['box']}`}>
-                                    <div className={`${styles.overlay}`}>
-                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                            <Image
-                                            alt='branding portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
-                                                width='20'
-                                                height='20'
-                                                data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Rectangle 135.jpg'
-                                            />
-                                        </div>
-                                    </div>
-                                    <Image
-                                        className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Rectangle 135.jpg'
-                                        alt='portfolio1'
-                                        width='383'
-                                        height='334'
-                                    />
-                                </div>
-                            </div>
-                        </Stack>
-
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-up" data-aos-duration="2000">
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 11.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 11.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 153.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 153.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 6.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 6.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 144.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 144.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 14.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 14.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        </Stack>
-
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-down" data-aos-duration="2000">
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -515,7 +161,7 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -538,7 +184,7 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -561,18 +207,18 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 163.jpg'
+                                            data-src='/Assets/Assets/For Web/Group 6.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 163.jpg'
+                                    src='/Assets/Assets/For Web/Group 6.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -584,18 +230,41 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 9.jpg'
+                                            data-src='/Assets/Assets/For Web/Rectangle 144.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 9.jpg'
+                                    src='/Assets/Assets/For Web/Rectangle 144.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Group 14.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Group 14.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -604,13 +273,296 @@ const BrandingIdentityPortfolio = () => {
                         </div>
                         </Stack>
 
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-up" data-aos-duration="2000">
+                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
+                            <div className={`${styles['testimonial']}`}>
+                                <div className={`${styles['box']}`}>
+                                    <div className={`${styles.overlay}`}>
+                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                            <Image
+                                            alt='logo portfolio'
+                                                src='/Assets/Assets/For Web/cross.svg'
+                                                width='20'
+                                                height='20'
+                                                data-fancybox="gallery"
+                                                data-src='/Assets/Assets/For Web/Group 1.jpg'
+                                            />
+                                        </div>
+                                    </div>
+                                    <Image
+                                        className={`${styles['portfolioImage']}`}
+                                        src='/Assets/Assets/For Web/Group 1.jpg'
+                                        alt='portfolio1'
+                                        width='383'
+                                        height='334'
+                                    />
+                                </div>
+                            </div>
+                            <div className={`${styles['testimonial']}`}>
+                                <div className={`${styles['box']}`}>
+                                    <div className={`${styles.overlay}`}>
+                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                            <Image
+                                            alt='logo portfolio'
+                                                src='/Assets/Assets/For Web/cross.svg'
+                                                width='20'
+                                                height='20'
+                                                data-fancybox="gallery"
+                                                data-src='/Assets/Assets/For Web/Rectangle 152.jpg'
+                                            />
+                                        </div>
+                                    </div>
+                                    <Image
+                                        className={`${styles['portfolioImage']}`}
+                                        src='/Assets/Assets/For Web/Rectangle 152.jpg'
+                                        alt='portfolio1'
+                                        width='383'
+                                        height='334'
+                                    />
+                                </div>
+                            </div>
+                            <div className={`${styles['testimonial']}`}>
+                                <div className={`${styles['box']}`}>
+                                    <div className={`${styles.overlay}`}>
+                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                            <Image
+                                            alt='logo portfolio'
+                                                src='/Assets/Assets/For Web/cross.svg'
+                                                width='20'
+                                                height='20'
+                                                data-fancybox="gallery"
+                                                data-src='/Assets/Assets/For Web/Group 4.jpg'
+                                            />
+                                        </div>
+                                    </div>
+                                    <Image
+                                        className={`${styles['portfolioImage']}`}
+                                        src='/Assets/Assets/For Web/Group 4.jpg'
+                                        alt='portfolio1'
+                                        width='383'
+                                        height='334'
+                                    />
+                                </div>
+                            </div>
+                            <div className={`${styles['testimonial']}`}>
+                                <div className={`${styles['box']}`}>
+                                    <div className={`${styles.overlay}`}>
+                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                            <Image
+                                            alt='logo portfolio'
+                                                src='/Assets/Assets/For Web/cross.svg'
+                                                width='20'
+                                                height='20'
+                                                data-fancybox="gallery"
+                                                data-src='/Assets/Assets/For Web/Rectangle 134.jpg'
+                                            />
+                                        </div>
+                                    </div>
+                                    <Image
+                                        className={`${styles['portfolioImage']}`}
+                                        src='/Assets/Assets/For Web/Rectangle 134.jpg'
+                                        alt='portfolio1'
+                                        width='383'
+                                        height='334'
+                                    />
+                                </div>
+                            </div>
+                            <div className={`${styles['testimonial']}`}>
+                                <div className={`${styles['box']}`}>
+                                    <div className={`${styles.overlay}`}>
+                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                            <Image
+                                            alt='logo portfolio'
+                                                src='/Assets/Assets/For Web/cross.svg'
+                                                width='20'
+                                                height='20'
+                                                data-fancybox="gallery"
+                                                data-src='/Assets/Assets/For Web/Rectangle 135.jpg'
+                                            />
+                                        </div>
+                                    </div>
+                                    <Image
+                                        className={`${styles['portfolioImage']}`}
+                                        src='/Assets/Assets/For Web/Rectangle 135.jpg'
+                                        alt='portfolio1'
+                                        width='383'
+                                        height='334'
+                                    />
+                                </div>
+                            </div>
+                            <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Rectangle 136.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Rectangle 136.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        </Stack>
+
+                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
+                        
                         <div className={`${styles['testimonial']}`}>
                             <div className={`${styles['box']}`}>
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Group 3.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Group 3.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Group 2.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Group 2.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Rectangle 139.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Rectangle 139.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Rectangle 140.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Rectangle 140.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Group 11.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Group 11.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Rectangle 153.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Rectangle 153.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        </Stack>
+
+                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -633,7 +585,7 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -656,7 +608,7 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -679,7 +631,7 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -702,18 +654,41 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 5.jpg'
+                                            data-src='/Assets/Assets/For Web/Rectangle 163.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 5.jpg'
+                                    src='/Assets/Assets/For Web/Rectangle 163.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Group 9.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Group 9.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -722,13 +697,13 @@ const BrandingIdentityPortfolio = () => {
                         </div>
                         </Stack>
 
-                        <Stack direction="horizontal" gap={0} className='justify-content-between w-100' data-aos="flip-down" data-aos-duration="2000">
+                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
                         <div className={`${styles['testimonial']}`}>
                             <div className={`${styles['box']}`}>
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -751,7 +726,7 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -774,7 +749,7 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -797,7 +772,7 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -820,7 +795,7 @@ const BrandingIdentityPortfolio = () => {
                                 <div className={`${styles.overlay}`}>
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
-                                        alt='branding portfolio'
+                                        alt='logo portfolio'
                                             src='/Assets/Assets/For Web/cross.svg'
                                             width='20'
                                             height='20'
@@ -832,6 +807,29 @@ const BrandingIdentityPortfolio = () => {
                                 <Image
                                     className={`${styles['portfolioImage']}`}
                                     src='/Assets/Assets/For Web/Rectangle 168.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For Web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For Web/Group 5.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For Web/Group 5.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
