@@ -30,7 +30,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For Web/Branding-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For Web/Branding-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Branding & Identity</Card.Title>
@@ -43,7 +43,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="1500">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For Web/web-development-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For Web/web-development-blue.svg" width='60' height='60' alt='Kodaweb Web Development' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Web Development</Card.Title>
@@ -56,7 +56,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="2000">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For Web/Web-App-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For Web/Web-App-blue.svg" width='60' height='60' alt='Kodaweb Web Application' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Web Application</Card.Title>
@@ -88,7 +88,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For Web/UX-UI-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For Web/UX-UI-blue.svg" width='60' height='60' alt='Kodaweb UI/UX Designing' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>UI/UX Designing</Card.Title>
@@ -101,7 +101,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1500">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For Web/Digital-marketing-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For Web/Digital-marketing-blue.svg" width='60' height='60' alt='Kodaweb Digital Marketing' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Digital Marketing</Card.Title>
@@ -114,7 +114,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="2000">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For Web/SEO-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For Web/SEO-blue.svg" width='60' height='60' alt='Kodaweb SEO & Content Writing' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>SEO & Content Writing</Card.Title>
