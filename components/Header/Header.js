@@ -31,15 +31,6 @@ const menuLinks = [
     path: '/contact'
   },
 ]
-
-// const MenuItem = ({title, path}) => {
-//   console.log(title,path)
-//   return (
-//     <Link href={path} passHref>
-//       {title}
-//     </Link>
-//   )
-// }
  
 const Header = () => {
 
@@ -49,13 +40,15 @@ const Header = () => {
   return (
     <Navbar bg="light" expand="lg" className='py-3' id="home" fixed="top">
       <Container>
-        <Navbar.Brand href="/">
-          <Image
-          alt='header logo'
-            src='/Assets/Assets/For Web/LogoHeader.png'
-            width='235'
-            height='60'
-          />
+        <Navbar.Brand>
+          <Link href='/'>
+            <Image
+              alt='Kodaweb header logo'
+              src='/Assets/Assets/For Web/LogoHeader.png'
+              width='235'
+              height='60'
+            />
+          </Link>
           {/* Logo */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

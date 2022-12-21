@@ -30,6 +30,7 @@
 
 .homeAboutUsSectionImage {
   position: absolute;
+  border-radius: 25px;
 }
 
 .lineTitle {

@@ -616,36 +616,6 @@ const Pricing = (props) => {
           }
 
           {/* Digital Marekting & SEO End */}
-
-
-
-          {/* HOME PAGE PRICING START */}
-          {/* <Row>
-            <div className='d-flex' style={{gap: '25px'}}>
-              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={LogoDesignHandler}>
-                {logoDesign ? 'Logo Design' : 'Logo Design'}
-              </Button>
-              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={BrandingIdentityHandler}>
-                {Branding ? 'Branding Identity' : 'Branding Identity'}
-              </Button>
-              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={WebsiteHandler}>
-                {Web ? 'Website' : 'Website'}
-              </Button>
-              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']}`} onClick={AppHandler}>
-                {App ? 'App Development' : 'App Development'}
-              </Button>
-            </div>
-            <div className={styles.pricingContentWrapper}>
-              <div>
-                {logoDesign && <LogoDesign />}
-                {Branding && <BrandingIdentity />}
-                {Web && <Website />}
-                {App && <AppDevelopment />}
-              </div>
-            </div>
-          </Row> */}
-          {/* HOME PAGE PRICING END */}
-
           {
             isButton == 'false' ?
               null :
