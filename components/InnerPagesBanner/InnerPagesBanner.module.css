@@ -98,4 +98,13 @@
     } */
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .innerBannerMainWrapper img {
+        width: 40%;
+        height: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+    }
+}
+
 /* Responsive End */

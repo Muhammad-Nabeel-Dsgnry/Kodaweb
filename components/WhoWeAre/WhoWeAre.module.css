@@ -170,3 +170,59 @@
   }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  h3.lineTitle::before {
+    width: 18%;
+    margin-right: 15px;
+    height: 3px;
+  }
+  h3.lineTitle {
+      font-size: 16px;
+      line-height: 17px;
+      font-weight: 500;
+  }
+  h2.mainTitle {
+      font-size: 2.5rem;
+      line-height: 50px;
+  }
+  .Para {
+      font-weight: 500;
+      font-size: 1.125rem;
+      line-height: 30px;
+  }
+  .WhoWeAreCounterWrapper {
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(450%);
+  }
+  .WhoWeAreCounterBoxDivider, .WhoWeAreCounterBoxDivider2 {
+    display: none;
+  }
+  .WhoWeAreCounterBoxContent span {
+    font-size: 1.563rem;
+    line-height: 30px;
+  }
+  .WhoWeAreCounterBoxContent p {
+    font-size: 1.1rem;
+    line-height: 12px;
+  }
+  .WhoWeAreCounterBoxContent p::before {
+    margin-right: 2px;
+  }
+  .WhoWeAreCounterBoxContent div {
+    height: 30px !important;
+  }
+  .WhoWeAreSectionImage {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+}

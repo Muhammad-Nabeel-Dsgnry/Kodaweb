@@ -21,7 +21,7 @@ const OurTeam = () => {
                             </Link> */}
                         </div>
                     </Col>
-                    <Col md={8}>
+                    <Col md={8} className={styles.AnimatedImagesColumn}>
                         <Row>
                             <Col md={5} xs={6} style={{display: 'flex', justifyContent: 'end'}}>
                             <div className={styles.AnimationImgBoxOne}>

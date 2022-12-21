@@ -157,3 +157,17 @@
     
 
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .testimonial {
+      pointer-events: none;
+      width: 50%;
+      height: auto;
+    }
+    .ourWorkImageRow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+}

@@ -331,3 +331,42 @@
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    h3.lineTitle::before {
+        width: 18%;
+        margin-right: 15px;
+        height: 3px;
+    }
+    h3.lineTitle {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 500;
+    }
+    h2.mainTitle {
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .Para {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 30px;
+    }
+    .processHoverableContentBox1 p,
+    .processHoverableContentBox2 p,
+    .processNumberLine::after,
+    .processNumberLineOne::before,
+    .processNumberLineOne::after,
+    .processNumberLineTwo::before,
+    .processNumberLineTwo::after,
+    .processNumberLineThree::before,
+    .processNumberLineFour::before {
+        display: none;
+    }
+    .processBoxes:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+}

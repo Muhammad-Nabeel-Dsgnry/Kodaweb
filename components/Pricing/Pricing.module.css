@@ -139,3 +139,49 @@
   }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pricingSection {
+    padding: 35px 0px 80px 0px;
+  }
+  h3.lineTitle::before {
+    width: 18%;
+    margin-right: 15px;
+    height: 3px;
+  }
+  h3.lineTitle {
+      font-size: 16px;
+      line-height: 17px;
+      font-weight: 500;
+  }
+  h2.mainTitle {
+      font-size: 2.5rem;
+      line-height: 50px;
+  }
+  .Para {
+      font-weight: 500;
+      font-size: 1.125rem;
+      line-height: 30px;
+  }
+  .guaranteeImage {
+    width: 50%;
+    height: auto;
+  }
+  .guaranteeImageWrapper {
+    justify-content: start !important;
+  }
+  .pricingTabsBtn {
+    padding: 16px 26px !important;
+    white-space: nowrap;
+    margin: 0px 0px !important;
+    font-size: 0.75rem !important;
+    line-height: 15px !important;
+  }
+  .logoRow {
+    margin-top: 20px;
+  }
+  .logoRow div {
+    flex-wrap: wrap;
+  }
+
+}
