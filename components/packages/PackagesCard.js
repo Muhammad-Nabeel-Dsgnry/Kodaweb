@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import styles from './PackagesCard.module.css'
+import Image from 'next/image';
 
 const PackagesCard = ({ item }) => {
     return (
@@ -13,7 +14,18 @@ const PackagesCard = ({ item }) => {
                     {
                         item.packageDetails.map((item, key) => {
                             return (
-                                <p key={key}>{item}</p>
+                                <>
+                                <span className={`${styles['packagesDetailsWrapper']}`}>
+                                    <Image
+                                        className={`${styles['packagesDetailsIcon']}`}
+                                        src='/Assets/Assets/For Web/accept_1.svg'
+                                        width='18'
+                                        height='18'
+                                        alt='check'
+                                    />
+                                    <p key={key} className={`${styles['packagesDetailsItem']}`}>{item}</p>
+                                </span>
+                                </>
                             )
                         })
                     }

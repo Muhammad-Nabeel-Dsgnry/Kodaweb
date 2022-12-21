@@ -190,6 +190,9 @@
     font-size: 0.75rem;
     line-height: 15px;
   }
+  .formCol {
+    padding: 0px 20px;
+  }
 
 }
 
@@ -214,6 +217,8 @@
       font-size: 1.125rem;
       line-height: 30px;
   }
-
+  .formCol {
+    padding: 0px 40px;
+  }
 
 }

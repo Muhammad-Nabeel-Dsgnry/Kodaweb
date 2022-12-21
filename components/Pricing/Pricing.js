@@ -429,8 +429,6 @@ const Pricing = (props) => {
             <Col xs={12} lg={6}>
               <div>
                 <h3 className={styles.lineTitle}>{pricingSmTitle}</h3>
-                {/* <h2 className={styles.mainTitle}>Choose the right plan for your business<span className={styles.dot}>.</span></h2> */}
-                {/* <h2 className={styles.mainTitle}>{pricingMainTitle}</h2> */}
                 <h2 className={styles.mainTitle}>{pricingMainTitle}<span className={colorText ? styles.dot : ''}>{colorText}</span></h2>
                 <p className={`${styles['Para']} ${styles['colorBlack']} ${isImage == 'true' ? 'w-100' : 'w-100'}`}>{pricingShortPara}</p>
               </div>
@@ -451,7 +449,6 @@ const Pricing = (props) => {
           </Row>
 
           {/* Logo Design Packages Start */}
-
             {
               pricingMainTitle == 'Choose the right plan for your business' ? 
               <Row className={`${styles.logoRow}`}>
@@ -481,11 +478,9 @@ const Pricing = (props) => {
               :
               null
             }
-
           {/* Logo Design Packages End */}
 
           {/* Inner Page Logo Design Packages Start */}
-
           {
               pricingMainTitle == 'Logo Design' ?
               <Row className={`${styles.logoRow}`}>
@@ -515,7 +510,6 @@ const Pricing = (props) => {
           {/* Inner Page  Logo Design Packages End */}
 
           {/* Branding & Identity Packages Start */}
-          
           {
             pricingMainTitle == 'Branding & Identity' || isInnerPageLogoDesign == 'false' ?
             <Row className={`${styles.logoRow}`}>
@@ -549,7 +543,6 @@ const Pricing = (props) => {
           {/* Branding & Identity Packages End */}
 
           {/* Website Design Start */}
-
           {
             pricingMainTitle == 'Website Design' || isInnerPageLogoDesign == 'false' ?
               <Row className={`${styles.logoRow}`}>
@@ -579,12 +572,10 @@ const Pricing = (props) => {
               :
               null
           }
-
           {/* Website Design End */}
 
 
           {/* Digital Marekting & SEO Start */}
-
           {
             pricingMainTitle == 'Digital Marketing & SEO' || isInnerPageLogoDesign == 'false' ?
               <Row className={`${styles.logoRow}`}>

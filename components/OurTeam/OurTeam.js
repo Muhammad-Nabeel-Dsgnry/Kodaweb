@@ -24,7 +24,7 @@ const OurTeam = () => {
                     <Col md={8} className={styles.AnimatedImagesColumn}>
                         <Row>
                             <Col md={5} xs={6} style={{display: 'flex', justifyContent: 'end'}}>
-                            <div className={styles.AnimationImgBoxOne}>
+                            <div className={`${styles['AnimationImgBoxOne']}`}>
                                 <Image
                                     className={styles.imgOne}
                                     src='/Assets/Assets/For web/team-6.png'
@@ -42,7 +42,7 @@ const OurTeam = () => {
                             </div>
                             </Col>
                             <Col md={3} className={`${styles['hideAnimatedSec']} ${'p-0'}`}>
-                            <div className={styles.AnimationImgBoxOne}>
+                            <div className={`${styles['AnimationImgBoxOne']}`}>
                                 <Image
                                     className={styles.imgOne}
                                     src='/Assets/Assets/For web/team-7.png'
@@ -60,7 +60,7 @@ const OurTeam = () => {
                             </div>
                             </Col>
                             <Col md={4} xs={6} style={{display: 'flex', justifyContent: 'end'}}>
-                            <div className={styles.AnimationImgBoxOne}>
+                            <div className={`${styles['AnimationImgBoxOne']}`}>
                                 <Image
                                     className={styles.imgOne}
                                     src='/Assets/Assets/For web/team-5.png'
@@ -80,7 +80,7 @@ const OurTeam = () => {
                         </Row>
                         <Row className='mt-2'>
                             <Col md={4} xs={6} style={{display: 'flex', justifyContent: 'end'}}>
-                                <div className={styles.AnimationImgBoxOne}>
+                                <div className={`${styles['AnimationImgBoxOne']} ${styles['AnimationImgBoxTwo']}`}>
                                     <Image
                                         className={styles.imgOne}
                                         src='/Assets/Assets/For web/team-1.png'
@@ -98,7 +98,7 @@ const OurTeam = () => {
                                 </div>
                             </Col>
                             <Col md={2} className={`${styles['hideAnimatedSec']} ${'p-0'}`}>
-                            <div className={styles.AnimationImgBoxOne}>
+                            <div className={`${styles['AnimationImgBoxOne']} ${styles['AnimationImgBoxTwo']}`}>
                                 <Image
                                     className={styles.imgOne}
                                     src='/Assets/Assets/For web/team-2.png'
@@ -119,7 +119,7 @@ const OurTeam = () => {
                             <div className={`${styles['ourTeamAnimationTextOne']}`}>
                                 <p>Our team explores, experiments, and finds inspiration everywhere.</p>
                             </div>
-                            <div className={styles.AnimationImgBoxOne} style={{display: 'flex', justifyContent: 'end'}}>
+                            <div className={`${styles['AnimationImgBoxOne']} ${styles['AnimationImgBoxTwo']}`} style={{display: 'flex', justifyContent: 'end'}}>
                                 <Image
                                     className={styles.imgOne}
                                     src='/Assets/Assets/For web/team-4.png'
@@ -142,7 +142,7 @@ const OurTeam = () => {
                                 <p className={styles.teamScrollDown}>Scroll Down</p>
                             </Col>
                             <Col md={4} xs={3} style={{display: 'flex', justifyContent: 'end'}} className='pe-0'>
-                            <div className={`${styles['AnimationImgBoxOne']}`}>
+                            <div className={`${styles['AnimationImgBoxOne']} ${styles['AnimationImgBoxThree']}`}>
                                 <Image
                                     className={styles.imgOne}
                                     src='/Assets/Assets/For web/team-3.png'

@@ -27,7 +27,6 @@ export default function Home() {
             paraText='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus semper accumsan massa, ut pulvinar augue aliquet non.'
             classses={styles['home-banner']}
           />
-          {/* <h2 className='text-danger' style={{ fontFamily: 'Montserrat' }}>Testing</h2> */}
         </div>
       
         <Services
@@ -36,7 +35,6 @@ export default function Home() {
         <Client />
         <Counter />
         <Portfolio />
-
         <Pricing
           pricingSmTitle='Pricing'
           pricingMainTitle='Choose the right plan for your business'
@@ -45,7 +43,6 @@ export default function Home() {
           isButton='true'
           isImage='true'
         />
-        
         <Testimonials />
         <AboutUs />
         <Contact />

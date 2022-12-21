@@ -52,6 +52,14 @@
     border-radius: 10px;
 }
 
+.processContentBox img {
+    filter: brightness(0);
+}
+
+.processContentBox:hover img {
+    filter: brightness(1);
+}
+
 .processContentBox p {
     font-family: 'Inter';
     font-weight: 400;
@@ -130,20 +138,6 @@
     padding-left: 0px;
 }
 
-/* .processContentBox span {
-    color: var(--text-white);
-    font-size: 0.625rem;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    font-weight: 300;
-    border: 2px solid var(--bg-blue);
-    width: fit-content;
-    border-radius: 100%;
-    padding: 3px;
-    line-height: 10px;
-} */
-
 .processNumberLine::after {
     content: '';
     width: 6.3%;
@@ -212,47 +206,6 @@
     margin-top: 28px;
 }
 
-/* .processContentBoxWrapper:hover span {
-    color: var(--text-white);
-    border-color: var(--text-white) !important;
-} */
-
-/* .processNumberLine2::before, .processNumberLine3::before, .processNumberLine4::before {
-    content: '';
-    background-color: var(--bg-blue);
-    height: 2px;
-    display: block;
-    position: absolute;
-}
-
-.processNumberLine2::before {
-    left: 33.2%;
-    width: 7%;
-}
-
-.processNumberLine3::before {
-    width: 3.5%;
-}
-
-.processNumberLine2::after {
-    content: '';
-    
-    background-color: var(--bg-blue);
-    height: 2px;
-    display: block;
-    right: 67.7%;
-    position: absolute;
-}
-
-.processNumberLine2::after {
-    width: 6%;
-}
-
-.processNumberLine3::after {
-    width: 6%;
-} */
-
-
 .processNumberNormal {
     border: 1px solid var(--bg-blue);
     width: 12px;
@@ -284,14 +237,9 @@
     transition: all .8s;
 }
 
-/* .processNumberDivider {
-    background-color: var(--bg-blue);
-    width: 62.3%;
-    height: 2px;
-    position: absolute;
-    left: 21.5%;
-    transform: translateY(-3px);
-} */
+.processBoxesRow {
+
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -367,6 +315,12 @@
     }
     .processBoxes:not(:last-child) {
         margin-bottom: 20px;
+    }
+    .processBoxes {
+        width: 50%;
+    }
+    .processBoxesRow {
+        margin-top: 40px;
     }
 
 }

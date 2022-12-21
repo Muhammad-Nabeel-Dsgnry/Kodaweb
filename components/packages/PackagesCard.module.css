@@ -40,13 +40,27 @@
 }
 
 .PackagesCardBoxBody p::before {
-    content: '\2713';
+    /* content: '\2713';
     display: inline-block;
     margin-right: 30px;
     color: #2C35CD;
     font-size: 28px;
     line-height: 29px;
-    font-weight: 500;
+    font-weight: 500; */
+}
+
+.PackagesCardBoxBody span:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.packagesDetailsWrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.packagesDetailsIcon {
+    margin-right: 25px;
+    align-self: center;
 }
 
 .PackagesCardBoxBody p {
@@ -55,6 +69,7 @@
     font-size: 16px;
     line-height: 37px;
     color: #000000;
+    margin-bottom: 0px;
 }
 
 .blueButton {

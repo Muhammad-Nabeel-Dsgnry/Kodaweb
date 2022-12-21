@@ -37,7 +37,6 @@ const WhoWeAre = () => {
                                     </div>
                                 )}
                             </VisibilitySensor>
-                                {/* <h2>360</h2> */}
                                 <p>Project Completed</p>
                             </div>
                         </div>
@@ -58,7 +57,6 @@ const WhoWeAre = () => {
                                     </div>
                                 )}
                             </VisibilitySensor>
-                                {/* <h2>360</h2> */}
                                 <p>Satisfied Customer</p>
                             </div>
                         </div>
@@ -80,17 +78,11 @@ const WhoWeAre = () => {
                                     </div>
                                 )}
                             </VisibilitySensor>
-                                {/* <h2>360</h2> */}
                                 <p>National Award</p>
                             </div>
                         </div>
                     </Col>
                 </Row>
-                {/* <div className={styles.WhoWeAreCounterWrapper}>
-                    <div className={styles.WhoWeAre}>
-
-                    </div>
-                </div> */}
                 </Col>
                 <Col lg={6}>
                 <Image

@@ -84,7 +84,7 @@ const Contact = () => {
                 </Col>
               </Row>
             </Col>
-            <Col lg={5}>
+            <Col lg={5} className={`${styles['formCol']}`}>
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
                 <InputGroup.Text id="inputGroup-sizing-lg" className={styles.inputFieldIcon}>
                   <Image

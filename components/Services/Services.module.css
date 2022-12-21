@@ -181,15 +181,18 @@
         flex-wrap: nowrap;
         overflow-x: scroll;
         overflow-y: hidden;
+        max-width: 95%;
+        margin: 0 auto;
     }
 
     .cardCol {
         min-width: 100%;
-        min-height: 450px;
+        min-height: 500px;
+        /* padding: 0px 30px; */
     }
 
     .cardBody {
-        height: 320px;
+        height: 350px;
     }
 
     .cardText {
@@ -237,10 +240,10 @@
     }
     .cardCol {
         min-width: 50%;
-        min-height: 450px;
+        min-height: 500px;
     }
     .cardBody {
-        height: 320px;
+        height: 350px;
     }
     .blueButton {
         margin-top: 50px;

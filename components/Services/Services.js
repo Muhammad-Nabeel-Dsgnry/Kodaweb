@@ -149,7 +149,6 @@ const Services = (props) => {
               :
               null
             }
-            {/* <Button className={styles.blueButton}>View More</Button> */}
           </Container>
         </section>
     </>

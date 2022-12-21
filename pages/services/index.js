@@ -15,9 +15,6 @@ const Services = () => {
         innerBannerSideImage=''
         pageName='services'
       />
-      {/* <div className={`${styles['innerPageBannerWrapper']}`}>
-        
-      </div> */}
       <Service />
       <Skills />
       <Counter />

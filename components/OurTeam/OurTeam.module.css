@@ -85,9 +85,6 @@ p.teamScrollDown {
     white-space: nowrap;
 }
 
-
-
-
 .AnimationImgBoxOne, .AnimationImgBoxTwo {
     position: relative;
 }
@@ -96,9 +93,8 @@ p.teamScrollDown {
 
 }
 
-.AnimationImgBoxOne .imgOne,
-.AnimationImgBoxTwo .imgOne {
-  animation: test 10s linear infinite;
+.AnimationImgBoxOne .imgOne {
+  animation: animationOne 15s linear infinite;
   position: absolute;
   z-index: 1;
   box-shadow: 0px 4px 6px 2px rgb(26 26 26 / 15%);
@@ -106,7 +102,16 @@ p.teamScrollDown {
   filter: brightness(0.6);
 }
 
-@keyframes test {
+.AnimationImgBoxTwo .imgOne {
+  animation: animationTwo 17s linear infinite;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 4px 6px 2px rgb(26 26 26 / 15%);
+  border-radius: 10px;
+  filter: brightness(0.6);
+}
+
+@keyframes animationOne {
     0% {
     opacity: 0;
     }
@@ -114,6 +119,24 @@ p.teamScrollDown {
     opacity: 1;
     }
     50% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+@keyframes animationTwo {
+    0% {
+    opacity: 0;
+    }
+    25% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 1;
+    }
+    75% {
     opacity: 1;
     }
     100% {
