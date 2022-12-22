@@ -138,6 +138,7 @@ button.btnActive {
     top: 0;
     left: 0;
     right: 0;
+    height: 100vh;
   }
   .navbar-toggler {
     border: none;
@@ -151,6 +152,12 @@ button.btnActive {
   .show#basic-navbar-nav a.active {
     color: var(--text-white) !important;
     border-bottom: 2px solid var(--bg-white);
+  }
+  .navbar-nav {
+    margin-bottom: 30px;
+  }
+  .navbar-toggler:focus:not(:focus-visible) {
+    box-shadow: none;
   }
   
 }
@@ -172,6 +179,7 @@ button.btnActive {
     top: 0;
     left: 0;
     right: 0;
+    height: 100vh;
   }
   #home {
     padding-bottom: 0px !important;
@@ -179,6 +187,9 @@ button.btnActive {
   .show#basic-navbar-nav a.active {
     color: var(--text-white) !important;
     border-bottom: 2px solid var(--bg-white);
+  }
+  .navbar-toggler:focus:not(:focus-visible) {
+    box-shadow: none;
   }
 
 }

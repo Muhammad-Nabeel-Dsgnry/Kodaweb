@@ -26,7 +26,7 @@ const Services = (props) => {
                 </div>
               </Col>
             </Row>
-            <Row className={`${styles.cardRow} ${'mt-5'}`}>
+            <Row className={`${styles.cardRow} ${'mt-5'} ${styles['desktopScreenServicesSection']}`}>
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
@@ -84,7 +84,7 @@ const Services = (props) => {
               isTwoRows == 'false' ?
               null
               :
-            <Row className={`${styles.cardRow} ${'mt-5 pt-4 mb-5'}`}>
+            <Row className={`${styles.cardRow} ${'mt-5 pt-4 mb-5'} ${styles['desktopScreenServicesSection']}`}>
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
@@ -151,6 +151,122 @@ const Services = (props) => {
             }
           </Container>
         </section>
+
+
+        {/* SECTION FOR MOBILE SCREENS */}
+
+        <section className={`${styles['mobileScreenServicesSection']}`}>
+          <Container>
+            <Row className={`${styles.cardRow}`}>
+                <Col className={`${styles.cardCol}`}>
+                  <Card className={styles.cardWrapper} >
+                    <div className={styles.imageBoxWrapper}>
+                      <Card.Img variant="top" src="/Assets/Assets/For Web/Branding-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
+                    </div>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>Branding & Identity</Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className={`${styles.cardCol}`}>
+                  <Card className={styles.cardWrapper} >
+                    <div className={styles.imageBoxWrapper}>
+                      <Card.Img variant="top" src="/Assets/Assets/For Web/web-development-blue.svg" width='60' height='60' alt='Kodaweb Web Development' className={styles.serviceCardImage} />
+                    </div>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>Web Development</Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className={`${styles.cardCol}`}>
+                  <Card className={styles.cardWrapper} >
+                    <div className={styles.imageBoxWrapper}>
+                      <Card.Img variant="top" src="/Assets/Assets/For Web/Web-App-blue.svg" width='60' height='60' alt='Kodaweb Web Application' className={styles.serviceCardImage} />
+                    </div>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>Web Application</Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className={`${styles.cardCol}`}>
+                  <Card className={styles.cardWrapper} >
+                    <div className={styles.imageBoxWrapper}>
+                      <Card.Img variant="top" src="/Assets/Assets/For Web/Graphic-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
+                    </div>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>Video Production</Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className={`${styles.cardCol}`}>
+                  <Card className={styles.cardWrapper} >
+                    <div className={styles.imageBoxWrapper}>
+                      <Card.Img variant="top" src="/Assets/Assets/For Web/UX-UI-blue.svg" width='60' height='60' alt='Kodaweb UI/UX Designing' className={styles.serviceCardImage} />
+                    </div>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>UI/UX Designing</Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className={`${styles.cardCol}`}>
+                  <Card className={styles.cardWrapper} >
+                    <div className={styles.imageBoxWrapper}>
+                      <Card.Img variant="top" src="/Assets/Assets/For Web/Digital-marketing-blue.svg" width='60' height='60' alt='Kodaweb Digital Marketing' className={styles.serviceCardImage} />
+                    </div>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>Digital Marketing</Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className={`${styles.cardCol}`}>
+                  <Card className={styles.cardWrapper} >
+                    <div className={styles.imageBoxWrapper}>
+                      <Card.Img variant="top" src="/Assets/Assets/For Web/SEO-blue.svg" width='60' height='60' alt='Kodaweb SEO & Content Writing' className={styles.serviceCardImage} />
+                    </div>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>SEO & Content Writing</Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className={`${styles.cardCol}`}>
+                  <Card className={styles.cardWrapper} >
+                    <div className={styles.imageBoxWrapper}>
+                      <Card.Img variant="top" src="/Assets/Assets/For Web/App-Dev-blue.svg" width='60' height='60' className={styles.serviceCardImage} />
+                    </div>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>App Development</Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+          </Container>
+        </section>
+
+        {/* SECTION FOR MOBILE SCREENS */}
     </>
   )
 }

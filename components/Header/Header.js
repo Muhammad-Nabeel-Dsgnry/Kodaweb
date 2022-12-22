@@ -43,6 +43,7 @@ const Header = () => {
         <Navbar.Brand>
           <Link href='/'>
             <Image
+              className={`${styles['headerMobileLogoBlack']}`}
               alt='Kodaweb header logo'
               src='/Assets/Assets/For Web/LogoHeader.png'
               width='235'

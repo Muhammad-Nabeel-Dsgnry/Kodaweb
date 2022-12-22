@@ -146,12 +146,16 @@
     transition: all 1s;
 }
 
+.mobileScreenServicesSection {
+    display: none;
+}
+
 
 /* Responsive Start */
 
 @media only screen and (max-width: 600px) {
     .home_services_section {
-        padding: 40px 10px 60px 10px;
+        padding: 40px 10px 30px 10px;
     }
     .home_services_section .content_Section div {
         width: 100% !important;
@@ -207,9 +211,27 @@
         font-size: 0.75rem;
         line-height: 15px;
     }
+    .desktopScreenServicesSection {
+        display: none;
+    }
+    .mobileScreenServicesSection {
+        display: block;
+        padding-top: 0px !important;
+        background-color: #F5F6FF;
+        padding-bottom: 60px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .desktopScreenServicesSection {
+        display: none !important;
+    }
+    .mobileScreenServicesSection {
+        display: block;
+        padding-top: 0px !important;
+        background-color: #F5F6FF;
+        padding-bottom: 60px;
+    }
     .home_services_section .content_Section div {
         width: 100% !important;
     }
