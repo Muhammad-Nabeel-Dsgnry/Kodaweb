@@ -139,7 +139,9 @@
   .portfolio_section {
     padding: 34px 0px 43px 0px;
   }
-
+  .portfolioCol {
+    padding: 0px 20px;
+  }
   .portfolioCol div {
     width: 100% !important;
   }

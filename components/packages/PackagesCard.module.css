@@ -14,7 +14,10 @@
 .PackagesCardBoxBody {
     text-align: left;
     margin: 0px 10px;
-    height: 430px;
+    max-height: 440px;
+    overflow: hidden;
+}
+.PackagesCardBoxBody:hover {
     overflow-y: scroll;
 }
 

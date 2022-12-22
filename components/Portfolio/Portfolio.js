@@ -46,6 +46,17 @@ const Portfolio = () => {
           autoplay: true,
         }
       },
+      {
+        breakpoint: 1281,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+          arrows: true,
+          autoplay: true,
+        }
+      },
     ]
   };
 
@@ -82,6 +93,17 @@ const Portfolio = () => {
           autoplay: true,
         }
       },
+      {
+        breakpoint: 1281,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+          arrows: true,
+          autoplay: true,
+        }
+      },
     ]
   };
 
@@ -111,6 +133,17 @@ const Portfolio = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          infinite: true,
+          dots: false,
+          arrows: true,
+          autoplay: true,
+        }
+      },
+      {
+        breakpoint: 1281,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
           infinite: true,
           dots: false,
           arrows: true,

@@ -83,6 +83,10 @@
 
 @media only screen and (max-width: 600px) {
 
+    .workContentCol {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
     h3.lineTitle::before {
         width: 18%;
         margin-right: 15px;
@@ -111,6 +115,8 @@
     }
     .workBtnWrapper {
         flex-wrap: wrap;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
 }

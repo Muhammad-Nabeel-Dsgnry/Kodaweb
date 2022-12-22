@@ -54,6 +54,8 @@ a.navMenu:hover {
         line-height: 22px;
         margin: 0px 0px 40px 0px;
         width: fit-content;
+        color: var(--text-white) !important;
+        font-weight: 500;
     }
     .navMenu:nth-child(1) {
         margin-top: 40px;
@@ -63,17 +65,20 @@ a.navMenu:hover {
         font-size: 0.875rem;
         line-height: 17px;
         padding: 16px 25px;
+        background-color: var(--text-white);
+        color: var(--text-blue);
     }
     
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
     .navMenu {
+        font-weight: 500;
         font-size: 1.125rem;
         line-height: 22px;
         margin: 0px 0px 40px 0px;
         width: fit-content;
+        color: var(--text-white) !important;
     }
     .navMenu:nth-child(1) {
         margin-top: 40px;
@@ -82,7 +87,28 @@ a.navMenu:hover {
         margin-left: 0px;
         font-size: 0.875rem;
         line-height: 17px;
-        padding: 16px 35px;
+        padding: 16px 25px;
+        background-color: var(--text-white);
+        color: var(--text-blue);
     }
-    
+    .navBarContainer {
+        min-width: 100%;
+    }
 }
+
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .navMenu {
+        color: var(--text-black) !important;
+        margin: auto 10px;
+        font-size: 1rem;
+    }
+    .navMenu:nth-child(1) {
+        margin-top: auto;
+    }
+    .navButton {
+        background-color: var(--bg-blue);
+        color: var(--text-white);
+    }
+  }

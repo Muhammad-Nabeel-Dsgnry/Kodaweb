@@ -243,6 +243,9 @@
 
 @media only screen and (max-width: 600px) {
 
+    .processMainSection {
+        padding: 40px 8px;
+    }
     h3.lineTitle::before {
         width: 18%;
         margin-right: 15px;

@@ -39,7 +39,7 @@ const Header = () => {
   // return <header className={`${styles['header']} ${styles['headerTwo']} `}>Header</header>
   return (
     <Navbar bg="light" expand="lg" className='py-3' id="home" fixed="top">
-      <Container>
+      <Container className={`${'p-0'} ${styles['navBarContainer']}`}>
         <Navbar.Brand>
           <Link href='/'>
             <Image

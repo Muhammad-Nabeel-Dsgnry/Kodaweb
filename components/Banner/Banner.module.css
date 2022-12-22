@@ -101,8 +101,9 @@
 
 @media only screen and (max-width: 600px) {
     .banner-content {
-        padding: 10px;
+        padding: 10px 20px;
         height: 80vh;
+        margin-top: 87px;
     }
     .banner-content h1 {
         font-size: 2.4rem;
@@ -129,6 +130,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .banner-content {
         height: 70vh;
+        margin-top: 87px;
     }
     .banner-content h1 {
         font-size: 2.813rem;
@@ -148,6 +150,18 @@
 @media (min-width: 1550px) and (max-width: 1750px) {
     .homeBannersocial {
         left: 215px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+    .homeBannersocial {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .homeBannersocial {
+        display: none;
     }
 }
 

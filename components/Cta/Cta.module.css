@@ -44,7 +44,7 @@
   @media only screen and (max-width: 600px) {
 
     .CtaMainWrapper {
-        padding: 35px 0px;
+        padding: 35px 20px;
     }
     .CtaMainWrapper h2 {
         font-size: 1.563rem;

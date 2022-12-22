@@ -140,7 +140,7 @@
   }
   .WhoWeAreCounterWrapper {
     padding: 15px;
-    width: 92%;
+    width: 87%;
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -167,6 +167,9 @@
   .WhoWeAreSectionImage {
     width: 100%;
     height: auto;
+  }
+  .WhoWeAreSection {
+    padding: 40px 8px 120px;
   }
 
 }

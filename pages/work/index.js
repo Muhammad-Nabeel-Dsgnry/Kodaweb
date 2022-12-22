@@ -58,7 +58,7 @@ const Work = () => {
       <section className={styles.workMainSection}>
         <Container>
           <Row>
-            <Col>
+            <Col className={`${styles['workContentCol']}`}>
               <div className='w-100'>
                 <h3 className={styles.lineTitle}>Featured Projects</h3>
                 <h2 className={styles.mainTitle}>Get Inspired By Our Finest Work<span className={styles.dot}>.</span></h2>

@@ -69,7 +69,7 @@
 @media only screen and (max-width: 600px) {
 
     .footerMainWrapper {
-        padding: 36px 0px 60px 0px;
+        padding: 36px 8px 60px 8px;
     }
     .footerPara {
         margin-top: 0px;

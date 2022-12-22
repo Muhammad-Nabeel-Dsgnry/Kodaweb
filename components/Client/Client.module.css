@@ -39,7 +39,7 @@
 
   @media only screen and (max-width: 600px) {
     .clients_section {
-        padding: 58px 0px;
+        padding: 58px 8px;
     }
     .clients_section .content_Section div {
         width: 100% !important;
