@@ -139,13 +139,14 @@
       line-height: 22px;
   }
   .WhoWeAreCounterWrapper {
-    padding: 15px;
+    padding: 15px 10px;
     width: 87%;
     margin: 0 auto;
     position: absolute;
     left: 0;
     right: 0;
     transform: translateY(250%);
+    text-align: center;
   }
   .WhoWeAreCounterBoxDivider, .WhoWeAreCounterBoxDivider2 {
     display: none;
@@ -196,13 +197,14 @@
       line-height: 30px;
   }
   .WhoWeAreCounterWrapper {
-    padding: 15px;
+    padding: 15px 10px;
     width: 80%;
     margin: 0 auto;
     position: absolute;
     left: 0;
     right: 0;
     transform: translateY(450%);
+    text-align: center;
   }
   .WhoWeAreCounterBoxDivider, .WhoWeAreCounterBoxDivider2 {
     display: none;
