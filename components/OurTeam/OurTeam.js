@@ -23,7 +23,7 @@ const OurTeam = () => {
                     </Col>
                     <Col md={8} className={styles.AnimatedImagesColumn}>
                         <Row>
-                            <Col md={5} xs={6} style={{display: 'flex', justifyContent: 'end'}}>
+                            <Col md={5} xs={8} style={{display: 'flex', justifyContent: 'end'}}>
                             <div className={`${styles['AnimationImgBoxOne']}`}>
                                 <Image
                                     className={styles.imgOne}
@@ -59,7 +59,7 @@ const OurTeam = () => {
                                 />
                             </div>
                             </Col>
-                            <Col md={4} xs={6} style={{display: 'flex', justifyContent: 'end'}}>
+                            <Col md={4} xs={4} style={{display: 'flex', justifyContent: 'end'}}>
                             <div className={`${styles['AnimationImgBoxOne']}`}>
                                 <Image
                                     className={styles.imgOne}
