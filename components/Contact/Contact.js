@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import InnerPagesBanner from '../InnerPagesBanner/InnerPagesBanner';
-
+import Link from 'next/link';
 
 const Contact = () => {
   return (
@@ -19,8 +19,8 @@ const Contact = () => {
             <Col lg={7}>
               <div className='w-100'>
                 <h3 className={styles.lineTitle}>Lets Talk</h3>
-                <h2 className={styles.mainTitle}>Have a project you ‘re intrested in discussing with us?</h2>
-                <p className={styles.Para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.</p>
+                <h2 className={styles.mainTitle}>Looking For A Fresh Ideas?</h2>
+                <p className={`${styles['Para']} ${styles['contactSectionPara']}`}>Just say hello. We would love to learn about your goals and brainstorm ideas together.</p>
               </div>
               <Row>
                 <Col>
@@ -28,7 +28,7 @@ const Contact = () => {
                     <div className='mb-4'>
                       <span className={styles.formSectionImageWrapper}>
                         <Image
-                        alt='contact icons'
+                          alt='contact icons'
                           className={styles.formSectionIcon}
                           src='/Assets/Assets/For Web/location(Bold).svg'
                           width='22'
@@ -37,7 +37,9 @@ const Contact = () => {
                       </span>
                     </div>
                     <h6 className={styles.formSectionSmTitle}>Our Office:</h6>
+                    <Link href='https://goo.gl/maps/eHVx2XFuBZu1Lk57A' target='_blank'>
                     <p className={styles.formSectionPara}>#15–7015 Avenue of Americas New York, NY L5S 1T7</p>
+                    </Link>
                   </div>
                 </Col>
                 <Col>

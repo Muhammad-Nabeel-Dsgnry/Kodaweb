@@ -158,15 +158,15 @@ const Footer = () => {
               </Link>
             </div>
             <div className={`${styles['footerMenuWrapper']} ${styles['footerCompanyInfo']}`}>
-              <Link href='#' className="d-flex align-items-center">
+              <Link href='https://goo.gl/maps/eHVx2XFuBZu1Lk57A' target='_blank' className="d-flex align-items-start">
                 <Image
-                alt='footer icons'
+                  alt='footer icons'
                   className="me-3"
                   src='/Assets/Assets/For Web/location.svg'
                   width='21'
                   height='19'
                 />
-                <span>#15–7015 Avenue of Americas New York, NY L5S 1T7</span>
+                <span className={`${styles['footerLocation']}`}>#15–7015 Avenue of Americas New York, NY L5S 1T7</span>
               </Link>
             </div>
             <div className={styles.footerSocialLinkWrapper}>
