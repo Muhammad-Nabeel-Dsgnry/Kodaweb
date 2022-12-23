@@ -2,8 +2,12 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import styles from './PackagesCard.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PackagesCard = ({ item }) => {
+    
+    
+
     return (
         <div className={styles.PackagesCardBoxWrapper} data-aos="fade-in" data-aos-duration="2000">
             <div className={styles.PackagesCardBoxHeader}>
@@ -31,7 +35,10 @@ const PackagesCard = ({ item }) => {
                     }
                 </div>
             </div>
-            <Button className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`}>Start Projects</Button>
+            <Link href='/projectDetail' className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`} >
+                Start Projects
+            </Link>
+            {/* <Button className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`}>Start Projects</Button> */}
         </div>
     )
 }

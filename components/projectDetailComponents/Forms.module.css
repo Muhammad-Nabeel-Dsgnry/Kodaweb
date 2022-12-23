@@ -1,0 +1,56 @@
+.formLabel {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: var(--bg-dark);
+}
+.formExampleText {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 17px;
+    color: #969696;  
+}
+.formFieldsCol {
+
+}
+.formFieldsRow {
+
+}
+.formControl {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 25px 20px;
+}
+.formControl:focus {
+    box-shadow: none;
+    border: 1px solid #2C35CD;
+}
+.fileUploadWrapper p {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #969696;
+    margin-bottom: 0px;
+}
+.fileUploadWrapper {
+    width: 100%;
+    height: 9.4%;
+    border-radius: 10px;
+    position: relative;
+    background-color: transparent;
+    box-shadow: 0px 2px 4px 2px rgb(0 0 0 / 10%);
+    border: 1.5px solid var(--text-black);
+    padding: 25px 20px;
+    text-align: center;
+}
+.formFileUploadBtn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+}

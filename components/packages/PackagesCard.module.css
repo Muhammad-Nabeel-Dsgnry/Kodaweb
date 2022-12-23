@@ -89,6 +89,12 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
+    color: var(--text-white);
+    text-align: center;
+  }
+  .pricingBoxBtn {
+    padding: 16px 50px !important;
+    width: fit-content;
   }
   
   .blueButton:hover {

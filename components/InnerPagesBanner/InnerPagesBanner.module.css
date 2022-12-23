@@ -110,5 +110,21 @@
         padding-bottom: 20px;
     }
 }
+@media (min-width: 1025px) and (max-width: 1350px) {
+    .innerBannerMainWrapper h2 {
+        font-size: 2.188rem;
+        line-height: 50px;
+    }
+    .innerBannerMainWrapper p {
+        font-size: 1rem;
+        line-height: 30px;
+        margin-top: 12px;
+    }
+    .innerBannerMainWrapper img {
+        width: 80%;
+        height: auto;
+        margin-right: auto;
+    }
+}
 
 /* Responsive End */
