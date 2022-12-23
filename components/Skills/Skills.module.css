@@ -141,8 +141,8 @@
         margin-bottom: 34px;
     }
     .skillName, .skillNumber {
-        font-size: 0.75rem;
-        line-height: 15px;
+        font-size: 0.875rem;
+        line-height: 25px;
         font-weight: 600;
     }
     .skillsSection:not(:last-child) {

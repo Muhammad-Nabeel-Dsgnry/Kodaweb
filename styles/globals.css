@@ -191,6 +191,9 @@ button.btnActive {
   .navbar-toggler:focus:not(:focus-visible) {
     box-shadow: none;
   }
+  .navbar-nav {
+    margin-bottom: 30px;
+  }
 
 }
 

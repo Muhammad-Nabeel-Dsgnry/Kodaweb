@@ -7,6 +7,7 @@ import Image from 'next/image';
 import styles from './Header.module.css'
 import Button from 'react-bootstrap/Button';
 import { useRouter } from 'next/router';
+import LogoHeader from '../../public/Assets/Assets/For web/LogoHeader.png';
 
 
 const menuLinks = [
@@ -45,7 +46,7 @@ const Header = () => {
             <Image
               className={`${styles['headerMobileLogoBlack']}`}
               alt='Kodaweb header logo'
-              src='/Assets/Assets/For Web/LogoHeader.png'
+              src={LogoHeader}
               width='235'
               height='60'
             />

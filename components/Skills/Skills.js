@@ -29,7 +29,7 @@ const Skills = () => {
                         <Col md={4} xs={12}>
                         <span className={styles.skillName}>UX UI Designing</span>
                         </Col>
-                        <Col md={7} xs={12} className={styles.ProgressBarCol}>
+                        <Col md={7} xs={10} className={styles.ProgressBarCol}>
                          <ProgressBar now={82}  className={styles['skillsProgress']} /> 
                         </Col>
                         <Col md={1} xs={2}>
@@ -42,7 +42,7 @@ const Skills = () => {
                         <Col md={4} xs={12}>
                         <span className={styles.skillName}>Web Development</span>
                         </Col>
-                        <Col md={7} xs={12} className={styles.ProgressBarCol}>
+                        <Col md={7} xs={10} className={styles.ProgressBarCol}>
                          <ProgressBar now={78}  className={styles['skillsProgress']} /> 
                         </Col>
                         <Col md={1} xs={2}>
@@ -55,7 +55,7 @@ const Skills = () => {
                         <Col md={4} xs={12}>
                         <span className={styles.skillName}>Product Development</span>
                         </Col>
-                        <Col md={7} xs={12} className={styles.ProgressBarCol}>
+                        <Col md={7} xs={10} className={styles.ProgressBarCol}>
                          <ProgressBar now={80}  className={styles['skillsProgress']} /> 
                         </Col>
                         <Col md={1} xs={2}>
@@ -68,7 +68,7 @@ const Skills = () => {
                         <Col md={4} xs={12}>
                         <span className={styles.skillName}>Software Development</span>
                         </Col>
-                        <Col md={7} xs={12} className={styles.ProgressBarCol}>
+                        <Col md={7} xs={10} className={styles.ProgressBarCol}>
                          <ProgressBar now={65}  className={styles['skillsProgress']} /> 
                         </Col>
                         <Col md={1} xs={2}>
