@@ -143,7 +143,7 @@ const Services = (props) => {
 
             {
               isTwoRows == 'false' ?
-              <Link href='/services' className={styles.blueButton}>
+              <Link href='/services' className={`${styles['blueButton']} ${styles['desktopScreenServicesSection']}`}>
                 View More
               </Link>
               :
@@ -263,6 +263,14 @@ const Services = (props) => {
                   </Card>
                 </Col>
               </Row>
+              {
+              isTwoRows == 'false' ?
+              <Link href='/services' className={styles.blueButton}>
+                View More
+              </Link>
+              :
+              null
+            }
           </Container>
         </section>
 
