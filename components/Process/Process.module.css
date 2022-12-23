@@ -243,6 +243,15 @@
 
 @media only screen and (max-width: 600px) {
 
+    .desktopProcessBoxesRow {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        position: relative;
+        overflow-x: scroll;
+    }
+    .processBoxes {
+        min-width: 260px;
+    }
     .processMainSection {
         padding: 40px 8px;
     }
@@ -285,6 +294,15 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    .desktopProcessBoxesRow {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        position: relative;
+        overflow-x: scroll;
+    }
+    .processBoxes {
+        min-width: 280px;
+    }
     h3.lineTitle::before {
         width: 18%;
         margin-right: 15px;

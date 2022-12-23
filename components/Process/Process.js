@@ -4,6 +4,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './Process.module.css'
 import Image from 'next/image';
+import Plan_white from '../../public/Assets/Assets/For web/Plan-white.png';
+import Design_white from '../../public/Assets/Assets/For web/Design-white.png';
+import Develop_white from '../../public/Assets/Assets/For web/Develop-white.png';
+import Test_white from '../../public/Assets/Assets/For web/Test-white.png';
+import Deploy_white from '../../public/Assets/Assets/For web/Deploy-white.png';
+import Maintain_white from '../../public/Assets/Assets/For web/Maintain-white.png';
 
 const Process = () => {
     return (
@@ -20,12 +26,12 @@ const Process = () => {
                         </Col>
                     </Row>
 
-                    <Row className={`${'mt-5'} ${styles['processBoxesRow']}`}>
-                        <Col lg={2} xs={12} className={`${styles['processBoxes']}`}>
+                    <Row className={`${'mt-5'} ${styles['processBoxesRow']} ${styles['desktopProcessBoxesRow']}`}>
+                        <Col lg={2} xs={6} className={`${styles['processBoxes']}`}>
                             <div className={styles.processContentBoxWrapper}>
                                 <div className={styles.processContentBox}>
                                     <Image
-                                        src='/Assets/Assets/For Web/Plan-white.png'
+                                        src={Plan_white}
                                         alt='plan'
                                         width='32'
                                         height='32'
@@ -44,12 +50,12 @@ const Process = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={2} xs={12} className={`${styles['processBoxes']}`}>
+                        <Col lg={2} xs={6} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Design-white.png'
-                                    alt='plan'
+                                    src={Design_white}
+                                    alt='design'
                                     width='32'
                                     height='32'
                                 />
@@ -67,12 +73,12 @@ const Process = () => {
                             </div>
                         </div>
                         </Col>
-                        <Col lg={2} xs={12} className={`${styles['processBoxes']}`}>
+                        <Col lg={2} xs={6} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Develop-white.png'
-                                    alt='plan'
+                                    src={Develop_white}
+                                    alt='develop'
                                     width='32'
                                     height='32'
                                 />
@@ -90,12 +96,12 @@ const Process = () => {
                             </div>
                         </div>
                         </Col>
-                        <Col lg={2} xs={12} className={`${styles['processBoxes']}`}>
+                        <Col lg={2} xs={6} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Test-white.png'
-                                    alt='plan'
+                                    src={Test_white}
+                                    alt='test'
                                     width='32'
                                     height='32'
                                 />
@@ -113,12 +119,12 @@ const Process = () => {
                             </div>
                         </div>
                         </Col>
-                        <Col lg={2} xs={12} className={`${styles['processBoxes']}`}>
+                        <Col lg={2} xs={6} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Deploy-white.png'
-                                    alt='plan'
+                                    src={Deploy_white}
+                                    alt='deploy'
                                     width='32'
                                     height='32'
                                 />
@@ -136,12 +142,12 @@ const Process = () => {
                             </div>
                         </div>
                         </Col>
-                        <Col lg={2} xs={12} className={`${styles['processBoxes']}`}>
+                        <Col lg={2} xs={6} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
                             <div className={styles.processContentBox}>
                                 <Image
-                                    src='/Assets/Assets/For Web/Maintain-white.png'
-                                    alt='plan'
+                                    src={Maintain_white}
+                                    alt='Maintain'
                                     width='32'
                                     height='32'
                                 />
