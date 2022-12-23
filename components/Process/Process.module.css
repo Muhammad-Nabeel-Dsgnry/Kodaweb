@@ -343,5 +343,46 @@
     .processBoxesRow {
         margin-top: 40px;
     }
-
+}
+@media (min-width: 1025px) and (max-width: 1350px) {
+    h3.lineTitle::before {
+      width: 18%;
+      margin-right: 15px;
+      height: 3px;
+    }
+    h3.lineTitle {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 500;
+    }
+    h2.mainTitle {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .Para {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 30px;
+    }
+    .desktopProcessBoxesRow {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        position: relative;
+        overflow-x: scroll;
+    }
+    .processBoxes {
+        min-width: 300px;
+        margin-bottom: 20px;
+    }
+    .processHoverableContentBox1 p,
+    .processHoverableContentBox2 p,
+    .processNumberLine::after,
+    .processNumberLineOne::before,
+    .processNumberLineOne::after,
+    .processNumberLineTwo::before,
+    .processNumberLineTwo::after,
+    .processNumberLineThree::before,
+    .processNumberLineFour::before {
+        display: none;
+    }
 }

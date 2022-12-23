@@ -81,4 +81,16 @@
     }
   }
 
+  @media (min-width: 1025px) and (max-width: 1350px) {
+    .counter_Section__cardTitle div span {
+      font-size: 1.625rem;
+      line-height: 30px;
+    }
+
+    .counter_Section__cardText {
+      font-size: 1.1rem;
+      line-height: 31px;
+    }
+}
+
   /* Reponsive End */

@@ -76,3 +76,20 @@
     }
 
 }
+@media (min-width: 1025px) and (max-width: 1350px) {
+
+    .CtaMainWrapper {
+        padding: 35px 0px;
+    }
+    .CtaMainWrapper h2 {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    .CtaMainWrapper a {
+        margin-top: 40px;
+        font-size: 0.75rem;
+        line-height: 15px;
+        padding: 9px 30px;
+    }
+
+}

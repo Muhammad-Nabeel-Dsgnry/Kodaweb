@@ -26,3 +26,13 @@
         margin-left: 15px;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1350px) {
+    .pricingBoxWrapper {
+        margin-top: 50px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}

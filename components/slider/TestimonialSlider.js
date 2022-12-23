@@ -34,6 +34,15 @@ const TestimonialSlider = () => {
           dots: true
         }
       },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
     ]
   };
 

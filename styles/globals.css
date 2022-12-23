@@ -203,3 +203,11 @@ button.btnActive {
     padding-right: 20px;
   }
 }
+
+@media (min-width: 1025px) and (max-width: 1350px) {
+
+  #testimonialsId ul.slick-dots {
+    margin-bottom: 0px;
+  }
+
+}

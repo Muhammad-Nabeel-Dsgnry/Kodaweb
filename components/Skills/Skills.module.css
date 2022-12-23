@@ -198,5 +198,41 @@
     }
 
 }
+@media (min-width: 1025px) and (max-width: 1350px) {
+    h3.lineTitle::before {
+      width: 18%;
+      margin-right: 15px;
+      height: 3px;
+    }
+    h3.lineTitle {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 500;
+    }
+    h2.mainTitle {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .Para {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 30px;
+    }
+    .skillsMainWrapper {
+        width: 60%;
+        padding: 20px;
+        margin-top: 0px;
+    }
+    .servicesSectionImage {
+        width: 100%;
+        height: auto;    
+    }
+    .skillName, .skillNumber {
+        font-size: 0.9rem;
+        line-height: 15px;
+        font-weight: 600;
+    }
+}
+
 
 /* Responsive End */

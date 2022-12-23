@@ -130,3 +130,19 @@
         margin-top: 50px;
     }
   }
+
+  @media (min-width: 1025px) and (max-width: 1350px) {
+
+    .PackagesCardBoxWrapper {
+        min-width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .pricingBoxBtn {
+        font-size: 0.75rem;
+        line-height: 20px;
+        padding: 13px 42px;
+        margin-top: 50px;
+    }
+
+  }
