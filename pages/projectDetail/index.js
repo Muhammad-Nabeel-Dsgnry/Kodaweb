@@ -82,6 +82,7 @@ const Index = () => {
                 <span>
                     <Image
                     src={GuaranteeIcon}
+                    alt='GuaranteeIcon'
                     width='65'
                     height='65'
                     />
