@@ -5,7 +5,7 @@ import uploadIcon from '../../../public/Assets/Assets/For web/upload.png';
 import { SketchPicker } from 'react-color';
 import { useState } from 'react';
 
-const stepOneForm = () => {
+const StepOneForm = () => {
 
     const [primaryColor, setPrimaryColor] = useState('black')
     const [primarypallet, setPrimarypallet] = useState(false)
@@ -171,29 +171,6 @@ const stepOneForm = () => {
                         </Form.Group>
                     </Col>
                 </Row>
-                {/* <Row>
-                    <Col lg={4} xs={6} md={4} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
-                        <Form.Group className={`${'mb-3'}`} controlId="formGroupPrimaryColor">
-                            <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Primary Color</Form.Label>
-                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' />
-                            <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
-                        </Form.Group>
-                    </Col>
-                    <Col lg={4} xs={6} md={4} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
-                        <Form.Group className={`${'mb-3'}`} controlId="formGroupPrimaryColor">
-                            <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Primary Color</Form.Label>
-                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type="text" />
-                            <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
-                        </Form.Group>
-                    </Col>
-                    <Col lg={4} xs={6} md={4} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
-                        <Form.Group className={`${'mb-3'}`} controlId="formGroupPrimaryColor">
-                            <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Primary Color</Form.Label>
-                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type="text" />
-                            <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
-                        </Form.Group>
-                    </Col>
-                </Row> */}
                 <Col lg={12} xs={12} md={12} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                     <Form.Group className={`${'mb-3'}`} controlId="formGroupFileUpload">
                         <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Do you have any images, sketches or documents that might be helpful?</Form.Label>
@@ -216,4 +193,4 @@ const stepOneForm = () => {
   )
 }
 
-export default stepOneForm
+export default StepOneForm

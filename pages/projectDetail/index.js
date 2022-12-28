@@ -9,11 +9,11 @@ import Step2 from '../../components/projectDetailComponents/step2/step2';
 import Step3 from '../../components/projectDetailComponents/step3/step3';
 import { useState } from 'react';
 
-const index = () => {
+const Index = () => {
 
-  let [stepOne, setStepOne] = useState(true)
-  let [stepTwo, setStepTwo] = useState(false)
-  let [stepThree, setStepThree] = useState(false)
+  const [stepOne, setStepOne] = useState(true)
+  const [stepTwo, setStepTwo] = useState(false)
+  const [stepThree, setStepThree] = useState(false)
 
   const stepOneHandler = () => {
     setStepOne(false)
@@ -147,4 +147,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

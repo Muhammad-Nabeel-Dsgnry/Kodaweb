@@ -1,9 +1,8 @@
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import styles from '../Forms.module.css'
-import Image from 'next/image';
 import Link from 'next/link';
 
-const stepTwoForm = () => {
+const StepTwoForm = () => {
     return (
         <div>
             <Form>
@@ -42,4 +41,4 @@ const stepTwoForm = () => {
       )
 }
 
-export default stepTwoForm
+export default StepTwoForm

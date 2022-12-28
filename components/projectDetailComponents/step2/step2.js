@@ -10,7 +10,7 @@ import creditCard from '../../../public/Assets/Assets/For web/credit-debit-card.
 import payPal from '../../../public/Assets/Assets/For web/PayPal.svg'
 import select from '../../../public/Assets/Assets/For web/tick.svg'
 
-const step2 = (props) => {
+const Step2 = (props) => {
 
   const [isSelectStripe, setIsSelectStripe] = useState(false)
   const [isSelectCard, setIsSelectCard] = useState(false)
@@ -82,6 +82,7 @@ const step2 = (props) => {
                 label={
                   <Image
                     src={stripe}
+                    alt='stripe'
                     width='200'
                     height='100'
                   />
@@ -97,6 +98,7 @@ const step2 = (props) => {
                   <span className={`${styles['paymentMethodSelectedIcon']}`}>
                     <Image
                       src={select}
+                      alt='select'
                       width='38'
                       height='38'
                     />
@@ -113,6 +115,7 @@ const step2 = (props) => {
                 label={
                   <Image
                     src={creditCard}
+                    alt='creditCard'
                     width='200'
                     height='100'
                   />
@@ -128,6 +131,7 @@ const step2 = (props) => {
                   <span className={`${styles['paymentMethodSelectedIcon']}`}>
                     <Image
                       src={select}
+                      alt='select'
                       width='38'
                       height='38'
                     />
@@ -144,6 +148,7 @@ const step2 = (props) => {
                 label={
                   <Image
                     src={payPal}
+                    alt='payPal'
                     width='200'
                     height='100'
                   />
@@ -159,6 +164,7 @@ const step2 = (props) => {
                   <span className={`${styles['paymentMethodSelectedIcon']}`}>
                     <Image
                       src={select}
+                      alt='select'
                       width='38'
                       height='38'
                     />
@@ -174,4 +180,4 @@ const step2 = (props) => {
   )
 }
 
-export default step2
+export default Step2

@@ -1,2 +1,2 @@
 import stepper from './stepper'
-export default {stepper}
+export {stepper}
