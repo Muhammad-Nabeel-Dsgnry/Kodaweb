@@ -1,0 +1,19 @@
+.counterNumberWrapper span {
+    background-color: #2C35CD;
+    color: #fff;
+    padding: 17px 17px;
+    border-radius: 100%;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 25px;
+}
+.counterNumberWrapperOne, .counterNumberWrapperTwo {
+    margin-right: 140px;
+}
+.counterDivider {
+
+}
+.stepperWrapper {
+    margin-bottom: 56px;
+}

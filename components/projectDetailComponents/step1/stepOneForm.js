@@ -2,10 +2,56 @@ import { Container, Row, Col, Form } from 'react-bootstrap'
 import styles from '../Forms.module.css'
 import Image from 'next/image';
 import uploadIcon from '../../../public/Assets/Assets/For web/upload.png';
+import { SketchPicker } from 'react-color';
+import { useState } from 'react';
 
 const stepOneForm = () => {
+
+    const [primaryColor, setPrimaryColor] = useState('black')
+    const [primarypallet, setPrimarypallet] = useState(false)
+
+    const [secondaryColor, setSecondaryColor] = useState('black')
+    const [secondarypallet, setSecondarypallet] = useState(false)
+
+    const [ascendColor, setAscendColor] = useState('black')
+    const [ascendpallet, setAscendpallet] = useState(false)
+
+    const pickerStyles = {
+        default: {
+            picker: {
+                position: 'absolute',
+                bottom: '30px',
+                left: '100px'           
+            }
+        }
+    }
+
   return (
     <div>
+        {/* COLOR PICKER STYLE START */}
+        <style jsx>
+            {`
+            .primaryColorSelectionBox {
+                background-color: ${primaryColor};
+                width: 50px;
+                height: 50px;
+                border-radius: 4px
+                }
+            .secondaryColorSelectionBox {
+                background-color: ${secondaryColor};
+                width: 50px;
+                height: 50px;
+                border-radius: 4px
+                }
+            .ascendColorSelectionBox {
+                background-color: ${ascendColor};
+                width: 50px;
+                height: 50px;
+                border-radius: 4px
+                }
+            `}
+        </style>
+        {/* COLOR PICKER STYLE END */}
         <Form>
             <Row className={`${styles['formFieldsRow']}`}>
                 <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
@@ -76,6 +122,59 @@ const stepOneForm = () => {
                     <Col lg={4} xs={6} md={4} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                         <Form.Group className={`${'mb-3'}`} controlId="formGroupPrimaryColor">
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Primary Color</Form.Label>
+                            <div className={`${styles['colorPickerWrapper']}`}>
+                                <div className={`${'primaryColorSelectionBox'} ${styles['colorBoxDiv']}`} onClick={() => setPrimarypallet(!primarypallet)}></div>
+                                <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']}`} type='text' value={primaryColor} />
+                                {primarypallet && 
+                                    <SketchPicker
+                                        styles={pickerStyles}
+                                        color={primaryColor}
+                                        onChange={prColor => setPrimaryColor(prColor.hex)}
+                                    />
+                                }
+                            </div>
+                            <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
+                        </Form.Group>
+                    </Col>
+                    <Col lg={4} xs={6} md={4} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
+                        <Form.Group className={`${'mb-3'}`} controlId="formGroupPrimaryColor">
+                            <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Secondary Color</Form.Label>
+                            <div className={`${styles['colorPickerWrapper']}`}>
+                                <div className={`${'secondaryColorSelectionBox'} ${styles['colorBoxDiv']}`} onClick={() => setSecondarypallet(!secondarypallet)}></div>
+                                <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']}`} type='text' value={secondaryColor} />
+                                {secondarypallet && 
+                                    <SketchPicker
+                                        styles={pickerStyles}
+                                        color={secondaryColor}
+                                        onChange={scColor => setSecondaryColor(scColor.hex)}
+                                    />
+                                }
+                            </div>
+                            <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
+                        </Form.Group>
+                    </Col>
+                    <Col lg={4} xs={6} md={4} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
+                        <Form.Group className={`${'mb-3'}`} controlId="formGroupPrimaryColor">
+                            <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Ascend Color</Form.Label>
+                            <div className={`${styles['colorPickerWrapper']}`}>
+                                <div className={`${'ascendColorSelectionBox'} ${styles['colorBoxDiv']}`} onClick={() => setAscendpallet(!ascendpallet)}></div>
+                                <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']}`} type='text' value={ascendColor} />
+                                {ascendpallet && 
+                                    <SketchPicker
+                                        styles={pickerStyles}
+                                        color={ascendColor}
+                                        onChange={asColor => setAscendColor(asColor.hex)}
+                                    />
+                                }
+                            </div>
+                            <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
+                        </Form.Group>
+                    </Col>
+                </Row>
+                {/* <Row>
+                    <Col lg={4} xs={6} md={4} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
+                        <Form.Group className={`${'mb-3'}`} controlId="formGroupPrimaryColor">
+                            <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Primary Color</Form.Label>
                             <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' />
                             <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
                         </Form.Group>
@@ -94,20 +193,21 @@ const stepOneForm = () => {
                             <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
                         </Form.Group>
                     </Col>
-                </Row>
+                </Row> */}
                 <Col lg={12} xs={12} md={12} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                     <Form.Group className={`${'mb-3'}`} controlId="formGroupFileUpload">
                         <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Do you have any images, sketches or documents that might be helpful?</Form.Label>
                         <div className={`${styles['fileUploadWrapper']} ${'mb-2'}`}>
                             <Image
                                 src={uploadIcon}
+                                alt='image upload'
                                 width='49'
                                 height='40'
                             />
                             <p>Choose File</p>
                             <Form.Control size='lg' className={`${styles['formControl']} ${styles['formFileUploadBtn']}`} type='file' />
                         </div>
-                        <Form.Text className={`${styles['formExampleText']}`}>E.g. Your current logo, fonts, photos, illustrations, content, layout ideas etc.</Form.Text>
+                        <Form.Text className={`${styles['formExampleText']} ${styles['formTextCenter']}`}>E.g. Your current logo, fonts, photos, illustrations, content, layout ideas etc.</Form.Text>
                     </Form.Group>
                 </Col>
             </Row>

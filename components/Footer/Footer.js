@@ -95,6 +95,7 @@ const Footer = () => {
             <Link href='/'>
               <Image
                 src='/Assets/Assets/For Web/Logo for footer(2).png'
+                alt="kodaweb footer logo"
                 width='239'
                 height='104'
               />

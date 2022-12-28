@@ -1,5 +1,5 @@
 import step1 from './step1'
 
-export default {
+export {
     step1
 }

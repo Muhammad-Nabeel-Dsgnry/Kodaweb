@@ -1,0 +1,36 @@
+.readOnlyText {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 22px;
+    color: #969696;
+}
+.mainTitle {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 37px;
+    color: var(--text-black);
+}
+.briefMainSection {
+    margin-top: 12px;
+}
+.mainSection h6 {
+    margin-bottom: 40px;
+}
+.horizontalDivider {
+    border: 1px solid var(--text-gray);
+}
+.summaryTitle, .summaryData {
+    font-family: 'Inter';
+    font-size: 1rem;
+    line-height: 28px;
+}
+.summaryTitle {
+    color: var(--text-black);
+    font-weight: 500;
+}
+.summaryData {
+    color: var(--text-gray);
+    font-weight: 400;
+}

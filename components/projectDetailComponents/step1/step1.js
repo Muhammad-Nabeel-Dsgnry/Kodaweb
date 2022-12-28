@@ -1,18 +1,24 @@
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, ButtonGroup } from 'react-bootstrap'
 import styles from '../projectDetailComponents.module.css'
 import Image from 'next/image'
+import Stepper from '../stepper/stepper'
 import StepOneForm from './stepOneForm'
+import StepPackageDetails from './stepPackageDetails'
+import TimeDuration from './timeDuration'
 
-const step1 = (props) => {
+const  step1 = (props) => {
 
   const {stepSubTitle, stepMainTitle, stepPara, isImage, colorText} = props
 
   return (
-    <>
+    <> 
       <section>
         <Container>
           <Row>
-          <Col xs={12} lg={6}>
+              <Stepper />
+          </Row>
+          <Row className={`${'mt-5'}`}>
+          <Col xs={12} lg={7} md={7}>
               <div>
                 <h3 className={`${styles['lineTitle']}`}>{stepSubTitle}</h3>
                 <h2 className={styles.mainTitle}>{stepMainTitle}<span className={colorText ? styles.dot : ''}>{colorText}</span></h2>
@@ -21,7 +27,7 @@ const step1 = (props) => {
             </Col>
             {
               isImage == 'true' ?
-                <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={6}>
+                <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={5} md={5}>
                   <Image
                     className={styles.guaranteeImage}
                     src='/Assets/Assets/For Web/moneyBack.png'
@@ -33,9 +39,10 @@ const step1 = (props) => {
                 null
             }
           </Row>
-
           <Row>
             <StepOneForm />
+            <StepPackageDetails />
+            <TimeDuration />
           </Row>
         </Container>
       </section>

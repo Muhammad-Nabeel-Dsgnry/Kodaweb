@@ -3,6 +3,7 @@
 :root {
   --bg-white: #fff;
   --bg-dark: #1A1A1A;
+  --text-dark: #1A1A1A;
   --light-bg: #F5F6FF;
   --text-white: #fff;
   --text-black: #000;
@@ -116,6 +117,9 @@ button.btnActive {
 
 #home {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+.paymentSelected label {
+  border: 4px solid var(--bg-blue) !important;
 }
 
 @media only screen and (max-width: 600px) {

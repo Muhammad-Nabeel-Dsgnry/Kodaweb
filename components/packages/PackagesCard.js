@@ -7,7 +7,6 @@ import Link from 'next/link';
 const PackagesCard = ({ item }) => {
     
     
-
     return (
         <div className={styles.PackagesCardBoxWrapper} data-aos="fade-in" data-aos-duration="2000">
             <div className={styles.PackagesCardBoxHeader}>
@@ -34,10 +33,10 @@ const PackagesCard = ({ item }) => {
                         })
                     }
                 </div>
-            </div>
-            <Link href='/projectDetail' className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`} >
+            <Link href='/projectDetail/' className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`} >
                 Start Projects
             </Link>
+            </div>
             {/* <Button className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`}>Start Projects</Button> */}
         </div>
     )
