@@ -5,29 +5,33 @@
     line-height: 24px;
     color: var(--bg-dark);
 }
+
 .formExampleText {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 17px;
-    color: #969696;  
+    color: #969696;
 }
-.formFieldsCol {
 
-}
+.formFieldsCol {}
+
 .formFieldsRow {
     margin-top: 50px;
 }
+
 .formControl {
     background: #FFFFFF;
     box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 25px 20px;
 }
+
 .formControl:focus {
     box-shadow: none;
     border: 1px solid #2C35CD;
 }
+
 .fileUploadWrapper p {
     font-family: 'Inter';
     font-weight: 500;
@@ -36,6 +40,7 @@
     color: #969696;
     margin-bottom: 0px;
 }
+
 .fileUploadWrapper {
     width: 100%;
     height: 9.4%;
@@ -47,6 +52,7 @@
     padding: 25px 20px;
     text-align: center;
 }
+
 .formFileUploadBtn {
     position: absolute;
     left: 0;
@@ -54,27 +60,59 @@
     opacity: 0;
     height: 100%;
 }
+
 .formTextCenter {
     display: flex;
     justify-content: center;
 }
+
 .colorPickerWrapper {
     position: relative
 }
+
 .colorBoxDiv {
     z-index: 1;
     position: relative;
     margin: auto;
     margin-right: 30px;
     min-width: 12%;
-    transform: translateY(30%); 
+    transform: translateY(30%);
 }
+
 .colorField {
     position: absolute;
     left: 0;
     top: 0;
     z-index: 0;
 }
-.formFieldsRow label, .formFieldsRow small{
+
+.formFieldsRow label,
+.formFieldsRow small {
     user-select: none;
+}
+
+.phoneNumberInput select {
+    position: absolute;
+    width: 61px;
+    height: 34px;
+    opacity: 0;
+}
+
+.phoneNumberInput img {
+    width: 54px;
+    height: 34px;
+    object-fit: cover;
+    box-shadow: 0px 4px 16px 0px rgb(0 0 0 / 15%);
+}
+
+.phoneNumberInput .PhoneInputCountry {
+    width: fit-content !important;
+}
+.formFieldsRow input {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1A1A1A;
 }

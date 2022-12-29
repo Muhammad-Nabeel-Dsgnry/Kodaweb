@@ -12,7 +12,7 @@ import select from '../../../public/Assets/Assets/For web/tick.svg'
 
 const Step2 = (props) => {
 
-  const [isSelectStripe, setIsSelectStripe] = useState(false)
+  const [isSelectStripe, setIsSelectStripe] = useState(true)
   const [isSelectCard, setIsSelectCard] = useState(false)
   const [isSelectPayPal, setIsSelectPayPal] = useState(false)
 
@@ -87,9 +87,10 @@ const Step2 = (props) => {
                     height='100'
                   />
                 }
-                name="stripe"
+                name="paymentMethod"
                 type='radio'
                 id={`inline-radio-1`}
+                value='Stripe'
                 onClick={() => setIsSelectStripe(stripeHandler)}
                 className={`${styles['paymentMethodRadioBtn']} ${isSelectStripe ? 'paymentSelected' : ''}`}
               />
@@ -120,9 +121,10 @@ const Step2 = (props) => {
                     height='100'
                   />
                 }
-                name="creditCard"
+                name="paymentMethod"
                 type='radio'
                 id={`inline-radio-2`}
+                value='Credit/debit Cards'
                 onClick={() => setIsSelectCard(cardHandler)}
                 className={`${styles['paymentMethodRadioBtn']} ${isSelectCard ? 'paymentSelected' : ''}`}
               />
@@ -153,9 +155,10 @@ const Step2 = (props) => {
                     height='100'
                   />
                 }
-                name="payPal"
+                name="paymentMethod"
                 type='radio'
                 id={`inline-radio-3`}
+                value='Paypal'
                 onClick={() => setIsSelectPayPal(payPalHandler)}
                 className={`${styles['paymentMethodRadioBtn']} ${isSelectPayPal ? 'paymentSelected' : ''}`}
               />

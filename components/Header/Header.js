@@ -8,7 +8,8 @@ import styles from './Header.module.css'
 import Button from 'react-bootstrap/Button';
 import { useRouter } from 'next/router';
 import LogoHeader from '../../public/Assets/Assets/For web/LogoHeader.png';
-
+import GetAQuote from '../GetAQuote/GetAQuote';
+import { useState } from 'react';
 
 const menuLinks = [
   {
@@ -34,6 +35,8 @@ const menuLinks = [
 ]
  
 const Header = () => {
+
+  const [isOpen, setIsOpen] = useState(false)
 
   const route = useRouter()
 
@@ -62,9 +65,10 @@ const Header = () => {
               )
             })}
           </Nav>
-          <Link href='#' className={`${styles['blueButton']} ${styles['navButton']}`}>
+          <Link href='#' className={`${styles['blueButton']} ${styles['navButton']}`} onClick={() => setIsOpen(true)}>
             Get A Quote
           </Link>
+          <GetAQuote show={isOpen} onHide={() => setIsOpen(false)} />
           {/* <Button className={`${styles['blueButton']} ${styles['navButton']}`}>Start your project</Button> */}
         </Navbar.Collapse>
       </Container>

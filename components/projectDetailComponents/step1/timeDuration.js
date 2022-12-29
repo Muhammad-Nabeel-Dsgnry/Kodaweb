@@ -1,10 +1,14 @@
 import React from 'react'
+import { useState } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import SectionContent from '../sectionContent'
 import {Logo_Design_Duration, Logo_Branding_Identity_Duration} from './DurationData'
 import styles from './timeDuration.module.css'
 
 const timeDuration = () => {
+
+    const [duration, setDuration] = useState('')
+    // console.log('duration', duration)
 
   return (
     <>
@@ -29,8 +33,11 @@ const timeDuration = () => {
                                         <div className={`${styles['timeDurationContent']}`}>
                                             <Form.Check
                                                 type='radio'
+                                                name='time duration'
                                                 label={`${item.time}`}
                                                 id={`${item.id}`}
+                                                onChange={(e) => setDuration(e.target.value)}
+                                                value={`${item.time}`}
                                             />
                                         </div>
                                         <div className={`${styles['timeDurationPrice']} ${styles['timeDurationContent']}`}>
