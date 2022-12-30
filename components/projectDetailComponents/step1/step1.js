@@ -3,7 +3,7 @@ import styles from '../projectDetailComponents.module.css'
 import Image from 'next/image'
 import Stepper from '../stepper/stepper'
 import StepOneForm from './stepOneForm'
-import StepPackageDetails from './stepPackageDetails'
+import StepPackageDetails from './[stepPackageDetails].js'
 import TimeDuration from './timeDuration'
 
 const  step1 = (props) => {
@@ -41,8 +41,8 @@ const  step1 = (props) => {
           </Row>
           <Row>
             <StepOneForm />
-            <StepPackageDetails />
-            <TimeDuration />
+            {/* <StepPackageDetails /> */}
+            {/* <TimeDuration /> */}
           </Row>
         </Container>
       </section>

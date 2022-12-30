@@ -1,37 +1,88 @@
-import { Container, Row, Col, Form } from 'react-bootstrap'
-import styles from '../Forms.module.css'
+import { Container, Row, Col, Form, ButtonGroup } from 'react-bootstrap'
+// import styles from '../Forms.module.css'
+import styles from '../../../styles/projectDetail.module.css'
 import Link from 'next/link';
 import { useState } from 'react';
-import PhoneInput, { formatPhoneNumberIntl } from 'react-phone-number-input'
+import PhoneInput from 'react-phone-number-input'
+import GuaranteeIcon from '../../../public/Assets/Assets/For web/tick.svg'
+import ProjectBrief from '../step3/projectBrief';
+import Image from 'next/image';
+import SectionContent from '../sectionContent';
+import stripe from '../../../public/Assets/Assets/For web/Stripe.svg'
+import creditCard from '../../../public/Assets/Assets/For web/credit-debit-card.svg'
+import payPal from '../../../public/Assets/Assets/For web/PayPal.svg'
+import select from '../../../public/Assets/Assets/For web/tick.svg'
 
-const StepTwoForm = () => {
+
+
+const StepTwoForm = (props) => {
+
+    const [isHide, setIsHide] = useState(false)
+    const [state, setState] = useState({formData:''})
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
     const [message, setMessage] = useState('')
 
-    console.log('phoneNumber', phoneNumber)
+    const stepTwoData = [name, email, phoneNumber, message]
+
+    console.log('stepTwoData', stepTwoData)
+
+    // const sendFormTwoDataHandler = () => {
+    //     setState({formData:stepTwoData})
+    // }
+
+    const [isSelectStripe, setIsSelectStripe] = useState(true)
+    const [isSelectCard, setIsSelectCard] = useState(false)
+    const [isSelectPayPal, setIsSelectPayPal] = useState(false)
+
+    const { stepSubTitle, stepMainTitle, stepPara, isImage, colorText } = props
+
+    const stripeHandler = () => {
+        setIsSelectStripe(true)
+        setIsSelectCard(false)
+        setIsSelectPayPal(false)
+    }
+    const cardHandler = () => {
+        setIsSelectCard(true)
+        setIsSelectStripe(false)
+        setIsSelectPayPal(false)
+    }
+    const payPalHandler = () => {
+        setIsSelectPayPal(true)
+        setIsSelectCard(false)
+        setIsSelectStripe(false)
+    }
 
     return (
-        <div>
+        <>
+        <section>
+            {/* {
+                isHide == 'true' ?
+                <ProjectBrief data={sendFormTwoDataHandler}/>
+                :
+                null
+            } */}
             <Form>
-                <Row className={`${styles['formFieldsRow']}`}>
-                    <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
+                <Row className={`${styles['formFieldsRow']} ${'justify-content-between'}`}>
+                    <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupName'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Name</Form.Label>
                             <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setName(e.target.value)} />
                             <Form.Text className={`${styles['formExampleText']}`}>E.g. Ibhrahim</Form.Text>
                         </Form.Group>
                     </Col>
-                    <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
+                    <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupEmail'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Email</Form.Label>
                             <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='email' onChange={(e) => setEmail(e.target.value)} />
                             <Form.Text className={`${styles['formExampleText']}`}>We'll hold your data according to our <Link href=''>Privacy Policy</Link>.</Form.Text>
                         </Form.Group>
                     </Col>
-                    <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
+                    </Row>
+                    <Row className={`${'justify-content-between'}`}>
+                    <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                         <Form.Group className={`${'mb-3'} ${styles['phoneNumberInput']}`} controlId='formGroupNumber'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Phone Number</Form.Label>
                             <PhoneInput
@@ -48,7 +99,7 @@ const StepTwoForm = () => {
                             <Form.Text className={`${styles['formExampleText']}`}>We'll hold your data according to our <Link href=''>Privacy Policy</Link></Form.Text>
                         </Form.Group>
                     </Col>
-                    <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
+                    <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupMessage'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Message</Form.Label>
                             <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setMessage(e.target.value)} />
@@ -57,7 +108,156 @@ const StepTwoForm = () => {
                     </Col> 
                 </Row>
             </Form>
-        </div>
+        </section>
+
+        <section>
+        <Row className={`${'mt-5'}`}>
+          <SectionContent
+            contentTitle='Payment Method'
+            contentMainTitle='Choose payment method'
+            contentText='Select the payment method which is best suit for you.'
+          />
+        </Row>
+
+        <Row className={`${styles['paymentMethodMainWrapper']}`}>
+          <Col lg={4} md={4} xs={4}>
+            <div className={`${styles['paymentMethodBoxWrapper']}`}>
+              <Form.Check
+                inline
+                label={
+                  <Image
+                    src={stripe}
+                    alt='stripe'
+                    width='200'
+                    height='100'
+                  />
+                }
+                name="paymentMethod"
+                type='radio'
+                id={`inline-radio-1`}
+                value='Stripe'
+                onClick={() => setIsSelectStripe(stripeHandler)}
+                className={`${styles['paymentMethodRadioBtn']} ${isSelectStripe ? 'paymentSelected' : ''}`}
+              />
+              {
+                isSelectStripe ?
+                  <span className={`${styles['paymentMethodSelectedIcon']}`}>
+                    <Image
+                      src={select}
+                      alt='select'
+                      width='38'
+                      height='38'
+                    />
+                  </span>
+                  :
+                  null
+              }
+            </div>
+          </Col>
+          <Col lg={4} md={4} xs={4}>
+            <div className={`${styles['paymentMethodBoxWrapper']}`}>
+              <Form.Check
+                inline
+                label={
+                  <Image
+                    src={creditCard}
+                    alt='creditCard'
+                    width='200'
+                    height='100'
+                  />
+                }
+                name="paymentMethod"
+                type='radio'
+                id={`inline-radio-2`}
+                value='Credit/debit Cards'
+                onClick={() => setIsSelectCard(cardHandler)}
+                className={`${styles['paymentMethodRadioBtn']} ${isSelectCard ? 'paymentSelected' : ''}`}
+              />
+              {
+                isSelectCard ?
+                  <span className={`${styles['paymentMethodSelectedIcon']}`}>
+                    <Image
+                      src={select}
+                      alt='select'
+                      width='38'
+                      height='38'
+                    />
+                  </span>
+                  :
+                  null
+              }
+            </div>
+          </Col>
+          <Col lg={4} md={4} xs={4}>
+            <div className={`${styles['paymentMethodBoxWrapper']}`}>
+              <Form.Check
+                inline
+                label={
+                  <Image
+                    src={payPal}
+                    alt='payPal'
+                    width='200'
+                    height='100'
+                  />
+                }
+                name="paymentMethod"
+                type='radio'
+                id={`inline-radio-3`}
+                value='Paypal'
+                onClick={() => setIsSelectPayPal(payPalHandler)}
+                className={`${styles['paymentMethodRadioBtn']} ${isSelectPayPal ? 'paymentSelected' : ''}`}
+              />
+              {
+                isSelectPayPal ?
+                  <span className={`${styles['paymentMethodSelectedIcon']}`}>
+                    <Image
+                      src={select}
+                      alt='select'
+                      width='38'
+                      height='38'
+                    />
+                  </span>
+                  :
+                  null
+              }
+            </div>
+          </Col>
+        </Row>
+        </section>
+        
+
+        <Row className={`${'pb-5'}`}>
+            <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
+            <div className={`${styles['stepGuaranteeSec']}`}>
+                <span>
+                    <Image
+                    src={GuaranteeIcon}
+                    alt='GuaranteeIcon'
+                    width='65'
+                    height='65'
+                    />
+                </span>
+                <div>
+                    <h6>100% money back guarantee</h6>
+                    <p>A design you love or your money back</p>
+                </div>
+            </div>
+            </Col>
+            <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
+            
+            </Col> 
+              <Col lg={4} md={4} xs={6} className={`${'mb-4 '}`}>
+              <ButtonGroup>
+                  <Link href='' className={`${styles['blueButton']} ${'me-4'}`}>
+                    Back
+                  </Link>
+                    <Link href='' className={`${styles['blueButton']}`}>
+                      Continue
+                    </Link>
+              </ButtonGroup>
+              </Col>
+        </Row>
+        </>
       )
 }
 

@@ -5,11 +5,11 @@ import { useRouter } from 'next/router'
 import { Container, Row, Col, Form, Stack } from 'react-bootstrap'
 import styles from '../stepPackageDetails.module.css'
 
-const stepPackageDetails = () => {
+const StepPackageDetails = () => {
 
   const router = useRouter()
   const data = router.query
-  // console.log('Data : ', data)
+  console.log('Data : ', data)
 
   const props = {
     id: data.id,
@@ -17,6 +17,13 @@ const stepPackageDetails = () => {
     title: data.title,
     price: data.price,
     options: data.options,
+  }
+
+  if(props.id && props.title && props.name) {
+    console.log('data received')
+  }
+  else {
+    console.log('data not received')
   }
   
   // console.log('Props : ', props)
@@ -26,7 +33,7 @@ const stepPackageDetails = () => {
         <SectionContent
             contentTitle='Package'
             contentMainTitle='Package Details'
-            contentText='Do you need more than a logo?'
+            contentText={`Do you need more than a ${props.name}?`}
             contentColorText=''
         />
 
@@ -76,4 +83,4 @@ const stepPackageDetails = () => {
   )
 }
 
-export default stepPackageDetails
+export default StepPackageDetails

@@ -4,7 +4,12 @@ import styles from '../Forms.module.css'
 import BriefStyle from './projectBrief.module.css'
 import Link from 'next/link';
 
-const projectBrief = () => {
+const projectBrief = ({data}) => {
+
+  // const {name, email, phoneNumber, message} = formData
+
+  console.log('secondFormData', data)
+
   return (
     <>
       <section className={`${BriefStyle['mainSection']}`}>

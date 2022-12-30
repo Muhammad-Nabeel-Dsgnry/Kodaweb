@@ -13,7 +13,7 @@ const Index = () => {
 
   const [stepOne, setStepOne] = useState(true)
   const [stepTwo, setStepTwo] = useState(false)
-  const [stepThree, setStepThree] = useState(false)
+  const [stepThree, setStepThree] = useState(false) 
 
   const stepOneHandler = () => {
     setStepOne(false)
@@ -76,7 +76,7 @@ const Index = () => {
           </Col>
         </Row>
 
-        <Row className={`${'pb-5'}`}>
+        {/* <Row className={`${'pb-5'}`}>
             <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
             <div className={`${styles['stepGuaranteeSec']}`}>
                 <span>
@@ -141,7 +141,7 @@ const Index = () => {
               :
               null
             }
-        </Row>
+        </Row> */}
       </Container>
     </section>
     </>

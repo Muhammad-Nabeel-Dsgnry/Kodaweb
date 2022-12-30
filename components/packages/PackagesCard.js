@@ -34,7 +34,7 @@ const PackagesCard = ({ item }) => {
                         })
                     }
                 </div>
-            <Link href={{pathname: `/projectDetail`, query: data}} className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`}>
+            <Link href={{pathname: `/projectDetail`, query: item}} className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`}>
                 Start Projects
             </Link>
             </div>

@@ -4,35 +4,35 @@ import styles from '../projectDetailComponents.module.css'
 import Stepper from '../stepper/stepper'
 import Image from 'next/image'
 import StepTwoForm from './stepTwoForm'
-import SectionContent from '../sectionContent'
-import stripe from '../../../public/Assets/Assets/For web/Stripe.svg'
-import creditCard from '../../../public/Assets/Assets/For web/credit-debit-card.svg'
-import payPal from '../../../public/Assets/Assets/For web/PayPal.svg'
-import select from '../../../public/Assets/Assets/For web/tick.svg'
+// import SectionContent from '../sectionContent'
+// import stripe from '../../../public/Assets/Assets/For web/Stripe.svg'
+// import creditCard from '../../../public/Assets/Assets/For web/credit-debit-card.svg'
+// import payPal from '../../../public/Assets/Assets/For web/PayPal.svg'
+// import select from '../../../public/Assets/Assets/For web/tick.svg'
 
 const Step2 = (props) => {
 
-  const [isSelectStripe, setIsSelectStripe] = useState(true)
-  const [isSelectCard, setIsSelectCard] = useState(false)
-  const [isSelectPayPal, setIsSelectPayPal] = useState(false)
+  // const [isSelectStripe, setIsSelectStripe] = useState(true)
+  // const [isSelectCard, setIsSelectCard] = useState(false)
+  // const [isSelectPayPal, setIsSelectPayPal] = useState(false)
 
   const { stepSubTitle, stepMainTitle, stepPara, isImage, colorText } = props
 
-  const stripeHandler = () => {
-    setIsSelectStripe(true)
-    setIsSelectCard(false)
-    setIsSelectPayPal(false)
-  }
-  const cardHandler = () => {
-    setIsSelectCard(true)
-    setIsSelectStripe(false)
-    setIsSelectPayPal(false)
-  }
-  const payPalHandler = () => {
-    setIsSelectPayPal(true)
-    setIsSelectCard(false)
-    setIsSelectStripe(false)
-  }
+  // const stripeHandler = () => {
+  //   setIsSelectStripe(true)
+  //   setIsSelectCard(false)
+  //   setIsSelectPayPal(false)
+  // }
+  // const cardHandler = () => {
+  //   setIsSelectCard(true)
+  //   setIsSelectStripe(false)
+  //   setIsSelectPayPal(false)
+  // }
+  // const payPalHandler = () => {
+  //   setIsSelectPayPal(true)
+  //   setIsSelectCard(false)
+  //   setIsSelectStripe(false)
+  // }
 
   return (
     <section>
@@ -66,7 +66,7 @@ const Step2 = (props) => {
         <Row>
           <StepTwoForm />
         </Row>
-        <Row className={`${'mt-5'}`}>
+        {/* <Row className={`${'mt-5'}`}>
           <SectionContent
             contentTitle='Payment Method'
             contentMainTitle='Choose payment method'
@@ -177,7 +177,7 @@ const Step2 = (props) => {
               }
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </section>
   )

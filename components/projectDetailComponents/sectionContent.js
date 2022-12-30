@@ -8,7 +8,7 @@ const sectionContent = (props) => {
 
   return (
     <>
-        <section className={`${'mt-5'}`}>
+        <section className={`${'mt-5 p-0'}`}>
             <Container>
                 <Row>
                     <Col xs={12} lg={8} md={8}>
