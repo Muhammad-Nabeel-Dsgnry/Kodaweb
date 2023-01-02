@@ -12,7 +12,7 @@ import StepTwoForm from './stepTwoForm'
 
 const Step2 = (props) => {
 
-  const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor} = props
+  const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor, timeDuration} = props
 
   // const [isSelectStripe, setIsSelectStripe] = useState(true)
   // const [isSelectCard, setIsSelectCard] = useState(false)
@@ -66,7 +66,7 @@ const Step2 = (props) => {
         </Row> */}
 
         <Row>
-          <StepTwoForm businessName={businessName}  industry={industry} logoType={logoType} primaryColor={primaryColor} secondaryColor={secondaryColor} ascendColor={ascendColor} />
+          <StepTwoForm businessName={businessName}  industry={industry} logoType={logoType} primaryColor={primaryColor} secondaryColor={secondaryColor} ascendColor={ascendColor} timeDuration={timeDuration} />
         </Row>
         {/* <Row className={`${'mt-5'}`}>
           <SectionContent

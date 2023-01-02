@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 const projectBrief = (props) => {
 
-  const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors} = props
+  const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors, duration} = props
 
-  console.log('Project Brief Data', businessName)
+  console.log('Project Brief Data', duration)
 
   return (
     <>
@@ -46,8 +46,8 @@ const projectBrief = (props) => {
           <Row>
             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                 <Form.Group className={`${'mb-3'}`} controlId="formGroupName">
-                    <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Selected time duration</Form.Label>
-                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue="3 Days" />
+                    <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Time duration</Form.Label>
+                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue={duration} />
                 </Form.Group>
             </Col>
           </Row>

@@ -16,8 +16,8 @@ import Step3 from '../step3/step3';
 
 const StepTwoForm = (props) => {
 
-  const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor} = props
-  console.log('step one form data', businessName)
+  const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor, timeDuration} = props
+  console.log('step one form data', timeDuration)
 
     const [isStepOne, setIsStepOne] = useState(true)
     const [isStepTwo, setIsStepTwo] = useState(false)
@@ -27,6 +27,7 @@ const StepTwoForm = (props) => {
     const [Industry, setIndustry] = useState(industry)
     const [LogoType, setLogoType] = useState(logoType)
     const [Colors, setColors] = useState([primaryColor, secondaryColor, ascendColor])
+    const [Duration, setDuration] = useState(timeDuration)
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -276,7 +277,7 @@ const StepTwoForm = (props) => {
         </Row>
                 </div>
         :
-        <Step3 name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={isSelect} businessName={BusinessName} industry={Industry} logoType={LogoType} colors={Colors} />
+        <Step3 name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={isSelect} businessName={BusinessName} industry={Industry} logoType={LogoType} colors={Colors} duration={Duration} />
               }
         </>
       )

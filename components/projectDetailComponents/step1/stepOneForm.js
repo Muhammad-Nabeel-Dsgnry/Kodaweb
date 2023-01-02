@@ -35,6 +35,12 @@ const StepOneForm = () => {
     const [ascendColor, setAscendColor] = useState('#0066FF')
     const [ascendpallet, setAscendpallet] = useState(false)
 
+    const [timeDuration, setTimeDuration] = useState('')
+    const handleChange = (e) => {
+        setTimeDuration(e.target.value)
+    }
+    // console.log('Time Duration', timeDuration)
+
     const handleStepOne = () => {
         setIsStepOne(false)
       }
@@ -63,16 +69,11 @@ const StepOneForm = () => {
         }
     }
 
-    const [duration, setDuration] = useState('')
-
 
     return (
         <>
-        
             {
                 isStepOne ?
-            
-            
             <section>
             <div>
                 {/* COLOR PICKER STYLE START */}
@@ -290,7 +291,7 @@ const StepOneForm = () => {
                             <div className={`${styles['detailsTitleCol']}`}>
                                 <Form.Check
                                     type='radio'
-                                    name='name'
+                                    name='package details'
                                     label={`label`}
                                     id='1'
                                 />
@@ -351,7 +352,7 @@ const StepOneForm = () => {
                                                         name='time duration'
                                                         label={`${item.time}`}
                                                         id={`${item.id}`}
-                                                        onChange={(e) => setDuration(e.target.value)}
+                                                        onChange={handleChange}
                                                         value={`${item.time}`}
                                                     />
                                                 </div>
@@ -403,7 +404,7 @@ const StepOneForm = () => {
         </Row>
         </section>
         :
-        <Step2 businessName={businessName}  industry={industry} logoType={logoType} primaryColor={primaryColor} secondaryColor={secondaryColor} ascendColor={ascendColor} />
+        <Step2 businessName={businessName}  industry={industry} logoType={logoType} primaryColor={primaryColor} secondaryColor={secondaryColor} ascendColor={ascendColor} timeDuration={timeDuration} />
                             }
         
 
