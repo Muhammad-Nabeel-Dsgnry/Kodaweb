@@ -4,11 +4,11 @@ import styles from '../Forms.module.css'
 import BriefStyle from './projectBrief.module.css'
 import Link from 'next/link';
 
-const projectBrief = ({data}) => {
+const projectBrief = (props) => {
 
-  // const {name, email, phoneNumber, message} = formData
+  const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors} = props
 
-  console.log('secondFormData', data)
+  console.log('secondFormData', name)
 
   return (
     <>
@@ -19,13 +19,13 @@ const projectBrief = ({data}) => {
             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                 <Form.Group className={`${'mb-3'}`} controlId="formGroupName">
                     <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Your business name</Form.Label>
-                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue="KODAWEB" />
+                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue={businessName} />
                 </Form.Group>
             </Col>
             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                 <Form.Group className={`${'mb-3'}`} controlId="formGroupEmail">
                     <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Your industry</Form.Label>
-                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue="IT Marketing & Sales" />
+                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue={industry} />
                 </Form.Group>
             </Col>
           </Row>
@@ -33,13 +33,13 @@ const projectBrief = ({data}) => {
             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                 <Form.Group className={`${'mb-3'}`} controlId="formGroupName">
                     <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Your Logo type</Form.Label>
-                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue="illustration" />
+                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue={logoType} />
                 </Form.Group>
             </Col>
             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                 <Form.Group className={`${'mb-3'}`} controlId="formGroupEmail">
                     <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Your selected colors</Form.Label>
-                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue="#FF0000, #57C070, #0066FF" />
+                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue={colors} />
                 </Form.Group>
             </Col>
           </Row>
@@ -61,13 +61,13 @@ const projectBrief = ({data}) => {
             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                 <Form.Group className={`${'mb-3'}`} controlId="formGroupName">
                     <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Your name</Form.Label>
-                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue="Steve Willsom" />
+                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue={name} />
                 </Form.Group>
             </Col>
             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                 <Form.Group className={`${'mb-3'}`} controlId="formGroupEmail">
                     <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Email</Form.Label>
-                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue="Stevewillsom@gmail.com" />
+                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue={email} />
                 </Form.Group>
             </Col>
           </Row>
@@ -75,7 +75,7 @@ const projectBrief = ({data}) => {
             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                 <Form.Group className={`${'mb-3'}`} controlId="formGroupName">
                     <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Phone Number</Form.Label>
-                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue="+10981238987" />
+                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue={phoneNumber} />
                 </Form.Group>
             </Col>
             </Row>
@@ -89,7 +89,7 @@ const projectBrief = ({data}) => {
             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                 <Form.Group className={`${'mb-3'}`} controlId="formGroupName">
                     <Form.Label className={`${styles['formLabel']} ${'mb-1'}`}>Your Choise</Form.Label>
-                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue="Credit/Debit Cards" />
+                    <Form.Control size='lg' className={`${BriefStyle['readOnlyText']} ${'mb-2'}`} type="text" readOnly plaintext defaultValue={paymentMethod} />
                 </Form.Group>
             </Col>
             </Row>

@@ -16,3 +16,44 @@
     position: absolute;
     transform: translateY(70%);
 }
+
+.stepGuaranteeSec h6 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: var(--text-dark);
+  }
+  .stepGuaranteeSec p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    color: var(--text-gray);
+    margin-bottom: 0px;
+  }
+  .blueButton {
+    padding: 12px 55px;
+    border: 2px solid #2C35CD;
+    color: var(--text-white);
+    border-radius: 100px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.25rem;
+    display: block;
+    width: fit-content;
+    background-color: #2C35CD;
+  }
+  .blueButton:hover {
+    background-color: transparent;
+    border: 1px solid #2C35CD;
+    color: var(--bg-blue);
+    transition: 0.8s;
+  }
+  .stepGuaranteeSec {
+    display: flex;
+    align-items: center;
+  }
+  .stepGuaranteeSec span {
+    margin-right: 10px;
+  }

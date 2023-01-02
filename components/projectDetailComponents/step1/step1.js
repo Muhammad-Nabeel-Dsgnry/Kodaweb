@@ -17,7 +17,7 @@ const  step1 = (props) => {
           <Row>
               <Stepper />
           </Row>
-          <Row className={`${'mt-5'}`}>
+          {/* <Row className={`${'mt-5'}`}>
           <Col xs={12} lg={7} md={7}>
               <div>
                 <h3 className={`${styles['lineTitle']}`}>{stepSubTitle}</h3>
@@ -38,7 +38,7 @@ const  step1 = (props) => {
                 </Col> :
                 null
             }
-          </Row>
+          </Row> */}
           <Row>
             <StepOneForm />
             {/* <StepPackageDetails /> */}

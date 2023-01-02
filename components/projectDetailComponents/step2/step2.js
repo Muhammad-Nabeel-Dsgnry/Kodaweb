@@ -12,11 +12,13 @@ import StepTwoForm from './stepTwoForm'
 
 const Step2 = (props) => {
 
+  const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor} = props
+
   // const [isSelectStripe, setIsSelectStripe] = useState(true)
   // const [isSelectCard, setIsSelectCard] = useState(false)
   // const [isSelectPayPal, setIsSelectPayPal] = useState(false)
 
-  const { stepSubTitle, stepMainTitle, stepPara, isImage, colorText } = props
+  // const { stepSubTitle, stepMainTitle, stepPara, isImage, colorText } = props
 
   // const stripeHandler = () => {
   //   setIsSelectStripe(true)
@@ -37,10 +39,10 @@ const Step2 = (props) => {
   return (
     <section>
       <Container>
-        <Row>
+        {/* <Row>
           <Stepper />
-        </Row>
-        <Row className={`${'mt-5'}`}>
+        </Row> */}
+        {/* <Row className={`${'mt-5'}`}>
           <Col xs={12} lg={8} md={8}>
             <div>
               <h3 className={`${styles['lineTitle']}`}>{stepSubTitle}</h3>
@@ -61,10 +63,10 @@ const Step2 = (props) => {
               </Col> :
               null
           }
-        </Row>
+        </Row> */}
 
         <Row>
-          <StepTwoForm />
+          <StepTwoForm businessName={businessName}  industry={industry} logoType={logoType} primaryColor={primaryColor} secondaryColor={secondaryColor} ascendColor={ascendColor} />
         </Row>
         {/* <Row className={`${'mt-5'}`}>
           <SectionContent

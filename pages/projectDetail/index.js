@@ -13,7 +13,9 @@ const Index = () => {
 
   const [stepOne, setStepOne] = useState(true)
   const [stepTwo, setStepTwo] = useState(false)
-  const [stepThree, setStepThree] = useState(false) 
+  const [stepThree, setStepThree] = useState(false)
+
+  const [isHide, setIsHide] = useState(false)
 
   const stepOneHandler = () => {
     setStepOne(false)

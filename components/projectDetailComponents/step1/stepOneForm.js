@@ -8,9 +8,13 @@ import SectionContent from '../sectionContent';
 import {Logo_Design_Duration, Logo_Branding_Identity_Duration} from './DurationData'
 import GuaranteeIcon from '../../../public/Assets/Assets/For web/tick.svg'
 import Link from 'next/link';
-
+import ProjectBrief from '../step3/projectBrief';
+import Step2 from '../step2/step2';
 
 const StepOneForm = () => {
+
+    const [isStepOne, setIsStepOne] = useState(true)
+    // const [isStepTwo, setIsStepTwo] = useState(false)
 
     const [businessName, setBusinessName] = useState('')
     const [businessSlogan, setBusinessSlogan] = useState('')
@@ -31,6 +35,10 @@ const StepOneForm = () => {
     const [ascendColor, setAscendColor] = useState('#0066FF')
     const [ascendpallet, setAscendpallet] = useState(false)
 
+    const handleStepOne = () => {
+        setIsStepOne(false)
+      }
+
     let stepOneFormData = {
         businessName,
         businessSlogan,
@@ -42,7 +50,7 @@ const StepOneForm = () => {
         contentPages,
         colors: [primaryColor, secondaryColor, ascendColor]
     }
-    // console.log(stepOneFormData)
+    console.log(stepOneFormData)
 
 
     const pickerStyles = {
@@ -60,6 +68,12 @@ const StepOneForm = () => {
 
     return (
         <>
+        
+            {
+                isStepOne ?
+            
+            
+            <section>
             <div>
                 {/* COLOR PICKER STYLE START */}
                 <style jsx>
@@ -82,9 +96,40 @@ const StepOneForm = () => {
                 height: 50px;
                 border-radius: 4px
                 }
+                .hide {
+                    display: none
+                }
+                
             `}
                 </style>
                 {/* COLOR PICKER STYLE END */}
+
+                    
+            {/* <section className='hide'>
+                <ProjectBrief businessName={businessName}  industry={industry} logoType={logoType} primaryColor={primaryColor} secondaryColor={secondaryColor} ascendColor={ascendColor} />
+            </section> */}
+                   <Container>
+                    <Row>
+
+                   <Col xs={12} lg={7} md={7}>
+              <div>
+                <h3 className={`${styles['lineTitle']}`}>Requirements</h3>
+                <h2 className={styles.mainTitle}>Project Brief</h2>
+                <p className={`${styles['Para']} ${styles['colorBlack']}`}>Fill out the brief so the designers know what you’re looking for.</p>
+              </div>
+            </Col>
+            
+                <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={5} md={5}>
+                  <Image
+                    className={styles.guaranteeImage}
+                    src='/Assets/Assets/For Web/moneyBack.png'
+                    alt='money back guarantee'
+                    width='200'
+                    height='180'
+                  />
+                </Col>
+                    </Row>
+                    </Container> 
                 <Form>
                     <Row className={`${styles['formFieldsRow']} ${'justify-content-between'}`}>
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
@@ -231,17 +276,14 @@ const StepOneForm = () => {
                     </Col>
                 </Form>
             </div>
-
             {/* Package section start */}
-
-            <SectionContent
-                contentTitle='Package'
-                contentMainTitle='Package Details'
-                contentText={`Do you need more than a logo?`}
-                contentColorText=''
-            />
-
             <section>
+                <SectionContent
+                    contentTitle='Package'
+                    contentMainTitle='Package Details'
+                    contentText={`Do you need more than a logo?`}
+                    contentColorText=''
+                />
                 <Container className={`${styles['detailsMainContainer']}`}>
                     <Row className={`${styles['detailsHeaderRow']}`}>
                         <Col lg={5} md={5} xs={5}>
@@ -282,12 +324,9 @@ const StepOneForm = () => {
                     </Row>
                 </Container>
             </section>
-
             {/* Package section end */}
 
-
             {/* TIME DURATION SECTION START */}
-
             <section>
                 <SectionContent
                     contentTitle='Time Duration'
@@ -328,9 +367,9 @@ const StepOneForm = () => {
                     </Row>
                 </Container>
             </section>
-
             {/* TIME DURATION SECTION END */}
-
+                            
+                            
             <Row className={`${'pb-5'}`}>
             <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
             <div className={`${styles['stepGuaranteeSec']}`}>
@@ -356,12 +395,17 @@ const StepOneForm = () => {
                   <Link href='' className={`${styles['blueButton']} ${'me-4'}`}>
                     Reset
                   </Link>
-                    <Link href='' className={`${styles['blueButton']}`}>
+                    <Link href='' className={`${styles['blueButton']}`} onClick={handleStepOne}>
                       Continue
                     </Link>
               </ButtonGroup>
               </Col>
         </Row>
+        </section>
+        :
+        <Step2 businessName={businessName}  industry={industry} logoType={logoType} primaryColor={primaryColor} secondaryColor={secondaryColor} ascendColor={ascendColor} />
+                            }
+        
 
         </>
     )

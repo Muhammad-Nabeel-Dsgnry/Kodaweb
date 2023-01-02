@@ -89,13 +89,13 @@ const DetailForms = () => {
             <Row className={`${'mt-5'}`}>
             <Col xs={12} lg={7} md={7}>
                 <div>
-                    {/* <h3 className={`${styles['lineTitle']}`}>{stepSubTitle}</h3>
-                    <h2 className={styles.mainTitle}>{stepMainTitle}<span className={colorText ? styles.dot : ''}>{colorText}</span></h2>
-                    <p className={`${styles['Para']} ${styles['colorBlack']} ${isImage == 'true' ? 'w-100' : 'w-100'}`}>{stepPara}</p> */}
+                    <h3 className={`${styles['lineTitle']}`}>Requirements</h3>
+                    <h2 className={styles.mainTitle}>Project Brief</h2>
+                    <p className={`${styles['Para']} ${styles['colorBlack']}`}>Fill out the brief so the designers know what you’re looking for.</p>
                 </div>
                 </Col>
-                {
-                isImage == 'true' ?
+                {/* {
+                isImage == 'true' ? */}
                     <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={5} md={5}>
                     <Image
                         className={styles.guaranteeImage}
@@ -104,9 +104,10 @@ const DetailForms = () => {
                         width='200'
                         height='180'
                     />
-                    </Col> :
+                    </Col>
+                    {/* :
                     null
-                }
+                } */}
             </Row>
             </Container>
         </section>

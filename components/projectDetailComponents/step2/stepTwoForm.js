@@ -5,65 +5,80 @@ import Link from 'next/link';
 import { useState } from 'react';
 import PhoneInput from 'react-phone-number-input'
 import GuaranteeIcon from '../../../public/Assets/Assets/For web/tick.svg'
-import ProjectBrief from '../step3/projectBrief';
 import Image from 'next/image';
 import SectionContent from '../sectionContent';
 import stripe from '../../../public/Assets/Assets/For web/Stripe.svg'
 import creditCard from '../../../public/Assets/Assets/For web/credit-debit-card.svg'
 import payPal from '../../../public/Assets/Assets/For web/PayPal.svg'
 import select from '../../../public/Assets/Assets/For web/tick.svg'
-
-
+import ProjectBrief from '../step3/projectBrief';
+import Step3 from '../step3/step3';
 
 const StepTwoForm = (props) => {
 
-    const [isHide, setIsHide] = useState(false)
-    const [state, setState] = useState({formData:''})
+  const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor} = props
+  console.log('step one form data', industry)
+
+    const [isStepOne, setIsStepOne] = useState(true)
+    const [isStepTwo, setIsStepTwo] = useState(false)
+    const [state, setState] = useState('')
+
+    const [BusinessName, setbusinessName] = useState(businessName)
+    const [Industry, setIndustry] = useState(industry)
+    const [LogoType, setLogoType] = useState(logoType)
+    const [Colors, setColors] = useState([primaryColor, secondaryColor, ascendColor])
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
     const [message, setMessage] = useState('')
+    const [isSelect, setIsSelect] = useState('')
 
-    const stepTwoData = [name, email, phoneNumber, message]
+    
+    const stepTwoData = [name, email, phoneNumber, message, isSelect]
+
+    // const [passingData, setPassingData] = useState(stepTwoData)
 
     console.log('stepTwoData', stepTwoData)
 
+    const handleChange=(e)=>{
+      setIsSelect(e.target.value);
+    }
+
+    const handleStepOne = () => {
+      setIsStepOne(false)
+      setIsStepTwo(true)
+    }
+
     // const sendFormTwoDataHandler = () => {
-    //     setState({formData:stepTwoData})
+    //     setState(stepTwoData)
     // }
 
-    const [isSelectStripe, setIsSelectStripe] = useState(true)
-    const [isSelectCard, setIsSelectCard] = useState(false)
-    const [isSelectPayPal, setIsSelectPayPal] = useState(false)
 
-    const { stepSubTitle, stepMainTitle, stepPara, isImage, colorText } = props
-
-    const stripeHandler = () => {
-        setIsSelectStripe(true)
-        setIsSelectCard(false)
-        setIsSelectPayPal(false)
-    }
-    const cardHandler = () => {
-        setIsSelectCard(true)
-        setIsSelectStripe(false)
-        setIsSelectPayPal(false)
-    }
-    const payPalHandler = () => {
-        setIsSelectPayPal(true)
-        setIsSelectCard(false)
-        setIsSelectStripe(false)
-    }
+    // const { stepSubTitle, stepMainTitle, stepPara, isImage, colorText } = props
 
     return (
         <>
-        <section>
             {/* {
-                isHide == 'true' ?
-                <ProjectBrief data={sendFormTwoDataHandler}/>
+                isStepOne === 'true' ?
+                <ProjectBrief name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={isSelect} />
                 :
                 null
-            } */}
+              } */}
+
+              {
+                isStepOne ?
+                <div>
+        <section>
+            <Row className={`${'mt-5'}`}>
+            <Col xs={12} lg={7} md={7}>
+              <div>
+                  <h3 className={`${styles['lineTitle']}`}>Personal Detail</h3>
+                  <h2 className={styles.mainTitle}>Personal Information.</h2>
+                  <p className={`${styles['Para']} ${styles['colorBlack']}`}>Fill out the personal information it’s help us to get in touch with you if we need.</p>
+              </div>
+              </Col>
+            </Row>
             <Form>
                 <Row className={`${styles['formFieldsRow']} ${'justify-content-between'}`}>
                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
@@ -109,7 +124,6 @@ const StepTwoForm = (props) => {
                 </Row>
             </Form>
         </section>
-
         <section>
         <Row className={`${'mt-5'}`}>
           <SectionContent
@@ -129,18 +143,19 @@ const StepTwoForm = (props) => {
                     src={stripe}
                     alt='stripe'
                     width='200'
-                    height='100'
+                    height='100'                        
                   />
                 }
                 name="paymentMethod"
                 type='radio'
-                id={`inline-radio-1`}
+                id={`stripe`}
                 value='Stripe'
-                onClick={() => setIsSelectStripe(stripeHandler)}
-                className={`${styles['paymentMethodRadioBtn']} ${isSelectStripe ? 'paymentSelected' : ''}`}
+                onChange={handleChange}
+                checked={isSelect === 'Stripe'}
+                className={`${styles['paymentMethodRadioBtn']} ${isSelect === 'Stripe' ? 'paymentSelected' : ''}`}
               />
               {
-                isSelectStripe ?
+                isSelect === 'Stripe' ?
                   <span className={`${styles['paymentMethodSelectedIcon']}`}>
                     <Image
                       src={select}
@@ -164,17 +179,19 @@ const StepTwoForm = (props) => {
                     alt='creditCard'
                     width='200'
                     height='100'
+                    for='creditCard'
                   />
                 }
                 name="paymentMethod"
                 type='radio'
-                id={`inline-radio-2`}
+                id={`creditCard`}
                 value='Credit/debit Cards'
-                onClick={() => setIsSelectCard(cardHandler)}
-                className={`${styles['paymentMethodRadioBtn']} ${isSelectCard ? 'paymentSelected' : ''}`}
+                checked={isSelect === 'Credit/debit Cards'}
+                onChange={handleChange}
+                className={`${styles['paymentMethodRadioBtn']} ${isSelect === 'Credit/debit Cards' ? 'paymentSelected' : ''}`}
               />
               {
-                isSelectCard ?
+                isSelect === 'Credit/debit Cards' ?
                   <span className={`${styles['paymentMethodSelectedIcon']}`}>
                     <Image
                       src={select}
@@ -198,17 +215,19 @@ const StepTwoForm = (props) => {
                     alt='payPal'
                     width='200'
                     height='100'
+                    for='payPal'
                   />
                 }
                 name="paymentMethod"
                 type='radio'
-                id={`inline-radio-3`}
-                value='Paypal'
-                onClick={() => setIsSelectPayPal(payPalHandler)}
-                className={`${styles['paymentMethodRadioBtn']} ${isSelectPayPal ? 'paymentSelected' : ''}`}
+                id={`payPal`}
+                value='payPal'
+                checked={isSelect === 'payPal'}
+                onChange={handleChange}
+                className={`${styles['paymentMethodRadioBtn']} ${isSelect === 'payPal' ? 'paymentSelected' : ''}`}
               />
               {
-                isSelectPayPal ?
+                isSelect === 'payPal' ?
                   <span className={`${styles['paymentMethodSelectedIcon']}`}>
                     <Image
                       src={select}
@@ -224,8 +243,6 @@ const StepTwoForm = (props) => {
           </Col>
         </Row>
         </section>
-        
-
         <Row className={`${'pb-5'}`}>
             <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
             <div className={`${styles['stepGuaranteeSec']}`}>
@@ -251,12 +268,16 @@ const StepTwoForm = (props) => {
                   <Link href='' className={`${styles['blueButton']} ${'me-4'}`}>
                     Back
                   </Link>
-                    <Link href='' className={`${styles['blueButton']}`}>
+                    <Link href='' className={`${styles['blueButton']}`} onClick={handleStepOne}>
                       Continue
                     </Link>
               </ButtonGroup>
               </Col>
         </Row>
+                </div>
+        :
+        <Step3 name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={isSelect} businessName={BusinessName} industry={Industry} logoType={LogoType} colors={Colors} />
+              }
         </>
       )
 }
