@@ -8,6 +8,11 @@ const stepper = () => {
     <>
         <section className={`${styles['stepperWrapper']}`}>
             <Container>
+                <div>
+                    <Col lg='auto' md='auto' xs='auto'>
+                        <div className={`${styles['stepperBar']}`}></div>
+                    </Col>
+                </div>
                 <Row className={`${'justify-content-center'}`}>
                     <Col lg='auto' md='auto' xs='auto'>
                         <span className={`${styles['counterDivider']}`}></span>

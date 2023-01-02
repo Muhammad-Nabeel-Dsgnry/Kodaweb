@@ -1,6 +1,6 @@
 .counterNumberWrapper span {
-    background-color: #2C35CD;
-    color: #fff;
+    background-color: #E3E3E3;
+    color: #E3E3E3;
     padding: 17px 17px;
     border-radius: 100%;
     font-family: 'Inter';
@@ -15,5 +15,12 @@
 
 }
 .stepperWrapper {
-    margin-bottom: 56px;
+    /* margin-bottom: 56px; */
+    margin-bottom: 110px;
+}
+.stepperBar {
+    background-color: #E3E3E3;
+    width: 40%;
+    height: 2px;
+    margin: auto;
 }
