@@ -17,7 +17,7 @@ import Step3 from '../step3/step3';
 const StepTwoForm = (props) => {
 
   const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor} = props
-  console.log('step one form data', industry)
+  console.log('step one form data', businessName)
 
     const [isStepOne, setIsStepOne] = useState(true)
     const [isStepTwo, setIsStepTwo] = useState(false)

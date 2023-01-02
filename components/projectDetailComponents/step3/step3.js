@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 const step3 = (props) => {
 
-    const {name, email, phoneNumber, message, paymentMethod} = props
+    const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors} = props
 
     console.log('secondFormData', props)
 
@@ -49,7 +49,7 @@ const step3 = (props) => {
             <Row>
             <Stack direction="horizontal" gap={4} className={`${style['projectDetailsWrapper']} ${'align-items-start'}`}>
                 <Col lg={8} md={8} xs={12} className={`${style['projectDetailsBox']} ${style['briefBox']}`}>
-                    <ProjectBrief name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={paymentMethod} />
+                    <ProjectBrief name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={paymentMethod} businessName={businessName} industry={industry} logoType={logoType} colors={colors} />
                 </Col>
                 <Col lg={4} md={4} xs={12} className={`${style['projectDetailsBox']} ${style['totalBox']}`}>
                     <OrderTotal />
@@ -86,10 +86,10 @@ const step3 = (props) => {
                 </div>
             </div>
             </Col>
-            <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
+            <Col lg={3} md={3} xs={6} className={`${'mb-4'}`}>
             
             </Col> 
-              <Col lg={4} md={4} xs={6} className={`${'mb-4 '}`}>
+              <Col lg={5} md={5} xs={6} className={`${'mb-4 d-flex justify-content-end'}`}>
               <ButtonGroup>
                   <Link href='/pricing' className={`${style['blueButton']} ${'me-4'}`}>
                     Cancel

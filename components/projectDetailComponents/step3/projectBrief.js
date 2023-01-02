@@ -8,7 +8,7 @@ const projectBrief = (props) => {
 
   const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors} = props
 
-  console.log('secondFormData', name)
+  console.log('Project Brief Data', businessName)
 
   return (
     <>
