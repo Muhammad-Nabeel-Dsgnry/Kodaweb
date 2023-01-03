@@ -352,7 +352,21 @@
 .detailsFooterCol p {
   margin-bottom: 0px;
 }
+.detailsFooterOptionsWrapper {
 
+}
+.packageOptionsBox {
+
+}
+.packageOptions {
+  list-style: none;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #969696;
+  margin-left: 18px;
+}
 /* STEP PACKAGE DETAIL CSS END */
 
 .errorField {
