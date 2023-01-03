@@ -8,6 +8,10 @@ const PackagesCard = ({ item }) => {
     
     let data = {id: item.id, name: item.name, title: item.title, price:item.price, options: item.options}
 
+    const onDataSave = () => {
+        const pkgData = localStorage.setItem('Package-Data', JSON.stringify(item))
+    }
+
     return (
         <div className={styles.PackagesCardBoxWrapper} data-aos="fade-in" data-aos-duration="2000">
             <div className={styles.PackagesCardBoxHeader}>
@@ -34,7 +38,7 @@ const PackagesCard = ({ item }) => {
                         })
                     }
                 </div>
-            <Link href={{pathname: `/projectDetail`, query: item}} className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`}>
+            <Link href={{pathname: `/projectDetail`}} className={`${styles['blueButton']} ${styles['pricingBoxBtn']}`} onClick={onDataSave}>
                 Start Projects
             </Link>
             </div>

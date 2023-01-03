@@ -1,9 +1,9 @@
-import { Container, Row, Col, Form, Dropdown, DropdownButton, ButtonGroup } from 'react-bootstrap'
+import { Container, Row, Col, Form, Dropdown, DropdownButton, ButtonGroup, Stack } from 'react-bootstrap'
 import styles from '../../../styles/projectDetail.module.css'
 import Image from 'next/image';
 import uploadIcon from '../../../public/Assets/Assets/For web/upload.png';
 import { SketchPicker } from 'react-color';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SectionContent from '../sectionContent';
 import {Logo_Design_Duration, Logo_Branding_Identity_Duration} from './DurationData'
 import GuaranteeIcon from '../../../public/Assets/Assets/For web/tick.svg'
@@ -35,15 +35,13 @@ const StepOneForm = () => {
     const [ascendColor, setAscendColor] = useState('#0066FF')
     const [ascendpallet, setAscendpallet] = useState(false)
 
+    const [packageDetails, setPackageDetails] = useState({})
     const [timeDuration, setTimeDuration] = useState('')
     const handleChange = (e) => {
+        localStorage.setItem('Package-Data', JSON.stringify({timeDuration: e.target.value, ...packageDetails}))
         setTimeDuration(e.target.value)
     }
     // console.log('Time Duration', timeDuration)
-
-    const handleStepOne = () => {
-        setIsStepOne(false)
-      }
 
     let stepOneFormData = {
         businessName,
@@ -68,6 +66,49 @@ const StepOneForm = () => {
             }
         }
     }
+
+
+    // const [logoPackage, setLogoPackage] = useState(JSON.parse(localStorage.getItem('Package-Data')))
+    // const [isDisabled, setIsDisabled] = useState('')
+    //     {
+    //         logoPackage.name.includes('Logo') ? setIsDisabled('disabled') : null
+    //     }
+    //     console.log('Logo Package', logoPackage.name)
+    //     console.log('isDisabled', isDisabled)
+
+    useEffect(() => {
+        setPackageDetails(JSON.parse(localStorage.getItem('Package-Data')))
+        console.log('package details', packageDetails.name)
+    }, [])
+
+    // const [validated, setValidated] = useState(false);
+    
+    // const handleSubmit = (event) => {
+    //     const form = event.currentTarget;
+    //     if (form.checkValidity() === false) {
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    //     }
+
+    //     setValidated(true);
+    //     // setIsStepOne(false)
+    // };
+
+    const handleStepOne = () => {
+        if(businessName.length === 0 || businessSlogan.length === 0 || industry.length === 0 || logoType.length === 0 || productDescription.length === 0 || competitor.length === 0 || communicate.length === 0
+            || contentPages.length === 0 || primaryColor.length === 0 || secondaryColor.length === 0 || ascendColor.length === 0)
+        {
+            console.log('Button disale')
+        }
+        else {
+            console.log('Button enable')
+            setIsStepOne(false)
+        }
+    }
+
+    // const resetFields = () => {
+
+    // }
 
 
     return (
@@ -136,15 +177,27 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupBusinessName'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Whats your business name?</Form.Label>
-                                <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setBusinessName(e.target.value)} />
-                                <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text>
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${businessName.length <= 0 ? 'error' : null}`} type='text' onChange={(e) => setBusinessName(e.target.value)} />
+                                {
+                                    businessName.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Business Name is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text>
+                                }
+
                             </Form.Group>
                         </Col>
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupSlogan'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Do you have a business slogan?</Form.Label>
-                                <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setBusinessSlogan(e.target.value)} />
-                                <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text>
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${businessSlogan.length <= 0 ? 'error' : null}`} type='text' onChange={(e) => setBusinessSlogan(e.target.value)} />
+                                {
+                                    businessSlogan.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Business Slogan is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. slogan</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text> */}
                             </Form.Group>
                         </Col>
                     </Row>
@@ -152,25 +205,37 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupindustry'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Select your industry</Form.Label>
-                                <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'}`} onChange={(e) => setIndustry(e.target.value)} >
+                                <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'} ${industry.length <= 0 ? 'error' : null}`} onChange={(e) => setIndustry(e.target.value)} >
                                     <option></option>
                                     <option>One</option>
                                     <option>Two</option>
                                     <option>Three</option>
                                 </Form.Select>
-                                <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text>
+                                {
+                                    industry.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Industry is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. one</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text> */}
                             </Form.Group>
                         </Col>
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupLogoType'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please select the logo type?</Form.Label>
-                                <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'}`} onChange={(e) => setLogoType(e.target.value)}>
+                                <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'} ${logoType.length <= 0 ? 'error' : null}`} onChange={(e) => setLogoType(e.target.value)} >
                                     <option></option>
                                     <option>One</option>
                                     <option>Two</option>
                                     <option>Three</option>
                                 </Form.Select>
-                                <Form.Text className={`${styles['formExampleText']}`}>E.g. Mascot, illustration,Typography etc...</Form.Text>
+                                {
+                                    logoType.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Logo Type is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. two</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>E.g. Mascot, illustration,Typography etc...</Form.Text> */}
                             </Form.Group>
                         </Col>
                     </Row>
@@ -178,15 +243,27 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupTargetAudience'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Describe what your organisation or product does and its target audience</Form.Label>
-                                <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} onChange={(e) => setProductDescription(e.target.value)} />
-                                <Form.Text className={`${styles['formExampleText']}`}>E.g. We sell anvils and other industrial goods to manufacturing companies and hobbyists all.</Form.Text>
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${productDescription.length <= 0 ? 'error' : null}`} as='textarea' rows={4} onChange={(e) => setProductDescription(e.target.value)} />
+                                {
+                                    productDescription.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Product Description is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. Describe what you want.</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>E.g. We sell anvils and other industrial goods to manufacturing companies and hobbyists all.</Form.Text> */}
                             </Form.Group>
                         </Col>
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupInspiration'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please mention top 3 competitor or any reference link that describe your inspiration.</Form.Label>
-                                <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} onChange={(e) => setCompetitor(e.target.value)} />
-                                <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text>
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${competitor.length <= 0 ? 'error' : null}`} as='textarea' rows={4} onChange={(e) => setCompetitor(e.target.value)} />
+                                {
+                                    competitor.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Reference links is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. top 3 competitor or any reference link.</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text> */}
                             </Form.Group>
                         </Col>
                     </Row>
@@ -194,15 +271,27 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupcommunicate'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Is there anything else you would like to communicate to the designers?</Form.Label>
-                                <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} onChange={(e) => setCommunicate(e.target.value)} />
-                                <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text>
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${communicate.length <= 0 ? 'error' : null}`} as='textarea' rows={4} onChange={(e) => setCommunicate(e.target.value)} />
+                                {
+                                    communicate.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Communication Message is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. communicate to the designers.</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text> */}
                             </Form.Group>
                         </Col>
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupWebsitePages'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please list down the content pages you will have on your website pages?</Form.Label>
-                                <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} onChange={(e) => setContentPages(e.target.value)} />
-                                <Form.Text className={`${styles['formExampleText']}`}>E.g. About Us, privacy Policy, Home,Contact Us, Product Page, Product Detail,Sign In etc....</Form.Text>
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${contentPages.length <= 0 ? 'error' : null}`} as='textarea' rows={4} onChange={(e) => setContentPages(e.target.value)} />
+                                {
+                                    contentPages.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Website Reference link is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. https://www.google.com/</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>E.g. About Us, privacy Policy, Home,Contact Us, Product Page, Product Detail,Sign In etc....</Form.Text> */}
                             </Form.Group>
                         </Col>
                     </Row>
@@ -212,7 +301,7 @@ const StepOneForm = () => {
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Primary Color</Form.Label>
                                 <div className={`${styles['colorPickerWrapper']}`}>
                                     <div className={`${'primaryColorSelectionBox'} ${styles['colorBoxDiv']}`} onClick={() => setPrimarypallet(!primarypallet)}></div>
-                                    <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']}`} type='text' value={primaryColor} onChange={(e) => setPrimaryColor(e.target.value)} />
+                                    <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']}`} type='text' value={primaryColor} onChange={(e) => setPrimaryColor(e.target.value)} />
                                     {primarypallet &&
                                         <SketchPicker
                                             styles={pickerStyles}
@@ -221,7 +310,13 @@ const StepOneForm = () => {
                                         />
                                     }
                                 </div>
-                                <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
+                                {
+                                    primaryColor.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Primary Color is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. #000</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text> */}
                             </Form.Group>
                         </Col>
                         <Col lg={4} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
@@ -229,7 +324,7 @@ const StepOneForm = () => {
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Secondary Color</Form.Label>
                                 <div className={`${styles['colorPickerWrapper']}`}>
                                     <div className={`${'secondaryColorSelectionBox'} ${styles['colorBoxDiv']}`} onClick={() => setSecondarypallet(!secondarypallet)}></div>
-                                    <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']}`} type='text' value={secondaryColor} onChange={(e) => setSecondaryColor(e.target.value)} />
+                                    <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']}`} type='text' value={secondaryColor} onChange={(e) => setSecondaryColor(e.target.value)} />
                                     {secondarypallet &&
                                         <SketchPicker
                                             styles={pickerStyles}
@@ -238,7 +333,13 @@ const StepOneForm = () => {
                                         />
                                     }
                                 </div>
-                                <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
+                                {
+                                    secondaryColor.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Secondary Color is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. #000</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text> */}
                             </Form.Group>
                         </Col>
                         <Col lg={4} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
@@ -246,7 +347,7 @@ const StepOneForm = () => {
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Ascend Color</Form.Label>
                                 <div className={`${styles['colorPickerWrapper']}`}>
                                     <div className={`${'ascendColorSelectionBox'} ${styles['colorBoxDiv']}`} onClick={() => setAscendpallet(!ascendpallet)}></div>
-                                    <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']}`} type='text' value={ascendColor} onChange={(e) => setAscendColor(e.target.value)} />
+                                    <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']}`} type='text' value={ascendColor} onChange={(e) => setAscendColor(e.target.value)} />
                                     {ascendpallet &&
                                         <SketchPicker
                                             styles={pickerStyles}
@@ -255,7 +356,13 @@ const StepOneForm = () => {
                                         />
                                     }
                                 </div>
-                                <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text>
+                                {
+                                    ascendColor.length <= 0 ?
+                                    <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Ascend Color is required</Form.Text>
+                                    :
+                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. #000</Form.Text>
+                                }
+                                {/* <Form.Text className={`${styles['formExampleText']}`}>Pick the colors from above colors picker which help us.</Form.Text> */}
                             </Form.Group>
                         </Col>
                     </Row>
@@ -282,7 +389,7 @@ const StepOneForm = () => {
                 <SectionContent
                     contentTitle='Package'
                     contentMainTitle='Package Details'
-                    contentText={`Do you need more than a logo?`}
+                    contentText={`Do you need more than a ${packageDetails?.name}?`}
                     contentColorText=''
                 />
                 <Container className={`${styles['detailsMainContainer']}`}>
@@ -292,7 +399,7 @@ const StepOneForm = () => {
                                 <Form.Check
                                     type='radio'
                                     name='package details'
-                                    label={`label`}
+                                    label={`${packageDetails?.name} (${packageDetails?.title})`}
                                     id='1'
                                 />
                             </div>
@@ -302,24 +409,23 @@ const StepOneForm = () => {
                         </Col>
                         <Col lg={2} md={2} xs={2}>
                             <div className={`${styles['detailsPriceCol']}`}>
-                                <p>From $80</p>
+                                <p>From {packageDetails?.price}</p>
                             </div>
                         </Col>
                     </Row>
                     <Row className={`${styles['detailsFooterRow']}`}>
                         <Col lg={8} md={8} xs={12}>
                             <div className={`${styles['detailsFooterCol']}`}>
-                                <p>options</p>
+                                <p>{packageDetails?.options}</p>
                                 {/* {
-                      props.options.map((i, index) => {
-                        return <div key={index}>
-                            <Stack direction='horizontal'>
-                              <p>{i}</p>
-                            </Stack>
-                          </div>
-                        
-                      })
-                    } */}
+                                packageDetails.options.map((i, index) => {
+                                    return (
+                                        <div className={`${styles['detailsFooterOptionsWrapper']}`}>
+                                            <li key={index}>{i}</li>
+                                        </div>
+                                    ) 
+                                })
+                                } */}
                             </div>
                         </Col>
                     </Row>
@@ -396,9 +502,17 @@ const StepOneForm = () => {
                   <Link href='' className={`${styles['blueButton']} ${'me-4'}`}>
                     Reset
                   </Link>
-                    <Link href='' className={`${styles['blueButton']}`} onClick={handleStepOne}>
+                 <Link href='' className={`${styles['blueButton']} ${
+                    businessName.length === 0 || businessSlogan.length === 0 || industry.length === 0 || logoType.length === 0 || productDescription.length === 0 || competitor.length === 0 || communicate.length === 0
+                    || contentPages.length === 0 || primaryColor.length === 0 || secondaryColor.length === 0 || ascendColor.length === 0 ? 'btnDisable' : null
+                    }`
+                }
+                    onClick={handleStepOne} type='submit'>
                       Continue
                     </Link>
+                    {/* <Link href='' className={`${styles['blueButton']}`} onClick={handleStepOne} type='submit'>
+                      Continue
+                    </Link> */}
               </ButtonGroup>
               </Col>
         </Row>

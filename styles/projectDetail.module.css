@@ -354,3 +354,8 @@
 }
 
 /* STEP PACKAGE DETAIL CSS END */
+
+.errorField {
+  color: red;
+}
+

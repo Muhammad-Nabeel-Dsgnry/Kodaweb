@@ -1,8 +1,18 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import BriefStyle from './projectBrief.module.css'
+import { useState, useEffect } from 'react'
+
 
 const orderTotal = () => {
+
+  const [summaryData, setSummaryData] = useState({})
+
+  useEffect(() => {
+    setSummaryData(JSON.parse(localStorage.getItem('Package-Data')))
+    console.log('Summary Data', summaryData)
+  }, [])
+
   return (
     <>
       <section>
@@ -15,7 +25,7 @@ const orderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>Service Type</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>LOGO Design</p>
+              <p className={`${BriefStyle['summaryData']}`}>{summaryData.name}</p>
             </Col>
           </Row>
           <Row className={`${''}`}>
@@ -23,7 +33,7 @@ const orderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>Package Type</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>Essential</p>
+              <p className={`${BriefStyle['summaryData']}`}>{summaryData.title}</p>
             </Col>
           </Row>
           <Row className={`${''}`}>
@@ -31,12 +41,12 @@ const orderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>Item Price</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>USD39</p>
+              <p className={`${BriefStyle['summaryData']}`}>{summaryData.price}</p>
             </Col>
           </Row>
           <Row className={`${''}`}>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-start'}`}>
-              <p className={`${BriefStyle['summaryTitle']}`}>3 Days Duration</p>
+              <p className={`${BriefStyle['summaryTitle']}`}>{summaryData.timeDuration}</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
               <p className={`${BriefStyle['summaryData']}`}>USD30</p>
