@@ -167,9 +167,15 @@ button.btnActive {
   border: 1px solid red;
 }
 
+.fancybox__button--thumbs, .fancybox__thumbs {
+  display: none !important;
+}
 
 @media only screen and (max-width: 600px) {
   
+  .mobileHideImageBox {
+    display: none !important;
+  }
   .slick-slide {
     pointer-events: none;
   }

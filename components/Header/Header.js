@@ -40,9 +40,12 @@ const Header = () => {
 
   const route = useRouter()
 
+
+  
+
   // return <header className={`${styles['header']} ${styles['headerTwo']} `}>Header</header>
   return (
-    <Navbar bg="light" expand="lg" className='py-3' id="home" fixed="top">
+    <Navbar bg="light" expand="lg" className='py-3 pe-md-3' id="home" fixed="top">
       <Container className={`${'p-0'} ${styles['navBarContainer']}`}>
         <Navbar.Brand>
           <Link href='/'>
@@ -61,7 +64,7 @@ const Header = () => {
           <Nav className="ms-auto">
             {menuLinks.map(({ title, path }, index) => {
               return (
-                <Link href={path} key={index} className={`${styles['navMenu']} ${route.pathname == path ? 'active' : null}`}>{title}</Link>
+                <Link href={path} key={index} className={`${styles['navMenu']} ${route.pathname == path ? 'active' : null} ${route.pathname == path ? 'hide' : null}`}>{title}</Link>
               )
             })}
           </Nav>
