@@ -138,9 +138,13 @@
 
   .portfolioImage {
     /* width: 100%; */
-    height: auto;
+    /* height: auto; */
+    height: 276px;
     object-fit: cover;
     max-width: 100%;
+  }
+  .w-83 {
+    width: 83.5%;
   }
 
   @media only screen and (max-width: 600px) {

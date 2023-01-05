@@ -10,6 +10,32 @@ import Link from 'next/link';
 import Slider from "react-slick";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
+import HomePortfolio1 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
+import HomePortfolio2 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-2.jpg' 
+import HomePortfolio3 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-3-main.jpg' 
+import HomePortfolio4 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-4-main.jpg' 
+import HomePortfolio5 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-5-main.jpg' 
+import HomePortfolio6 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-6-main.jpg' 
+import HomePortfolio7 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-7.jpg' 
+import HomePortfolio8 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-8.jpg' 
+import HomePortfolio9 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-9.jpg' 
+import HomePortfolio10 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-10.jpg' 
+import HomePortfolio11 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-11-main.jpg'
+import HomePortfolio12 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-12-main.jpg'
+import HomePortfolio13 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-13.jpg'
+import HomePortfolio14 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-14.jpg'
+import HomePortfolio15 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-15-main.jpg'
+import HomePortfolio16 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-16.jpg'
+import HomePortfolio17 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-17.jpg'
+import HomePortfolio18 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-18-main.jpg'
+import HomePortfolio19 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-19.jpg'
+import HomePortfolio20 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-20.jpg'
+import HomePortfolio21 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-21-main.jpg'
+import HomePortfolio22 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-22.jpg'
+import HomePortfolio23 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-23-main.jpg'
+import HomePortfolio24 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-24.jpg'
+import HomePortfolio25 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-25-main.jpg'
+
 
 const Portfolio = () => {
 
@@ -179,14 +205,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio1.png'
-                  alt='portfolio1'
+                  src={HomePortfolio1}
+                  alt='HomePortfolio-1'
                   width='383'
                   height='334'
                 />
@@ -202,14 +228,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-2.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio2.png'
-                  alt='portfolio1'
+                  src={HomePortfolio2}
+                  alt='HomePortfolio-2'
                   width='383'
                   height='334'
                 />
@@ -225,14 +251,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-3-detail.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio3.png'
-                  alt='portfolio1'
+                  src={HomePortfolio3}
+                  alt='HomePortfolio-3'
                   width='383'
                   height='334'
                 />
@@ -248,14 +274,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-4-detail.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio4.png'
-                  alt='portfolio1'
+                  src={HomePortfolio4}
+                  alt='HomePortfolio-4'
                   width='383'
                   height='334'
                 />
@@ -271,14 +297,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-5-detail.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio5.png'
-                  alt='portfolio1'
+                  src={HomePortfolio5}
+                  alt='HomePortfolio-5'
                   width='383'
                   height='334'
                 />
@@ -294,14 +320,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-6-detail.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio6.png'
-                  alt='portfolio1'
+                  src={HomePortfolio6}
+                  alt='HomePortfolio-6'
                   width='383'
                   height='334'
                 />
@@ -317,14 +343,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-7.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio7.png'
-                  alt='portfolio1'
+                  src={HomePortfolio7}
+                  alt='HomePortfolio-7'
                   width='383'
                   height='334'
                 />
@@ -343,14 +369,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-8.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio1.png'
-                  alt='portfolio1'
+                  src={HomePortfolio8}
+                  alt='HomePortfolio-8'
                   width='383'
                   height='334'
                 />
@@ -366,14 +392,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-9.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio2.png'
-                  alt='portfolio1'
+                  src={HomePortfolio9}
+                  alt='HomePortfolio-9'
                   width='383'
                   height='334'
                 />
@@ -389,14 +415,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-10.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio3.png'
-                  alt='portfolio1'
+                  src={HomePortfolio10}
+                  alt='HomePortfolio-10'
                   width='383'
                   height='334'
                 />
@@ -412,14 +438,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-11-detail.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio4.png'
-                  alt='portfolio1'
+                  src={HomePortfolio11}
+                  alt='HomePortfolio-11'
                   width='383'
                   height='334'
                 />
@@ -435,14 +461,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-12-detail.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio5.png'
-                  alt='portfolio1'
+                  src={HomePortfolio12}
+                  alt='HomePortfolio-12'
                   width='383'
                   height='334'
                 />
@@ -458,14 +484,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-13.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio6.png'
-                  alt='portfolio1'
+                  src={HomePortfolio13}
+                  alt='HomePortfolio-13'
                   width='383'
                   height='334'
                 />
@@ -481,14 +507,37 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-14.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio7.png'
-                  alt='portfolio1'
+                  src={HomePortfolio14}
+                  alt='HomePortfolio-14'
+                  width='383'
+                  height='334'
+                />
+              </div>
+            </div>
+            <div className={`${styles['testimonial']}`}>
+              <div className={`${styles['box']}`}>
+                <div className={`${styles.overlay}`}>
+                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                    <Image
+                    alt='portfolio'
+                      src='/Assets/Assets/For Web/cross.svg'
+                      width='20'
+                      height='20'
+                      data-fancybox="gallery"
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-15-detail.jpg'
+                    />
+                  </div>
+                </div>
+                <Image
+                  className={`${styles['portfolioImage']}`}
+                  src={HomePortfolio15}
+                  alt='HomePortfolio-15'
                   width='383'
                   height='334'
                 />
@@ -506,14 +555,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-16.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio1.png'
-                  alt='portfolio1'
+                  src={HomePortfolio16}
+                  alt='HomePortfolio-16'
                   width='383'
                   height='334'
                 />
@@ -529,14 +578,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-17.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio2.png'
-                  alt='portfolio1'
+                  src={HomePortfolio17}
+                  alt='HomePortfolio-17'
                   width='383'
                   height='334'
                 />
@@ -552,14 +601,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-18-detail.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio3.png'
-                  alt='portfolio1'
+                  src={HomePortfolio18}
+                  alt='HomePortfolio-18'
                   width='383'
                   height='334'
                 />
@@ -575,14 +624,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-19.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio4.png'
-                  alt='portfolio1'
+                  src={HomePortfolio19}
+                  alt='HomePortfolio-19'
                   width='383'
                   height='334'
                 />
@@ -598,14 +647,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-20.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio5.png'
-                  alt='portfolio1'
+                  src={HomePortfolio20}
+                  alt='HomePortfolio-20'
                   width='383'
                   height='334'
                 />
@@ -621,14 +670,14 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-21-detail.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio6.png'
-                  alt='portfolio1'
+                  src={HomePortfolio21}
+                  alt='HomePortfolio-21'
                   width='383'
                   height='334'
                 />
@@ -644,14 +693,83 @@ const Portfolio = () => {
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For Web/one.jpg'
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-22.jpg'
                     />
                   </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
-                  src='/Assets/Assets/For Web/portfolio7.png'
-                  alt='portfolio1'
+                  src={HomePortfolio22}
+                  alt='HomePortfolio-22'
+                  width='383'
+                  height='334'
+                />
+              </div>
+            </div>
+            <div className={`${styles['testimonial']}`}>
+              <div className={`${styles['box']}`}>
+                <div className={`${styles.overlay}`}>
+                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                    <Image
+                    alt='portfolio'
+                      src='/Assets/Assets/For Web/cross.svg'
+                      width='20'
+                      height='20'
+                      data-fancybox="gallery"
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-23-deatil.jpg'
+                    />
+                  </div>
+                </div>
+                <Image
+                  className={`${styles['portfolioImage']}`}
+                  src={HomePortfolio23}
+                  alt='HomePortfolio-23'
+                  width='383'
+                  height='334'
+                />
+              </div>
+            </div>
+            <div className={`${styles['testimonial']}`}>
+              <div className={`${styles['box']}`}>
+                <div className={`${styles.overlay}`}>
+                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                    <Image
+                    alt='portfolio'
+                      src='/Assets/Assets/For Web/cross.svg'
+                      width='20'
+                      height='20'
+                      data-fancybox="gallery"
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-24.jpg'
+                    />
+                  </div>
+                </div>
+                <Image
+                  className={`${styles['portfolioImage']}`}
+                  src={HomePortfolio24}
+                  alt='HomePortfolio-24'
+                  width='383'
+                  height='334'
+                />
+              </div>
+            </div>
+            <div className={`${styles['testimonial']}`}>
+              <div className={`${styles['box']}`}>
+                <div className={`${styles.overlay}`}>
+                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                    <Image
+                    alt='portfolio'
+                      src='/Assets/Assets/For Web/cross.svg'
+                      width='20'
+                      height='20'
+                      data-fancybox="gallery"
+                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-25-detail.jpg'
+                    />
+                  </div>
+                </div>
+                <Image
+                  className={`${styles['portfolioImage']}`}
+                  src={HomePortfolio25}
+                  alt='HomePortfolio-25'
                   width='383'
                   height='334'
                 />
