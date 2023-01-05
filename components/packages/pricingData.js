@@ -4,6 +4,7 @@ export const logoDesignPackages = [
         'title': 'Essentials',
         'name': 'Logo Design',
         'price': '$39',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -28,6 +29,7 @@ export const logoDesignPackages = [
         'title': 'Economical',
         'name': 'Logo Design',
         'price': '$99',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -52,6 +54,7 @@ export const logoDesignPackages = [
         'title': 'Pro',
         'name': 'Logo Design',
         'price': '$149',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -76,6 +79,7 @@ export const logoDesignPackages = [
         'title': 'Premium',
         'name': 'Logo Design',
         'price': '$199',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -103,6 +107,7 @@ export const Branding_IdentityPackages = [
         'title': 'Essentials',
         'name': 'Branding Identity',
         'price': '$19',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -127,6 +132,7 @@ export const Branding_IdentityPackages = [
         'title': 'Economical',
         'name': 'Branding Identity',
         'price': '$29',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -151,6 +157,7 @@ export const Branding_IdentityPackages = [
         'title': 'Pro',
         'name': 'Branding Identity',
         'price': '$39',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -175,6 +182,7 @@ export const Branding_IdentityPackages = [
         'title': 'Premium',
         'name': 'Branding Identity',
         'price': '$49',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -202,6 +210,7 @@ export const WebsitePackages = [
         'title': 'Essentials',
         'name': 'Website',
         'price': '$5',
+        'pricing_group': 'Website',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -226,6 +235,7 @@ export const WebsitePackages = [
         'title': 'Economical',
         'name': 'Website',
         'price': '$10',
+        'pricing_group': 'Website',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -250,6 +260,7 @@ export const WebsitePackages = [
         'title': 'Pro',
         'name': 'Website',
         'price': '$15',
+        'pricing_group': 'Website',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -274,6 +285,7 @@ export const WebsitePackages = [
         'title': 'Premium',
         'name': 'Website',
         'price': '$20',
+        'pricing_group': 'Website',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -301,6 +313,7 @@ export const App_DevPackages = [
         'title': 'Essentials',
         'name': 'App Development',
         'price': '$50',
+        'pricing_group': 'Website',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -325,6 +338,7 @@ export const App_DevPackages = [
         'title': 'Economical',
         'name': 'App Development',
         'price': '$100',
+        'pricing_group': 'Website',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -349,6 +363,7 @@ export const App_DevPackages = [
         'title': 'Pro',
         'name': 'App Development',
         'price': '$150',
+        'pricing_group': 'Website',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -373,6 +388,7 @@ export const App_DevPackages = [
         'title': 'Premium',
         'name': 'App Development',
         'price': '$200',
+        'pricing_group': 'Website',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -400,6 +416,7 @@ export const Logo_Branding_Identity = [
         'title': 'Essentials',
         'name': 'Logo + Branding & Identity',
         'price': '$5',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -424,6 +441,7 @@ export const Logo_Branding_Identity = [
         'title': 'Economical',
         'name': 'Logo + Branding & Identity',
         'price': '$10',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -448,6 +466,7 @@ export const Logo_Branding_Identity = [
         'title': 'Pro',
         'name': 'Logo + Branding & Identity',
         'price': '$1',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -472,6 +491,7 @@ export const Logo_Branding_Identity = [
         'title': 'Premium',
         'name': 'Logo + Branding & Identity',
         'price': '$2',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -499,6 +519,7 @@ export const Logo_Branding_Identity_Website = [
         'title': 'Essentials',
         'name': 'Logo + Branding & Identity + Website',
         'price': '$5000',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -523,6 +544,7 @@ export const Logo_Branding_Identity_Website = [
         'title': 'Economical',
         'name': 'Logo + Branding & Identity + Website',
         'price': '$12000',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -547,6 +569,7 @@ export const Logo_Branding_Identity_Website = [
         'title': 'Pro',
         'name': 'Logo + Branding & Identity + Website',
         'price': '$13000',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -571,6 +594,7 @@ export const Logo_Branding_Identity_Website = [
         'title': 'Premium',
         'name': 'Logo + Branding & Identity + Website',
         'price': '$25000',
+        'pricing_group': 'Logo',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -598,6 +622,7 @@ export const MockupsPackage = [
         'title': 'Essentials',
         'name': 'Mockups',
         'price': '$15',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -622,6 +647,7 @@ export const MockupsPackage = [
         'title': 'Economical',
         'name': 'Mockups',
         'price': '$16',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -646,6 +672,7 @@ export const MockupsPackage = [
         'title': 'Pro',
         'name': 'Mockups',
         'price': '$17',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -670,6 +697,7 @@ export const MockupsPackage = [
         'title': 'Premium',
         'name': 'Mockups',
         'price': '$18',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -697,6 +725,7 @@ export const BusinessCardPackage = [
         'title': 'Essentials',
         'name': 'Business Card',
         'price': '$19',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -721,6 +750,7 @@ export const BusinessCardPackage = [
         'title': 'Economical',
         'name': 'Business Card',
         'price': '$20',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -745,6 +775,7 @@ export const BusinessCardPackage = [
         'title': 'Pro',
         'name': 'Business Card',
         'price': '$21',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -769,6 +800,7 @@ export const BusinessCardPackage = [
         'title': 'Premium',
         'name': 'Business Card',
         'price': '$22',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -796,6 +828,7 @@ export const LetterheadStationeryPackage = [
         'title': 'Essentials',
         'name': 'Letterhead & Stationery',
         'price': '$22',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -820,6 +853,7 @@ export const LetterheadStationeryPackage = [
         'title': 'Economical',
         'name': 'Letterhead & Stationery',
         'price': '$23',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -844,6 +878,7 @@ export const LetterheadStationeryPackage = [
         'title': 'Pro',
         'name': 'Letterhead & Stationery',
         'price': '$24',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -868,6 +903,7 @@ export const LetterheadStationeryPackage = [
         'title': 'Premium',
         'name': 'Letterhead & Stationery',
         'price': '$25',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -895,6 +931,7 @@ export const PackagingPackage = [
         'title': 'Essentials',
         'name': 'Packaging',
         'price': '$26',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -919,6 +956,7 @@ export const PackagingPackage = [
         'title': 'Economical',
         'name': 'Packaging',
         'price': '$27',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -943,6 +981,7 @@ export const PackagingPackage = [
         'title': 'Pro',
         'name': 'Packaging',
         'price': '$28',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -967,6 +1006,7 @@ export const PackagingPackage = [
         'title': 'Premium',
         'name': 'Packaging',
         'price': '$29',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -994,6 +1034,7 @@ export const HtmlPackage = [
         'title': 'Essentials',
         'name': 'HTML',
         'price': '$31',
+        'pricing_group': 'Website',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -1018,6 +1059,7 @@ export const HtmlPackage = [
         'title': 'Economical',
         'name': 'HTML',
         'price': '$32',
+        'pricing_group': 'Website',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -1042,6 +1084,7 @@ export const HtmlPackage = [
         'title': 'Pro',
         'name': 'HTML',
         'price': '$33',
+        'pricing_group': 'Website',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -1066,6 +1109,7 @@ export const HtmlPackage = [
         'title': 'Premium',
         'name': 'HTML',
         'price': '$34',
+        'pricing_group': 'Website',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -1093,6 +1137,7 @@ export const CmsPackage = [
         'title': 'Essentials',
         'name': 'CMS',
         'price': '$35',
+        'pricing_group': 'Website',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -1117,6 +1162,7 @@ export const CmsPackage = [
         'title': 'Economical',
         'name': 'CMS',
         'price': '$36',
+        'pricing_group': 'Website',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -1141,6 +1187,7 @@ export const CmsPackage = [
         'title': 'Pro',
         'name': 'CMS',
         'price': '$37',
+        'pricing_group': 'Website',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -1165,6 +1212,7 @@ export const CmsPackage = [
         'title': 'Premium',
         'name': 'CMS',
         'price': '$38',
+        'pricing_group': 'Website',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -1192,6 +1240,7 @@ export const E_CommercePackage = [
         'title': 'Essentials',
         'name': 'E_Commerce',
         'price': '$39',
+        'pricing_group': 'Website',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -1216,6 +1265,7 @@ export const E_CommercePackage = [
         'title': 'Economical',
         'name': 'E_Commerce',
         'price': '$40',
+        'pricing_group': 'Website',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -1240,6 +1290,7 @@ export const E_CommercePackage = [
         'title': 'Pro',
         'name': 'E_Commerce',
         'price': '$41',
+        'pricing_group': 'Website',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -1264,6 +1315,7 @@ export const E_CommercePackage = [
         'title': 'Premium',
         'name': 'E_Commerce',
         'price': '$42',
+        'pricing_group': 'Website',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -1291,6 +1343,7 @@ export const PortalPackage = [
         'title': 'Essentials',
         'name': 'Web App',
         'price': '$43',
+        'pricing_group': 'Website',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -1315,6 +1368,7 @@ export const PortalPackage = [
         'title': 'Economical',
         'name': 'Web App',
         'price': '$44',
+        'pricing_group': 'Website',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -1339,6 +1393,7 @@ export const PortalPackage = [
         'title': 'Pro',
         'name': 'Web App',
         'price': '$45',
+        'pricing_group': 'Website',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -1363,6 +1418,7 @@ export const PortalPackage = [
         'title': 'Premium',
         'name': 'Web App',
         'price': '$46',
+        'pricing_group': 'Website',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -1390,6 +1446,7 @@ export const SeoPackage = [
         'title': 'Essentials',
         'name': 'SEO',
         'price': '$47',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -1414,6 +1471,7 @@ export const SeoPackage = [
         'title': 'Economical',
         'name': 'SEO',
         'price': '$48',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -1438,6 +1496,7 @@ export const SeoPackage = [
         'title': 'Pro',
         'name': 'SEO',
         'price': '$49',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -1462,6 +1521,7 @@ export const SeoPackage = [
         'title': 'Premium',
         'name': 'SEO',
         'price': '$50',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -1489,6 +1549,7 @@ export const GoogleAdWordsPackage = [
         'title': 'Essentials',
         'name': 'Google AdWords',
         'price': '$51',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -1513,6 +1574,7 @@ export const GoogleAdWordsPackage = [
         'title': 'Economical',
         'name': 'Google AdWords',
         'price': '$52',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -1537,6 +1599,7 @@ export const GoogleAdWordsPackage = [
         'title': 'Pro',
         'name': 'Google AdWords',
         'price': '$53',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -1561,6 +1624,7 @@ export const GoogleAdWordsPackage = [
         'title': 'Premium',
         'name': 'Google AdWords',
         'price': '$54',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -1588,6 +1652,7 @@ export const RetargetingPackage = [
         'title': 'Essentials',
         'name': 'Retargeting',
         'price': '$55',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -1612,6 +1677,7 @@ export const RetargetingPackage = [
         'title': 'Economical',
         'name': 'Retargeting',
         'price': '$56',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -1636,6 +1702,7 @@ export const RetargetingPackage = [
         'title': 'Pro',
         'name': 'Retargeting',
         'price': '$57',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -1660,6 +1727,7 @@ export const RetargetingPackage = [
         'title': 'Premium',
         'name': 'Retargeting',
         'price': '$58',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -1687,6 +1755,7 @@ export const FacebookAdvertsPackage = [
         'title': 'Essentials',
         'name': 'Facebook Adverts',
         'price': '$59',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -1711,6 +1780,7 @@ export const FacebookAdvertsPackage = [
         'title': 'Economical',
         'name': 'Facebook Adverts',
         'price': '$60',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -1735,6 +1805,7 @@ export const FacebookAdvertsPackage = [
         'title': 'Pro',
         'name': 'Facebook Adverts',
         'price': '$61',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -1759,6 +1830,7 @@ export const FacebookAdvertsPackage = [
         'title': 'Premium',
         'name': 'Facebook Adverts',
         'price': '$62',
+        'pricing_group': 'Marketing',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',

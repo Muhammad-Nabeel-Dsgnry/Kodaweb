@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionContent from '../sectionContent'
-import OptionalPackage from './optionalPackage'
+// import OptionalPackage from './optionalPackage'
 import { useRouter } from 'next/router'
 import { Container, Row, Col, Form, Stack } from 'react-bootstrap'
 import styles from '../stepPackageDetails.module.css'
@@ -78,7 +78,7 @@ const StepPackageDetails = () => {
             </Row>
           </Container>
         </section>
-        <OptionalPackage />
+        {/* <OptionalPackage /> */}
     </>
   )
 }

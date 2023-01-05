@@ -11,6 +11,11 @@ import Link from 'next/link';
 import ProjectBrief from '../step3/projectBrief';
 import Step2 from '../step2/step2';
 import checkIcon from '../../../public/Assets/Assets/For Web/pkg-details.svg'
+import Optional from './Optional';
+import LogoOptional from './logoOptional';
+import BrandingOptional from './brandingOptional';
+import WebsiteOptional from './websiteOptional';
+
 
 const StepOneForm = () => {
 
@@ -440,6 +445,29 @@ const StepOneForm = () => {
                 </Container>
             </section>
             {/* Package section end */}
+
+            {/* OPTIONAL PACKAGE START */}
+            
+            {/* <Optional /> */}
+            {
+                packageDetails.pricing_group == 'Logo' ? 
+                <LogoOptional />
+                :
+                null
+            }
+            {
+                packageDetails.pricing_group == 'Branding' ? 
+                <BrandingOptional />
+                :
+                null
+            }
+            {
+                packageDetails.pricing_group == 'Website' ? 
+                <WebsiteOptional />
+                :
+                null
+            }
+            {/* OPTIONAL PACKAGE END */}
 
             {/* TIME DURATION SECTION START */}
             <section>
