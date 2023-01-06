@@ -17,7 +17,7 @@ import Step3 from '../step3/step3';
 const StepTwoForm = (props) => {
 
   const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor, timeDuration} = props
-  console.log('step one form data', timeDuration)
+  // console.log('step one form data', timeDuration)
 
     const [isStepOne, setIsStepOne] = useState(true)
     const [isStepTwo, setIsStepTwo] = useState(false)
@@ -40,7 +40,7 @@ const StepTwoForm = (props) => {
 
     // const [passingData, setPassingData] = useState(stepTwoData)
 
-    console.log('stepTwoData', stepTwoData)
+    // console.log('stepTwoData', stepTwoData)
 
     const handleChange=(e)=>{
       setIsSelect(e.target.value);
@@ -54,10 +54,10 @@ const StepTwoForm = (props) => {
     const handleStepOne = () => {
       if(name?.length === 0 || email?.length === 0 || phoneNumber?.length === 0 || message?.length === 0 || isSelect?.length === 0)
       {
-          console.log('phoneNumber', phoneNumber.length)
+          // console.log('phoneNumber', phoneNumber.length)
       }
       else {
-          console.log('Button enable')
+          // console.log('Button enable')
           setIsStepOne(false)
           setIsStepTwo(true)
       }

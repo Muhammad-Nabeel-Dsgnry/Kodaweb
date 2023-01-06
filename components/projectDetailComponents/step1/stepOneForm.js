@@ -42,12 +42,24 @@ const StepOneForm = () => {
     const [ascendpallet, setAscendpallet] = useState(false)
 
     const [packageDetails, setPackageDetails] = useState({})
+    const [timeDurationPrice, setTimeDurationPrice] = useState('')
     const [timeDuration, setTimeDuration] = useState('')
+    let durationPrice = ''
+    const getDurationPrice = (data) => {
+            Logo_Design_Duration.map((item) => {
+                if(data === item.time)
+                durationPrice = item.price
+                return durationPrice
+            })
+            
+            console.log('after data : ', durationPrice)
+    }
     const handleChange = (e) => {
         setTimeDuration(e.target.value)
-        localStorage.setItem('Package-Data', JSON.stringify({timeDuration: e.target.value, ...packageDetails}))
+        getDurationPrice(e.target.value)
+        localStorage.setItem('Package-Data', JSON.stringify({timeDuration: e.target.value, timeDurationPrice: durationPrice, ...packageDetails}))
     }
-    // console.log('Time Duration', timeDuration)
+    console.log('Time Duration Price : ', timeDurationPrice)
 
     let stepOneFormData = {
         businessName,
@@ -84,7 +96,7 @@ const StepOneForm = () => {
 
     useEffect(() => {
         setPackageDetails(JSON.parse(localStorage.getItem('Package-Data')))
-        console.log('package details', packageDetails.name)
+        // console.log('package details', packageDetails.name)
     }, [])
 
     // const [isValid, setIsValid] = useState(false);
@@ -499,13 +511,19 @@ const StepOneForm = () => {
                                                         type='radio'
                                                         name='time duration'
                                                         label={`${item.time}`}
-                                                        id={`${item.id}`}
+                                                        id={`${item.time}`}
+                                                        checked={timeDuration === `${item.price}`}
                                                         onChange={handleChange}
+                                                        onDoubleClick={handleChange}
                                                         value={`${item.time}`}
-                                                    />
+                                                        />
                                                 </div>
                                                 <div className={`${styles['timeDurationPrice']} ${styles['timeDurationContent']}`}>
-                                                    <p>{item.price}</p>
+                                                    <label htmlFor={item.time}>
+                                                        {
+                                                        item.price === 0 ? 'free' : `$${item.price}`
+                                                        }
+                                                    </label>
                                                 </div>
                                             </div>
                                         </>

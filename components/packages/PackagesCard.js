@@ -16,7 +16,7 @@ const PackagesCard = ({ item }) => {
         <div className={styles.PackagesCardBoxWrapper} data-aos="fade-in" data-aos-duration="2000">
             <div className={styles.PackagesCardBoxHeader}>
                 <h2 className={styles.packagesTitle}>{item.title}</h2>
-                <h3 className={styles.packagesPrice}>{item.price}</h3>
+                <h3 className={styles.packagesPrice}>${item.price}</h3>
                 <hr className={styles.packagesDivider}></hr>
                 <div className={styles.PackagesCardBoxBody}>
                     {

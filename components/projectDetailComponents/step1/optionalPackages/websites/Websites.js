@@ -4,8 +4,8 @@ export const WebsitesDataOpt = [
         'title': 'Website Pack',
         'content': 'Get everything you need to kick off your Website.',
         'badgetitle': 'Most Favorite',
-        'discount': '25',
-        'price': '$650',
+        'discount': 25,
+        'price': 650,
         'options': [
             'Logo',
             'Business card',

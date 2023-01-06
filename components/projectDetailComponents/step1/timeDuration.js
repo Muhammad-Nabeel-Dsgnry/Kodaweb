@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import SectionContent from '../sectionContent'
@@ -7,20 +6,20 @@ import styles from './timeDuration.module.css'
 
 const timeDuration = () => {
 
-    const [duration, setDuration] = useState('')
+    // const [duration, setDuration] = useState('')
     // console.log('duration', duration)
 
   return (
     <>
-    <section>
+    {/* <section>
         <SectionContent
             contentTitle= 'Time Duration'
             contentMainTitle = 'Duration'
             contentText = 'How long do you want your contest to run for?'
             contentColorText = ''
         />
-    </section>
-    <section>
+    </section> */}
+    {/* <section>
         <Container className='mt-3'>
             <Row>
                 <h6 className={`${styles['durationsTitle']}`}>Select your time duration</h6>
@@ -51,7 +50,7 @@ const timeDuration = () => {
                 </Col>
             </Row>
         </Container>
-        </section>
+        </section> */}
     </>
   )
 }

@@ -1,10 +1,9 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import BriefStyle from './projectBrief.module.css'
 import { useState, useEffect } from 'react'
 
 
-const orderTotal = () => {
+const OrderTotal = () => {
 
   const [summaryData, setSummaryData] = useState({})
 
@@ -12,6 +11,15 @@ const orderTotal = () => {
     setSummaryData(JSON.parse(localStorage.getItem('Package-Data')))
     console.log('Summary Data', summaryData)
   }, [])
+
+  let itemPrice = summaryData.price
+  let durationPrice = summaryData.timeDurationPrice
+  let add = itemPrice + durationPrice
+  let percentage = Math.round((add * 13/100)+add)
+  let total = percentage
+  console.log('add', add)
+  console.log('percentage', percentage)
+  console.log('total', total)
 
   return (
     <>
@@ -41,7 +49,7 @@ const orderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>Item Price</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>{summaryData.price}</p>
+              <p className={`${BriefStyle['summaryData']}`}>${summaryData.price}</p>
             </Col>
           </Row>
           <Row className={`${''}`}>
@@ -49,7 +57,7 @@ const orderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>{summaryData.timeDuration}</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>USD30</p>
+              <p className={`${BriefStyle['summaryData']}`}>${summaryData.timeDurationPrice}</p>
             </Col>
           </Row>
           <Row className={`${'pb-3'}`}>
@@ -57,7 +65,7 @@ const orderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>Tax Amount</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>0.00 USD</p>
+              <p className={`${BriefStyle['summaryData']}`}>{percentage} USD</p>
             </Col>
           </Row>
         </Container>
@@ -68,7 +76,7 @@ const orderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>Total (USD)</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>USD69</p>
+              <p className={`${BriefStyle['summaryData']}`}>USD{total}</p>
             </Col>
           </Row>
         </Container>
@@ -77,4 +85,4 @@ const orderTotal = () => {
   )
 }
 
-export default orderTotal
+export default OrderTotal

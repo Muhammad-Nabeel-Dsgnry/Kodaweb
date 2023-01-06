@@ -33,7 +33,7 @@ const Optional = ({item}) => {
                         </Col>
                         <Col lg={2} md={2} xs={2}>
                             <div className={`${styles['detailsPriceCol']}`}>
-                                <p>From {item?.price}</p>
+                                <p>From ${item?.price}</p>
                             </div>
                         </Col>
                     </Row>
@@ -43,7 +43,7 @@ const Optional = ({item}) => {
                                 {
                                 item.options?.map((i, index) => {
                                     return (
-                                        <div className={`${styles['detailsFooterOptionsWrapper']}`}>
+                                        <div key={index} className={`${styles['detailsFooterOptionsWrapper']}`}>
                                             <span className={`${styles['packageOptionsBox']} ${'d-flex justify-content-center align-items-center'}`}>
                                                 <Image
                                                     src={checkIcon}
