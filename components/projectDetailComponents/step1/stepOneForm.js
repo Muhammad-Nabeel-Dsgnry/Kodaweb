@@ -15,7 +15,7 @@ import Optional from './Optional';
 import LogoOptional from './logoOptional';
 import BrandingOptional from './brandingOptional';
 import WebsiteOptional from './websiteOptional';
-
+import MarketingOptional from './marketingOptional';
 
 const StepOneForm = () => {
 
@@ -447,26 +447,32 @@ const StepOneForm = () => {
             {/* Package section end */}
 
             {/* OPTIONAL PACKAGE START */}
-            
-            {/* <Optional /> */}
-            {
-                packageDetails.pricing_group == 'Logo' ? 
-                <LogoOptional />
-                :
-                null
-            }
-            {
-                packageDetails.pricing_group == 'Branding' ? 
-                <BrandingOptional />
-                :
-                null
-            }
-            {
-                packageDetails.pricing_group == 'Website' ? 
-                <WebsiteOptional />
-                :
-                null
-            }
+            <section className={`${'mt-5'}`}>
+                {
+                    packageDetails.pricing_group == 'Logo' ? 
+                    <LogoOptional />
+                    :
+                    null
+                }
+                {
+                    packageDetails.pricing_group == 'Branding' ? 
+                    <BrandingOptional />
+                    :
+                    null
+                }
+                {
+                    packageDetails.pricing_group == 'Website' ? 
+                    <WebsiteOptional />
+                    :
+                    null
+                }
+                {
+                    packageDetails.pricing_group == 'Marketing' ? 
+                    <MarketingOptional />
+                    :
+                    null
+                }
+            </section>
             {/* OPTIONAL PACKAGE END */}
 
             {/* TIME DURATION SECTION START */}

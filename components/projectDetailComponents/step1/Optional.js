@@ -8,9 +8,7 @@ const Optional = ({item}) => {
 
   
   // console.log('logo optional maped items : ', item.content)
-
   // const [optionalPackage, setOptionalPackage] = useState({})
-
   // useEffect(() => {
   //   setOptionalPackage(JSON.parse(localStorage.getItem('Package-Data')))
   // }, [])
@@ -30,7 +28,7 @@ const Optional = ({item}) => {
                                 />
                             </div>
                             <div className={`${styles['detailsContentCol']}`}>
-                                <p>{item?.content}</p>
+                                <p>{item?.content} <span className={`${styles['optionalPackageDiscount']}`}> save{item?.discount}%+</span></p>
                             </div>
                         </Col>
                         <Col lg={2} md={2} xs={2}>
@@ -39,7 +37,7 @@ const Optional = ({item}) => {
                             </div>
                         </Col>
                     </Row>
-                    <Row className={`${styles['detailsFooterRow']} ${'mt-3 w-75'}`}>
+                    <Row className={`${styles['detailsFooterRow']} ${'mt-3 w-100'}`}>
                         <Col lg={8} md={8} xs={12} className={`${'ms-4'}`}>
                             <div className={`${styles['detailsFooterCol']} ${'d-flex justify-content-between align-items-center'}`}>
                                 {
