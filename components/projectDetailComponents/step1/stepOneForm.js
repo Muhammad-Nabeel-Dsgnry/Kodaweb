@@ -10,7 +10,7 @@ import GuaranteeIcon from '../../../public/Assets/Assets/For web/tick.svg'
 import Link from 'next/link';
 import ProjectBrief from '../step3/projectBrief';
 import Step2 from '../step2/step2';
-import checkIcon from '../../../public/Assets/Assets/For Web/pkg-details.svg'
+// import checkIcon from '../../../public/Assets/Assets/For Web/pkg-details.svg'
 import Optional from './Optional';
 import LogoOptional from './logoOptional';
 import BrandingOptional from './brandingOptional';
@@ -426,7 +426,7 @@ const StepOneForm = () => {
                         </Col>
                         <Col lg={2} md={2} xs={2}>
                             <div className={`${styles['detailsPriceCol']}`}>
-                                <p>From {packageDetails?.price}</p>
+                                <p>From ${packageDetails?.price}</p>
                             </div>
                         </Col>
                     </Row>
@@ -440,7 +440,7 @@ const StepOneForm = () => {
                                         <div key={index} className={`${styles['detailsFooterOptionsWrapper']}`}>
                                             <span className={`${styles['packageOptionsBox']} ${'d-flex justify-content-center align-items-center'}`}>
                                                 <Image
-                                                    src={checkIcon}
+                                                    src='/Assets/Assets/For Web/pkg-details.svg'
                                                     alt='package options'
                                                     width='18'
                                                     height='15'
