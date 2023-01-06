@@ -10,7 +10,7 @@ const OrderTotal = () => {
   useEffect(() => {
     setSummaryData(JSON.parse(localStorage.getItem('Package-Data')))
     console.log('Summary Data', summaryData)
-  }, [])
+  })
 
   let itemPrice = summaryData.price
   let durationPrice = summaryData.timeDurationPrice

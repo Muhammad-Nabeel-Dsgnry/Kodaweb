@@ -50,7 +50,7 @@ const StepPackageDetails = () => {
                       />
                     </div>
                     <div className={`${styles['detailsContentCol']}`}>
-                      <p>No thanks. I'll just start with the basics for now.</p>
+                      <p>No thanks. Ill just start with the basics for now.</p>
                     </div>
               </Col>
               <Col lg={2} md={2} xs={2}>

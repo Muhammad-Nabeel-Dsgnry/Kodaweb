@@ -48,7 +48,7 @@ const GetAQuote = (props) => {
                                 <Form.Group className={`${'mb-3'}`} controlId='formGroupEmail'>
                                     <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Email</Form.Label>
                                     <Form.Control size='lg' className={`${modalStyles['modalInputFields']} ${styles['formControl']} ${'mb-2'}`} type='email' onChange={(e) => setEmail(e.target.value)} />
-                                    <Form.Text className={`${styles['formExampleText']}`}>We'll hold your data according to our <Link href='#'>Privacy Policy</Link>.</Form.Text>
+                                    <Form.Text className={`${styles['formExampleText']}`}>Well hold your data according to our <Link href='#'>Privacy Policy</Link>.</Form.Text>
                                 </Form.Group>
                             {/* </Col> */}
                         </div>
@@ -87,7 +87,7 @@ const GetAQuote = (props) => {
                                         className={` ${styles['formControl']} ${'mb-2'}`}
                                     />
                                     {/* <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setPhoneNumber(e.target.value)} /> */}
-                                    <Form.Text className={`${styles['formExampleText']}`}>We'll hold your data according to our <Link href='#'>Privacy Policy</Link></Form.Text>
+                                    <Form.Text className={`${styles['formExampleText']}`}>Well hold your data according to our <Link href=''>Privacy Policy</Link></Form.Text>
                                 </Form.Group>
                             {/* </Col> */}
                             </div>
@@ -101,7 +101,7 @@ const GetAQuote = (props) => {
                                         <option value='Two'>Two</option>
                                         <option value='Three'>Three</option>
                                     </Form.Select>
-                                    <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text>
+                                    <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you dont want one incorporated.</Form.Text>
                                 </Form.Group>
                             {/* </Col> */}
                             </div>
@@ -112,7 +112,7 @@ const GetAQuote = (props) => {
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupTargetAudience'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Message</Form.Label>
                                 <Form.Control size='lg' className={`${modalStyles['modalInputFields']} ${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} onChange={(e) => setMessage(e.target.value)}/>
-                                <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text>
+                                <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you dont want one incorporated.</Form.Text>
                             </Form.Group>
                             </Col>
                         </Row>

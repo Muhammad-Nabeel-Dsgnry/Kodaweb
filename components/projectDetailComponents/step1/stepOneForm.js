@@ -421,7 +421,7 @@ const StepOneForm = () => {
                                 />
                             </div>
                             <div className={`${styles['detailsContentCol']}`}>
-                                <p>No thanks. I'll just start with the basics for now.</p>
+                                <p>No thanks. Ill just start with the basics for now.</p>
                             </div>
                         </Col>
                         <Col lg={2} md={2} xs={2}>
@@ -437,7 +437,7 @@ const StepOneForm = () => {
                                 {
                                 packageDetails.options?.map((i, index) => {
                                     return (
-                                        <div className={`${styles['detailsFooterOptionsWrapper']}`}>
+                                        <div key={index} className={`${styles['detailsFooterOptionsWrapper']}`}>
                                             <span className={`${styles['packageOptionsBox']} ${'d-flex justify-content-center align-items-center'}`}>
                                                 <Image
                                                     src={checkIcon}
