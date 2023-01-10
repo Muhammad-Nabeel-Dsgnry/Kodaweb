@@ -27,9 +27,9 @@
     padding: 25px 20px;
 }
 
-.formControl:focus {
+.formControl:focus, .phoneNumberInput:focus {
     box-shadow: none;
-    border: 1px solid #2C35CD;
+    border: 1px solid #2C35CD !important;
 }
 
 .fileUploadWrapper p {

@@ -12,6 +12,7 @@ import creditCard from '../../../public/Assets/Assets/For web/credit-debit-card.
 import payPal from '../../../public/Assets/Assets/For web/PayPal.svg'
 import select from '../../../public/Assets/Assets/For web/tick.svg'
 import ProjectBrief from '../step3/projectBrief';
+import Step1 from '../step1/step1';
 import Step3 from '../step3/step3';
 
 const StepTwoForm = (props) => {
@@ -21,6 +22,7 @@ const StepTwoForm = (props) => {
 
     const [isStepOne, setIsStepOne] = useState(true)
     const [isStepTwo, setIsStepTwo] = useState(false)
+    const [formOne, setFormOne] = useState(false)
     const [state, setState] = useState('')
 
     const [BusinessName, setbusinessName] = useState(businessName)
@@ -62,6 +64,13 @@ const StepTwoForm = (props) => {
           setIsStepTwo(true)
       }
   }
+
+  // const handleBack = () => {
+  //   {
+  //     isStepTwo == 'false' ? <Step1 /> : null
+  //   }
+  //   // alert('button clicked')
+  // }
 
     // const sendFormTwoDataHandler = () => {
     //     setState(stepTwoData)
@@ -171,7 +180,7 @@ const StepTwoForm = (props) => {
         </Row>
 
         <Row className={`${styles['paymentMethodMainWrapper']}`}>
-          <Col lg={4} md={4} xs={4}>
+          <Col lg={4} md={12} xs={12} className={`${'my-2'}`}>
             <div className={`${styles['paymentMethodBoxWrapper']}`}>
               <Form.Check
                 inline
@@ -180,8 +189,9 @@ const StepTwoForm = (props) => {
                     src={stripe}
                     alt='stripe'
                     width='200'
-                    height='100'                        
-                  />
+                    height='100' 
+                    htmlFor='Stript'                      
+                    />
                 }
                 name="paymentMethod"
                 type='radio'
@@ -206,7 +216,7 @@ const StepTwoForm = (props) => {
               }
             </div>
           </Col>
-          <Col lg={4} md={4} xs={4}>
+          <Col lg={4} md={12} xs={12} className={`${'my-2'}`}>
             <div className={`${styles['paymentMethodBoxWrapper']}`}>
               <Form.Check
                 inline
@@ -216,7 +226,7 @@ const StepTwoForm = (props) => {
                     alt='creditCard'
                     width='200'
                     height='100'
-                    for='creditCard'
+                    htmlFor='creditCard'
                   />
                 }
                 name="paymentMethod"
@@ -242,7 +252,7 @@ const StepTwoForm = (props) => {
               }
             </div>
           </Col>
-          <Col lg={4} md={4} xs={4}>
+          <Col lg={4} md={12} xs={12} className={`${'my-2'}`}>
             <div className={`${styles['paymentMethodBoxWrapper']}`}>
               <Form.Check
                 inline
@@ -252,7 +262,7 @@ const StepTwoForm = (props) => {
                     alt='payPal'
                     width='200'
                     height='100'
-                    for='payPal'
+                    htmlFor='payPal'
                   />
                 }
                 name="paymentMethod"
@@ -287,8 +297,9 @@ const StepTwoForm = (props) => {
           }
         </Row>
         </section>
+        <Container>
         <Row className={`${'pb-5'}`}>
-            <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
+            <Col lg={6} md='auto' xs='auto' className={`${'mb-4 d-flex justify-content-start p-0'}`}>
             <div className={`${styles['stepGuaranteeSec']}`}>
                 <span>
                     <Image
@@ -304,26 +315,27 @@ const StepTwoForm = (props) => {
                 </div>
             </div>
             </Col>
-            <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
+            {/* <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
             
-            </Col> 
-              <Col lg={4} md={4} xs={6} className={`${'mb-4 '}`}>
+            </Col>  */}
+              <Col lg={6} md='auto' xs='auto' className={`${'mb-4 d-flex justify-content-end p-0'}`}>
               <ButtonGroup>
-                  <Link href='' className={`${styles['blueButton']} ${'me-4'}`}>
+                  <button className={`${styles['blueButton']} ${'me-4'}`}>
                     Back
-                  </Link>
-                    <Link href='' className={`${styles['blueButton']} ${
+                  </button>
+                    <button href='' className={`${styles['blueButton']} ${
                     name?.length === 0 || email?.length === 0 || phoneNumber?.length === 0 || message?.length === 0 || isSelect?.length === 0 ? 'btnDisable' : null }`
                     }
                     onClick={handleStepOne}>
                       Continue
-                    </Link>
+                    </button>
                     {/* <Link href='' className={`${styles['blueButton']}`} onClick={handleStepOne}>
                       Continue
                     </Link> */}
               </ButtonGroup>
               </Col>
         </Row>
+        </Container>
                 </div>
         :
         <Step3 name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={isSelect} businessName={BusinessName} industry={Industry} logoType={LogoType} colors={Colors} duration={Duration} />

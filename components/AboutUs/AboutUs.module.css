@@ -12,6 +12,8 @@
   margin: 60px 0px 0px 0px;
   background-color: transparent;
   /* color: #fff; */
+  width: 240px;
+  padding: 15px 18px;
 }
 
 .homeAboutUsExperienceSection {}
@@ -21,8 +23,10 @@
   border-radius: 0px 0px 20px 0px;
   padding: 34px 20px;
   position: relative;
-  left: 42%;
-  top: 88%;
+  left: 41.6%;
+  top: 88.9%;
+  /* left: 42%;
+  top: 88%; */
   /* bottom: 0; */
   width: 60%;
   text-align: center;
@@ -73,7 +77,7 @@
 }
 
 .blueButton {
-  padding: 18px 67px;
+  /* padding: 18px 67px; */
   border: 1px solid #2C35CD;
   color: var(--text-white);
   border-radius: 100px;
@@ -86,7 +90,8 @@
   display: block;
   /* margin-right: auto;
   margin-left: auto; */
-  width: fit-content;
+  /* width: fit-content; */
+  text-align: center;
 }
 
 .blueButton:hover {

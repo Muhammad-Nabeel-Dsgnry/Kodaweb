@@ -126,6 +126,16 @@ const StepOneForm = () => {
 
     const resetFields = () => {
         setBusinessName('')
+        setBusinessSlogan('')
+        setIndustry('')
+        setLogoType('')
+        setProductDescription('')
+        setCompetitor('')
+        setCommunicate('')
+        setContentPages('')
+        setPrimaryColor('#FF0000')
+        setSecondaryColor('#57C070')
+        setAscendColor('#0066FF')
     }
 
 
@@ -195,7 +205,7 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupBusinessName'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Whats your business name?</Form.Label>
-                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${businessName?.length <= 0 ? 'error' : null}`} type='text' onChange={(e) => setBusinessName(e.target.value)} />
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${businessName?.length <= 0 ? 'error' : null}`} value={businessName} type='text' onChange={(e) => setBusinessName(e.target.value)} />
                                 {   
                                     businessName?.length <= 0 ?
                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Business Name is required</Form.Text>
@@ -207,7 +217,7 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupSlogan'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Do you have a business slogan?</Form.Label>
-                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${businessSlogan?.length <= 0 ? 'error' : null}`} type='text' onChange={(e) => setBusinessSlogan(e.target.value)} />
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${businessSlogan?.length <= 0 ? 'error' : null}`} value={businessSlogan} type='text' onChange={(e) => setBusinessSlogan(e.target.value)} />
                                 {
                                     businessSlogan?.length <= 0 ?
                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Business Slogan is required</Form.Text>
@@ -222,7 +232,7 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupindustry'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Select your industry</Form.Label>
-                                <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'} ${industry?.length <= 0 ? 'error' : null}`} onChange={(e) => setIndustry(e.target.value)} >
+                                <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'} ${industry?.length <= 0 ? 'error' : null}`} value={industry} onChange={(e) => setIndustry(e.target.value)} >
                                     <option></option>
                                     <option>One</option>
                                     <option>Two</option>
@@ -240,7 +250,7 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupLogoType'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please select the logo type?</Form.Label>
-                                <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'} ${logoType?.length <= 0 ? 'error' : null}`} onChange={(e) => setLogoType(e.target.value)} >
+                                <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'} ${logoType?.length <= 0 ? 'error' : null}`} value={logoType} onChange={(e) => setLogoType(e.target.value)} >
                                     <option></option>
                                     <option>One</option>
                                     <option>Two</option>
@@ -260,7 +270,7 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupTargetAudience'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Describe what your organisation or product does and its target audience</Form.Label>
-                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${productDescription?.length <= 0 ? 'error' : null}`} as='textarea' rows={4} onChange={(e) => setProductDescription(e.target.value)} />
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${productDescription?.length <= 0 ? 'error' : null}`} as='textarea' rows={4} value={productDescription} onChange={(e) => setProductDescription(e.target.value)} />
                                 {
                                     productDescription?.length <= 0 ?
                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Product Description is required</Form.Text>
@@ -273,7 +283,7 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupInspiration'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please mention top 3 competitor or any reference link that describe your inspiration.</Form.Label>
-                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${competitor?.length <= 0 ? 'error' : null}`} as='textarea' rows={4} onChange={(e) => setCompetitor(e.target.value)} />
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${competitor?.length <= 0 ? 'error' : null}`} as='textarea' rows={4} value={competitor} onChange={(e) => setCompetitor(e.target.value)} />
                                 {
                                     competitor?.length <= 0 ?
                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Reference links is required</Form.Text>
@@ -288,7 +298,7 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupcommunicate'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Is there anything else you would like to communicate to the designers?</Form.Label>
-                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${communicate?.length <= 0 ? 'error' : null}`} as='textarea' rows={4} onChange={(e) => setCommunicate(e.target.value)} />
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${communicate?.length <= 0 ? 'error' : null}`} as='textarea' rows={4} value={communicate} onChange={(e) => setCommunicate(e.target.value)} />
                                 {
                                     communicate?.length <= 0 ?
                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Communication Message is required</Form.Text>
@@ -301,7 +311,7 @@ const StepOneForm = () => {
                         <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                             <Form.Group className={`${'mb-3'}`} controlId='formGroupWebsitePages'>
                                 <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please list down the content pages you will have on your website pages?</Form.Label>
-                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${contentPages?.length <= 0 ? 'error' : null}`} as='textarea' rows={4} onChange={(e) => setContentPages(e.target.value)} />
+                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${contentPages?.length <= 0 ? 'error' : null}`} as='textarea' rows={4} value={contentPages} onChange={(e) => setContentPages(e.target.value)} />
                                 {
                                     contentPages?.length <= 0 ?
                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Website Reference link is required</Form.Text>
@@ -411,7 +421,7 @@ const StepOneForm = () => {
                 />
                 <Container className={`${styles['detailsMainContainer']}`}>
                     <Row className={`${styles['detailsHeaderRow']}`}>
-                        <Col lg={5} md={5} xs={5}>
+                        <Col lg={5} md={12} xs={12}>
                             <div className={`${styles['detailsTitleCol']}`}>
                                 <Form.Check
                                     type='radio'
@@ -424,7 +434,7 @@ const StepOneForm = () => {
                                 <p>No thanks. Ill just start with the basics for now.</p>
                             </div>
                         </Col>
-                        <Col lg={2} md={2} xs={2}>
+                        <Col lg={2} md={12} xs={12}>
                             <div className={`${styles['detailsPriceCol']}`}>
                                 <p>From ${packageDetails?.price}</p>
                             </div>
@@ -432,12 +442,12 @@ const StepOneForm = () => {
                     </Row>
                     <Row className={`${styles['detailsFooterRow']} ${'mt-3 w-75'}`}>
                         <Col lg={8} md={8} xs={12} className={`${'ms-4'}`}>
-                            <div className={`${styles['detailsFooterCol']} ${'d-flex justify-content-between align-items-center'}`}>
+                            <div className={`${styles['detailsFooterCol']} ${'d-flex justify-content-start align-items-center flex-wrap'}`}>
                                 {/* <p>{packageDetails?.options}</p> */}
                                 {
                                 packageDetails.options?.map((i, index) => {
                                     return (
-                                        <div key={index} className={`${styles['detailsFooterOptionsWrapper']}`}>
+                                        <div key={index} className={`${styles['detailsFooterOptionsWrapper']} ${'me-3'}`}>
                                             <span className={`${styles['packageOptionsBox']} ${'d-flex justify-content-center align-items-center'}`}>
                                                 <Image
                                                     src='/Assets/Assets/For Web/pkg-details.svg'
@@ -500,7 +510,7 @@ const StepOneForm = () => {
                 <Container className='mt-3'>
                     <Row>
                         <h6 className={`${styles['durationsTitle']}`}>Select your time duration</h6>
-                        <Col lg={6} md={6} xs={12} className={`${styles['timeDurationCol']}`}>
+                        <Col lg={6} md={12} xs={12} className={`${styles['timeDurationCol']}`}>
                             <div className={`${styles['timeDurationMainWrapper']}`}>
                                 {Logo_Design_Duration.map((item, index) => {
                                     return (
@@ -536,9 +546,9 @@ const StepOneForm = () => {
             </section>
             {/* TIME DURATION SECTION END */}
                             
-                            
+            <Container>              
             <Row className={`${'pb-5'}`}>
-            <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
+            <Col lg={6} md='auto' xs='auto' className={`${'mb-4 d-flex justify-content-start p-0'}`}>
             <div className={`${styles['stepGuaranteeSec']}`}>
                 <span>
                     <Image
@@ -554,28 +564,29 @@ const StepOneForm = () => {
                 </div>
             </div>
             </Col>
-            <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
+            {/* <Col lg={4} md='auto' xs='auto' className={`${'mb-4'}`}>
             
-            </Col> 
-              <Col lg={4} md={4} xs={6} className={`${'mb-4 '}`}>
+            </Col>  */}
+              <Col lg={6} md='auto' xs='auto' className={`${'mb-4 d-flex justify-content-end p-0'}`}>
               <ButtonGroup>
-                  <Link href='' className={`${styles['blueButton']} ${'me-4'}`} onClick={resetFields}>
+                  <button className={`${styles['blueButton']} ${'me-4'}`} onClick={resetFields}>
                     Reset
-                  </Link>
-                 <Link href='' className={`${styles['blueButton']} ${
+                  </button>
+                 <button className={`${styles['blueButton']} ${
                     businessName.length === 0 || businessSlogan.length === 0 || industry.length === 0 || logoType.length === 0 || productDescription.length === 0 || competitor.length === 0 || communicate.length === 0
                     || contentPages.length === 0 || primaryColor.length === 0 || secondaryColor.length === 0 || ascendColor.length === 0 ? 'btnDisable' : null
                     }`
                 }
                     onClick={handleStepOne} type='submit'>
                       Continue
-                    </Link>
+                    </button>
                     {/* <Link href='' className={`${styles['blueButton']}`} onClick={handleStepOne} type='submit'>
                       Continue
                     </Link> */}
               </ButtonGroup>
               </Col>
         </Row>
+        </Container>
         </section>
         :
         <Step2 businessName={businessName}  industry={industry} logoType={logoType} primaryColor={primaryColor} secondaryColor={secondaryColor} ascendColor={ascendColor} timeDuration={timeDuration} />

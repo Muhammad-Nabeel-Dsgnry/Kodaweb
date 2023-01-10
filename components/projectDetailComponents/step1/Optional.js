@@ -18,7 +18,7 @@ const Optional = ({item}) => {
         <section>
                 <Container className={`${styles['detailsMainContainer']}`}>
                     <Row className={`${styles['detailsHeaderRow']}`}>
-                        <Col lg={5} md={5} xs={5}>
+                        <Col lg={5} md={12} xs={12}>
                             <div className={`${styles['detailsTitleCol']}`}>
                                 <Form.Check
                                     type='radio'
@@ -31,7 +31,7 @@ const Optional = ({item}) => {
                                 <p>{item?.content} <span className={`${styles['optionalPackageDiscount']}`}> save{item?.discount}%+</span></p>
                             </div>
                         </Col>
-                        <Col lg={2} md={2} xs={2}>
+                        <Col lg={2} md={12} xs={12}>
                             <div className={`${styles['detailsPriceCol']}`}>
                                 <p>From ${item?.price}</p>
                             </div>
@@ -39,11 +39,11 @@ const Optional = ({item}) => {
                     </Row>
                     <Row className={`${styles['detailsFooterRow']} ${'mt-3 w-100'}`}>
                         <Col lg={8} md={8} xs={12} className={`${'ms-4'}`}>
-                            <div className={`${styles['detailsFooterCol']} ${'d-flex justify-content-between align-items-center'}`}>
+                            <div className={`${styles['detailsFooterCol']} ${'d-flex justify-content-start flex-wrap align-items-center'}`}>
                                 {
                                 item.options?.map((i, index) => {
                                     return (
-                                        <div key={index} className={`${styles['detailsFooterOptionsWrapper']}`}>
+                                        <div key={index} className={`${styles['detailsFooterOptionsWrapper']} ${'me-3'}`}>
                                             <span className={`${styles['packageOptionsBox']} ${'d-flex justify-content-center align-items-center'}`}>
                                                 <Image
                                                     src='/Assets/Assets/For web/pkg-details.svg'

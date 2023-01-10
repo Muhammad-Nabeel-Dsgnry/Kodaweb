@@ -62,7 +62,8 @@
     margin-bottom: 0px;
   }
   .blueButton {
-    padding: 12px 55px;
+    margin: 5px 0px;
+    padding: 15px 18px;
     border: 2px solid #2C35CD;
     color: var(--text-white);
     border-radius: 100px;
@@ -70,7 +71,8 @@
     font-weight: 400;
     font-size: 1.25rem;
     display: block;
-    width: fit-content;
+    width: 160px;
+    text-align: center;
     background-color: #2C35CD;
   }
   .blueButton:hover {
@@ -223,11 +225,15 @@
 }
 .paymentMethodBoxWrapper label {
   width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border: 2px solid #000;
   border-radius: 10px;
   box-shadow: 0px 1px 2px 2px rgb(0 0 0 / 10%);
-  padding: 30px 70px;
+  /* padding: 30px 70px; */
   cursor: pointer;
 }
 .paymentMethodBoxWrapper input {
@@ -366,7 +372,7 @@
   font-size: 1.25rem;
   line-height: 24px;
   color: #969696;
-  margin-left: 18px;
+  margin-left: 10px;
 }
 .optionalPackageDiscount {
   font-family: 'Inter';
@@ -382,3 +388,16 @@
   color: red;
 }
 
+@media (min-width: 1025px) and (max-width: 1350px) {
+  .mainTitle {
+      font-size: 2.5rem;
+      line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainTitle {
+      font-size: 1.5rem;
+      line-height: 29px;
+  }
+}

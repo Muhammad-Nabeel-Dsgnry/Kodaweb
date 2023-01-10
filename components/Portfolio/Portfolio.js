@@ -44,7 +44,7 @@ const Portfolio = () => {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
@@ -197,17 +197,16 @@ const Portfolio = () => {
           <Slider {...settings}>
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
+                  <div className={`${styles['topLineOne']}`}></div>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  {/* <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
-                    alt='portfolio'
+                      alt='portfolio'
                       src='/Assets/Assets/For Web/cross.svg'
                       width='20'
                       height='20'
-                      data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
-                    />
-                  </div>
+                      />
+                  </div> */}
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -215,8 +214,11 @@ const Portfolio = () => {
                   alt='HomePortfolio-1'
                   width='383'
                   height='334'
+                  data-fancybox="gallery"
+                  data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
                 />
               </div>
+              <div className={`${styles['topLineTwo']}`}></div>
             </div>
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>

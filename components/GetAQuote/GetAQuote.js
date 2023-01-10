@@ -2,7 +2,7 @@ import modalStyles from './GetAQuote.module.css'
 import Link from 'next/link'
 import PhoneInput from 'react-phone-number-input'
 import styles from '../../components/projectDetailComponents/Forms.module.css'
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
@@ -18,6 +18,8 @@ const GetAQuote = (props) => {
     const [message, setMessage] = useState('')
     const [industry, setIndustry] = useState('')
 
+    // const useRef = useRef
+
     console.log('phoneNumber', phoneNumber)
 
     return (
@@ -32,28 +34,28 @@ const GetAQuote = (props) => {
                 <Modal.Header closeButton></Modal.Header>
                 <Modal.Body>
                     <Form>
-                        <Stack direction="horizontal" gap={5} className={`${'justify-content-between'}`}>
-                        {/* <Row className={`${styles['formFieldsRow']}`}> */}
-                        <div className='w-50 mt-4'>
-                            {/* <Col className={`${styles['formFieldsCol']}`}> */}
+                        {/* <Stack direction="horizontal" gap={5} > */}
+                        <Row className={`${styles['formFieldsRow']}`}>
+                        {/* <div className='w-50 mt-4'> */}
+                            <Col lg={6} md={12} xs={12} className={`${styles['formFieldsCol']}`}>
                                 <Form.Group className={`${'mb-3'}`} controlId='formGroupName'>
                                     <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Name</Form.Label>
                                     <Form.Control size='lg' className={`${modalStyles['modalInputFields']} ${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setName(e.target.value)} />
                                     <Form.Text className={`${styles['formExampleText']}`}>E.g. Ibhrahim</Form.Text>
                                 </Form.Group>
-                            {/* </Col> */}
-                        </div>
-                        <div className='w-50 mt-4'>
-                            {/* <Col className={`${styles['formFieldsCol']}`}> */}
+                            </Col>
+                        {/* </div> */}
+                        {/* <div className='w-50 mt-4'> */}
+                            <Col lg={6} md={12} xs={12} className={`${styles['formFieldsCol']}`}>
                                 <Form.Group className={`${'mb-3'}`} controlId='formGroupEmail'>
                                     <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Email</Form.Label>
                                     <Form.Control size='lg' className={`${modalStyles['modalInputFields']} ${styles['formControl']} ${'mb-2'}`} type='email' onChange={(e) => setEmail(e.target.value)} />
                                     <Form.Text className={`${styles['formExampleText']}`}>Well hold your data according to our <Link href='#'>Privacy Policy</Link>.</Form.Text>
                                 </Form.Group>
-                            {/* </Col> */}
-                        </div>
-                        {/* </Row> */}
-                        </Stack>
+                            </Col>
+                        {/* </div> */}
+                        </Row>
+                        {/* </Stack> */}
                         {/* <Row className={`${styles['formFieldsRow']}`}>
                             <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                                 <Form.Group className={`${'mb-3'}`} controlId='formGroupName'>
@@ -71,9 +73,9 @@ const GetAQuote = (props) => {
                             </Col>
                         </Row> */}
                         <Row>
-                            <Stack direction="horizontal" gap={5} className={`${'justify-content-between'}`}>
-                                <div className='w-50 mt-4'>
-                            {/* <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}> */}
+                            {/* <Stack direction="horizontal" gap={5} className={`${'justify-content-between'}`}> */}
+                                {/* <div className='w-50 mt-4'> */}
+                            <Col lg={6} xs={12} md={12} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                                 <Form.Group className={`${'mb-3'} ${styles['phoneNumberInput']}`} controlId='formGroupNumber'>
                                     <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Phone Number</Form.Label>
                                     <PhoneInput
@@ -84,15 +86,15 @@ const GetAQuote = (props) => {
                                         value={phoneNumber}
                                         defaultCountry='US'
                                         onChange={setPhoneNumber}
-                                        className={` ${styles['formControl']} ${'mb-2'}`}
+                                        className={`${styles['formControl']} ${'mb-2'} ${styles['modalInputFields']} ${styles['modalPhoneInputFields']}`}
                                     />
                                     {/* <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setPhoneNumber(e.target.value)} /> */}
                                     <Form.Text className={`${styles['formExampleText']}`}>Well hold your data according to our <Link href=''>Privacy Policy</Link></Form.Text>
                                 </Form.Group>
-                            {/* </Col> */}
-                            </div>
-                            <div className='w-50 mt-4'>
-                            {/* <Col lg={6} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}> */}
+                            </Col>
+                            {/* </div> */}
+                            {/* <div className='w-50 mt-4'> */}
+                            <Col lg={6} xs={12} md={12} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                                 <Form.Group className={`${'mb-3'}`} controlId='formGroupindustry'>
                                     <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Select your industry</Form.Label>
                                     <Form.Select size='lg' className={`${modalStyles['modalInputFields']} ${styles['formControl']} ${'mb-2'}`} onChange={(e) => setIndustry(e.target.value)} >
@@ -103,9 +105,9 @@ const GetAQuote = (props) => {
                                     </Form.Select>
                                     <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you dont want one incorporated.</Form.Text>
                                 </Form.Group>
-                            {/* </Col> */}
-                            </div>
-                            </Stack>
+                            </Col>
+                            {/* </div> */}
+                            {/* </Stack> */}
                         </Row>
                         <Row>
                             <Col lg={12} xs={12} md={12} className={`${styles['formFieldsCol']} ${'mt-4'}`}>

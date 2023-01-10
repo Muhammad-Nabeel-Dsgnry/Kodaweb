@@ -26,4 +26,9 @@
 }
 .modalInputFields {
     padding: 15px !important;
+    box-shadow: 0px 2px 4px 2px rgb(0 0 0 / 10%) !important;
+    border: none;
 }
+/* .PhoneInputInput:focus .modalInputFields {
+    border: 1px solid #2C35CD !important;
+} */

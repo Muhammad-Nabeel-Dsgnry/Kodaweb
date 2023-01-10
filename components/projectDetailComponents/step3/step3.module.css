@@ -33,7 +33,7 @@
     margin-bottom: 0px;
   }
   .blueButton {
-    padding: 12px 55px;
+    padding: 15px 18px;
     border: 2px solid #2C35CD;
     color: var(--text-white);
     border-radius: 100px;
@@ -41,7 +41,8 @@
     font-weight: 400;
     font-size: 1.25rem;
     display: block;
-    width: fit-content;
+    width: 160px;
+    text-align: center;
     background-color: #2C35CD;
   }
   .blueButton:hover {
@@ -56,4 +57,10 @@
   }
   .stepGuaranteeSec span {
     margin-right: 10px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .summaryGuaranteeImageBox {
+      display: none;
+    }
   }

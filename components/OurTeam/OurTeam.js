@@ -160,7 +160,9 @@ const OurTeam = () => {
                             </div>
                             </Col>
                             <Col md={4} xs={9} style={{display: 'flex', alignItems: 'center'}}>
-                            <p className={`${styles['teamAnimatedPara']}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.</p>
+                            <p className={`${styles['teamAnimatedPara']}`}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur
+                            </p>
                             </Col>
                         </Row>
                     </Col>

@@ -10,13 +10,13 @@ const OrderTotal = () => {
   useEffect(() => {
     setSummaryData(JSON.parse(localStorage.getItem('Package-Data')))
     console.log('Summary Data', summaryData)
-  })
+  }, [])
 
   let itemPrice = summaryData.price
   let durationPrice = summaryData.timeDurationPrice
   let add = itemPrice + durationPrice
   let percentage = Math.round((add * 13/100)+add)
-  let total = percentage
+  let total = percentage + add
   console.log('add', add)
   console.log('percentage', percentage)
   console.log('total', total)
@@ -76,7 +76,7 @@ const OrderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>Total (USD)</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>USD{total}</p>
+              <p className={`${BriefStyle['summaryData']}`}>USD {total}</p>
             </Col>
           </Row>
         </Container>

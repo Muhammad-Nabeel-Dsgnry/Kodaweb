@@ -92,7 +92,7 @@
 
 
 .blueButton {
-    padding: 18px 67px;
+    /* padding: 18px 67px; */
     border: 1px solid #2C35CD;
     color: #2C35CD;
     border-radius: 100px;
@@ -105,7 +105,10 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: fit-content;
+    /* width: fit-content; */
+    width: 240px;
+    text-align: center;
+    padding: 15px 18px;
 }
 
 .blueButton:hover {

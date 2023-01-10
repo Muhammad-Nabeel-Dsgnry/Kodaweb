@@ -84,6 +84,11 @@ p.teamScrollDown {
     letter-spacing: 1em;
     white-space: nowrap;
 }
+.teamAnimatedPara {
+    font-size: 0.875rem !important;
+    line-height: 26px !important;
+    color: var(--text-gray) !important;
+}
 
 .AnimationImgBoxOne, .AnimationImgBoxTwo {
     position: relative;

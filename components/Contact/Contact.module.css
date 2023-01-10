@@ -73,6 +73,9 @@
   /* background-color: transparent; */
   margin: 60px 0px 0px 0px;
   padding: 16px 50px;
+  width: 240px;
+  padding: 15px 18px;
+  text-align: center;
 }
 
 .lineTitle {
@@ -119,7 +122,7 @@
 }
 
 .blueButton {
-  padding: 18px 67px;
+  /* padding: 18px 67px; */
   /* border: 1px solid #2C35CD; */
   background-color: #2C35CD;
   color: var(--text-white);
@@ -133,7 +136,7 @@
   display: block;
   /* margin-right: auto;
   margin-left: auto; */
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .blueButton:hover {

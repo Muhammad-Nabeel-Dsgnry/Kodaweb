@@ -30,28 +30,29 @@ const step3 = (props) => {
                     <h2 className={styles.mainTitle}>Summary</h2>
                     {/* <p className={`${styles['Para']} ${styles['colorBlack']}`}>{stepPara}</p> */}
                 </div>
-                </Col>
-                {/* {
-                isImage == 'true' ?
-                    <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={5} md={5}>
-                    <Image
-                        className={styles.guaranteeImage}
-                        src='/Assets/Assets/For Web/moneyBack.png'
-                        alt='money back guarantee'
-                        width='200'
-                        height='180'
-                    />
-                    </Col> :
-                    null
-                } */}
+            </Col>
+            {/* {
+            isImage == 'true' ?
+                <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={5} md={5}>
+                <Image
+                    className={styles.guaranteeImage}
+                    src='/Assets/Assets/For Web/moneyBack.png'
+                    alt='money back guarantee'
+                    width='200'
+                    height='180'
+                />
+                </Col> :
+                null
+            } */}
             </Row>
             
-            <Row>
-            <Stack direction="horizontal" gap={4} className={`${style['projectDetailsWrapper']} ${'align-items-start'}`}>
-                <Col lg={8} md={8} xs={12} className={`${style['projectDetailsBox']} ${style['briefBox']}`}>
+            <Row className={`${style['projectDetailsWrapper']} ${'align-items-start'}`}>
+            {/* <Stack direction="horizontal" gap={4} className={`${style['projectDetailsWrapper']} ${'align-items-start'}`}> */}
+                <Col lg={7} md={12} xs={12} className={`${style['projectDetailsBox']} ${style['briefBox']} ${'mb-4'}`}>
                     <ProjectBrief name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={paymentMethod} businessName={businessName} industry={industry} logoType={logoType} colors={colors} duration={duration} />
                 </Col>
-                <Col lg={4} md={4} xs={12} className={`${style['projectDetailsBox']} ${style['totalBox']}`}>
+                <Col lg={1}></Col>
+                <Col lg={4} md={12} xs={12} className={`${style['projectDetailsBox']} ${style['totalBox']}`}>
                     <OrderTotal />
                 <section className={`${'d-flex justify-content-center align-items-center'}`}>
                     <div className={`${style['summaryGuaranteeImageBox']}`}>
@@ -64,13 +65,14 @@ const step3 = (props) => {
                     </div>
                 </section>
                 </Col>
-            </Stack>
+            {/* </Stack> */}
             </Row>
             </Container>
 
 
+            <Container>
             <Row className={`${'pb-5'}`}>
-            <Col lg={4} md={4} xs={6} className={`${'mb-4'}`}>
+            <Col lg={6} md='auto' xs='auto' className={`${'mb-4 d-flex justify-content-start p-0'}`}>
             <div className={`${style['stepGuaranteeSec']}`}>
                 <span>
                     <Image
@@ -86,20 +88,21 @@ const step3 = (props) => {
                 </div>
             </div>
             </Col>
-            <Col lg={3} md={3} xs={6} className={`${'mb-4'}`}>
+            {/* <Col lg={3} md={3} xs={6} className={`${'mb-4'}`}>
             
-            </Col> 
-              <Col lg={5} md={5} xs={6} className={`${'mb-4 d-flex justify-content-end'}`}>
+            </Col>  */}
+              <Col lg={6} md='auto' xs='auto' className={`${'mb-4 d-flex justify-content-end p-0'}`}>
               <ButtonGroup>
-                  <Link href='/pricing' className={`${style['blueButton']} ${'me-4'}`}>
+                  <button href={{pathname: `/projectDetail`}} className={`${style['blueButton']} ${'me-4'}`}>
                     Cancel
-                  </Link>
-                    <Link href='' className={`${style['blueButton']}`}>
+                  </button>
+                    <button href='#' className={`${style['blueButton']}`}>
                       Pay Now
-                    </Link>
+                    </button>
               </ButtonGroup>
               </Col>
         </Row>
+        </Container>
         </section>
         </>
     )

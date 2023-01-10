@@ -17,7 +17,7 @@
 }
 
 .ctaButton {
-    padding: 9px 55px;
+    padding: 15px 18px;
     border: 2.5px solid var(--bg-white);
     color: var(--text-white);
     border-radius: 100px;
@@ -30,7 +30,8 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: fit-content;
+    width: 240px;
+    text-align: center;
   }
   
   .ctaButton:hover {
