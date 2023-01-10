@@ -428,9 +428,9 @@ const Pricing = (props) => {
           <Row>
             <Col xs={12} lg={6}>
               <div>
-                <h3 className={styles.lineTitle}>{pricingSmTitle}</h3>
-                <h2 className={styles.mainTitle}>{pricingMainTitle}<span className={colorText ? styles.dot : ''}>{colorText}</span></h2>
-                <p className={`${styles['Para']} ${styles['colorBlack']} ${isImage == 'true' ? 'w-100' : 'w-100'}`}>{pricingShortPara}</p>
+                <h3 className={styles.lineTitle} contentEditable='true'>{pricingSmTitle}</h3>
+                <h2 className={styles.mainTitle} contentEditable='true'>{pricingMainTitle}<span className={colorText ? styles.dot : ''}>{colorText}</span></h2>
+                <p className={`${styles['Para']} ${styles['colorBlack']} ${isImage == 'true' ? 'w-100' : 'w-100'}`} contentEditable='true'>{pricingShortPara}</p>
               </div>
             </Col>
             {

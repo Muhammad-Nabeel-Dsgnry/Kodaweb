@@ -31,7 +31,7 @@ const Counter = () => {
                       )}
                     </VisibilitySensor>
                     </Card.Title>
-                    <Card.Text className={styles.counter_Section__cardText}>
+                    <Card.Text className={styles.counter_Section__cardText} contentEditable='true'>
                       Project Completed
                     </Card.Text>
                   </Card.Body>
@@ -52,7 +52,7 @@ const Counter = () => {
                       )}
                     </VisibilitySensor>
                     </Card.Title>
-                    <Card.Text className={styles.counter_Section__cardText}>
+                    <Card.Text className={styles.counter_Section__cardText} contentEditable='true'>
                       Satisfied Customer
                     </Card.Text>
                   </Card.Body>
@@ -73,7 +73,7 @@ const Counter = () => {
                       )}
                     </VisibilitySensor>
                     </Card.Title>
-                    <Card.Text className={styles.counter_Section__cardText}>
+                    <Card.Text className={styles.counter_Section__cardText} contentEditable='true'>
                       Working Hours
                     </Card.Text>
                   </Card.Body>
@@ -89,12 +89,12 @@ const Counter = () => {
                     <VisibilitySensor partialVisibility>
                       {({ isVisible }) => (
                         <div style={{ height: 60 }}>
-                          {isVisible ? <CountUp duration={4} end={234} delay={.5} /> : null}
+                          {isVisible ? <CountUp duration={4} end={234} delay={.5}/> : null}
                         </div>
                       )}
                     </VisibilitySensor>
                     </Card.Title>
-                    <Card.Text className={styles.counter_Section__cardText}>
+                    <Card.Text className={styles.counter_Section__cardText} contentEditable='true'>
                       Paid Advertisement
                     </Card.Text>
                   </Card.Body>
