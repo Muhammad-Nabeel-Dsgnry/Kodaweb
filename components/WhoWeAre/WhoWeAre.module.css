@@ -60,9 +60,12 @@
     border-radius: 10px;
     padding: 25px 55px;
     position: absolute;
+    position: relative;
     width: 685px;
     left: 28%;
-    margin-top: 2%;
+    /* margin-top: 2%; */
+    /* margin-top: 2%; */
+    margin-top: 66px;
   }
 
 .WhoWeAreCounterBoxContent {
@@ -175,7 +178,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768) and (max-width: 1024px) {
 
   h3.lineTitle::before {
     width: 18%;
@@ -260,5 +263,36 @@
     padding: 20px 20px;
     width: 685px;
     left: 8%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  .WhoWeAreCounterWrapper {
+    /* width: 60%;
+    transform: translateY(0%); */
+
+    width: 70%;
+    transform: translateX(-20%);
+    position: absolute !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .WhoWeAreCounterWrapper {
+
+  }
+}
+@media (min-width: 200px) and (max-width: 364px) {
+  .WhoWeAreCounterWrapper {
+    transform: translateY(200%);
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  .WhoWeAreCounterWrapper {
+    width: 88%;
+    transform: translateY(360%);
+  }
+}
+@media (min-width: 450px) and (max-width: 499px) {
+  .WhoWeAreCounterWrapper {
+    transform: translateY(320%);
   }
 }

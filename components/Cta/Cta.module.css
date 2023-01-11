@@ -57,6 +57,10 @@
         line-height: 15px;
         padding: 9px 30px;
     }
+    .ctaButton {
+        width: 160px;
+        padding: 15px;
+    }
 
   }
 
@@ -75,6 +79,10 @@
         line-height: 15px;
         padding: 9px 30px;
     }
+    .ctaButton {
+        width: 160px;
+        padding: 15px;
+    }
 
 }
 @media (min-width: 1025px) and (max-width: 1350px) {
@@ -91,6 +99,10 @@
         font-size: 0.75rem;
         line-height: 15px;
         padding: 9px 30px;
+    }
+    .ctaButton {
+        width: 160px;
+        padding: 15px;
     }
 
 }

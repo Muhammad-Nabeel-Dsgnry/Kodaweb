@@ -62,6 +62,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
   }
 
   .innerAboutImageOne {
@@ -69,9 +70,13 @@
   }
 
   .innerAboutImageTwo {
-     position: absolute;
-     right: 29%;
-     bottom: -52%;
+    position: absolute;
+    /* right: 29%;
+    bottom: -52%; */
+    right: 29%;
+    bottom: 0;
+    top: 40%;
+    left: 0%;
     }
     
 .innerAboutImageOne, .innerAboutImageTwo {

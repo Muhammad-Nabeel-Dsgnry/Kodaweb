@@ -34,7 +34,7 @@ const Process = () => {
                                         src={Plan_white}
                                         alt='plan'
                                         width='32'
-                                        height='32'
+                                        height='34'
                                     />
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.
@@ -43,12 +43,14 @@ const Process = () => {
                                         <span className={styles.processNumberNormal}></span>
                                         <span className={styles.processNumberHover}>01</span>
                                     </div>
+                                    <div className={`${styles['processBoxDividerWrapper']}`}></div>
                                 </div>
                                 <div className={`${styles['processHoverableContentBox1']} ${styles['processHoverableBox1']}`}>
                                     <h6>Plan</h6>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                 </div>
                             </div>
+                            
                         </Col>
                         <Col lg={2} xs={6} className={`${styles['processBoxes']}`}>
                         <div className={styles.processContentBoxWrapper}>
@@ -62,10 +64,12 @@ const Process = () => {
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.
                                 </p>
+                                <div className={`${styles['processBoxDividerWrapperRight']}`}></div>
                                 <div className={styles.processNumberLineOne}>
                                     <span className={styles.processNumberNormal}></span>
                                     <span className={styles.processNumberHover}>02</span>
                                 </div>
+                                <div className={`${styles['processBoxDividerWrapper']}`}></div>
                             </div>
                             <div className={`${styles['processHoverableContentBox1']} ${styles['processHoverableBox2']}`}>
                                 <h6>Design</h6>
@@ -85,10 +89,12 @@ const Process = () => {
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.
                                 </p>
+                                <div className={`${styles['processBoxDividerWrapperRight']}`}></div>
                                 <div className={styles.processNumberLineTwo}>
                                     <span className={styles.processNumberNormal}></span>
                                     <span className={styles.processNumberHover}>03</span>
                                 </div>
+                                <div className={`${styles['processBoxDividerWrapper']}`}></div>
                             </div>
                             <div className={`${styles['processHoverableContentBox1']} ${styles['processHoverableBox3']}`}>
                                 <h6>Develop</h6>
@@ -108,10 +114,12 @@ const Process = () => {
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.
                                 </p>
+                                <div className={`${styles['processBoxDividerWrapperRight']}`}></div>
                                 <div className={styles.processNumberLineThree}>
                                     <span className={styles.processNumberNormal}></span>
                                     <span className={styles.processNumberHover}>04</span>
                                 </div>
+                                <div className={`${styles['processBoxDividerWrapper']}`}></div>
                             </div>
                             <div className={`${styles['processHoverableContentBox2']} ${styles['processHoverableBox4']}`}>
                                 <h6>Test</h6>
@@ -131,10 +139,12 @@ const Process = () => {
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.
                                 </p>
+                                <div className={`${styles['processBoxDividerWrapperRight']}`}></div>
                                 <div className={styles.processNumberLineFour}>
                                     <span className={styles.processNumberNormal}></span>
                                     <span className={styles.processNumberHover}>05</span>
                                 </div>
+                                <div className={`${styles['processBoxDividerWrapper']}`}></div>
                             </div>
                             <div className={`${styles['processHoverableContentBox2']} ${styles['processHoverableBox5']}`}>
                                 <h6>Deploy</h6>
@@ -154,6 +164,7 @@ const Process = () => {
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur.
                                 </p>
+                                <div className={`${styles['processBoxDividerWrapperRight']}`}></div>
                                 <div className={styles.processNumberLine}>
                                     <span className={styles.processNumberNormal}></span>
                                     <span className={styles.processNumberHover}>06</span>
@@ -165,6 +176,13 @@ const Process = () => {
                             </div>
                         </div>
                         </Col>
+                        {/* <Row>
+                            <Col lg='auto' md='auto' sm='auto'>
+                                <div className={`${styles['processBoxDividerWrapper']}`}>
+                                    <hr />
+                                </div>
+                            </Col>
+                        </Row> */}
                     </Row>
                 </Container>
             </section>
