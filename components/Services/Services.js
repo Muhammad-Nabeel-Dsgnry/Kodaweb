@@ -78,7 +78,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="2500">
                   <div className={styles.imageBoxWrapper}>
-                    <Image variant="top" src={GraphicIcon} width='60' height='60' className={styles.serviceCardImage} />
+                    <Image variant="top" src={GraphicIcon} width='60' height='60' alt='Kodaweb Graphic Designing' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Video Production</Card.Title>
@@ -136,7 +136,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="2500">
                   <div className={styles.imageBoxWrapper}>
-                    <Image variant="top" src={AppDevelopmentIcon} width='60' height='60' className={styles.serviceCardImage} />
+                    <Image variant="top" src={AppDevelopmentIcon} width='60' height='60' alt='Kodaweb App Development' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>App Development</Card.Title>
@@ -209,7 +209,7 @@ const Services = (props) => {
                 <Col className={`${styles.cardCol}`}>
                   <Card className={styles.cardWrapper} >
                     <div className={styles.imageBoxWrapper}>
-                      <Image variant="top" src={GraphicIcon} width='60' height='60' className={styles.serviceCardImage} />
+                      <Image variant="top" src={GraphicIcon} width='60' height='60' alt='Kodaweb Graphic Designing' className={styles.serviceCardImage} />
                     </div>
                     <Card.Body className={styles.cardBody}>
                       <Card.Title className={styles.cardTitle}>Video Production</Card.Title>
@@ -261,7 +261,7 @@ const Services = (props) => {
                 <Col className={`${styles.cardCol}`}>
                   <Card className={styles.cardWrapper} >
                     <div className={styles.imageBoxWrapper}>
-                      <Image variant="top" src={AppDevelopmentIcon} width='60' height='60' className={styles.serviceCardImage} />
+                      <Image variant="top" src={AppDevelopmentIcon} width='60' height='60' alt='Kodaweb App Development' className={styles.serviceCardImage} />
                     </div>
                     <Card.Body className={styles.cardBody}>
                       <Card.Title className={styles.cardTitle}>App Development</Card.Title>
