@@ -14,7 +14,7 @@ const Skills = () => {
     <>
       <section className={styles.homeAboutUsSection}>
         <Container>
-          <Row>
+          <Row className={`${'position-relative'}`}>
             <Col lg={6} xs={12}>
               <div className='w-80'>
                 <h3 className={styles.lineTitle}>Best Skills</h3>

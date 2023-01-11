@@ -58,7 +58,8 @@
 
 .skillsMainWrapper {
     background-color: #F5F5F5;
-    width: 40%;
+    /* width: 45%; */
+    width: 65%;
     position: absolute;
     padding: 30px 30px 30px 30px;
     border-radius: 20px;
@@ -78,6 +79,12 @@
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 22px;
+}
+.skillName {
+    white-space: nowrap;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .skillsProgress {
     height: 6px;
