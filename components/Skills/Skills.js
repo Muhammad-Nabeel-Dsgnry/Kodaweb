@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import skillsSideImage from '../../public/Assets/Assets/For Web/Best Skill.jpg'
 
 const Skills = () => {
 
@@ -82,8 +83,8 @@ const Skills = () => {
             <Col lg={6} xs={12}>
               <Image
                 className={styles.servicesSectionImage}
-                src='/Assets/Assets/For Web/Best Skill.jpg'
-                alt='best skills'
+                src={skillsSideImage}
+                alt='Kodaweb best skills'
                 width='646'
                 height='632'
               />
