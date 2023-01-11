@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import Link from 'next/link';
-import brandingIcon from '../../public/Assets/Assets/For Web/Branding-blue.svg'
+import brandingIcon from '../../public/Assets/Assets/For Web/Branding-blue.png'
 import webDevelopmentIcon from '../../public/Assets/Assets/For Web/web-development-blue.svg'
 import webApplicationIcon from '../../public/Assets/Assets/For Web/Web-App-blue.svg'
 import GraphicIcon from '../../public/Assets/Assets/For Web/Graphic-blue.svg'
