@@ -91,7 +91,7 @@ const TestimonialSlider = () => {
           <div className={styles.testimonialsInnerBox}>
             <div className={styles.testimonialsBoxHeader}>
               <Image
-                src='/Assets/Assets/For-web/testimonail profile 1.jpg'
+                src='/Assets/Assets/For-web/testimonail-profile-1.jpg'
                 alt='client image'
                 width='100'
                 height='100'
@@ -147,7 +147,7 @@ const TestimonialSlider = () => {
           <div className={styles.testimonialsInnerBox}>
             <div className={styles.testimonialsBoxHeader}>
               <Image
-                src='/Assets/Assets/For-web/testimonail profile 2.jpg'
+                src='/Assets/Assets/For-web/testimonail-profile-2.jpg'
                 alt='client image'
                 width='100'
                 height='100'
@@ -203,7 +203,7 @@ const TestimonialSlider = () => {
           <div className={styles.testimonialsInnerBox}>
             <div className={styles.testimonialsBoxHeader}>
               <Image
-                src='/Assets/Assets/For-web/testimonail profile 1.jpg'
+                src='/Assets/Assets/For-web/testimonail-profile-1.jpg'
                 alt='client image'
                 width='100'
                 height='100'
