@@ -24,7 +24,7 @@ const InnerPagesBanner = (props) => {
                     </Col>
                     <Col lg={5}>
                         {
-                        innerBannerSideImage ? 
+                        innerBannerSideImage === 'yes' ? 
                         <Image
                             src={innerBannerSideImage}
                             alt='kodaweb-banner-image'
@@ -54,10 +54,10 @@ const InnerPagesBanner = (props) => {
                     </Col>
                     <Col lg={5} style={{display: 'flex', justifyContent: 'end', alignItems: 'center'}}>
                         {
-                        innerBannerSideImage ? 
+                        innerBannerSideImage === 'yes' ? 
                         <Image
                             className={`${styles['innerBannerRigtImage']}`}
-                            src={innerBannerSideImage}
+                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
                             alt='kodaweb-banner-image'
                             width='451'
                             height='368'
@@ -85,7 +85,7 @@ const InnerPagesBanner = (props) => {
                     </Col>
                     <Col lg={5}>
                         {
-                        innerBannerSideImage ? 
+                        innerBannerSideImage === 'yes' ? 
                         <Image
                             src={innerBannerSideImage}
                             alt='kodaweb-banner-image'
@@ -115,7 +115,7 @@ const InnerPagesBanner = (props) => {
                     </Col>
                     <Col lg={5}>
                         {
-                        innerBannerSideImage ? 
+                        innerBannerSideImage === 'yes' ? 
                         <Image
                             src={innerBannerSideImage}
                             alt='kodaweb-banner-image'
@@ -145,7 +145,7 @@ const InnerPagesBanner = (props) => {
                     </Col>
                     <Col lg={5}>
                         {
-                        innerBannerSideImage ? 
+                        innerBannerSideImage === 'yes' ? 
                         <Image
                             src={innerBannerSideImage}
                             alt='kodaweb-banner-image'
