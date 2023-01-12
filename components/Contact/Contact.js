@@ -30,7 +30,7 @@ const Contact = () => {
                         <Image
                           alt='contact icons'
                           className={styles.formSectionIcon}
-                          src='/Assets/Assets/For-web/location(Bold).svg'
+                          src='/Assets/Assets/For-web/location-icon.svg'
                           width='22'
                           height='30'
                         />
@@ -49,7 +49,7 @@ const Contact = () => {
                         <Image
                         alt='contact icons'
                           className={styles.formSectionIcon}
-                          src='/Assets/Assets/For-web/call(Bold).svg'
+                          src='/Assets/Assets/For-web/call-icon.svg'
                           width='22'
                           height='30'
                         />
@@ -71,7 +71,7 @@ const Contact = () => {
                         <Image
                         alt='contact icons'
                           className={styles.formSectionIcon}
-                          src='/Assets/Assets/For-web/mail(Bold).svg'
+                          src='/Assets/Assets/For-web/mail-icon.svg'
                           width='22'
                           height='30'
                         />
