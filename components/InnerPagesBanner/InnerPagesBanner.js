@@ -26,7 +26,7 @@ const InnerPagesBanner = (props) => {
                         {
                         innerBannerSideImage === 'yes' ? 
                         <Image
-                            src={innerBannerSideImage}
+                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
@@ -87,7 +87,7 @@ const InnerPagesBanner = (props) => {
                         {
                         innerBannerSideImage === 'yes' ? 
                         <Image
-                            src={innerBannerSideImage}
+                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
@@ -117,7 +117,7 @@ const InnerPagesBanner = (props) => {
                         {
                         innerBannerSideImage === 'yes' ? 
                         <Image
-                            src={innerBannerSideImage}
+                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
@@ -147,7 +147,7 @@ const InnerPagesBanner = (props) => {
                         {
                         innerBannerSideImage === 'yes' ? 
                         <Image
-                            src={innerBannerSideImage}
+                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
