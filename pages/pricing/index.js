@@ -9,7 +9,7 @@ const Pricing = () => {
         innerBannerTitle='Choose the right plan for your business'
         innerBannerpara='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in.'
         innerBannerBgImage=''
-        innerBannerSideImage='/Assets/Assets/For Web/moneyBackGuarantee.png'
+        innerBannerSideImage='/Assets/Assets/For-Web/moneyBackGuarantee.png'
         pageName='pricing'
       />
 
