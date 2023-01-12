@@ -7,9 +7,9 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import Link from 'next/link';
-import brandingIcon from '../../public/Assets/Assets/For Web/Branding-blue.png'
-import webDevelopmentIcon from '../../public/Assets/Assets/For Web/web-development-blue.svg'
-import webApplicationIcon from '../../public/Assets/Assets/For Web/Web-App-blue.svg'
+import BrandingIcon from '../../public/Assets/Assets/For web/Branding-blue.svg'
+import WebDevelopmentIcon from '../../public/Assets/Assets/For Web/web-development-blue.svg'
+import WebApplicationIcon from '../../public/Assets/Assets/For Web/Web-App-blue.svg'
 import GraphicIcon from '../../public/Assets/Assets/For Web/Graphic-blue.svg'
 import UiUxIcon from '../../public/Assets/Assets/For Web/UX-UI-blue.svg'
 import DigitalMarketingIcon from '../../public/Assets/Assets/For Web/Digital-marketing-blue.svg'
@@ -39,7 +39,7 @@ const Services = (props) => {
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
                     {/* <Card.Img variant="top" src="/Assets/Assets/For Web/Branding-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} /> */}
-                    <Image src={brandingIcon} width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
+                    <Image src={BrandingIcon} width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Branding & Identity</Card.Title>
@@ -52,7 +52,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="1500">
                   <div className={styles.imageBoxWrapper}>
-                    <Image src={webDevelopmentIcon} width='60' height='60' alt='Kodaweb Web Development' className={styles.serviceCardImage} />
+                    <Image src={WebDevelopmentIcon} width='60' height='60' alt='Kodaweb Web Development' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Web Development</Card.Title>
@@ -65,7 +65,7 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="2000">
                   <div className={styles.imageBoxWrapper}>
-                    <Image src={webApplicationIcon} width='60' height='60' alt='Kodaweb Web Application' className={styles.serviceCardImage} />
+                    <Image src={WebApplicationIcon} width='60' height='60' alt='Kodaweb Web Application' className={styles.serviceCardImage} />
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Web Application</Card.Title>
@@ -170,7 +170,7 @@ const Services = (props) => {
                 <Col className={`${styles.cardCol}`}>
                   <Card className={styles.cardWrapper} >
                     <div className={styles.imageBoxWrapper}>
-                      <Image src={brandingIcon} width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
+                      <Image src={BrandingIcon} width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
                     </div>
                     <Card.Body className={styles.cardBody}>
                       <Card.Title className={styles.cardTitle}>Branding & Identity</Card.Title>
@@ -183,7 +183,7 @@ const Services = (props) => {
                 <Col className={`${styles.cardCol}`}>
                   <Card className={styles.cardWrapper} >
                     <div className={styles.imageBoxWrapper}>
-                      <Image src={webDevelopmentIcon} width='60' height='60' alt='Kodaweb Web Development' className={styles.serviceCardImage} />
+                      <Image src={WebDevelopmentIcon} width='60' height='60' alt='Kodaweb Web Development' className={styles.serviceCardImage} />
                     </div>
                     <Card.Body className={styles.cardBody}>
                       <Card.Title className={styles.cardTitle}>Web Development</Card.Title>
@@ -196,7 +196,7 @@ const Services = (props) => {
                 <Col className={`${styles.cardCol}`}>
                   <Card className={styles.cardWrapper} >
                     <div className={styles.imageBoxWrapper}>
-                      <Image src={webApplicationIcon} width='60' height='60' alt='Kodaweb Web Application' className={styles.serviceCardImage} />
+                      <Image src={WebApplicationIcon} width='60' height='60' alt='Kodaweb Web Application' className={styles.serviceCardImage} />
                     </div>
                     <Card.Body className={styles.cardBody}>
                       <Card.Title className={styles.cardTitle}>Web Application</Card.Title>
