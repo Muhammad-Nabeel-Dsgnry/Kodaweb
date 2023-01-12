@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'next/image';
+import banenrSideImage from '../../public/Assets/Assets/For-web/moneyBackGuarantee.png';
 
 const InnerPagesBanner = (props) => {
     let {innerBannerTitle, innerBannerpara, innerBannerSideImage, pageName} = props
@@ -26,7 +27,7 @@ const InnerPagesBanner = (props) => {
                         {
                         innerBannerSideImage === 'yes' ? 
                         <Image
-                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
+                            src={banenrSideImage}
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
@@ -57,7 +58,7 @@ const InnerPagesBanner = (props) => {
                         innerBannerSideImage === 'yes' ? 
                         <Image
                             className={`${styles['innerBannerRigtImage']}`}
-                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
+                            src={banenrSideImage}
                             alt='kodaweb-banner-image'
                             width='451'
                             height='368'
@@ -87,7 +88,7 @@ const InnerPagesBanner = (props) => {
                         {
                         innerBannerSideImage === 'yes' ? 
                         <Image
-                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
+                            src={banenrSideImage}
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
@@ -117,7 +118,7 @@ const InnerPagesBanner = (props) => {
                         {
                         innerBannerSideImage === 'yes' ? 
                         <Image
-                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
+                            src={banenrSideImage}
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
@@ -147,7 +148,7 @@ const InnerPagesBanner = (props) => {
                         {
                         innerBannerSideImage === 'yes' ? 
                         <Image
-                            src='/Assets/Assets/For-Web/moneyBackGuarantee.png'
+                            src={banenrSideImage}
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
