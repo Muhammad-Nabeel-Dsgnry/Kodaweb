@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import skillsSideImage from '../../public/Assets/Assets/For Web/Best Skill.jpg'
+import skillsSideImage from '../../public/Assets/Assets/For-web/Best Skill.jpg'
 
 const Skills = () => {
 

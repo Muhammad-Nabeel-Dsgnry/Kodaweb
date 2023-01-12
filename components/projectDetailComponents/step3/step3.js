@@ -5,8 +5,8 @@ import Image from 'next/image'
 import Stepper from '../stepper/stepper'
 import ProjectBrief from './projectBrief'
 import OrderTotal from './orderTotal'
-import moneyBack from '../../../public/Assets/Assets/For web/moneyBack.png'
-import GuaranteeIcon from '../../../public/Assets/Assets/For web/tick.svg'
+import moneyBack from '../../../public/Assets/Assets/For-web/moneyBack.png'
+import GuaranteeIcon from '../../../public/Assets/Assets/For-web/tick.svg'
 import Link from 'next/link';
 
 
@@ -36,7 +36,7 @@ const step3 = (props) => {
                 <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={5} md={5}>
                 <Image
                     className={styles.guaranteeImage}
-                    src='/Assets/Assets/For Web/moneyBack.png'
+                    src='/Assets/Assets/For-web/moneyBack.png'
                     alt='money back guarantee'
                     width='200'
                     height='180'

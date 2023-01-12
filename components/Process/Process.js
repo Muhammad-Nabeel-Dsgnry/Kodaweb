@@ -4,12 +4,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from './Process.module.css'
 import Image from 'next/image';
-import Plan_white from '../../public/Assets/Assets/For web/Plan-white.png';
-import Design_white from '../../public/Assets/Assets/For web/Design-white.png';
-import Develop_white from '../../public/Assets/Assets/For web/Develop-white.png';
-import Test_white from '../../public/Assets/Assets/For web/Test-white.png';
-import Deploy_white from '../../public/Assets/Assets/For web/Deploy-white.png';
-import Maintain_white from '../../public/Assets/Assets/For web/Maintain-white.png';
+import Plan_white from '../../public/Assets/Assets/For-web/Plan-white.png';
+import Design_white from '../../public/Assets/Assets/For-web/Design-white.png';
+import Develop_white from '../../public/Assets/Assets/For-web/Develop-white.png';
+import Test_white from '../../public/Assets/Assets/For-web/Test-white.png';
+import Deploy_white from '../../public/Assets/Assets/For-web/Deploy-white.png';
+import Maintain_white from '../../public/Assets/Assets/For-web/Maintain-white.png';
 
 const Process = () => {
     return (

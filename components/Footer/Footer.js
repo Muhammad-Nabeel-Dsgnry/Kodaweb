@@ -94,7 +94,7 @@ const Footer = () => {
           <Col lg={3}>
             <Link href='/'>
               <Image
-                src='/Assets/Assets/For Web/Logo for footer(2).png'
+                src='/Assets/Assets/For-web/Logo for footer(2).png'
                 alt="kodaweb footer logo"
                 width='239'
                 height='104'
@@ -139,7 +139,7 @@ const Footer = () => {
                 <Image
                 alt='footer icons'
                   className="me-3"
-                  src='/Assets/Assets/For Web/message.svg'
+                  src='/Assets/Assets/For-web/message.svg'
                   width='21'
                   height='19'
                 />
@@ -151,7 +151,7 @@ const Footer = () => {
                 <Image
                 alt='footer icons'
                   className="me-3"
-                  src='/Assets/Assets/For Web/call.svg'
+                  src='/Assets/Assets/For-web/call.svg'
                   width='21'
                   height='19'
                 />
@@ -163,7 +163,7 @@ const Footer = () => {
                 <Image
                   alt='footer icons'
                   className="me-3"
-                  src='/Assets/Assets/For Web/location.svg'
+                  src='/Assets/Assets/For-web/location.svg'
                   width='21'
                   height='19'
                 />
@@ -175,7 +175,7 @@ const Footer = () => {
                 <Image
                 alt='footer icons'
                   className="me-4 my-4"
-                  src='/Assets/Assets/For Web/facebook.svg'
+                  src='/Assets/Assets/For-web/facebook.svg'
                   width='30'
                   height='30'
                 />
@@ -184,7 +184,7 @@ const Footer = () => {
                 <Image
                 alt='footer icons'
                   className="me-4 my-4"
-                  src='/Assets/Assets/For Web/Dribble.svg'
+                  src='/Assets/Assets/For-web/Dribble.svg'
                   width='30'
                   height='30'
                 />
@@ -193,7 +193,7 @@ const Footer = () => {
                 <Image
                 alt='footer icons'
                   className="me-4 my-4"
-                  src='/Assets/Assets/For Web/Twitter.svg'
+                  src='/Assets/Assets/For-web/Twitter.svg'
                   width='30'
                   height='30'
                 />
@@ -202,7 +202,7 @@ const Footer = () => {
                 <Image
                 alt='footer icons'
                   className="me-4 my-4"
-                  src='/Assets/Assets/For Web/Linked In.svg'
+                  src='/Assets/Assets/For-web/Linked In.svg'
                   width='30'
                   height='30'
                 />
@@ -223,35 +223,35 @@ const Footer = () => {
             <div className={styles.paymentImages}>
               <Image
                 className="me-2 mt-2"
-                src='/Assets/Assets/For Web/JCB.png'
+                src='/Assets/Assets/For-web/JCB.png'
                 alt='footer social midea icon'
                 width='50'
                 height='40'
               />
               <Image
                 className="me-2 mt-2"
-                src='/Assets/Assets/For Web/Dicover.png'
+                src='/Assets/Assets/For-web/Dicover.png'
                 alt='footer social midea icon'
                 width='50'
                 height='40'
               />
               <Image
                 className="me-2 mt-2"
-                src='/Assets/Assets/For Web/UnionPay.png'
+                src='/Assets/Assets/For-web/UnionPay.png'
                 alt='footer social midea icon'
                 width='50'
                 height='40'
               />
               <Image
                 className="me-2 mt-2"
-                src='/Assets/Assets/For Web/VISA.png'
+                src='/Assets/Assets/For-web/VISA.png'
                 alt='footer social midea icon'
                 width='50'
                 height='40'
               />
               <Image
                 className="me-2 mt-2"
-                src='/Assets/Assets/For Web/MasterCard.png'
+                src='/Assets/Assets/For-web/MasterCard.png'
                 alt='footer social midea icon'
                 width='50'
                 height='40'

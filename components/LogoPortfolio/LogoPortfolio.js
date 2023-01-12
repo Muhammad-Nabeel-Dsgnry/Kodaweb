@@ -22,17 +22,17 @@ const LogoPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Group 1.jpg'
+                                                data-src='/Assets/Assets/For-web/Group 1.jpg'
                                             />
                                         </div>
                                     </div>
                                     <Image
                                         className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Group 1.jpg'
+                                        src='/Assets/Assets/For-web/Group 1.jpg'
                                         alt='portfolio1'
                                         width='383'
                                         height='334'
@@ -45,17 +45,17 @@ const LogoPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Rectangle 152.jpg'
+                                                data-src='/Assets/Assets/For-web/Rectangle 152.jpg'
                                             />
                                         </div>
                                     </div>
                                     <Image
                                         className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Rectangle 152.jpg'
+                                        src='/Assets/Assets/For-web/Rectangle 152.jpg'
                                         alt='portfolio1'
                                         width='383'
                                         height='334'
@@ -68,17 +68,17 @@ const LogoPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Group 4.jpg'
+                                                data-src='/Assets/Assets/For-web/Group 4.jpg'
                                             />
                                         </div>
                                     </div>
                                     <Image
                                         className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Group 4.jpg'
+                                        src='/Assets/Assets/For-web/Group 4.jpg'
                                         alt='portfolio1'
                                         width='383'
                                         height='334'
@@ -91,17 +91,17 @@ const LogoPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Rectangle 134.jpg'
+                                                data-src='/Assets/Assets/For-web/Rectangle 134.jpg'
                                             />
                                         </div>
                                     </div>
                                     <Image
                                         className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Rectangle 134.jpg'
+                                        src='/Assets/Assets/For-web/Rectangle 134.jpg'
                                         alt='portfolio1'
                                         width='383'
                                         height='334'
@@ -114,17 +114,17 @@ const LogoPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Rectangle 135.jpg'
+                                                data-src='/Assets/Assets/For-web/Rectangle 135.jpg'
                                             />
                                         </div>
                                     </div>
                                     <Image
                                         className={`${styles['portfolioImage']}`}
-                                        src='/Assets/Assets/For Web/Rectangle 135.jpg'
+                                        src='/Assets/Assets/For-web/Rectangle 135.jpg'
                                         alt='portfolio1'
                                         width='383'
                                         height='334'
@@ -137,17 +137,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 136.jpg'
+                                            data-src='/Assets/Assets/For-web/Rectangle 136.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 136.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 136.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -164,17 +164,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 3.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 3.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 3.jpg'
+                                    src='/Assets/Assets/For-web/Group 3.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -187,17 +187,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 2.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 2.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 2.jpg'
+                                    src='/Assets/Assets/For-web/Group 2.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -210,17 +210,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 139.jpg'
+                                            data-src='/Assets/Assets/For-web/Rectangle 139.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 139.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 139.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -233,17 +233,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 140.jpg'
+                                            data-src='/Assets/Assets/For-web/Rectangle 140.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 140.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 140.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -256,17 +256,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 11.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 11.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 11.jpg'
+                                    src='/Assets/Assets/For-web/Group 11.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -279,158 +279,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 153.jpg'
+                                            data-src='/Assets/Assets/For-web/Rectangle 153.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 153.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        </Stack>
-
-                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 15.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 15.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 8.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 8.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 16.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 16.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 6.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 6.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 144.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 144.jpg'
-                                    alt='portfolio1'
-                                    width='383'
-                                    height='334'
-                                />
-                            </div>
-                        </div>
-                        <div className={`${styles['testimonial']}`}>
-                            <div className={`${styles['box']}`}>
-                                <div className={`${styles.overlay}`}>
-                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
-                                        <Image
-                                        alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
-                                            width='20'
-                                            height='20'
-                                            data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 14.jpg'
-                                        />
-                                    </div>
-                                </div>
-                                <Image
-                                    className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 14.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 153.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -446,17 +305,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 10.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 15.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 10.jpg'
+                                    src='/Assets/Assets/For-web/Group 15.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -469,17 +328,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 161.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 8.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 161.jpg'
+                                    src='/Assets/Assets/For-web/Group 8.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -492,17 +351,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 7.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 16.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 7.jpg'
+                                    src='/Assets/Assets/For-web/Group 16.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -515,17 +374,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 164.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 6.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 164.jpg'
+                                    src='/Assets/Assets/For-web/Group 6.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -538,17 +397,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 163.jpg'
+                                            data-src='/Assets/Assets/For-web/Rectangle 144.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 163.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 144.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -561,17 +420,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 9.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 14.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 9.jpg'
+                                    src='/Assets/Assets/For-web/Group 14.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -587,17 +446,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 156.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 10.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 156.jpg'
+                                    src='/Assets/Assets/For-web/Group 10.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -610,17 +469,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 13.jpg'
+                                            data-src='/Assets/Assets/For-web/Rectangle 161.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 13.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 161.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -633,17 +492,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 159.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 7.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 159.jpg'
+                                    src='/Assets/Assets/For-web/Group 7.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -656,17 +515,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 12.jpg'
+                                            data-src='/Assets/Assets/For-web/Rectangle 164.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 12.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 164.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -679,17 +538,17 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Rectangle 168.jpg'
+                                            data-src='/Assets/Assets/For-web/Rectangle 163.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 168.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 163.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -702,17 +561,158 @@ const LogoPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Group 5.jpg'
+                                            data-src='/Assets/Assets/For-web/Group 9.jpg'
                                         />
                                     </div>
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 5.jpg'
+                                    src='/Assets/Assets/For-web/Group 9.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        </Stack>
+
+                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For-web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For-web/Rectangle 156.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For-web/Rectangle 156.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For-web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For-web/Group 13.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For-web/Group 13.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For-web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For-web/Rectangle 159.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For-web/Rectangle 159.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For-web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For-web/Group 12.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For-web/Group 12.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For-web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For-web/Rectangle 168.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For-web/Rectangle 168.jpg'
+                                    alt='portfolio1'
+                                    width='383'
+                                    height='334'
+                                />
+                            </div>
+                        </div>
+                        <div className={`${styles['testimonial']}`}>
+                            <div className={`${styles['box']}`}>
+                                <div className={`${styles.overlay}`}>
+                                    <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                                        <Image
+                                        alt='logo portfolio'
+                                            src='/Assets/Assets/For-web/cross.svg'
+                                            width='20'
+                                            height='20'
+                                            data-fancybox="gallery"
+                                            data-src='/Assets/Assets/For-web/Group 5.jpg'
+                                        />
+                                    </div>
+                                </div>
+                                <Image
+                                    className={`${styles['portfolioImage']}`}
+                                    src='/Assets/Assets/For-web/Group 5.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -728,57 +728,57 @@ const LogoPortfolio = () => {
                             <div className="">
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio11.png'
+                                    src='/Assets/Assets/For-web/portfolio11.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                                 <div className={`${styles['portfolioHover']}`}></div>
                             </div>
                             <div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio12.png'
+                                    src='/Assets/Assets/For-web/portfolio12.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                             </div>
                             <div className="">
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio13.png'
+                                    src='/Assets/Assets/For-web/portfolio13.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                             </div>
                             <div className="">
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio14.png'
+                                    src='/Assets/Assets/For-web/portfolio14.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                             </div>
                             <div className="">
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio15.png'
+                                    src='/Assets/Assets/For-web/portfolio15.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                             </div>
                         </Stack> */}

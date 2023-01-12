@@ -1,7 +1,7 @@
 import { Container, Row, Col, Form, Dropdown, DropdownButton } from 'react-bootstrap'
 import styles from './Forms.module.css'
 import Image from 'next/image';
-import uploadIcon from '../../public/Assets/Assets/For web/upload.png';
+import uploadIcon from '../../public/Assets/Assets/For-web/upload.png';
 import { SketchPicker } from 'react-color';
 import { useState } from 'react';
 import Stepper from './stepper/stepper';
@@ -99,7 +99,7 @@ const DetailForms = () => {
                     <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={5} md={5}>
                     <Image
                         className={styles.guaranteeImage}
-                        src='/Assets/Assets/For Web/moneyBack.png'
+                        src='/Assets/Assets/For-web/moneyBack.png'
                         alt='money back guarantee'
                         width='200'
                         height='180'

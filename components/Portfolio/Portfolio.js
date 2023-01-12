@@ -10,31 +10,31 @@ import Link from 'next/link';
 import Slider from "react-slick";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
-import HomePortfolio1 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
-import HomePortfolio2 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-2.jpg' 
-import HomePortfolio3 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-3-main.jpg' 
-import HomePortfolio4 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-4-main.jpg' 
-import HomePortfolio5 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-5-main.jpg' 
-import HomePortfolio6 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-6-main.jpg' 
-import HomePortfolio7 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-7.jpg' 
-import HomePortfolio8 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-8.jpg' 
-import HomePortfolio9 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-9.jpg' 
-import HomePortfolio10 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-10.jpg' 
-import HomePortfolio11 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-11-main.jpg'
-import HomePortfolio12 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-12-main.jpg'
-import HomePortfolio13 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-13.jpg'
-import HomePortfolio14 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-14.jpg'
-import HomePortfolio15 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-15-main.jpg'
-import HomePortfolio16 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-16.jpg'
-import HomePortfolio17 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-17.jpg'
-import HomePortfolio18 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-18-main.jpg'
-import HomePortfolio19 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-19.jpg'
-import HomePortfolio20 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-20.jpg'
-import HomePortfolio21 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-21-main.jpg'
-import HomePortfolio22 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-22.jpg'
-import HomePortfolio23 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-23-main.jpg'
-import HomePortfolio24 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-24.jpg'
-import HomePortfolio25 from '../../public/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-25-main.jpg'
+import HomePortfolio1 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
+import HomePortfolio2 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-2.jpg' 
+import HomePortfolio3 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-3-main.jpg' 
+import HomePortfolio4 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-4-main.jpg' 
+import HomePortfolio5 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-5-main.jpg' 
+import HomePortfolio6 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-6-main.jpg' 
+import HomePortfolio7 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-7.jpg' 
+import HomePortfolio8 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-8.jpg' 
+import HomePortfolio9 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-9.jpg' 
+import HomePortfolio10 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-10.jpg' 
+import HomePortfolio11 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-11-main.jpg'
+import HomePortfolio12 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-12-main.jpg'
+import HomePortfolio13 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-13.jpg'
+import HomePortfolio14 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-14.jpg'
+import HomePortfolio15 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-15-main.jpg'
+import HomePortfolio16 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-16.jpg'
+import HomePortfolio17 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-17.jpg'
+import HomePortfolio18 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-18-main.jpg'
+import HomePortfolio19 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-19.jpg'
+import HomePortfolio20 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-20.jpg'
+import HomePortfolio21 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-21-main.jpg'
+import HomePortfolio22 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-22.jpg'
+import HomePortfolio23 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-23-main.jpg'
+import HomePortfolio24 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-24.jpg'
+import HomePortfolio25 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-25-main.jpg'
 
 
 const Portfolio = () => {
@@ -202,7 +202,7 @@ const Portfolio = () => {
                   {/* <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                       alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       />
@@ -215,7 +215,7 @@ const Portfolio = () => {
                   width='383'
                   height='334'
                   data-fancybox="gallery"
-                  data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
+                  data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
                 />
               </div>
               <div className={`${styles['topLineTwo']}`}></div>
@@ -226,11 +226,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-2.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-2.jpg'
                     />
                   </div>
                 </div>
@@ -249,11 +249,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-3-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-3-detail.jpg'
                     />
                   </div>
                 </div>
@@ -272,11 +272,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-4-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-4-detail.jpg'
                     />
                   </div>
                 </div>
@@ -295,11 +295,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-5-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-5-detail.jpg'
                     />
                   </div>
                 </div>
@@ -318,11 +318,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-6-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-6-detail.jpg'
                     />
                   </div>
                 </div>
@@ -341,11 +341,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-7.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-7.jpg'
                     />
                   </div>
                 </div>
@@ -367,11 +367,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-8.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-8.jpg'
                     />
                   </div>
                 </div>
@@ -390,11 +390,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-9.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-9.jpg'
                     />
                   </div>
                 </div>
@@ -413,11 +413,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-10.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-10.jpg'
                     />
                   </div>
                 </div>
@@ -436,11 +436,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-11-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-11-detail.jpg'
                     />
                   </div>
                 </div>
@@ -459,11 +459,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-12-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-12-detail.jpg'
                     />
                   </div>
                 </div>
@@ -482,11 +482,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-13.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-13.jpg'
                     />
                   </div>
                 </div>
@@ -505,11 +505,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-14.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-14.jpg'
                     />
                   </div>
                 </div>
@@ -528,11 +528,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-15-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-15-detail.jpg'
                     />
                   </div>
                 </div>
@@ -553,11 +553,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-16.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-16.jpg'
                     />
                   </div>
                 </div>
@@ -576,11 +576,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-17.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-17.jpg'
                     />
                   </div>
                 </div>
@@ -599,11 +599,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-18-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-18-detail.jpg'
                     />
                   </div>
                 </div>
@@ -622,11 +622,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-19.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-19.jpg'
                     />
                   </div>
                 </div>
@@ -645,11 +645,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-20.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-20.jpg'
                     />
                   </div>
                 </div>
@@ -668,11 +668,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-21-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-21-detail.jpg'
                     />
                   </div>
                 </div>
@@ -691,11 +691,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-22.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-22.jpg'
                     />
                   </div>
                 </div>
@@ -714,11 +714,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-23-deatil.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-23-deatil.jpg'
                     />
                   </div>
                 </div>
@@ -737,11 +737,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-24.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-24.jpg'
                     />
                   </div>
                 </div>
@@ -760,11 +760,11 @@ const Portfolio = () => {
                   <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                     <Image
                     alt='portfolio'
-                      src='/Assets/Assets/For Web/cross.svg'
+                      src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
                       data-fancybox="gallery"
-                      data-src='/Assets/Assets/For web/home-portfolio/Kodaweb-home-portfolio-25-detail.jpg'
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-25-detail.jpg'
                     />
                   </div>
                 </div>

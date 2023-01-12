@@ -24,7 +24,7 @@ const InnerAboutUs = () => {
                                     <li data-aos="fade-down" data-aos-duration='1000'>
                                         <span>
                                             <Image
-                                                src='/Assets/Assets/For Web/accept_1.svg'
+                                                src='/Assets/Assets/For-web/accept_1.svg'
                                                 width='18'
                                                 height='18'
                                                 alt='check'
@@ -35,7 +35,7 @@ const InnerAboutUs = () => {
                                     <li data-aos="fade-down" data-aos-duration='1500'>
                                         <span>
                                             <Image
-                                                src='/Assets/Assets/For Web/accept_1.svg'
+                                                src='/Assets/Assets/For-web/accept_1.svg'
                                                 width='18'
                                                 height='18'
                                                 alt='check'
@@ -46,7 +46,7 @@ const InnerAboutUs = () => {
                                     <li data-aos="fade-down" data-aos-duration='2000'>
                                         <span>
                                             <Image
-                                                src='/Assets/Assets/For Web/accept_1.svg'
+                                                src='/Assets/Assets/For-web/accept_1.svg'
                                                 width='18'
                                                 height='18'
                                                 alt='check'
@@ -60,7 +60,7 @@ const InnerAboutUs = () => {
                         <Col lg={6} xs={12} className={styles.innerAboutImageOverlapCol}>
                             <Image
                                 className={styles.innerAboutImageOne}
-                                src='/Assets/Assets/For Web/About Us image 1.jpg'
+                                src='/Assets/Assets/For-web/About Us image 1.jpg'
                                 width='455'
                                 height='514'
                                 alt='About Us image 1'
@@ -69,7 +69,7 @@ const InnerAboutUs = () => {
                             />
                             <Image
                                 className={styles.innerAboutImageTwo}
-                                src='/Assets/Assets/For Web/About Us image 2.jpg'
+                                src='/Assets/Assets/For-web/About Us image 2.jpg'
                                 width='387'
                                 height='443'
                                 alt='About Us image 2'

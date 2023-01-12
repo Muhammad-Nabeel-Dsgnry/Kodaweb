@@ -4,13 +4,13 @@ import styles from '../../../styles/projectDetail.module.css'
 import Link from 'next/link';
 import { useState } from 'react';
 import PhoneInput from 'react-phone-number-input'
-import GuaranteeIcon from '../../../public/Assets/Assets/For web/tick.svg'
+import GuaranteeIcon from '../../../public/Assets/Assets/For-web/tick.svg'
 import Image from 'next/image';
 import SectionContent from '../sectionContent';
-import stripe from '../../../public/Assets/Assets/For web/Stripe.svg'
-import creditCard from '../../../public/Assets/Assets/For web/credit-debit-card.svg'
-import payPal from '../../../public/Assets/Assets/For web/PayPal.svg'
-import select from '../../../public/Assets/Assets/For web/tick.svg'
+import stripe from '../../../public/Assets/Assets/For-web/Stripe.svg'
+import creditCard from '../../../public/Assets/Assets/For-web/credit-debit-card.svg'
+import payPal from '../../../public/Assets/Assets/For-web/PayPal.svg'
+import select from '../../../public/Assets/Assets/For-web/tick.svg'
 import ProjectBrief from '../step3/projectBrief';
 import Step1 from '../step1/step1';
 import Step3 from '../step3/step3';

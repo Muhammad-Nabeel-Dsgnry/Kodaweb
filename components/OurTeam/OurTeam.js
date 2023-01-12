@@ -27,14 +27,14 @@ const OurTeam = () => {
                             <div className={`${styles['AnimationImgBoxOne']}`}>
                                 <Image
                                     className={styles.imgOne}
-                                    src='/Assets/Assets/For web/team-6.png'
+                                    src='/Assets/Assets/For-web/team-6.png'
                                     alt='team one'
                                     width='233'
                                     height='237'
                                 />
                                 <Image
                                     className={styles.imgTwo}
-                                    src='/Assets/Assets/For web/team-13.png'
+                                    src='/Assets/Assets/For-web/team-13.png'
                                     alt='team one'
                                     width='233'
                                     height='237'
@@ -45,14 +45,14 @@ const OurTeam = () => {
                             <div className={`${styles['AnimationImgBoxOne']}`}>
                                 <Image
                                     className={styles.imgOne}
-                                    src='/Assets/Assets/For web/team-7.png'
+                                    src='/Assets/Assets/For-web/team-7.png'
                                     alt='team one'
                                     width='173'
                                     height='151'
                                 />
                                 <Image
                                     className={styles.imgTwo}
-                                    src='/Assets/Assets/For web/team-14.png'
+                                    src='/Assets/Assets/For-web/team-14.png'
                                     alt='team one'
                                     width='173'
                                     height='151'
@@ -63,14 +63,14 @@ const OurTeam = () => {
                             <div className={`${styles['AnimationImgBoxOne']}`}>
                                 <Image
                                     className={styles.imgOne}
-                                    src='/Assets/Assets/For web/team-5.png'
+                                    src='/Assets/Assets/For-web/team-5.png'
                                     alt='team one'
                                     width='112'
                                     height='183'
                                 />
                                 <Image
                                     className={styles.imgTwo}
-                                    src='/Assets/Assets/For web/team-12.png'
+                                    src='/Assets/Assets/For-web/team-12.png'
                                     alt='team one'
                                     width='112'
                                     height='183'
@@ -83,14 +83,14 @@ const OurTeam = () => {
                                 <div className={`${styles['AnimationImgBoxOne']} ${styles['AnimationImgBoxTwo']}`}>
                                     <Image
                                         className={styles.imgOne}
-                                        src='/Assets/Assets/For web/team-1.png'
+                                        src='/Assets/Assets/For-web/team-1.png'
                                         alt='team one'
                                         width='219'
                                         height='222'
                                     />
                                     <Image
                                         className={styles.imgTwo}
-                                        src='/Assets/Assets/For web/team-8.png'
+                                        src='/Assets/Assets/For-web/team-8.png'
                                         alt='team one'
                                         width='219'
                                         height='222'
@@ -101,14 +101,14 @@ const OurTeam = () => {
                             <div className={`${styles['AnimationImgBoxOne']} ${styles['AnimationImgBoxTwo']}`}>
                                 <Image
                                     className={styles.imgOne}
-                                    src='/Assets/Assets/For web/team-2.png'
+                                    src='/Assets/Assets/For-web/team-2.png'
                                     alt='team one'
                                     width='142'
                                     height='149'
                                 />
                                 <Image
                                     className={styles.imgTwo}
-                                    src='/Assets/Assets/For web/team-9.png'
+                                    src='/Assets/Assets/For-web/team-9.png'
                                     alt='team one'
                                     width='142'
                                     height='149'
@@ -122,14 +122,14 @@ const OurTeam = () => {
                             <div className={`${styles['AnimationImgBoxOne']} ${styles['AnimationImgBoxTwo']}`} style={{display: 'flex', justifyContent: 'end'}}>
                                 <Image
                                     className={styles.imgOne}
-                                    src='/Assets/Assets/For web/team-4.png'
+                                    src='/Assets/Assets/For-web/team-4.png'
                                     alt='team one'
                                     width='176'
                                     height='186'
                                 />
                                 <Image
                                     className={styles.imgTwo}
-                                    src='/Assets/Assets/For web/team-11.png'
+                                    src='/Assets/Assets/For-web/team-11.png'
                                     alt='team one'
                                     width='176'
                                     height='186'
@@ -145,14 +145,14 @@ const OurTeam = () => {
                             <div className={`${styles['AnimationImgBoxOne']} ${styles['AnimationImgBoxThree']}`}>
                                 <Image
                                     className={styles.imgOne}
-                                    src='/Assets/Assets/For web/team-3.png'
+                                    src='/Assets/Assets/For-web/team-3.png'
                                     alt='team one'
                                     width='224'
                                     height='247'
                                 />
                                 <Image
                                     className={styles.imgTwo}
-                                    src='/Assets/Assets/For web/team-10.png'
+                                    src='/Assets/Assets/For-web/team-10.png'
                                     alt='team one'
                                     width='224'
                                     height='247'

@@ -24,7 +24,7 @@ const WhoWeAre = () => {
                         <div className={styles.WhoWeAreCounterBox}>
                             <span className={styles.WhoWeAreCounterBoxDivider}></span>
                             <Image
-                                src='/Assets/Assets/For Web/Project-completed-blue.svg'
+                                src='/Assets/Assets/For-web/Project-completed-blue.svg'
                                 alt='Who We Are icon'
                                 width='33'
                                 height='40'
@@ -44,7 +44,7 @@ const WhoWeAre = () => {
                     <Col md={4} xs={4} className='p-0'>
                         <div className={styles.WhoWeAreCounterBox}>
                             <Image
-                                src='/Assets/Assets/For Web/Satisfied-customer-blue.svg'
+                                src='/Assets/Assets/For-web/Satisfied-customer-blue.svg'
                                 alt='Who We Are icon'
                                 width='33'
                                 height='40'
@@ -65,7 +65,7 @@ const WhoWeAre = () => {
                         <div className={styles.WhoWeAreCounterBox}>
                     <span className={styles.WhoWeAreCounterBoxDivider2}></span>
                             <Image
-                                src='/Assets/Assets/For Web/national-award-blue.svg'
+                                src='/Assets/Assets/For-web/national-award-blue.svg'
                                 alt='Who We Are icon'
                                 width='33'
                                 height='40'
@@ -87,7 +87,7 @@ const WhoWeAre = () => {
                 <Col lg={6}>
                 <Image
                     className={styles.WhoWeAreSectionImage}
-                    src='/Assets/Assets/For Web/who-we-are.png'
+                    src='/Assets/Assets/For-web/who-we-are.png'
                     alt='who We Are'
                     width='646'
                     height='710'

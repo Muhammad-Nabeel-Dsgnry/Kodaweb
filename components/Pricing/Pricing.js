@@ -438,7 +438,7 @@ const Pricing = (props) => {
                 <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={6}>
                   <Image
                     className={styles.guaranteeImage}
-                    src='/Assets/Assets/For Web/moneyBack.png'
+                    src='/Assets/Assets/For-web/moneyBack.png'
                     alt='money back guarantee'
                     width='345'
                     height='282'

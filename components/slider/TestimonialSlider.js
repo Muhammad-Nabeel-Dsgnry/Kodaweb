@@ -91,7 +91,7 @@ const TestimonialSlider = () => {
           <div className={styles.testimonialsInnerBox}>
             <div className={styles.testimonialsBoxHeader}>
               <Image
-                src='/Assets/Assets/For Web/testimonail profile 1.jpg'
+                src='/Assets/Assets/For-web/testimonail profile 1.jpg'
                 alt='client image'
                 width='100'
                 height='100'
@@ -105,35 +105,35 @@ const TestimonialSlider = () => {
               <p contentEditable='true'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div className='d-flex'>
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
@@ -147,7 +147,7 @@ const TestimonialSlider = () => {
           <div className={styles.testimonialsInnerBox}>
             <div className={styles.testimonialsBoxHeader}>
               <Image
-                src='/Assets/Assets/For Web/testimonail profile 2.jpg'
+                src='/Assets/Assets/For-web/testimonail profile 2.jpg'
                 alt='client image'
                 width='100'
                 height='100'
@@ -161,35 +161,35 @@ const TestimonialSlider = () => {
               <p contentEditable='true'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div className='d-flex'>
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
@@ -203,7 +203,7 @@ const TestimonialSlider = () => {
           <div className={styles.testimonialsInnerBox}>
             <div className={styles.testimonialsBoxHeader}>
               <Image
-                src='/Assets/Assets/For Web/testimonail profile 1.jpg'
+                src='/Assets/Assets/For-web/testimonail profile 1.jpg'
                 alt='client image'
                 width='100'
                 height='100'
@@ -217,35 +217,35 @@ const TestimonialSlider = () => {
               <p contentEditable='true'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div className='d-flex'>
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'
                   className='me-2'
                 />
                 <Image
-                  src='/Assets/Assets/For Web/star.svg'
+                  src='/Assets/Assets/For-web/star.svg'
                   alt='client-rating'
                   width='23'
                   height='23'

@@ -7,32 +7,32 @@ import Image from 'next/image';
 import Stack from 'react-bootstrap/Stack';
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
-import BrandingPortfolio1 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-1.jpg' 
-import BrandingPortfolio2 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-2.jpg' 
-import BrandingPortfolio3 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-3.jpg' 
-import BrandingPortfolio4 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-4.jpg' 
-import BrandingPortfolio5 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-5.jpg' 
-import BrandingPortfolio6 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-6.jpg' 
-import BrandingPortfolio7 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-7.jpg' 
-import BrandingPortfolio8 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-8.jpg' 
-import BrandingPortfolio9 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-9.jpg' 
-import BrandingPortfolio10 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-10.jpg' 
-import BrandingPortfolio11 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-11.jpg' 
-import BrandingPortfolio12 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-12.jpg' 
-import BrandingPortfolio13 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-13.jpg' 
-import BrandingPortfolio14 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-14.jpg' 
-import BrandingPortfolio15 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-15.jpg' 
-import BrandingPortfolio16 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-16.jpg' 
-import BrandingPortfolio17 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-17.jpg' 
-import BrandingPortfolio18 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-18.jpg' 
-import BrandingPortfolio19 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-19.jpg' 
-import BrandingPortfolio20 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-20.jpg' 
-import BrandingPortfolio21 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-21.jpg' 
-import BrandingPortfolio22 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-22.jpg' 
-import BrandingPortfolio23 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-23.jpg' 
-import BrandingPortfolio24 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-24.jpg' 
-import BrandingPortfolio25 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-25.jpg' 
-import BrandingPortfolio26 from '../../public/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-26.jpg' 
+import BrandingPortfolio1 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-1.jpg' 
+import BrandingPortfolio2 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-2.jpg' 
+import BrandingPortfolio3 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-3.jpg' 
+import BrandingPortfolio4 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-4.jpg' 
+import BrandingPortfolio5 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-5.jpg' 
+import BrandingPortfolio6 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-6.jpg' 
+import BrandingPortfolio7 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-7.jpg' 
+import BrandingPortfolio8 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-8.jpg' 
+import BrandingPortfolio9 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-9.jpg' 
+import BrandingPortfolio10 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-10.jpg' 
+import BrandingPortfolio11 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-11.jpg' 
+import BrandingPortfolio12 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-12.jpg' 
+import BrandingPortfolio13 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-13.jpg' 
+import BrandingPortfolio14 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-14.jpg' 
+import BrandingPortfolio15 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-15.jpg' 
+import BrandingPortfolio16 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-16.jpg' 
+import BrandingPortfolio17 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-17.jpg' 
+import BrandingPortfolio18 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-18.jpg' 
+import BrandingPortfolio19 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-19.jpg' 
+import BrandingPortfolio20 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-20.jpg' 
+import BrandingPortfolio21 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-21.jpg' 
+import BrandingPortfolio22 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-22.jpg' 
+import BrandingPortfolio23 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-23.jpg' 
+import BrandingPortfolio24 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-24.jpg' 
+import BrandingPortfolio25 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-25.jpg' 
+import BrandingPortfolio26 from '../../public/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-26.jpg' 
 
 const BrandingIdentityPortfolio = () => {
 
@@ -48,11 +48,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                             alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src={'/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-1.jpg'}
+                                            data-src={'/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-1.jpg'}
                                         />
                                     </div>
                                 </div>
@@ -71,11 +71,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-2.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-2.jpg'
                                         />
                                     </div>
                                 </div>
@@ -94,11 +94,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-3.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-3.jpg'
                                         />
                                     </div>
                                 </div>
@@ -117,11 +117,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-4.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-4.jpg'
                                         />
                                     </div>
                                 </div>
@@ -140,11 +140,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-5.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-5.jpg'
                                         />
                                     </div>
                                 </div>
@@ -163,11 +163,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-6.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-6.jpg'
                                         />
                                     </div>
                                 </div>
@@ -189,11 +189,11 @@ const BrandingIdentityPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-7.jpg'
+                                                data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-7.jpg'
                                             />
                                         </div>
                                     </div>
@@ -212,11 +212,11 @@ const BrandingIdentityPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-8.jpg'
+                                                data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-8.jpg'
                                             />
                                         </div>
                                     </div>
@@ -235,11 +235,11 @@ const BrandingIdentityPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-9.jpg'
+                                                data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-9.jpg'
                                             />
                                         </div>
                                     </div>
@@ -258,11 +258,11 @@ const BrandingIdentityPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-10.jpg'
+                                                data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-10.jpg'
                                             />
                                         </div>
                                     </div>
@@ -281,11 +281,11 @@ const BrandingIdentityPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-11.jpg'
+                                                data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-11.jpg'
                                             />
                                         </div>
                                     </div>
@@ -304,11 +304,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-12.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-12.jpg'
                                         />
                                     </div>
                                 </div>
@@ -331,11 +331,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-13.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-13.jpg'
                                         />
                                     </div>
                                 </div>
@@ -354,11 +354,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-14.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-14.jpg'
                                         />
                                     </div>
                                 </div>
@@ -377,11 +377,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-15.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-15.jpg'
                                         />
                                     </div>
                                 </div>
@@ -400,11 +400,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-16.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-16.jpg'
                                         />
                                     </div>
                                 </div>
@@ -423,11 +423,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-17.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-17.jpg'
                                         />
                                     </div>
                                 </div>
@@ -446,11 +446,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-18.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-18.jpg'
                                         />
                                     </div>
                                 </div>
@@ -472,11 +472,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-19.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-19.jpg'
                                         />
                                     </div>
                                 </div>
@@ -495,11 +495,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-20.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-20.jpg'
                                         />
                                     </div>
                                 </div>
@@ -518,11 +518,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-21.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-21.jpg'
                                         />
                                     </div>
                                 </div>
@@ -541,11 +541,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-22.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-22.jpg'
                                         />
                                     </div>
                                 </div>
@@ -564,11 +564,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-23.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-23.jpg'
                                         />
                                     </div>
                                 </div>
@@ -587,11 +587,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-24.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-24.jpg'
                                         />
                                     </div>
                                 </div>
@@ -613,11 +613,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-25.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-25.jpg'
                                         />
                                     </div>
                                 </div>
@@ -636,11 +636,11 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-26.jpg'
+                                            data-src='/Assets/Assets/For-web/Branding_Identity_Portfolio/kodaweb-Branding-Identity-Portfolio-26.jpg'
                                         />
                                     </div>
                                 </div>
@@ -659,7 +659,7 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                         />
@@ -667,7 +667,7 @@ const BrandingIdentityPortfolio = () => {
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 159.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 159.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -680,7 +680,7 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                         />
@@ -688,7 +688,7 @@ const BrandingIdentityPortfolio = () => {
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 12.jpg'
+                                    src='/Assets/Assets/For-web/Group 12.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -701,7 +701,7 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                         />
@@ -709,7 +709,7 @@ const BrandingIdentityPortfolio = () => {
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Rectangle 168.jpg'
+                                    src='/Assets/Assets/For-web/Rectangle 168.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -722,7 +722,7 @@ const BrandingIdentityPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                         />
@@ -730,7 +730,7 @@ const BrandingIdentityPortfolio = () => {
                                 </div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/Group 5.jpg'
+                                    src='/Assets/Assets/For-web/Group 5.jpg'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
@@ -746,57 +746,57 @@ const BrandingIdentityPortfolio = () => {
                             <div className="">
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio11.png'
+                                    src='/Assets/Assets/For-web/portfolio11.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                                 <div className={`${styles['portfolioHover']}`}></div>
                             </div>
                             <div>
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio12.png'
+                                    src='/Assets/Assets/For-web/portfolio12.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                             </div>
                             <div className="">
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio13.png'
+                                    src='/Assets/Assets/For-web/portfolio13.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                             </div>
                             <div className="">
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio14.png'
+                                    src='/Assets/Assets/For-web/portfolio14.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                             </div>
                             <div className="">
                                 <Image
                                     className={`${styles['portfolioImage']}`}
-                                    src='/Assets/Assets/For Web/portfolio15.png'
+                                    src='/Assets/Assets/For-web/portfolio15.png'
                                     alt='portfolio1'
                                     width='383'
                                     height='334'
                                     data-fancybox="gallery"
-                                    data-src='/Assets/Assets/For Web/one.jpg'
+                                    data-src='/Assets/Assets/For-web/one.jpg'
                                 />
                             </div>
                         </Stack> */}

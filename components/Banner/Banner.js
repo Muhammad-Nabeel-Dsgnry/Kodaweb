@@ -18,7 +18,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
         <Link href='#' data-aos="fade-down" data-aos-duration="1000">
           <Image
             className="me-4 my-4"
-            src='/Assets/Assets/For Web/facebook.svg'
+            src='/Assets/Assets/For-web/facebook.svg'
             alt="banner social media icon"
             width='30'
             height='30'
@@ -27,7 +27,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
         <Link href='#' data-aos="fade-down" data-aos-duration="1000">
           <Image
             className="me-4 my-4"
-            src='/Assets/Assets/For Web/Dribble.svg'
+            src='/Assets/Assets/For-web/Dribble.svg'
             alt="banner social media icon"
             width='30'
             height='30'
@@ -36,7 +36,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
         <Link href='#' data-aos="fade-down" data-aos-duration="1000">
           <Image
             className="me-4 my-4"
-            src='/Assets/Assets/For Web/Twitter.svg'
+            src='/Assets/Assets/For-web/Twitter.svg'
             alt="banner social media icon"
             width='30'
             height='30'
@@ -45,7 +45,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
         <Link href='#' data-aos="fade-down" data-aos-duration="1000">
           <Image
             className="me-4 my-4"
-            src='/Assets/Assets/For Web/Linked In.svg'
+            src='/Assets/Assets/For-web/Linked In.svg'
             alt="banner social media icon"
             width='30'
             height='30'
@@ -57,7 +57,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
         <Link href=''>
           <Image
               className={`${styles['homeBannerScrollIcon']} ${'me-4 my-4'}`}
-              src='/Assets/Assets/For Web/Scroll-down-Arrow (2).svg'
+              src='/Assets/Assets/For-web/Scroll-down-Arrow (2).svg'
               alt="banner social media icon"
               width='30'
               height='30'

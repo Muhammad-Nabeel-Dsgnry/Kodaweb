@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import styles from '../../../styles/projectDetail.module.css'
-// import checkIcon from '../../../public/Assets/Assets/For web/pkg-details.svg'
+// import checkIcon from '../../../public/Assets/Assets/For-web/pkg-details.svg'
 import Image from 'next/image'
 
 const Optional = ({item}) => {
@@ -46,7 +46,7 @@ const Optional = ({item}) => {
                                         <div key={index} className={`${styles['detailsFooterOptionsWrapper']} ${'me-3'}`}>
                                             <span className={`${styles['packageOptionsBox']} ${'d-flex justify-content-center align-items-center'}`}>
                                                 <Image
-                                                    src='/Assets/Assets/For web/pkg-details.svg'
+                                                    src='/Assets/Assets/For-web/pkg-details.svg'
                                                     alt='package options'
                                                     width='18'
                                                     height='15'

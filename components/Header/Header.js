@@ -7,7 +7,7 @@ import Image from 'next/image';
 import styles from './Header.module.css'
 import Button from 'react-bootstrap/Button';
 import { useRouter } from 'next/router';
-import LogoHeader from '../../public/Assets/Assets/For web/LogoHeader.png';
+import LogoHeader from '../../public/Assets/Assets/For-web/LogoHeader.png';
 import GetAQuote from '../GetAQuote/GetAQuote';
 import { useState } from 'react';
 

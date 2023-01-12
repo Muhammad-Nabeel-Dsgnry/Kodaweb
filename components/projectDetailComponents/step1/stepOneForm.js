@@ -1,16 +1,16 @@
 import { Container, Row, Col, Form, Dropdown, DropdownButton, ButtonGroup, Stack } from 'react-bootstrap'
 import styles from '../../../styles/projectDetail.module.css'
 import Image from 'next/image';
-import uploadIcon from '../../../public/Assets/Assets/For web/upload.png';
+import uploadIcon from '../../../public/Assets/Assets/For-web/upload.png';
 import { SketchPicker } from 'react-color';
 import { useState, useEffect } from 'react';
 import SectionContent from '../sectionContent';
 import {Logo_Design_Duration, Logo_Branding_Identity_Duration} from './DurationData'
-import GuaranteeIcon from '../../../public/Assets/Assets/For web/tick.svg'
+import GuaranteeIcon from '../../../public/Assets/Assets/For-web/tick.svg'
 import Link from 'next/link';
 import ProjectBrief from '../step3/projectBrief';
 import Step2 from '../step2/step2';
-// import checkIcon from '../../../public/Assets/Assets/For Web/pkg-details.svg'
+// import checkIcon from '../../../public/Assets/Assets/For-web/pkg-details.svg'
 import Optional from './Optional';
 import LogoOptional from './logoOptional';
 import BrandingOptional from './brandingOptional';
@@ -192,7 +192,7 @@ const StepOneForm = () => {
                 <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={5} md={5}>
                   <Image
                     className={styles.guaranteeImage}
-                    src='/Assets/Assets/For Web/moneyBack.png'
+                    src='/Assets/Assets/For-web/moneyBack.png'
                     alt='money back guarantee'
                     width='200'
                     height='180'
@@ -450,7 +450,7 @@ const StepOneForm = () => {
                                         <div key={index} className={`${styles['detailsFooterOptionsWrapper']} ${'me-3'}`}>
                                             <span className={`${styles['packageOptionsBox']} ${'d-flex justify-content-center align-items-center'}`}>
                                                 <Image
-                                                    src='/Assets/Assets/For Web/pkg-details.svg'
+                                                    src='/Assets/Assets/For-web/pkg-details.svg'
                                                     alt='package options'
                                                     width='18'
                                                     height='15'

@@ -7,17 +7,17 @@ import Image from 'next/image';
 import Stack from 'react-bootstrap/Stack';
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
-import MobileAppPortfolio1 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-2-mian.jpg' 
-import MobileAppPortfolio2 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-4-mian.jpg' 
-import MobileAppPortfolio3 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-1-mian.jpg' 
-import MobileAppPortfolio4 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-3-mian.jpg' 
-import MobileAppPortfolio5 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-5-mian.jpg' 
-import MobileAppPortfolio6 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-6-mian.jpg' 
-import MobileAppPortfolio7 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-7-mian.jpg' 
-import MobileAppPortfolio8 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-9-mian.jpg' 
-import MobileAppPortfolio9 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-8-mian.jpg' 
-import MobileAppPortfolio10 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-10-mian.jpg' 
-import MobileAppPortfolio11 from '../../public/Assets/Assets/For web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-11-mian.jpg'
+import MobileAppPortfolio1 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-2-mian.jpg' 
+import MobileAppPortfolio2 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-4-mian.jpg' 
+import MobileAppPortfolio3 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-1-mian.jpg' 
+import MobileAppPortfolio4 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-3-mian.jpg' 
+import MobileAppPortfolio5 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-5-mian.jpg' 
+import MobileAppPortfolio6 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-6-mian.jpg' 
+import MobileAppPortfolio7 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-7-mian.jpg' 
+import MobileAppPortfolio8 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-9-mian.jpg' 
+import MobileAppPortfolio9 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-8-mian.jpg' 
+import MobileAppPortfolio10 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-10-mian.jpg' 
+import MobileAppPortfolio11 from '../../public/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-11-mian.jpg'
 
 const AppPortfolio = () => {
 
@@ -33,11 +33,11 @@ const AppPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-2-detail.jpg'
+                                                data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-2-detail.jpg'
                                             />
                                         </div>
                                     </div>
@@ -56,11 +56,11 @@ const AppPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-4-detail.jpg'
+                                                data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-4-detail.jpg'
                                             />
                                         </div>
                                     </div>
@@ -79,11 +79,11 @@ const AppPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-1-detail.jpg'
+                                                data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-1-detail.jpg'
                                             />
                                         </div>
                                     </div>
@@ -102,11 +102,11 @@ const AppPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-3-detail.jpg'
+                                                data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-3-detail.jpg'
                                             />
                                         </div>
                                     </div>
@@ -125,11 +125,11 @@ const AppPortfolio = () => {
                                         <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                             <Image
                                             alt='logo portfolio'
-                                                src='/Assets/Assets/For Web/cross.svg'
+                                                src='/Assets/Assets/For-web/cross.svg'
                                                 width='20'
                                                 height='20'
                                                 data-fancybox="gallery"
-                                                data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-5-detail.jpg'
+                                                data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-5-detail.jpg'
                                             />
                                         </div>
                                     </div>
@@ -148,11 +148,11 @@ const AppPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-6-detail.jpg'
+                                            data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-6-detail.jpg'
                                         />
                                     </div>
                                 </div>
@@ -175,11 +175,11 @@ const AppPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-7-detail.jpg'
+                                            data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-7-detail.jpg'
                                         />
                                     </div>
                                 </div>
@@ -198,11 +198,11 @@ const AppPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-9-detail.jpg'
+                                            data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-9-detail.jpg'
                                         />
                                     </div>
                                 </div>
@@ -221,11 +221,11 @@ const AppPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-8-detail.jpg'
+                                            data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-8-detail.jpg'
                                         />
                                     </div>
                                 </div>
@@ -244,11 +244,11 @@ const AppPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-10-detail.jpg'
+                                            data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-10-detail.jpg'
                                         />
                                     </div>
                                 </div>
@@ -267,11 +267,11 @@ const AppPortfolio = () => {
                                     <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
                                         <Image
                                         alt='logo portfolio'
-                                            src='/Assets/Assets/For Web/cross.svg'
+                                            src='/Assets/Assets/For-web/cross.svg'
                                             width='20'
                                             height='20'
                                             data-fancybox="gallery"
-                                            data-src='/Assets/Assets/For Web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-11-detail.jpg'
+                                            data-src='/Assets/Assets/For-web/Mobile_App_Portfolio/Kodaweb-Mobile-Portfolio-11-detail.jpg'
                                         />
                                     </div>
                                 </div>

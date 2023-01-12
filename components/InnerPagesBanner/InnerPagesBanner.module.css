@@ -1,6 +1,6 @@
 .innerBannerMainWrapper {
     /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/Assets/Assets/For Web/Banner-Service-Page.jpg'); */
+    url('/Assets/Assets/For-web/Banner-Service-Page.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -12,27 +12,27 @@
 
 .services-bg-img {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/Assets/Assets/For Web/Kodaweb-Service-Page.jpg')
+    url('/Assets/Assets/For-web/Kodaweb-Service-Page.jpg')
 }
 
 .contactUs-bg-img {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/Assets/Assets/For Web/Kodaweb-Contact-Us.jpg')
+    url('/Assets/Assets/For-web/Kodaweb-Contact-Us.jpg')
 }
 
 .pricing-bg-img {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/Assets/Assets/For Web/Kodaweb-Pricing.jpg')
+    url('/Assets/Assets/For-web/Kodaweb-Pricing.jpg')
 }
 
 .aboutUs-bg-img {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/Assets/Assets/For Web/Kodaweb-About-Us.jpg')
+    url('/Assets/Assets/For-web/Kodaweb-About-Us.jpg')
 }
 
 .work-bg-img {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/Assets/Assets/For Web/Kodaweb-Our-work.jpg');
+    url('/Assets/Assets/For-web/Kodaweb-Our-work.jpg');
     height: 100vh;
     padding-top: 0px;
 }

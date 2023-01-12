@@ -26,7 +26,7 @@ const PackagesCard = ({ item }) => {
                                 <span className={`${styles['packagesDetailsWrapper']}`}>
                                     <Image
                                         className={`${styles['packagesDetailsIcon']}`}
-                                        src='/Assets/Assets/For Web/accept_1.svg'
+                                        src='/Assets/Assets/For-web/accept_1.svg'
                                         width='18'
                                         height='18'
                                         alt='check'

@@ -62,12 +62,12 @@
 }
 
 .slickprev:before {
-    content: url('/Assets/Assets/For Web/left-arrow.svg');
+    content: url('/Assets/Assets/For-web/left-arrow.svg');
     cursor: pointer;
 }
 
 .slicknext:before {
-    content: url('/Assets/Assets/For Web/right-arrow.svg');
+    content: url('/Assets/Assets/For-web/right-arrow.svg');
     cursor: pointer;
 }
 

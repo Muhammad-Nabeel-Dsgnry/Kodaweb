@@ -4,7 +4,7 @@ import { Container, Row, Col, ButtonGroup } from 'react-bootstrap'
 import styles from '../../styles/projectDetail.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
-import GuaranteeIcon from '../../public/Assets/Assets/For web/tick.svg'
+import GuaranteeIcon from '../../public/Assets/Assets/For-web/tick.svg'
 import Step2 from '../../components/projectDetailComponents/step2/step2';
 import Step3 from '../../components/projectDetailComponents/step3/step3';
 import { useState } from 'react';
