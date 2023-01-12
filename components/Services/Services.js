@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import Link from 'next/link';
-import BrandingIcon from '../../public/Assets/Assets/For web/Branding-blue.svg'
+import BrandingIcon from '../../public/Assets/Assets/For web/Branding-blue-2.png'
 import WebDevelopmentIcon from '../../public/Assets/Assets/For Web/web-development-blue.svg'
 import WebApplicationIcon from '../../public/Assets/Assets/For Web/Web-App-blue.svg'
 import GraphicIcon from '../../public/Assets/Assets/For Web/Graphic-blue.svg'
@@ -27,7 +27,7 @@ const Services = (props) => {
           <Container>
             <Row>
               <Col className={styles.content_Section}>
-                <div className='w-50'>
+                <div className='w-50'> 
                   <h3 className={styles.lineTitle}>Our Services</h3>
                   <h2 className={styles.mainTitle}>Design Creative That Generate Result<span className={styles.dot}>.</span></h2>
                   <p className={`${styles['Para']} ${styles['colorBlack']}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.</p>
