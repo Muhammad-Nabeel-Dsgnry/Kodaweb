@@ -24,30 +24,30 @@ const Client = () => {
             </Row>
             <Row className='pt-5'>
               <Col xs={3}>
-                <Image src='/Assets/Assets/For-web/CocaCola.png' width='174' height='76' alt='portfolio 1' />
+                <Image src='/Assets/Assets/For-web/CocaCola.png' width='174' height='76' alt='CocaCola' />
               </Col>
               <Col xs={3}>
-                <Image src='/Assets/Assets/For-web/Hyundai.png' width='174' height='76' alt='portfolio 1' />
+                <Image src='/Assets/Assets/For-web/Hyundai.png' width='174' height='76' alt='Hyundai' />
               </Col>
               <Col xs={3}>
-                <Image src='/Assets/Assets/For-web/Apple.png' width='174' height='76' alt='portfolio 1' />
+                <Image src='/Assets/Assets/For-web/Apple.png' width='174' height='76' alt='Apple' />
               </Col>
               <Col xs={3}>
-                <Image src='/Assets/Assets/For-web/Verizon.png' width='174' height='76' alt='portfolio 1' />
+                <Image src='/Assets/Assets/For-web/Verizon.png' width='174' height='76' alt='Verizon' />
               </Col>
             </Row>
             <Row className='pt-5'>
               <Col xs={3}>
-                <Image src='/Assets/Assets/For-web/MicroSoft.png' width='174' height='76' alt='portfolio 1' />
+                <Image src='/Assets/Assets/For-web/MicroSoft.png' width='174' height='76' alt='MicroSoft' />
               </Col>
               <Col xs={3}>
-                <Image src='/Assets/Assets/For-web/Nestle.png' width='174' height='76' alt='portfolio 1' />
+                <Image src='/Assets/Assets/For-web/Nestle.png' width='174' height='76' alt='Nestle' />
               </Col>
               <Col xs={3}>
-                <Image src='/Assets/Assets/For-web/Prada.png' width='174' height='76' alt='portfolio 1' />
+                <Image src='/Assets/Assets/For-web/Prada.png' width='174' height='76' alt='Prada' />
               </Col>
               <Col xs={3}>
-                <Image src='/Assets/Assets/For-web/wellcare.png' width='174' height='76' alt='portfolio 1' />
+                <Image src='/Assets/Assets/For-web/wellcare.png' width='174' height='76' alt='wellcare' />
               </Col>
             </Row>
           </Container>

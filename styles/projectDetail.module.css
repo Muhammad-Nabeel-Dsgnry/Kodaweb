@@ -318,8 +318,15 @@
 .detailsHeaderRow {
   justify-content: space-between;
 }
-.detailsTitleCol {
-
+.optionalDetailsTitleCol span {
+  background: rgba(44, 53, 205, 0.7);
+}
+.popularIconWrapper {
+  width: 167px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
 }
 .detailsTitleCol label {
   font-family: 'Inter';
@@ -345,10 +352,21 @@
   white-space: nowrap;
 }
 .detailsContentCol p {
-  margin-top: 18px;
+  margin-top: 10px;
   margin-bottom: 0px;
   margin-left: 34px;
   color: #969696;
+}
+.packageBriefRadio input {
+  border: 1.5px solid #000;
+  padding: 8px;
+}
+.packageBriefRadio input:checked, .packageBriefRadio input:focus{
+  border: 1.5px solid #2C35CD;
+    padding: 8px;
+    box-shadow: inset 0px 0px 0px 3px #2c35cd;
+    background-color: transparent;
+    outline: none;
 }
 .detailsFooterRow {
 

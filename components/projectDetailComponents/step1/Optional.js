@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import styles from '../../../styles/projectDetail.module.css'
 // import checkIcon from '../../../public/Assets/Assets/For-web/pkg-details.svg'
+import mostPopularIcon from '../../../public/Assets/Assets/For-web/star.png'
 import Image from 'next/image'
 
 const Optional = ({item}) => {
@@ -19,13 +20,24 @@ const Optional = ({item}) => {
                 <Container className={`${styles['detailsMainContainer']}`}>
                     <Row className={`${styles['detailsHeaderRow']}`}>
                         <Col lg={5} md={12} xs={12}>
-                            <div className={`${styles['detailsTitleCol']}`}>
+                            <div className={`${styles['detailsTitleCol']} ${styles['optionalDetailsTitleCol']} ${'d-flex justify-content-between align-items-center'}`}>
                                 <Form.Check
                                     type='radio'
                                     name='package details'
                                     label={`${item?.title}`}
                                     id='1'
+                                    className={`${styles['packageBriefRadio']}`}
                                 />
+                                <span className={`${'text-white rounded-pill py-2 px-3 text-nowrap'} ${styles['popularIconWrapper']}`}>
+                                    <i className={`${'me-3'}`}>
+                                        <Image
+                                            src={mostPopularIcon}
+                                            width={19}
+                                            height={18}
+                                        />
+                                    </i>
+                                    {item?.badgetitle}
+                                </span>
                             </div>
                             <div className={`${styles['detailsContentCol']}`}>
                                 <p>{item?.content} <span className={`${styles['optionalPackageDiscount']}`}> save{item?.discount}%+</span></p>

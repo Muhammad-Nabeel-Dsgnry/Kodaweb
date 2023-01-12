@@ -66,10 +66,10 @@ const StepTwoForm = (props) => {
   }
 
   // const handleBack = () => {
-  //   {
-  //     isStepTwo == 'false' ? <Step1 /> : null
-  //   }
-  //   // alert('button clicked')
+  //   setIsStepOne(false)
+  //   setIsStepTwo(false)
+    
+  //   alert('button clicked')
   // }
 
     // const sendFormTwoDataHandler = () => {
@@ -142,7 +142,7 @@ const StepTwoForm = (props) => {
                                 value={phoneNumber}
                                 defaultCountry='US'
                                 onChange={setPhoneNumber}
-                                className={`${styles['formControl']} ${'mb-2'} ${phoneNumber?.length <= 3 ? 'error' : null}`}
+                                className={`${styles['formControl']} ${'mb-2'} ${phoneNumber?.length < 1 ? 'error' : null}`}
                             />
                             {/* <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setPhoneNumber(e.target.value)} /> */}
                             {

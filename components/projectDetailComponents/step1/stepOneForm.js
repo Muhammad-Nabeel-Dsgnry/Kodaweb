@@ -428,6 +428,7 @@ const StepOneForm = () => {
                                     name='package details'
                                     label={`${packageDetails?.name} (${packageDetails?.title})`}
                                     id='1'
+                                    className={`${styles['packageBriefRadio']}`}
                                 />
                             </div>
                             <div className={`${styles['detailsContentCol']}`}>
@@ -526,6 +527,7 @@ const StepOneForm = () => {
                                                         onChange={handleChange}
                                                         onDoubleClick={handleChange}
                                                         value={`${item.time}`}
+                                                        className={`${styles['packageBriefRadio']}`}
                                                         />
                                                 </div>
                                                 <div className={`${styles['timeDurationPrice']} ${styles['timeDurationContent']}`}>
