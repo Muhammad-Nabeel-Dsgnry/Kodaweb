@@ -7,14 +7,14 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import Link from 'next/link';
-import BrandingIcon from '../../public/Assets/Assets/For web/Branding-blue-2.png'
-import WebDevelopmentIcon from '../../public/Assets/Assets/For Web/web-development-blue.svg'
-import WebApplicationIcon from '../../public/Assets/Assets/For Web/Web-App-blue.svg'
-import GraphicIcon from '../../public/Assets/Assets/For Web/Graphic-blue.svg'
-import UiUxIcon from '../../public/Assets/Assets/For Web/UX-UI-blue.svg'
-import DigitalMarketingIcon from '../../public/Assets/Assets/For Web/Digital-marketing-blue.svg'
-import Seo_ContentWritingIcon from '../../public/Assets/Assets/For Web/SEO-blue.svg'
-import AppDevelopmentIcon from '../../public/Assets/Assets/For Web/App-Dev-blue.svg'
+import BrandingIcon from '../../public/Assets/Assets/For web/Branding-icon.png'
+import WebDevelopmentIcon from '../../public/Assets/Assets/For Web/web-dev-icon.png'
+import WebApplicationIcon from '../../public/Assets/Assets/For Web/web-app-icon.png'
+import GraphicIcon from '../../public/Assets/Assets/For Web/video-production-icon.png'
+import UiUxIcon from '../../public/Assets/Assets/For Web/Ui-icon.png'
+import DigitalMarketingIcon from '../../public/Assets/Assets/For Web/Digital-marketing-icon.png'
+import Seo_ContentWritingIcon from '../../public/Assets/Assets/For Web/Seo-icon.png'
+import AppDevelopmentIcon from '../../public/Assets/Assets/For Web/app-dev-icon.png'
  
 
 const Services = (props) => {
