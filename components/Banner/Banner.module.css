@@ -39,12 +39,21 @@
 
 .banner-btn {
     border-radius: 50px;
-    padding: 18px 67px;
+    padding: 18px;
     margin-top: 50px;
+    border: 1px solid #fff;
+    width: 240px;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 30px;
 }
 
 .banner-btn:hover {
     color: #2C35CD;
+    background-color: var(--bg-white);
+    /* transition: 0.1s; */
 }
 
 .homeBannerScrollBtn {
