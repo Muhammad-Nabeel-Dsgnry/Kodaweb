@@ -1238,7 +1238,7 @@ export const E_CommercePackage = [
     {
         'id': '1',
         'title': 'Essentials',
-        'name': 'E_Commerce',
+        'name': 'E-Commerce',
         'price': 39,
         'pricing_group': 'Website',
         'packageDetails': [
@@ -1263,7 +1263,7 @@ export const E_CommercePackage = [
     {
         'id': '2',
         'title': 'Economical',
-        'name': 'E_Commerce',
+        'name': 'E-Commerce',
         'price': 40,
         'pricing_group': 'Website',
         'packageDetails': [
@@ -1288,7 +1288,7 @@ export const E_CommercePackage = [
     {
         'id': '3',
         'title': 'Pro',
-        'name': 'E_Commerce',
+        'name': 'E-Commerce',
         'price': 41,
         'pricing_group': 'Website',
         'packageDetails': [
@@ -1313,7 +1313,7 @@ export const E_CommercePackage = [
     {
         'id': '4',
         'title': 'Premium',
-        'name': 'E_Commerce',
+        'name': 'E-Commerce',
         'price': 42,
         'pricing_group': 'Website',
         'packageDetails': [

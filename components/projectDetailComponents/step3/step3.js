@@ -16,6 +16,8 @@ const step3 = (props) => {
 
     console.log('secondFormData', props)
 
+    const dataClearHandler = () => localStorage.clear()
+
     return (
         <>
         <section>
@@ -93,9 +95,9 @@ const step3 = (props) => {
             </Col>  */}
               <Col lg={6} md='auto' xs='auto' className={`${'mb-4 d-flex justify-content-end p-0'}`}>
               <ButtonGroup>
-                  <button href={{pathname: `/projectDetail`}} className={`${style['blueButton']} ${'me-4'}`}>
+                  <Link href='/pricing' className={`${style['blueButton']} ${'me-4'}`} onClick={dataClearHandler}>
                     Cancel
-                  </button>
+                  </Link>
                     <button href='#' className={`${style['blueButton']}`}>
                       Pay Now
                     </button>
