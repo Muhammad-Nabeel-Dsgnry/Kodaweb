@@ -9,7 +9,7 @@ const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, childr
       {h1Text && <h1 data-aos="zoom-in" data-aos-duration="2000">{h1Text}</h1>}
       {h2Text && <h2>{h2Text}</h2>}
       {paraText && <p className="my-5" data-aos="fade-down" data-aos-duration="2500">{paraText}</p>}
-      <Link href='/' className={`${styles['banner-btn']} ${'text-white'}`} data-aos="zoom-in" data-aos-duration="3000">
+      <Link href='/work' className={`${styles['banner-btn']} ${'text-white'}`} data-aos="zoom-in" data-aos-duration="3000">
         Discover More
       </Link>
       {children}
