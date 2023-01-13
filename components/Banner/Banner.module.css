@@ -49,11 +49,9 @@
     font-size: 1.25rem;
     line-height: 30px;
 }
-
 .banner-btn:hover {
-    color: #2C35CD;
+    color: #2C35CD !important;
     background-color: var(--bg-white);
-    /* transition: 0.1s; */
 }
 
 .homeBannerScrollBtn {
