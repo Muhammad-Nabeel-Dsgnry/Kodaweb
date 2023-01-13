@@ -31,6 +31,7 @@ const InnerPagesBanner = (props) => {
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
+                            priority
                         />
                         :
                         null
@@ -62,6 +63,7 @@ const InnerPagesBanner = (props) => {
                             alt='kodaweb-banner-image'
                             width='451'
                             height='368'
+                            priority
                         />
                         :
                         null
@@ -92,6 +94,7 @@ const InnerPagesBanner = (props) => {
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
+                            priority
                         />
                         :
                         null
@@ -122,6 +125,7 @@ const InnerPagesBanner = (props) => {
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
+                            priority
                         />
                         :
                         null
@@ -152,6 +156,7 @@ const InnerPagesBanner = (props) => {
                             alt='kodaweb-banner-image'
                             width='100'
                             height='100'
+                            priority
                         />
                         :
                         null
