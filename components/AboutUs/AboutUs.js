@@ -15,9 +15,9 @@ const AboutUs = () => {
           <Row>
             <Col lg={6} xs={12}>
               <div className='w-80'>
-                <h3 className={styles.lineTitle} contentEditable='true'>About Us</h3>
-                <h2 className={styles.mainTitle} contentEditable='true'>Dreamit Is The Best IT Agency In World<span className={styles.dot}>.</span></h2>
-                <p className={styles.Para} contentEditable='true'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.</p>
+                <h3 className={styles.lineTitle} >About Us</h3>
+                <h2 className={styles.mainTitle} >Dreamit Is The Best IT Agency In World<span className={styles.dot}>.</span></h2>
+                <p className={styles.Para} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.</p>
                 {/* <Button className={`${styles['homeAboutUsSectionButton']} ${styles['blueButton']}`}>More Details</Button> */}
                 <Link href='/about' className={`${styles['homeAboutUsSectionButton']} ${styles['blueButton']}`}>
                   More Details

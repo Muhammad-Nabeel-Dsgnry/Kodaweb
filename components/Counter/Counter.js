@@ -31,7 +31,7 @@ const Counter = () => {
                       )}
                     </VisibilitySensor>
                     </Card.Title>
-                    <Card.Text className={styles.counter_Section__cardText} contentEditable='true'>
+                    <Card.Text className={styles.counter_Section__cardText} >
                       Project Completed
                     </Card.Text>
                   </Card.Body>
@@ -52,7 +52,7 @@ const Counter = () => {
                       )}
                     </VisibilitySensor>
                     </Card.Title>
-                    <Card.Text className={styles.counter_Section__cardText} contentEditable='true'>
+                    <Card.Text className={styles.counter_Section__cardText} >
                       Satisfied Customer
                     </Card.Text>
                   </Card.Body>
@@ -73,7 +73,7 @@ const Counter = () => {
                       )}
                     </VisibilitySensor>
                     </Card.Title>
-                    <Card.Text className={styles.counter_Section__cardText} contentEditable='true'>
+                    <Card.Text className={styles.counter_Section__cardText} >
                       Working Hours
                     </Card.Text>
                   </Card.Body>
@@ -94,7 +94,7 @@ const Counter = () => {
                       )}
                     </VisibilitySensor>
                     </Card.Title>
-                    <Card.Text className={styles.counter_Section__cardText} contentEditable='true'>
+                    <Card.Text className={styles.counter_Section__cardText} >
                       Paid Advertisement
                     </Card.Text>
                   </Card.Body>

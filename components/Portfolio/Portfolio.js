@@ -186,9 +186,9 @@ const Portfolio = () => {
           <Row>
             <Col className={styles.portfolioCol}>
               <div className='w-50'>
-                <h3 className={styles.lineTitle} contentEditable='true'>Our Portfolio</h3>
-                <h2 className={styles.mainTitle} contentEditable='true'>Our Latest Project<span className={styles.dot}>.</span></h2>
-                <p className={`${styles['Para']} ${styles['colorBlack']}`} contentEditable='true'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.</p>
+                <h3 className={styles.lineTitle} >Our Portfolio</h3>
+                <h2 className={styles.mainTitle} >Our Latest Project<span className={styles.dot}>.</span></h2>
+                <p className={`${styles['Para']} ${styles['colorBlack']}`} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.</p>
               </div>
             </Col>
           </Row>

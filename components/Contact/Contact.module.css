@@ -51,10 +51,10 @@
 }
 
 .inputFieldIcon,
-.inputTextField {
-  border: 0;
-  background-color: transparent;
-  align-self: flex-start;
+.inputTextField {}
+
+.inputFieldIcon {
+  pointer-events: none;
 }
 
 .formSectionInputGroup {

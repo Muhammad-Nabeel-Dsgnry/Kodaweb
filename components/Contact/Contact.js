@@ -18,9 +18,9 @@ const Contact = () => {
           <Row>
             <Col lg={7}>
               <div className='w-100'>
-                <h3 className={styles.lineTitle} contentEditable='true'>Lets Talk</h3>
-                <h2 className={styles.mainTitle} contentEditable='true'>Looking For A Fresh Ideas?</h2>
-                <p className={`${styles['Para']} ${styles['contactSectionPara']}`} contentEditable='true'>Just say hello. We would love to learn about your goals and brainstorm ideas together.</p>
+                <h3 className={styles.lineTitle} >Lets Talk</h3>
+                <h2 className={styles.mainTitle} >Looking For A Fresh Ideas?</h2>
+                <p className={`${styles['Para']} ${styles['contactSectionPara']}`} >Just say hello. We would love to learn about your goals and brainstorm ideas together.</p>
               </div>
               <Row>
                 <Col>
@@ -88,7 +88,7 @@ const Contact = () => {
             </Col>
             <Col lg={5} className={`${styles['formCol']}`}>
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
-                <InputGroup.Text id="inputGroup-sizing-lg" className={styles.inputFieldIcon}>
+                <InputGroup.Text id="inputGroup-sizing-lg" className={`${styles['inputFieldIcon']} ${'align-self-center border-0 bg-transparent'}`}>
                   <Image
                   alt='contact icons'
                     src='/Assets/Assets/For-web/profile.svg'
@@ -97,14 +97,14 @@ const Contact = () => {
                   />
                 </InputGroup.Text>
                 <Form.Control
-                  className={styles.inputTextField}
+                  className={`${styles['inputTextField']} ${'border-0'}`}
                   placeholder='Name'
                   aria-label="Large"
                   aria-describedby="inputGroup-sizing-sm"
                 />
               </InputGroup>
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
-                <InputGroup.Text id="inputGroup-sizing-lg" className={styles.inputFieldIcon}>
+                <InputGroup.Text id="inputGroup-sizing-lg" className={`${styles['inputFieldIcon']} ${'align-self-center border-0 bg-transparent'}`}>
                   <Image
                   alt='contact icons'
                     src='/Assets/Assets/For-web/email.svg'
@@ -113,14 +113,14 @@ const Contact = () => {
                   />
                 </InputGroup.Text>
                 <Form.Control
-                  className={styles.inputTextField}
+                  className={`${styles['inputTextField']} ${'border-0'}`}
                   placeholder='Email'
                   aria-label="Large"
                   aria-describedby="inputGroup-sizing-sm"
                 />
               </InputGroup>
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
-                <InputGroup.Text id="inputGroup-sizing-lg" className={styles.inputFieldIcon}>
+                <InputGroup.Text id="inputGroup-sizing-lg" className={`${styles['inputFieldIcon']} ${'align-self-start border-0 bg-transparent pt-3'}`}>
                   <Image
                   alt='contact icons'
                     src='/Assets/Assets/For-web/message-2.svg'
@@ -129,7 +129,7 @@ const Contact = () => {
                   />
                 </InputGroup.Text>
                 <Form.Control
-                  className={`${styles['inputTextField']}`}
+                  className={`${styles['inputTextField']} ${'border-0'}`}
                   placeholder='Message'
                   aria-label="Large"
                   aria-describedby="inputGroup-sizing-sm"

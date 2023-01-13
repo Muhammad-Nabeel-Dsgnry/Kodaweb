@@ -43,7 +43,7 @@ const Services = (props) => {
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Branding & Identity</Card.Title>
-                    <Card.Text contentEditable='true' className={styles.cardText}>
+                    <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
                   </Card.Body>
@@ -57,7 +57,7 @@ const Services = (props) => {
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Web Development</Card.Title>
-                    <Card.Text contentEditable='true' className={styles.cardText}>
+                    <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
                   </Card.Body>
@@ -71,7 +71,7 @@ const Services = (props) => {
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Web Application</Card.Title>
-                    <Card.Text contentEditable='true' className={styles.cardText}>
+                    <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
                   </Card.Body>
@@ -85,7 +85,7 @@ const Services = (props) => {
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Video Production</Card.Title>
-                    <Card.Text contentEditable='true' className={styles.cardText}>
+                    <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
                   </Card.Body>
@@ -105,7 +105,7 @@ const Services = (props) => {
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>UI/UX Designing</Card.Title>
-                    <Card.Text contentEditable='true' className={styles.cardText}>
+                    <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
                   </Card.Body>
@@ -119,7 +119,7 @@ const Services = (props) => {
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>Digital Marketing</Card.Title>
-                    <Card.Text contentEditable='true' className={styles.cardText}>
+                    <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
                   </Card.Body>
@@ -133,7 +133,7 @@ const Services = (props) => {
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>SEO & Content Writing</Card.Title>
-                    <Card.Text contentEditable='true' className={styles.cardText}>
+                    <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
                   </Card.Body>
@@ -147,7 +147,7 @@ const Services = (props) => {
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>App Development</Card.Title>
-                    <Card.Text contentEditable='true' className={styles.cardText}>
+                    <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
                   </Card.Body>

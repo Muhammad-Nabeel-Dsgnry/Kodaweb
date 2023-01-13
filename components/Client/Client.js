@@ -17,8 +17,8 @@ const Client = () => {
             <Row>
               <Col className={styles.content_Section}>
                 <div className='w-75'>
-                  <h3 className={styles.lineTitle} contentEditable='true'>Our Clients</h3>
-                  <h2 className={styles.mainTitle} contentEditable='true'>From Startups To The World’s Largest Companies<span className={styles.dot}>.</span></h2>
+                  <h3 className={styles.lineTitle} >Our Clients</h3>
+                  <h2 className={styles.mainTitle} >From Startups To The World’s Largest Companies<span className={styles.dot}>.</span></h2>
                 </div>
               </Col>
             </Row>

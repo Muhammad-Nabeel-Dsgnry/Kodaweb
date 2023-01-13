@@ -97,12 +97,12 @@ const TestimonialSlider = () => {
                 height='100'
               />
               <div className={styles.testimonialsBoxInfo}>
-                <h3 contentEditable='true'>Alan X</h3>
-                <p contentEditable='true'>CEO of DIGILOG</p>
+                <h3 >Alan X</h3>
+                <p >CEO of DIGILOG</p>
               </div>
             </div>
             <div className={styles.testimonialsBoxBody}>
-              <p contentEditable='true'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div className='d-flex'>
                 <Image
                   src='/Assets/Assets/For-web/star.svg'
@@ -153,12 +153,12 @@ const TestimonialSlider = () => {
                 height='100'
               />
               <div className={styles.testimonialsBoxInfo}>
-                <h3 contentEditable='true'>Alan X</h3>
-                <p contentEditable='true'>CEO of DIGILOG</p>
+                <h3 >Alan X</h3>
+                <p >CEO of DIGILOG</p>
               </div>
             </div>
             <div className={styles.testimonialsBoxBody}>
-              <p contentEditable='true'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div className='d-flex'>
                 <Image
                   src='/Assets/Assets/For-web/star.svg'
@@ -209,12 +209,12 @@ const TestimonialSlider = () => {
                 height='100'
               />
               <div className={styles.testimonialsBoxInfo}>
-                <h3 contentEditable='true'>Alan X</h3>
-                <p contentEditable='true'>CEO of DIGILOG</p>
+                <h3 >Alan X</h3>
+                <p >CEO of DIGILOG</p>
               </div>
             </div>
             <div className={styles.testimonialsBoxBody}>
-              <p contentEditable='true'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <div className='d-flex'>
                 <Image
                   src='/Assets/Assets/For-web/star.svg'
