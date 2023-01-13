@@ -27,11 +27,13 @@ const GetAQuote = (props) => {
         <>
             <Modal
                 {...props}
-                size="xl"
+                size="lg"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
-                <Modal.Header closeButton></Modal.Header>
+                <Modal.Header closeButton>
+                    <h2>Get A Quote</h2>
+                </Modal.Header>
                 <Modal.Body>
                     <Form>
                         {/* <Stack direction="horizontal" gap={5} > */}
