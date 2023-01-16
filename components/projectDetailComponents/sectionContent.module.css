@@ -25,6 +25,11 @@
     line-height: 67px;
     color: var(--text-black);
     margin-top: 25px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
   }
   
   .Para {
@@ -35,6 +40,11 @@
     line-height: 35px;
     color: var(--text-black);
     margin-top: 20px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
   }
   
   .dot {

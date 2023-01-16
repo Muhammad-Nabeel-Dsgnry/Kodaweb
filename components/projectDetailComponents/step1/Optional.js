@@ -19,8 +19,8 @@ const Optional = ({item}) => {
         <section>
                 <Container className={`${styles['detailsMainContainer']}`}>
                     <Row className={`${styles['detailsHeaderRow']}`}>
-                        <Col lg={5} md={12} xs={12}>
-                            <div className={`${styles['detailsTitleCol']} ${styles['optionalDetailsTitleCol']} ${'d-flex justify-content-between align-items-center'}`}>
+                        <Col lg={9} md={12} xs={12}>
+                            <div className={`${styles['detailsTitleCol']} ${styles['optionalDetailsTitleCol']} ${'d-flex justify-content-start align-items-center flex-wrap'}`}>
                                 <Form.Check
                                     type='radio'
                                     name='package details'
@@ -28,7 +28,7 @@ const Optional = ({item}) => {
                                     id='1'
                                     className={`${styles['packageBriefRadio']}`}
                                 />
-                                <span className={`${'text-white rounded-pill py-2 px-3 text-nowrap'} ${styles['popularIconWrapper']}`}>
+                                <span className={`${'text-white rounded-pill py-2 px-3 text-nowrap ms-3'} ${styles['popularIconWrapper']}`}>
                                     <i className={`${'me-3'}`}>
                                         <Image
                                             src={mostPopularIcon}
@@ -43,7 +43,7 @@ const Optional = ({item}) => {
                                 <p>{item?.content} <span className={`${styles['optionalPackageDiscount']}`}> save{item?.discount}%+</span></p>
                             </div>
                         </Col>
-                        <Col lg={2} md={12} xs={12}>
+                        <Col lg={3} md={12} xs={12}>
                             <div className={`${styles['detailsPriceCol']}`}>
                                 <p>From ${item?.price}</p>
                             </div>

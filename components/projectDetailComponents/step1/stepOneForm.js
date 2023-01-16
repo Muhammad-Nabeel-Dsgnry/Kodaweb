@@ -435,7 +435,7 @@ const StepOneForm = () => {
                             />
                             <Container className={`${styles['detailsMainContainer']}`}>
                                 <Row className={`${styles['detailsHeaderRow']}`}>
-                                    <Col lg={5} md={12} xs={12}>
+                                    <Col lg={9} md={12} xs={12}>
                                         <div className={`${styles['detailsTitleCol']}`}>
                                             <Form.Check
                                                 type='radio'
@@ -449,7 +449,7 @@ const StepOneForm = () => {
                                             <p>No thanks. Ill just start with the basics for now.</p>
                                         </div>
                                     </Col>
-                                    <Col lg={2} md={12} xs={12}>
+                                    <Col lg={3} md={12} xs={12}>
                                         <div className={`${styles['detailsPriceCol']}`}>
                                             <p>From ${packageDetails?.price}</p>
                                         </div>
