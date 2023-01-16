@@ -13,7 +13,7 @@ import { useState } from 'react'
 
 const step3 = (props) => {
 
-    const [isStepperThree, setIsStepperThree] = useState(true)
+    // const [isStepperThree, setIsStepperThree] = useState(true)
     // const [isStep3, setIsStep3] = useState(true)
 
     const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors, duration} = props
