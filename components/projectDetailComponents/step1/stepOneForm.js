@@ -16,11 +16,13 @@ import LogoOptional from './logoOptional';
 import BrandingOptional from './brandingOptional';
 import WebsiteOptional from './websiteOptional';
 import MarketingOptional from './marketingOptional';
+import Stepper from '../stepper/stepper';
 
 const StepOneForm = () => {
 
     const [isStepOne, setIsStepOne] = useState(true)
     // const [isStepTwo, setIsStepTwo] = useState(false)
+    const [isStepper, setIsStepper] = useState(true)
 
     const [businessName, setBusinessName] = useState('')
     const [businessNameErr, setBusinessNameErr] = useState('Enter Business Name..')
@@ -157,7 +159,10 @@ const StepOneForm = () => {
         <>
             {
                 isStepOne ?
-                    <section>
+                <section>
+                        {
+                            isStepper ? <Stepper isStepperOneTrue='true'/> : null  
+                        }
                         <div>
                             {/* COLOR PICKER STYLE START */}
                             <style jsx>

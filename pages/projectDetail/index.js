@@ -8,6 +8,7 @@ import GuaranteeIcon from '../../public/Assets/Assets/For-web/tick.svg'
 import Step2 from '../../components/projectDetailComponents/step2/step2';
 import Step3 from '../../components/projectDetailComponents/step3/step3';
 import { useState } from 'react';
+import Stepper from '../../components/projectDetailComponents/stepper/stepper';
 
 const Index = () => {
 
@@ -38,9 +39,12 @@ const Index = () => {
     <>
     <section className={`${styles['projectDetailsMainWrapper']}`}>
       <Container>
+        {/* <Row>
+          <Stepper isStepperTrue='true' />
+        </Row> */}
         <Row>
           <Col>
-          {stepOne ? 
+          {stepOne ?
             <Step1
               stepSubTitle='Requirements'
               stepMainTitle='Project Brief'

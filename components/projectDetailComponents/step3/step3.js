@@ -8,9 +8,13 @@ import OrderTotal from './orderTotal'
 import moneyBack from '../../../public/Assets/Assets/For-web/moneyBack.png'
 import GuaranteeIcon from '../../../public/Assets/Assets/For-web/tick.svg'
 import Link from 'next/link';
+import { useState } from 'react'
 
 
 const step3 = (props) => {
+
+    const [isStepperThree, setIsStepperThree] = useState(true)
+    const [isStep3, setIsStep3] = useState(true)
 
     const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors, duration} = props
 
@@ -20,11 +24,14 @@ const step3 = (props) => {
 
     return (
         <>
-        <section>
+            <section>
             <Container>
-            {/* <Row>
-                <Stepper />
-            </Row> */}
+            <Row>
+                {/* {
+                    isStepperThree ? <Stepper isStepperThreeTrue='true'/> : null
+                } */}
+                {/* <Stepper /> */}
+            </Row>
             <Row className={`${'mt-5'}`}>
             <Col xs={12} lg={7} md={7}>
                 <div>
@@ -106,6 +113,7 @@ const step3 = (props) => {
         </Row>
         </Container>
         </section>
+        
         </>
     )
 }

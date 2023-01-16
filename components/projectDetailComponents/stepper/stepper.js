@@ -3,7 +3,9 @@ import styles from './stepper.module.css'
 import { Container, Row, Col, ButtonGroup } from 'react-bootstrap'
 
 
-const stepper = () => {
+const stepper = (props) => {
+    const {isStepperTrue, isStepperOneTrue, isStepperTwoTrue, isStepperThreeTrue} = props
+    console.log('isStepperTrue : ', isStepperTrue)
   return (
     <>
         <section className={`${styles['stepperWrapper']}`}>
@@ -13,21 +15,21 @@ const stepper = () => {
                         <div className={`${styles['stepperBar']}`}></div>
                     </Col>
                 </div>
-                <Row className={`${'justify-content-center'}`}>
+                <Row className={`${'justify-content-center position-absolute start-0 end-0'}`}>
                     <Col lg='auto' md='auto' xs='auto'>
                         <span className={`${styles['counterDivider']}`}></span>
                         <div className={`${styles['counterNumberWrapper']} ${styles['counterNumberWrapperOne']}`}>
-                            <span>01</span>
+                            <span className={`${styles['active']}`}>01</span>
                         </div>
                     </Col>
                     <Col lg='auto' md='auto' xs='auto'>
                         <div className={`${styles['counterNumberWrapper']} ${styles['counterNumberWrapperTwo']}`}>
-                            <span>02</span>
+                            <span className={`${isStepperTwoTrue === 'true' ? styles['active'] : styles['deactive']}`}>02</span>
                         </div>
                     </Col>
                     <Col lg='auto' md='auto' xs='auto'>
                         <div className={`${styles['counterNumberWrapper']} ${styles['counterNumberWrapperThree']}`}>
-                            <span>03</span>
+                            <span className={`${isStepperThreeTrue === 'true' ? styles['active'] : styles['deactive']}`}>03</span>
                         </div>
                     </Col>
                 </Row>

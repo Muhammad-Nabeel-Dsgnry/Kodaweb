@@ -100,7 +100,7 @@ const GetAQuote = (props) => {
                                 <Form.Group className={`${'mb-3'}`} controlId='formGroupindustry'>
                                     <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Select your industry</Form.Label>
                                     <Form.Select size='lg' className={`${modalStyles['modalInputFields']} ${styles['formControl']} ${'mb-2'}`} onChange={(e) => setIndustry(e.target.value)} >
-                                        <option></option>
+                                        <option>Select Industry</option>
                                         <option value='One'>One</option>
                                         <option value='Two'>Two</option>
                                         <option value='Three'>Three</option>

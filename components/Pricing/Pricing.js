@@ -426,7 +426,7 @@ const Pricing = (props) => {
       <section className={styles.pricingSection}>
         <Container>
           <Row>
-            <Col xs={12} lg={6}>
+            <Col xs={12} lg={7}>
               <div>
                 <h3 className={styles.lineTitle} >{pricingSmTitle}</h3>
                 <h2 className={styles.mainTitle} >{pricingMainTitle}<span className={colorText ? styles.dot : ''}>{colorText}</span></h2>
@@ -435,7 +435,7 @@ const Pricing = (props) => {
             </Col>
             {
               isImage == 'true' ?
-                <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={6}>
+                <Col className={`${'d-flex justify-content-end'} ${styles['guaranteeImageWrapper']}`} xs={12} lg={5}>
                   <Image
                     className={styles.guaranteeImage}
                     src='/Assets/Assets/For-web/moneyBack.png'

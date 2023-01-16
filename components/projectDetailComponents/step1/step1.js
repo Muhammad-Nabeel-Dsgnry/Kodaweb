@@ -14,9 +14,9 @@ const  step1 = (props) => {
     <> 
       <section>
         <Container>
-          <Row>
+          {/* <Row>
               <Stepper />
-          </Row>
+          </Row> */}
           {/* <Row className={`${'mt-5'}`}>
           <Col xs={12} lg={7} md={7}>
               <div>

@@ -14,6 +14,7 @@ import select from '../../../public/Assets/Assets/For-web/tick.svg'
 import ProjectBrief from '../step3/projectBrief';
 import Step1 from '../step1/step1';
 import Step3 from '../step3/step3';
+import Stepper from '../stepper/stepper';
 
 const StepTwoForm = (props) => {
 
@@ -24,6 +25,7 @@ const StepTwoForm = (props) => {
     const [isStepTwo, setIsStepTwo] = useState(false)
     const [formOne, setFormOne] = useState(false)
     const [state, setState] = useState('')
+    const [isStepperTwo, setIsStepperTwo] = useState(true)
 
     const [BusinessName, setbusinessName] = useState(businessName)
     const [Industry, setIndustry] = useState(industry)
@@ -81,12 +83,9 @@ const StepTwoForm = (props) => {
 
     return (
         <>
-            {/* {
-                isStepOne === 'true' ?
-                <ProjectBrief name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={isSelect} />
-                :
-                null
-              } */}
+              {
+                isStepperTwo ? <Stepper isStepperTwoTrue='true'/> : null 
+              }
 
               {
                 isStepOne ?
