@@ -49,7 +49,7 @@ const OrderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>Item Price</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>${summaryData.price}</p>
+              <p className={`${BriefStyle['summaryData']}`}>{summaryData.price} USD</p>
             </Col>
           </Row>
           <Row className={`${''}`}>
@@ -57,7 +57,7 @@ const OrderTotal = () => {
               <p className={`${BriefStyle['summaryTitle']}`}>{summaryData.timeDuration}</p>
             </Col>
             <Col lg={6} md={6} xs={6} className={`${'p-0 d-flex flex-column align-items-end'}`}>
-              <p className={`${BriefStyle['summaryData']}`}>${summaryData.timeDurationPrice}</p>
+              <p className={`${BriefStyle['summaryData']}`}>{summaryData.timeDurationPrice} USD</p>
             </Col>
           </Row>
           <Row className={`${'pb-3'}`}>
