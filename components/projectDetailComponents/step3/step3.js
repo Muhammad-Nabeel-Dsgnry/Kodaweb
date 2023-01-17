@@ -16,7 +16,7 @@ const step3 = (props) => {
     // const [isStepperThree, setIsStepperThree] = useState(true)
     // const [isStep3, setIsStep3] = useState(true)
 
-    const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors, duration} = props
+    const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors, duration, stepperThree} = props
 
     console.log('secondFormData', props)
 
@@ -26,10 +26,10 @@ const step3 = (props) => {
         <>
             <section>
             <Container>
-            <Row>
-                {/* {
-                    isStepperThree ? <Stepper isStepperThreeTrue='true'/> : null
-                } */}
+            <Row style={stepperThree === 'three' ? {display: 'none'} : null}>           
+                {
+                    stepperThree === 'three' ? <Stepper isStepperThreeTrue='true' /> : null
+                }
                 {/* <Stepper /> */}
             </Row>
             <Row className={`${'mt-5'}`}>

@@ -19,17 +19,17 @@ const stepper = (props) => {
                     <Col lg='auto' md='auto' xs='auto'>
                         <span className={`${styles['counterDivider']}`}></span>
                         <div className={`${styles['counterNumberWrapper']} ${styles['counterNumberWrapperOne']}`}>
-                            <span className={`${styles['active']}`}>01</span>
+                            <span className={`${isStepperOneTrue === 'true' || isStepperTwoTrue === 'true' ? styles['active'] : null}`}>01</span>
                         </div>
                     </Col>
                     <Col lg='auto' md='auto' xs='auto'>
                         <div className={`${styles['counterNumberWrapper']} ${styles['counterNumberWrapperTwo']}`}>
-                            <span className={`${isStepperTwoTrue === 'true' ? styles['active'] : styles['deactive']}`}>02</span>
+                            <span className={`${isStepperTwoTrue === 'true' ? styles['active'] : null}`}>02</span>
                         </div>
                     </Col>
                     <Col lg='auto' md='auto' xs='auto'>
                         <div className={`${styles['counterNumberWrapper']} ${styles['counterNumberWrapperThree']}`}>
-                            <span className={`${isStepperThreeTrue === 'true' ? styles['active'] : styles['deactive']}`}>03</span>
+                            <span className={`${isStepperThreeTrue === 'true' ? styles['active'] : null}`}>03</span>
                         </div>
                     </Col>
                 </Row>

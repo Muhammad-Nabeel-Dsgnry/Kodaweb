@@ -23,16 +23,17 @@ const StepOneForm = () => {
     const [isStepOne, setIsStepOne] = useState(true)
     // const [isStepTwo, setIsStepTwo] = useState(false)
     const [isStepper, setIsStepper] = useState(true)
+    const [validated, setValidated] = useState(false);
 
-    const [businessName, setBusinessName] = useState('')
+    const [businessName, setBusinessName] = useState('Kodaweb')
     const [businessNameErr, setBusinessNameErr] = useState('Enter Business Name..')
-    const [businessSlogan, setBusinessSlogan] = useState('')
+    const [businessSlogan, setBusinessSlogan] = useState('Slogan')
     const [industry, setIndustry] = useState('')
     const [logoType, setLogoType] = useState('')
-    const [productDescription, setProductDescription] = useState('')
-    const [competitor, setCompetitor] = useState('')
-    const [communicate, setCommunicate] = useState('')
-    const [contentPages, setContentPages] = useState('')
+    const [productDescription, setProductDescription] = useState('Product Description')
+    const [competitor, setCompetitor] = useState('Competitors links')
+    const [communicate, setCommunicate] = useState('Describe your project')
+    const [contentPages, setContentPages] = useState('Reference link')
 
     const [primaryColor, setPrimaryColor] = useState('#FF0000')
     const [primarypallet, setPrimarypallet] = useState(false)
@@ -124,8 +125,7 @@ const StepOneForm = () => {
     // };
 
     const handleStepOne = () => {
-        if (businessName?.trim().length === 0 || businessSlogan?.trim().length === 0 || industry?.trim().length === 0 || productDescription?.trim().length === 0 || competitor?.trim().length === 0 || communicate?.trim().length === 0
-            || primaryColor?.trim().length === 0 || secondaryColor?.trim().length === 0 || ascendColor?.trim().length === 0) {
+        if (businessName?.trim().length === 0 || businessSlogan?.trim().length === 0 || industry?.trim().length === 0 || productDescription?.trim().length === 0 || competitor?.trim().length === 0 || communicate?.trim().length === 0 || primaryColor?.trim().length === 0 || secondaryColor?.trim().length === 0 || ascendColor?.trim().length === 0) {
             console.log('Button dsiable')
         }
         else {
@@ -224,13 +224,14 @@ const StepOneForm = () => {
                                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupBusinessName'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Whats your business name?</Form.Label>
-                                            <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${businessName?.trim().length <= 0 ? 'error' : null}`} value={businessName} type='text' onChange={(e) => setBusinessName(e.target.value)} />
+                                            <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'}`} value={businessName} type='text' onChange={(e) => setBusinessName(e.target.value)} />
                                             {
                                                 businessName?.trim().length <= 0 ?
                                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Business Name is required</Form.Text>
                                                     :
-                                                    <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text>
+                                                <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text>
                                             }
+                                                {/* <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text> */}
                                         </Form.Group>
                                     </Col>
                                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
@@ -251,11 +252,11 @@ const StepOneForm = () => {
                                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupindustry'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Select your industry</Form.Label>
-                                            <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'} ${industry?.trim().length <= 0 ? 'error' : null}`} value={industry} onChange={(e) => setIndustry(e.target.value)}>
-                                                <option>Select Industry</option>
-                                                <option>One</option>
-                                                <option>Two</option>
-                                                <option>Three</option>
+                                            <Form.Select as='select' size='lg' className={`${styles['formControl']} ${'mb-2'} ${industry?.trim().length <= 0 ? 'error' : null}`} value={industry} onChange={(e) => setIndustry(e.target.value)}>
+                                                <option defaultValue='One'>Select Industry</option>
+                                                <option value='One'>One</option>
+                                                <option value='Two'>Two</option>
+                                                <option value='Three'>Three</option>
                                             </Form.Select>
                                             {
                                                 industry?.trim().length <= 0 ?
@@ -270,10 +271,10 @@ const StepOneForm = () => {
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupLogoType'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please select the logo type?</Form.Label>
                                             <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'} ${logoType?.trim().length <= 0 ? 'error' : null}`} value={logoType} onChange={(e) => setLogoType(e.target.value)} disabled={ isPackageWeb.pricing_group === 'Logo' ? false : true} >
-                                                <option>Select Logo type</option>
-                                                <option>One</option>
-                                                <option>Two</option>
-                                                <option>Three</option>
+                                                <option value='null'>Select Logo type</option>
+                                                <option value='One' selected>One</option>
+                                                <option value='Two'>Two</option>
+                                                <option value='Three'>Three</option>
                                             </Form.Select>
                                             {/* {
                                                 logoType?.trim().length <= 0 ?

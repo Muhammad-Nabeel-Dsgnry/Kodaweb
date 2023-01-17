@@ -33,10 +33,10 @@ const StepTwoForm = (props) => {
     const [Colors, setColors] = useState([primaryColor, secondaryColor, ascendColor])
     const [Duration, setDuration] = useState(timeDuration)
 
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [phoneNumber, setPhoneNumber] = useState('')
-    const [message, setMessage] = useState('')
+    const [name, setName] = useState('name')
+    const [email, setEmail] = useState('info@gmail.com')
+    const [phoneNumber, setPhoneNumber] = useState('+10123456789')
+    const [message, setMessage] = useState('Message')
     const [isSelect, setIsSelect] = useState('')
 
     
@@ -84,7 +84,7 @@ const StepTwoForm = (props) => {
     return (
         <>
               {
-                isStepperTwo ? <Stepper isStepperTwoTrue='true'/> : null 
+                isStepperTwo ? <Stepper isStepperTwoTrue='true' /> : null 
               }
 
               {
@@ -105,7 +105,7 @@ const StepTwoForm = (props) => {
                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupName'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Name</Form.Label>
-                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${name?.length <= 0 ? 'error' : null}`} type='text' onChange={(e) => setName(e.target.value)} />
+                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${name?.length <= 0 ? 'error' : null}`} type='text' value={name} onChange={(e) => setName(e.target.value)} />
                             {
                               name?.length <= 0 ?
                               <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Name is required</Form.Text>
@@ -118,7 +118,7 @@ const StepTwoForm = (props) => {
                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupEmail'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Email</Form.Label>
-                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${email?.length <= 0 ? 'error' : null}`} type='email' onChange={(e) => setEmail(e.target.value)} />
+                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${email?.length <= 0 ? 'error' : null}`} type='email' value={email} onChange={(e) => setEmail(e.target.value)} />
                             {
                               email?.length <= 0 ?
                               <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Email is required</Form.Text>
@@ -156,7 +156,7 @@ const StepTwoForm = (props) => {
                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupMessage'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Message</Form.Label>
-                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${message?.length <= 0 ? 'error' : null}`} type='text' onChange={(e) => setMessage(e.target.value)} />
+                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${message?.length <= 0 ? 'error' : null}`} type='text' value={message} onChange={(e) => setMessage(e.target.value)} />
                             {
                               message?.length <= 0 ?
                               <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Message is required</Form.Text>
@@ -337,7 +337,7 @@ const StepTwoForm = (props) => {
         </Container>
                 </div>
         :
-        <Step3 name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={isSelect} businessName={BusinessName} industry={Industry} logoType={LogoType} colors={Colors} duration={Duration} />
+        <Step3 stepperThree='three' name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={isSelect} businessName={BusinessName} industry={Industry} logoType={LogoType} colors={Colors} duration={Duration} />
               }
         </>
       )
