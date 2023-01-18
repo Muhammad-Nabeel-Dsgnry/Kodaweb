@@ -46,13 +46,16 @@ const StepOneForm = () => {
     const [contentPages, setContentPages] = useState('Reference link')
 
     const [primaryColor, setPrimaryColor] = useState('#FF0000')
+    const [primaryColorErr, setPrimaryColorErr] = useState('')
     const [primarypallet, setPrimarypallet] = useState(false)
     // console.log('primaryColor', primaryColor)
 
-    const [secondaryColor, setSecondaryColor] = useState('#57C070 ')
+    const [secondaryColor, setSecondaryColor] = useState('#57C070')
+    const [secondaryColorErr, setSecondaryColorErr] = useState('')
     const [secondarypallet, setSecondarypallet] = useState(false)
 
     const [ascendColor, setAscendColor] = useState('#0066FF')
+    const [ascendColorErr, setAscendColorErr] = useState('')
     const [ascendpallet, setAscendpallet] = useState(false)
 
     const [packageDetails, setPackageDetails] = useState({})
@@ -135,7 +138,7 @@ const StepOneForm = () => {
     // };
 
     const handleStepOne = () => {
-        if (businessName?.trim().length === 0 || businessSlogan?.trim().length === 0 || industry?.trim().length === 0 || productDescription?.trim().length === 0 || competitor?.trim().length === 0 || communicate?.trim().length === 0 || primaryColor?.trim().length === 0 || secondaryColor?.trim().length === 0 || ascendColor?.trim().length === 0) {
+        if (businessName?.trim().length === 0 || businessSlogan?.trim().length === 0 || industry?.trim().length === 0 || productDescription?.trim().length === 0 || primaryColor?.trim().length === 0 || secondaryColor?.trim().length === 0 || ascendColor?.trim().length === 0) {
             console.log('Button dsiable')
         }
         else {
@@ -153,6 +156,15 @@ const StepOneForm = () => {
         }
         {
             productDescription.trim() == '' ? setProductDescriptionErr('This field is Required.') : setProductDescriptionErr('')
+        }
+        {
+            primaryColor.trim() == '' ? setPrimaryColorErr('Please select color.') : setPrimaryColorErr('')
+        }
+        {
+            secondaryColor.trim() == '' ? setSecondaryColorErr('Please select color.') : setSecondaryColorErr('')
+        }
+        {
+            ascendColor.trim() == '' ? setAscendColorErr('Please select color.') : setAscendColorErr('')
         }
     }
 
@@ -362,7 +374,7 @@ const StepOneForm = () => {
                                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupWebsitePages'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please list down the content pages you will have on your website pages?</Form.Label>
-                                            <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${contentPages?.trim().length <= 0 ? 'error' : null}`} as='textarea' rows={4} value={contentPages} onChange={(e) => setContentPages(e.target.value)} disabled={ isPackageWeb.pricing_group === 'Website' ? false : true } />
+                                            <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} value={contentPages} onChange={(e) => setContentPages(e.target.value)} disabled={ isPackageWeb.pricing_group === 'Website' ? false : true } />
                                             <p className={`${styles['formExampleText']}`}>E.g. About Us, privacy Policy, Home,Contact Us, Product Page, Product Detail,Sign In etc....</p>
                                             {/* {
                                                 contentPages?.trim().length <= 0 ?
@@ -379,8 +391,8 @@ const StepOneForm = () => {
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupPrimaryColor'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Primary Color</Form.Label>
                                             <div className={`${styles['colorPickerWrapper']}`}>
-                                                <div className={`${'primaryColorSelectionBox'} ${styles['colorBoxDiv']}`} onClick={() => setPrimarypallet(!primarypallet)}></div>
-                                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']} ${primaryColor?.trim().length <= 0 ? 'error' : null}`} type='text' value={primaryColor} onChange={(e) => setPrimaryColor(e.target.value)} />
+                                                <div className={`${'primaryColorSelectionBox'} ${styles['colorBoxDiv']} ${!primaryColorErr ? null : 'error'}`} onClick={() => setPrimarypallet(!primarypallet)}></div>
+                                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']} ${!primaryColorErr ? null : 'error'}`} type='text' value={primaryColor} onChange={(e) => setPrimaryColor(e.target.value)} />
                                                 {primarypallet &&
                                                     <SketchPicker
                                                         styles={pickerStyles}
@@ -389,7 +401,8 @@ const StepOneForm = () => {
                                                     />
                                                 }
                                             </div>
-                                            <p className={`${styles['formExampleText']} ${'mt-2'}`}>Pick the colors from above colors picker which help us.</p>
+                                            {/* <p className={`${styles['formExampleText']} ${'mt-2'}`}>Pick the colors from above colors picker which help us.</p> */}
+                                            { !primaryColorErr ? <p className={`${styles['formExampleText']}  ${'mt-2'}`}>Pick the colors from above colors picker which help us.</p> : <p className={`${styles['formExampleText']} ${styles['errorField']}`}>{primaryColorErr}</p> }
                                             {/* {
                                                 primaryColor?.trim().length <= 0 ?
                                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Primary Color is required</Form.Text>
@@ -403,8 +416,8 @@ const StepOneForm = () => {
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupPrimaryColor'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Secondary Color</Form.Label>
                                             <div className={`${styles['colorPickerWrapper']}`}>
-                                                <div className={`${'secondaryColorSelectionBox'} ${styles['colorBoxDiv']}`} onClick={() => setSecondarypallet(!secondarypallet)}></div>
-                                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']} ${secondaryColor?.trim().length <= 0 ? 'error' : null}`} type='text' value={secondaryColor} onChange={(e) => setSecondaryColor(e.target.value)} />
+                                                <div className={`${'secondaryColorSelectionBox'} ${styles['colorBoxDiv']} ${!primaryColorErr ? null : 'error'}`} onClick={() => setSecondarypallet(!secondarypallet)}></div>
+                                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']} ${!primaryColorErr ? null : 'error'}`} type='text' value={secondaryColor} onChange={(e) => setSecondaryColor(e.target.value)} />
                                                 {secondarypallet &&
                                                     <SketchPicker
                                                         styles={pickerStyles}
@@ -413,7 +426,8 @@ const StepOneForm = () => {
                                                     />
                                                 }
                                             </div>
-                                            <p className={`${styles['formExampleText']} ${'mt-2'}`}>Pick the colors from above colors picker which help us.</p>
+                                            {/* <p className={`${styles['formExampleText']} ${'mt-2'}`}>Pick the colors from above colors picker which help us.</p> */}
+                                            { !secondaryColorErr ? <p className={`${styles['formExampleText']}  ${'mt-2'}`}>Pick the colors from above colors picker which help us.</p> : <p className={`${styles['formExampleText']} ${styles['errorField']}`}>{secondaryColorErr}</p> }
                                             {/* {
                                                 secondaryColor?.trim().length <= 0 ?
                                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Secondary Color is required</Form.Text>
@@ -427,8 +441,8 @@ const StepOneForm = () => {
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupPrimaryColor'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Ascend Color</Form.Label>
                                             <div className={`${styles['colorPickerWrapper']}`}>
-                                                <div className={`${'ascendColorSelectionBox'} ${styles['colorBoxDiv']}`} onClick={() => setAscendpallet(!ascendpallet)}></div>
-                                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']} ${ascendColor?.trim().length <= 0 ? 'error' : null}`} type='text' value={ascendColor} onChange={(e) => setAscendColor(e.target.value)} />
+                                                <div className={`${'ascendColorSelectionBox'} ${styles['colorBoxDiv']} ${!ascendColorErr ? null : 'error'}`} onClick={() => setAscendpallet(!ascendpallet)}></div>
+                                                <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${styles['colorField']} ${!ascendColorErr ? null : 'error'}`} type='text' value={ascendColor} onChange={(e) => setAscendColor(e.target.value)} />
                                                 {ascendpallet &&
                                                     <SketchPicker
                                                         styles={pickerStyles}
@@ -437,7 +451,8 @@ const StepOneForm = () => {
                                                     />
                                                 }
                                             </div>
-                                            <p className={`${styles['formExampleText']} ${'mt-2'}`}>Pick the colors from above colors picker which help us.</p>
+                                            {/* <p className={`${styles['formExampleText']} ${'mt-2'}`}>Pick the colors from above colors picker which help us.</p> */}
+                                            { !ascendColorErr ? <p className={`${styles['formExampleText']}  ${'mt-2'}`}>Pick the colors from above colors picker which help us.</p> : <p className={`${styles['formExampleText']} ${styles['errorField']}`}>{ascendColorErr}</p> }
                                             {/* {
                                                 ascendColor?.trim().length <= 0 ?
                                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Ascend Color is required</Form.Text>
