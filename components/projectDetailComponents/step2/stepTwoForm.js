@@ -165,7 +165,7 @@ const StepTwoForm = (props) => {
                                 className={`${styles['formControl']} ${'mb-2'} ${!phoneNumberErr ? null : 'error'}`}
                             />
                             {/* <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setPhoneNumber(e.target.value)} /> */}
-                            { !phoneNumberErr ? <p className={`${styles['formExampleText']}`}>We'll hold your data according to our <Link href=''>Privacy Policy</Link></p> : <p className={`${styles['formExampleText']} ${styles['errorField']}`}>{phoneNumberErr}</p> }
+                            { !phoneNumberErr ? <p className={`${styles['formExampleText']}`}>Well hold your data according to our <Link href=''>Privacy Policy</Link></p> : <p className={`${styles['formExampleText']} ${styles['errorField']}`}>{phoneNumberErr}</p> }
                             {/* {
                               phoneNumber?.length <= 3 ?
                               <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Phone Number is required</Form.Text>
@@ -179,7 +179,7 @@ const StepTwoForm = (props) => {
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupMessage'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Message</Form.Label>
                             <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${message?.length <= 0 ? 'error' : null}`} type='text' value={message} onChange={(e) => setMessage(e.target.value)} />
-                            <p className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</p>
+                            <p className={`${styles['formExampleText']}`}>Tip: Leave blank if you dont want one incorporated.</p>
                             {/* {
                               message?.length <= 0 ?
                               <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Message is required</Form.Text>

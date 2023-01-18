@@ -333,7 +333,7 @@ const StepOneForm = () => {
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupInspiration'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please mention top 3 competitor or any reference link that describe your inspiration.</Form.Label>
                                             <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} value={competitor} onChange={(e) => setCompetitor(e.target.value)} />
-                                            <p className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</p>
+                                            <p className={`${styles['formExampleText']}`}>Tip: Leave blank if you dont want one incorporated.</p>
                                             {/* {
                                                 competitor?.trim().length <= 0 ?
                                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Reference links is required</Form.Text>
@@ -349,7 +349,7 @@ const StepOneForm = () => {
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupcommunicate'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Is there anything else you would like to communicate to the designers?</Form.Label>
                                             <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} value={communicate} onChange={(e) => setCommunicate(e.target.value)} />
-                                            <p className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</p>
+                                            <p className={`${styles['formExampleText']}`}>Tip: Leave blank if you dont want one incorporated.</p>
                                             {/* {
                                                 communicate?.trim().length <= 0 ?
                                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Communication Message is required</Form.Text>
