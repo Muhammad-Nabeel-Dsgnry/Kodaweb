@@ -33,11 +33,18 @@ const StepTwoForm = (props) => {
     const [Colors, setColors] = useState([primaryColor, secondaryColor, ascendColor])
     const [Duration, setDuration] = useState(timeDuration)
 
-    const [name, setName] = useState('name')
-    const [email, setEmail] = useState('info@gmail.com')
-    const [phoneNumber, setPhoneNumber] = useState('+10123456789')
+    const [name, setName] = useState('')
+    const [nameErr, setNameErr] = useState('')
+
+    const [email, setEmail] = useState('')
+    const [emailErr, setEmailErr] = useState('')
+
+    const [phoneNumber, setPhoneNumber] = useState('')
+    const [phoneNumberErr, setPhoneNumberErr] = useState('')
+
     const [message, setMessage] = useState('Message')
     const [isSelect, setIsSelect] = useState('')
+    const [isSelectErr, setIsSelectErr] = useState('')
 
     
     const stepTwoData = [name, email, phoneNumber, message, isSelect]
@@ -65,6 +72,18 @@ const StepTwoForm = (props) => {
           setIsStepOne(false)
           setIsStepTwo(true)
       }
+      {
+        name.trim() == '' ? setNameErr('Please enter your name.') : setNameErr('')
+    }
+    {
+        email.trim() == '' ? setEmailErr('Please enter your email.') : setEmailErr('')
+    }
+    {
+        phoneNumber.trim() == '' ? setPhoneNumberErr('Please enter your phone number.') : setPhoneNumberErr('')
+    }
+    {
+        isSelect.trim() == '' ? setIsSelectErr('Please Select any payment method.') : setIsSelectErr('')
+    }
   }
 
   // const handleBack = () => {
@@ -105,26 +124,28 @@ const StepTwoForm = (props) => {
                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupName'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Name</Form.Label>
-                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${name?.length <= 0 ? 'error' : null}`} type='text' value={name} onChange={(e) => setName(e.target.value)} />
-                            {
+                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${!nameErr ? null : 'error'}`} type='text' value={name} onChange={(e) => setName(e.target.value)} />
+                            { !nameErr ? <p className={`${styles['formExampleText']}`}>E.g. Ibhrahim</p> : <p className={`${styles['formExampleText']} ${styles['errorField']}`}>{nameErr}</p> }
+                            {/* {
                               name?.length <= 0 ?
                               <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Name is required</Form.Text>
                               :
                               <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text>
-                            }
+                            } */}
                             {/* <Form.Text className={`${styles['formExampleText']}`}>E.g. Ibhrahim</Form.Text> */}
                         </Form.Group>
                     </Col>
                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupEmail'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Email</Form.Label>
-                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${email?.length <= 0 ? 'error' : null}`} type='email' value={email} onChange={(e) => setEmail(e.target.value)} />
-                            {
+                            <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${!emailErr ? null : 'error'}`} type='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                            { !emailErr ? <p className={`${styles['formExampleText']}`}>E.g. Ibhrahim</p> : <p className={`${styles['formExampleText']} ${styles['errorField']}`}>{emailErr}</p> }
+                            {/* {
                               email?.length <= 0 ?
                               <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Email is required</Form.Text>
                               :
                               <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text>
-                            }
+                            } */}
                             {/* <Form.Text className={`${styles['formExampleText']}`}>We'll hold your data according to our <Link href=''>Privacy Policy</Link>.</Form.Text> */}
                         </Form.Group>
                     </Col>
@@ -141,15 +162,16 @@ const StepTwoForm = (props) => {
                                 value={phoneNumber}
                                 defaultCountry='US'
                                 onChange={setPhoneNumber}
-                                className={`${styles['formControl']} ${'mb-2'} ${phoneNumber?.length < 1 ? 'error' : null}`}
+                                className={`${styles['formControl']} ${'mb-2'} ${!phoneNumberErr ? null : 'error'}`}
                             />
                             {/* <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setPhoneNumber(e.target.value)} /> */}
-                            {
+                            { !phoneNumberErr ? <p className={`${styles['formExampleText']}`}>We'll hold your data according to our <Link href=''>Privacy Policy</Link></p> : <p className={`${styles['formExampleText']} ${styles['errorField']}`}>{phoneNumberErr}</p> }
+                            {/* {
                               phoneNumber?.length <= 3 ?
                               <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Phone Number is required</Form.Text>
                               :
                               <Form.Text className={`${styles['formExampleText']}`}>E.g. 0000000</Form.Text>
-                            }
+                            } */}
                             {/* <Form.Text className={`${styles['formExampleText']}`}>We'll hold your data according to our <Link href=''>Privacy Policy</Link></Form.Text> */}
                         </Form.Group>
                     </Col>
@@ -157,12 +179,13 @@ const StepTwoForm = (props) => {
                         <Form.Group className={`${'mb-3'}`} controlId='formGroupMessage'>
                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Message</Form.Label>
                             <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'} ${message?.length <= 0 ? 'error' : null}`} type='text' value={message} onChange={(e) => setMessage(e.target.value)} />
-                            {
+                            <p className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</p>
+                            {/* {
                               message?.length <= 0 ?
                               <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Message is required</Form.Text>
                               :
                               <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text>
-                            }
+                            } */}
                             {/* <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you don't want one incorporated.</Form.Text> */}
                         </Form.Group>
                     </Col> 
@@ -287,13 +310,14 @@ const StepTwoForm = (props) => {
               }
             </div>
           </Col>
-          {
+          { !isSelectErr ? null : <p className={`${styles['formExampleText']} ${styles['errorField']}`}>{isSelectErr}</p> }
+          {/* {
             isSelect.length <= 0 ?
             <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Please Select any payment method</Form.Text>
             :
             // <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text>
             null
-          }
+          } */}
         </Row>
         </section>
         <Container>
@@ -322,9 +346,13 @@ const StepTwoForm = (props) => {
                   <button className={`${styles['blueButton']} ${'me-4'}`}>
                     Back
                   </button>
-                    <button href='' className={`${styles['blueButton']} ${
+                    {/* <button href='' className={`${styles['blueButton']} ${
                     name?.length === 0 || email?.length === 0 || phoneNumber?.length === 0 || message?.length === 0 || isSelect?.length === 0 ? 'btnDisable' : null }`
                     }
+                    onClick={handleStepOne}>
+                      Continue
+                    </button> */}
+                    <button href='' className={`${styles['blueButton']}`}
                     onClick={handleStepOne}>
                       Continue
                     </button>
