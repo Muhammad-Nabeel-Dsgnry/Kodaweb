@@ -25,8 +25,8 @@ const StepOneForm = () => {
     const [isStepper, setIsStepper] = useState(true)
     const [validated, setValidated] = useState(false);
 
-    const [businessName, setBusinessName] = useState('Kodaweb')
-    const [businessNameErr, setBusinessNameErr] = useState('Enter Business Name..')
+    const [businessName, setBusinessName] = useState('')
+    const [businessNameErr, setBusinessNameErr] = useState('')
     const [businessSlogan, setBusinessSlogan] = useState('Slogan')
     const [industry, setIndustry] = useState('')
     const [logoType, setLogoType] = useState('')
@@ -132,6 +132,9 @@ const StepOneForm = () => {
             console.log('Button enable')
             setIsStepOne(false)
         }
+        {
+            businessName.trim() == '' ? setBusinessNameErr('Business Name is Required.') : setBusinessNameErr('')
+        }
     }
 
     // const handleBusinessError = () => {
@@ -140,6 +143,9 @@ const StepOneForm = () => {
     //         setBusinessNameErr('Enter Business Name')
     //     }
     // }
+
+    
+
 
     const resetFields = () => {
         setBusinessName('')
@@ -224,13 +230,14 @@ const StepOneForm = () => {
                                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']}`}>
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupBusinessName'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Whats your business name?</Form.Label>
-                                            <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'}`} value={businessName} type='text' onChange={(e) => setBusinessName(e.target.value)} />
-                                            {
+                                            <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'} ${!businessNameErr ? null : 'error'}`} value={businessName} type='text' onChange={(e) => setBusinessName(e.target.value)} />
+                                            { !businessNameErr ? <i className={`${styles['formExampleText']}`}>eg. Acme</i> : <i className={`${styles['formExampleText']} ${styles['errorField']}`}>{businessNameErr}</i> }
+                                            {/* {
                                                 businessName?.trim().length <= 0 ?
                                                     <Form.Text className={`${styles['formExampleText']} ${styles['errorField']}`}>Business Name is required</Form.Text>
                                                     :
                                                 <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text>
-                                            }
+                                            } */}
                                                 {/* <Form.Text className={`${styles['formExampleText']}`}>E.g. Acme</Form.Text> */}
                                         </Form.Group>
                                     </Col>
@@ -594,10 +601,14 @@ const StepOneForm = () => {
                                         <button className={`${styles['blueButton']} ${'me-4'}`} onClick={resetFields}>
                                             Reset
                                         </button>
-                                        <button className={`${styles['blueButton']} ${businessName.length === 0 || businessSlogan.length === 0 || industry.length === 0 || productDescription.length === 0 || competitor.length === 0 || communicate.length === 0
+                                        {/* <button className={`${styles['blueButton']} ${businessName.length === 0 || businessSlogan.length === 0 || industry.length === 0 || productDescription.length === 0 || competitor.length === 0 || communicate.length === 0
                                                 || primaryColor.length === 0 || secondaryColor.length === 0 || ascendColor.length === 0 ? 'btnDisable' : null
                                             }`
                                         }
+                                            onClick={handleStepOne} type='submit'>
+                                            Continue
+                                        </button> */}
+                                        <button className={`${styles['blueButton']}`}
                                             onClick={handleStepOne} type='submit'>
                                             Continue
                                         </button>
