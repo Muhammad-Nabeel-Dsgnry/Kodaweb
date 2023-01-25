@@ -37,9 +37,11 @@ const menuLinks = [
 const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false)
+  const [isToggle, setIsToggle] = useState(false)
 
   const route = useRouter()
 
+  const handleToggle = () => setIsToggle(!isToggle)
 
   
 
@@ -50,7 +52,7 @@ const Header = () => {
         <Navbar.Brand>
           <Link href='/'>
             <Image
-              className={`${styles['headerMobileLogoBlack']}`}
+              className={`${styles['headerMobileLogoBlack']} ${isToggle ? 'whiteLogo' : ''}`}
               alt='Kodaweb header logo'
               src={LogoHeader}
               width='235'
@@ -59,7 +61,7 @@ const Header = () => {
           </Link>
           {/* Logo */}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {menuLinks.map(({ title, path }, index) => {

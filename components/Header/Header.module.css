@@ -8,6 +8,7 @@
     text-align: center;
 }
 
+
 .navMenu {
     color: #000 !important;
     font-family: 'Inter';
@@ -45,14 +46,6 @@ a.navMenu:hover {
 
 #basic-navbar-nav a {
     text-decoration: none !important;
-}
-
-.headerMobileLogoBlack {
-
-}
-
-.headerMobileLogoWhite {
-    
 }
 
 @media only screen and (max-width: 600px) {
