@@ -8,168 +8,168 @@ import Image from 'next/image';
 import banenrSideImage from '../../public/Assets/Assets/For-web/moneyBackGuarantee.png';
 
 const InnerPagesBanner = (props) => {
-    let {innerBannerTitle, innerBannerpara, innerBannerSideImage, pageName} = props
-    
-  return (
-    <>
-    {
-        pageName == 'contact' ? 
-        <section className={`${styles['innerBannerMainWrapper']} ${'d-flex align-items-center'} ${pageName == 'contact' ? styles['contactUs-bg-img'] : null}`}>
-            <Container>
-                <Row>
-                    <Col lg={7}>
-                    <div className={`${styles['innerBannerContentWrapper']}`}>
-                        <h2>{innerBannerTitle}</h2>
-                        <p>{innerBannerpara}</p>
-                    </div>
-                    </Col>
-                    <Col lg={5}>
-                        {
-                        innerBannerSideImage === 'yes' ? 
-                        <Image
-                            src={banenrSideImage}
-                            alt='kodaweb-banner-image'
-                            width='100'
-                            height='100'
-                            priority
-                        />
-                        :
-                        null
-                        }
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-        :
-        null
-    }
-    {
-        pageName == 'pricing' ? 
-        <section className={`${styles['innerBannerMainWrapper']} ${'d-flex align-items-center'} ${pageName == 'pricing' ? styles['pricing-bg-img'] : null}`}>
-            <Container>
-                <Row>
-                    <Col lg={7} style={{display: 'flex', alignItems: 'center'}}>
-                    <div className={`${styles['innerBannerContentWrapper']}`}>
-                        <h2>{innerBannerTitle}</h2>
-                        <p>{innerBannerpara}</p>
-                    </div>
-                    </Col>
-                    <Col lg={5} style={{display: 'flex', justifyContent: 'end', alignItems: 'center'}}>
-                        {
-                        innerBannerSideImage === 'yes' ? 
-                        <Image
-                            className={`${styles['innerBannerRigtImage']}`}
-                            src={banenrSideImage}
-                            alt='kodaweb-banner-image'
-                            width='451'
-                            height='368'
-                            priority
-                        />
-                        :
-                        null
-                        }
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-        :
-        null
-    }
-    {
-        pageName == 'services' ? 
-        <section className={`${styles['innerBannerMainWrapper']} ${'d-flex align-items-center'} ${pageName == 'services' ? styles['services-bg-img'] : null}`}>
-            <Container>
-                <Row>
-                    <Col lg={7}>
-                    <div className={`${styles['innerBannerContentWrapper']}`}>
-                        <h2>{innerBannerTitle}</h2>
-                        <p>{innerBannerpara}</p>
-                    </div>
-                    </Col>
-                    <Col lg={5}>
-                        {
-                        innerBannerSideImage === 'yes' ? 
-                        <Image
-                            src={banenrSideImage}
-                            alt='kodaweb-banner-image'
-                            width='100'
-                            height='100'
-                            priority
-                        />
-                        :
-                        null
-                        }
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-        :
-        null
-    }
-    {
-        pageName == 'aboutUs' ? 
-        <section className={`${styles['innerBannerMainWrapper']} ${'d-flex align-items-center'} ${pageName == 'aboutUs' ? styles['aboutUs-bg-img'] : null}`}>
-            <Container>
-                <Row>
-                    <Col lg={7}>
-                    <div className={`${styles['innerBannerContentWrapper']}`}>
-                        <h2>{innerBannerTitle}</h2>
-                        <p>{innerBannerpara}</p>
-                    </div>
-                    </Col>
-                    <Col lg={5}>
-                        {
-                        innerBannerSideImage === 'yes' ? 
-                        <Image
-                            src={banenrSideImage}
-                            alt='kodaweb-banner-image'
-                            width='100'
-                            height='100'
-                            priority
-                        />
-                        :
-                        null
-                        }
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-        :
-        null
-    }
-    {
-        pageName == 'work' ? 
-        <section className={`${styles['innerBannerMainWrapper']}  ${pageName == 'work' ? styles['work-bg-img'] : null}`}>
-            <Container>
-                <Row>
-                    <Col lg={7}>
-                    <div className={`${styles['innerBannerContentWrapper']} ${styles['workBannerContentWrapper']}`}>
-                        <h2>{innerBannerTitle}</h2>
-                        <p>{innerBannerpara}</p>
-                    </div>
-                    </Col>
-                    <Col lg={5}>
-                        {
-                        innerBannerSideImage === 'yes' ? 
-                        <Image
-                            src={banenrSideImage}
-                            alt='kodaweb-banner-image'
-                            width='100'
-                            height='100'
-                            priority
-                        />
-                        :
-                        null
-                        }
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-        :
-        null
-    }
-    </>
-  )
+    let { innerBannerTitle, innerBannerpara, innerBannerSideImage, pageName } = props
+
+    return (
+        <>
+            {
+                pageName == 'contact' ?
+                    <section className={`${styles['innerBannerMainWrapper']} ${'d-flex align-items-center'} ${pageName == 'contact' ? styles['contactUs-bg-img'] : null}`}>
+                        <Container>
+                            <Row>
+                                <Col lg={7}>
+                                    <div className={`${styles['innerBannerContentWrapper']}`}>
+                                        <h2>{innerBannerTitle}</h2>
+                                        <p>{innerBannerpara}</p>
+                                    </div>
+                                </Col>
+                                <Col lg={5}>
+                                    {
+                                        innerBannerSideImage === 'yes' ?
+                                            <Image
+                                                src={banenrSideImage}
+                                                alt='kodaweb-banner-image'
+                                                width='100'
+                                                height='100'
+                                                priority
+                                            />
+                                            :
+                                            null
+                                    }
+                                </Col>
+                            </Row>
+                        </Container>
+                    </section>
+                    :
+                    null
+            }
+            {
+                pageName == 'pricing' ?
+                    <section className={`${styles['innerBannerMainWrapper']} ${'d-flex align-items-center'} ${pageName == 'pricing' ? styles['pricing-bg-img'] : null}`}>
+                        <Container>
+                            <Row>
+                                <Col lg={7} style={{ display: 'flex', alignItems: 'center' }}>
+                                    <div className={`${styles['innerBannerContentWrapper']}`}>
+                                        <h2>{innerBannerTitle}</h2>
+                                        <p>{innerBannerpara}</p>
+                                    </div>
+                                </Col>
+                                <Col lg={5} style={{ display: 'flex', justifyContent: 'end', alignItems: 'center' }}>
+                                    {
+                                        innerBannerSideImage === 'yes' ?
+                                            <Image
+                                                className={`${styles['innerBannerRigtImage']}`}
+                                                src={banenrSideImage}
+                                                alt='kodaweb-banner-image'
+                                                width='451'
+                                                height='368'
+                                                priority
+                                            />
+                                            :
+                                            null
+                                    }
+                                </Col>
+                            </Row>
+                        </Container>
+                    </section>
+                    :
+                    null
+            }
+            {
+                pageName == 'services' ?
+                    <section className={`${styles['innerBannerMainWrapper']} ${'d-flex align-items-center'} ${pageName == 'services' ? styles['services-bg-img'] : null}`}>
+                        <Container>
+                            <Row>
+                                <Col lg={7}>
+                                    <div className={`${styles['innerBannerContentWrapper']}`}>
+                                        <h2>{innerBannerTitle}</h2>
+                                        <p>{innerBannerpara}</p>
+                                    </div>
+                                </Col>
+                                <Col lg={5}>
+                                    {
+                                        innerBannerSideImage === 'yes' ?
+                                            <Image
+                                                src={banenrSideImage}
+                                                alt='kodaweb-banner-image'
+                                                width='100'
+                                                height='100'
+                                                priority
+                                            />
+                                            :
+                                            null
+                                    }
+                                </Col>
+                            </Row>
+                        </Container>
+                    </section>
+                    :
+                    null
+            }
+            {
+                pageName == 'aboutUs' ?
+                    <section className={`${styles['innerBannerMainWrapper']} ${'d-flex align-items-center'} ${pageName == 'aboutUs' ? styles['aboutUs-bg-img'] : null}`}>
+                        <Container>
+                            <Row>
+                                <Col lg={7}>
+                                    <div className={`${styles['innerBannerContentWrapper']}`}>
+                                        <h2>{innerBannerTitle}</h2>
+                                        <p>{innerBannerpara}</p>
+                                    </div>
+                                </Col>
+                                <Col lg={5}>
+                                    {
+                                        innerBannerSideImage === 'yes' ?
+                                            <Image
+                                                src={banenrSideImage}
+                                                alt='kodaweb-banner-image'
+                                                width='100'
+                                                height='100'
+                                                priority
+                                            />
+                                            :
+                                            null
+                                    }
+                                </Col>
+                            </Row>
+                        </Container>
+                    </section>
+                    :
+                    null
+            }
+            {
+                pageName == 'work' ?
+                    <section className={`${styles['innerBannerMainWrapper']}  ${pageName == 'work' ? styles['work-bg-img'] : null}`}>
+                        <Container>
+                            <Row>
+                                <Col lg={7}>
+                                    <div className={`${styles['innerBannerContentWrapper']} ${styles['workBannerContentWrapper']}`}>
+                                        <h2>{innerBannerTitle}</h2>
+                                        <p>{innerBannerpara}</p>
+                                    </div>
+                                </Col>
+                                <Col lg={5}>
+                                    {
+                                        innerBannerSideImage === 'yes' ?
+                                            <Image
+                                                src={banenrSideImage}
+                                                alt='kodaweb-banner-image'
+                                                width='100'
+                                                height='100'
+                                                priority
+                                            />
+                                            :
+                                            null
+                                    }
+                                </Col>
+                            </Row>
+                        </Container>
+                    </section>
+                    :
+                    null
+            }
+        </>
+    )
 }
 
 export default InnerPagesBanner

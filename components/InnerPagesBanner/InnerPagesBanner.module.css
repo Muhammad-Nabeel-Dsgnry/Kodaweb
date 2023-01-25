@@ -67,6 +67,29 @@
 
 /* Responsive Start */
 
+@media only screen and (max-width: 991px) {
+    .work-bg-img {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/Assets/Assets/For-web/Banner-our-work-mobile.jpg');
+    }
+    .services-bg-img {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/Assets/Assets/For-web/Banner-Services-mobile.jpg')
+    }
+    .pricing-bg-img {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/Assets/Assets/For-web/Banner-pricing-mobile.jpg')
+    }
+    .aboutUs-bg-img {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/Assets/Assets/For-web/Banner-About-Us-mobile.jpg')
+    }
+    .contactUs-bg-img {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/Assets/Assets/For-web/Banner-Contact-Us-mobile.jpg')
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
     .innerBannerMainWrapper {
