@@ -122,6 +122,8 @@
       opacity: 0;
       transition: .5s ease;
       background-color: hsla(0,0%,7%,.612);
+      /* box-shadow: 0px 5px 5px 200px #0000004a inset !important; */
+      /* filter: blur(20px) !important; */
   }
   
   .overlay:hover {
@@ -137,7 +139,7 @@
   }
 
   .portfolioImage {
-    /* width: 100%; */
+    width: 100vw;
     height: auto;
     object-fit: cover;
     max-width: 100%;

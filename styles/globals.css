@@ -166,6 +166,9 @@ button.btnActive {
   border-radius: 20px;
   padding: 40px 50px 30px;
 }
+.modal-content small {
+  white-space: unset;
+}
 .modal-header, .modal-footer {
   border: none;
 }
@@ -190,7 +193,9 @@ button.btnActive {
 
 
 @media only screen and (max-width: 600px) {
-  
+  .modal-content {
+    padding: 20px !important;
+  }
   .mobileHideImageBox {
     display: none !important;
   }
