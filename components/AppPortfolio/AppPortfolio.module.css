@@ -159,6 +159,9 @@
       flex-wrap: wrap;
       width: 100%;
     }
+    .portfolioImage {
+      height: 170px;
+    }
     
 
   }
