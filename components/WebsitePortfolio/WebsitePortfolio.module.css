@@ -137,9 +137,9 @@
   }
 
   .portfolioImage {
-    /* width: 100%; */
+    width: 100vw;
     /* height: auto; */
-    height: 276px;
+    height: 278px;
     object-fit: cover;
     max-width: 100%;
   }
@@ -157,6 +157,7 @@
     .ourWorkImageRow {
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
     }
     
 
@@ -172,6 +173,7 @@
     .ourWorkImageRow {
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
     }
 
 }

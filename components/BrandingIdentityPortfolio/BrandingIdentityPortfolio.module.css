@@ -163,6 +163,7 @@
     .ourWorkImageRow {
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
     }
     
 
@@ -178,6 +179,7 @@
     .ourWorkImageRow {
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
     }
 
 }

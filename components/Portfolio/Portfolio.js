@@ -35,6 +35,8 @@ import HomePortfolio22 from '../../public/Assets/Assets/For-web/home-portfolio/K
 import HomePortfolio23 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-23-main.jpg'
 import HomePortfolio24 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-24.jpg'
 import HomePortfolio25 from '../../public/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-25-main.jpg'
+import overlayRightImage from "../../public/Assets/Assets/For-web/right-border.png";
+import overlayLeftImage from "../../public/Assets/Assets/For-web/left-border.png";
 
 
 const Portfolio = () => {
@@ -199,14 +201,65 @@ const Portfolio = () => {
               <div className={`${styles['box']}`}>
                   <div className={`${styles['topLineOne']}`}></div>
                 <div className={`${styles.overlay}`}>
-                  {/* <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                       alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
                       width='20'
                       height='20'
+                      data-fancybox="gallery"
+                      data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
                       />
-                  </div> */}
+                  </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -214,8 +267,6 @@ const Portfolio = () => {
                   alt='HomePortfolio-1'
                   width='383'
                   height='334'
-                  data-fancybox="gallery"
-                  data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-1.jpg'
                 />
               </div>
               <div className={`${styles['topLineTwo']}`}></div>
@@ -223,7 +274,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -233,6 +312,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-2.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -246,7 +346,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -256,6 +384,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-3-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -269,7 +418,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -279,6 +456,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-4-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -292,7 +490,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -302,6 +528,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-5-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -315,7 +562,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -325,6 +600,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-6-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -338,7 +634,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -348,6 +672,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-7.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -364,7 +709,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -374,6 +747,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-8.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -387,7 +781,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -397,6 +819,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-9.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -410,7 +853,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -420,6 +891,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-10.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -433,7 +925,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -443,6 +963,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-11-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -456,7 +997,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -466,6 +1035,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-12-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -479,7 +1069,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -489,6 +1107,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-13.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -502,7 +1141,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -512,6 +1179,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-14.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -525,7 +1213,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -535,6 +1251,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-15-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -550,7 +1287,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -560,6 +1325,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-16.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -573,7 +1359,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -583,6 +1397,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-17.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -596,7 +1431,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -606,6 +1469,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-18-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -619,7 +1503,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -629,6 +1541,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-19.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -642,7 +1575,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -652,6 +1613,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-20.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -665,7 +1647,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -675,6 +1685,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-21-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -688,7 +1719,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -698,6 +1757,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-22.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -711,7 +1791,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -721,6 +1829,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-23-deatil.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -734,7 +1863,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -744,6 +1901,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-24.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
@@ -757,7 +1935,35 @@ const Portfolio = () => {
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>
-                  <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%' }}>
+                  <div style={{ position: "relative", padding: "10px" }}>
+                      <Image
+                        src={overlayRightImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginLeft: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                        }}
+                      />
+                    </div>
+                  <div style={{ display: "flex",
+                        justifyContent: "center",
+                        color: "#fff",
+                        alignItems: "center",
+                        height: "100%",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0",
+                        position: "absolute",
+                        top: "0",
+                        left: "0",
+                        right: "0",
+                        bottom: "0", }}>
                     <Image
                     alt='portfolio'
                       src='/Assets/Assets/For-web/cross.svg'
@@ -767,6 +1973,27 @@ const Portfolio = () => {
                       data-src='/Assets/Assets/For-web/home-portfolio/Kodaweb-home-portfolio-25-detail.jpg'
                     />
                   </div>
+                  <div
+                      style={{
+                        position: "absolute",
+                        bottom: "0",
+                        padding: "10px",
+                      }}
+                    >
+                      <Image
+                        src={overlayLeftImage}
+                        alt="overlay right border"
+                        width={100}
+                        height={100}
+                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        style={{
+                          marginRight: "auto",
+                          display: "block",
+                          transform: "rotate(0deg)",
+                          position: "relative",
+                        }}
+                      />
+                    </div>
                 </div>
                 <Image
                   className={`${styles['portfolioImage']}`}
