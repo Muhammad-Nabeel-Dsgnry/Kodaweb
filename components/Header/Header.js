@@ -38,11 +38,18 @@ const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   const [isToggle, setIsToggle] = useState(false)
+  const [isActive, setIsActive] = useState(false)
 
   const route = useRouter()
 
-  const handleToggle = () => setIsToggle(!isToggle)
+  const handleToggle = () => {
+    setIsToggle(!isToggle)
+  }
 
+  const hadnleActive = () => {
+    setIsActive(true)
+    setIsToggle(false)
+  }
   
 
   // return <header className={`${styles['header']} ${styles['headerTwo']} `}>Header</header>
@@ -52,7 +59,7 @@ const Header = () => {
         <Navbar.Brand>
           <Link href='/'>
             <Image
-              className={`${styles['headerMobileLogoBlack']} ${isToggle ? 'whiteLogo' : ''}`}
+              className={`${styles['headerMobileLogoBlack']} ${isToggle ? !isActive ? 'whiteLogo' : '' : ''}`}
               alt='Kodaweb header logo'
               src={LogoHeader}
               width='235'
@@ -62,11 +69,11 @@ const Header = () => {
           {/* Logo */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className={`${isActive ? 'hideCollapse' : ''}`}>
           <Nav className="ms-auto">
             {menuLinks.map(({ title, path }, index) => {
               return (
-                <Link href={path} key={index} className={`${styles['navMenu']} ${route.pathname == path ? 'active' : null} ${route.pathname == path ? 'hide' : null}`}>{title}</Link>
+                <Link href={path} key={index} className={`${styles['navMenu']} ${route.pathname == path ? 'active' : null}`} onClick={hadnleActive}>{title}</Link>
               )
             })}
           </Nav>

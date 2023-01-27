@@ -48,6 +48,7 @@ a.navMenu:hover {
     text-decoration: none !important;
 }
 
+
 @media only screen and (max-width: 600px) {
 
     .navMenu {

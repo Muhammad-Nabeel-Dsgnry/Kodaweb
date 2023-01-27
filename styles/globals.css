@@ -190,6 +190,9 @@ button.btnActive {
 .fancybox__button--thumbs, .fancybox__thumbs {
   display: none !important;
 }
+.hideCollapse {
+  display: none;
+}
 
 
 @media only screen and (max-width: 600px) {
