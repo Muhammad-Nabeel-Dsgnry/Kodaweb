@@ -69,7 +69,7 @@ const Header = () => {
           {/* Logo */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
-        <Navbar.Collapse id="basic-navbar-nav" className={`${isActive ? 'hideCollapse' : ''}`}>
+        <Navbar.Collapse id="basic-navbar-nav" className={`${isActive ? 'hideCollapse' : null}`}>
           <Nav className="ms-auto">
             {menuLinks.map(({ title, path }, index) => {
               return (
@@ -81,6 +81,48 @@ const Header = () => {
             Get A Quote
           </Link>
           <GetAQuote show={isOpen} onHide={() => setIsOpen(false)} />
+          {isToggle ?
+          <>
+            <div className={`${styles['mobileSocialIconsWrapper']} mt-5`}>
+            <Image
+              className="me-5 my-4"
+              src='/Assets/Assets/For-web/facebook.svg'
+              alt="banner social media icon"
+              width='30'
+              height='30'
+            />
+            <Image
+              className="me-5 my-4"
+              src='/Assets/Assets/For-web/Dribble.svg'
+              alt="banner social media icon"
+              width='30'
+              height='30'
+            />
+            <Image
+              className="me-5 my-4"
+              src='/Assets/Assets/For-web/Twitter.svg'
+              alt="banner social media icon"
+              width='30'
+              height='30'
+            />
+            <Image
+              className="me-5 my-4"
+              src='/Assets/Assets/For-web/Linked In.svg'
+              alt="banner social media icon"
+              width='30'
+              height='30'
+            />
+            </div>
+            <div className='text-white'>
+              <h2 className={`${styles['mobileTitle']}`}>KODAWEB STUDIO</h2>
+              <Link href='https://goo.gl/maps/eHVx2XFuBZu1Lk57A' target='_blank' className="d-flex align-items-start">
+              <span className={`w-100 text-white fs-5`}>#15–7015 Avenue of Americas New York, NY L5S 1T7</span>
+              </Link>
+            </div>
+          </>
+          :
+          null
+          }
           {/* <Button className={`${styles['blueButton']} ${styles['navButton']}`}>Start your project</Button> */}
         </Navbar.Collapse>
       </Container>

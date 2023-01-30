@@ -234,6 +234,7 @@ button.btnActive {
   .show#basic-navbar-nav a.active {
     color: var(--text-white) !important;
     border-bottom: 2px solid var(--bg-white);
+    line-height: 30px;
   }
   .navbar-nav {
     margin-bottom: 30px;
@@ -269,6 +270,7 @@ button.btnActive {
   .show#basic-navbar-nav a.active {
     color: var(--text-white) !important;
     border-bottom: 2px solid var(--bg-white);
+    line-height: 30px;
   }
   .navbar-toggler:focus:not(:focus-visible) {
     box-shadow: none;

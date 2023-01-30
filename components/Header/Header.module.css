@@ -47,21 +47,27 @@ a.navMenu:hover {
 #basic-navbar-nav a {
     text-decoration: none !important;
 }
-
+.mobileTitle {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 39px;
+    letter-spacing: 1px;
+}
 
 @media only screen and (max-width: 600px) {
 
     .navMenu {
         font-size: 1.8rem;
         line-height: 22px;
-        margin: 0px 0px 40px 0px;
+        margin: 0px 0px 45px 0px;
         width: fit-content;
         color: var(--text-white) !important;
         font-weight: 800;
         letter-spacing: 2px;
     }
     .navMenu:nth-child(1) {
-        margin-top: 40px;
+        margin-top: 80px;
     }
     .navButton {
         margin-left: 0px;
@@ -79,14 +85,14 @@ a.navMenu:hover {
     .navMenu {
         font-size: 1.8rem;
         line-height: 22px;
-        margin: 0px 0px 40px 0px;
+        margin: 0px 0px 60px 0px;
         width: fit-content;
         color: var(--text-white) !important;
         font-weight: 800;
         letter-spacing: 2px;
     }
     .navMenu:nth-child(1) {
-        margin-top: 40px;
+        margin-top: 80px;
     }
     .navButton {
         margin-left: 0px;
