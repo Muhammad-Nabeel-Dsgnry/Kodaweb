@@ -193,9 +193,12 @@ button.btnActive {
 .hideCollapse {
   display: none;
 }
+.hideToggleButton {
+  display: none;
+}
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .modal-content {
     padding: 20px !important;
   }
@@ -275,9 +278,9 @@ button.btnActive {
   .navbar-toggler:focus:not(:focus-visible) {
     box-shadow: none;
   }
-  .navbar-nav {
+  /* .navbar-nav {
     margin-bottom: 30px;
-  }
+  } */
 
 }
 

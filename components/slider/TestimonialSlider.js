@@ -17,7 +17,7 @@ const TestimonialSlider = () => {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

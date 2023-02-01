@@ -41,7 +41,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 28px;
 }
 
@@ -66,7 +66,7 @@
     width: 75%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
     .footerMainWrapper {
         padding: 36px 8px 60px 8px;

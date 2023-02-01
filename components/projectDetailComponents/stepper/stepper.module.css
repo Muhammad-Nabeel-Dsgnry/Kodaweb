@@ -33,3 +33,9 @@
 .deactive {
     background-color: #E3E3E3 !important;
 }
+
+@media only screen and (max-width: 1200px) {
+    .stepperWrapper {
+        display: none;
+    }
+}

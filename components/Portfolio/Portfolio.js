@@ -64,6 +64,17 @@ const Portfolio = () => {
         }
       },
       {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true,
+          autoplay: false,
+        }
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
@@ -104,6 +115,17 @@ const Portfolio = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true,
+          autoplay: false,
+        }
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -150,6 +172,17 @@ const Portfolio = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true,
+          autoplay: false,
+        }
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -207,7 +240,7 @@ const Portfolio = () => {
                         alt="overlay right border"
                         width={100}
                         height={100}
-                        className={`${styles["overlayBorder"]} ${styles["overlayBorder"]}`}
+                        className={`${styles["overlayBorder"]}`}
                         style={{
                           marginLeft: "auto",
                           display: "block",

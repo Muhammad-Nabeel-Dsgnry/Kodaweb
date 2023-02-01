@@ -64,6 +64,9 @@ const StepOneForm = () => {
     console.log("Get Logo Package : ", isPackageWeb.name)
     const [timeDurationPrice, setTimeDurationPrice] = useState('')
     const [timeDuration, setTimeDuration] = useState('')
+    // const [selectedPackage, setSelectedPackage] = useState({...packageDetails})
+    // console.log('selectedPackage : ', selectedPackage)
+
     let durationPrice = ''
     const getDurationPrice = (data) => {
         Logo_Design_Duration.map((item) => {
@@ -191,6 +194,10 @@ const StepOneForm = () => {
         setSecondaryColor('#57C070')
         setAscendColor('#0066FF')
     }
+
+    // const handlePackageDetails = () => {
+    //     console.log(selectedPackage)
+    // }
 
     return (
         <>
@@ -498,6 +505,7 @@ const StepOneForm = () => {
                                                 name='package details'
                                                 label={`${packageDetails?.name} (${packageDetails?.title})`}
                                                 id='1'
+                                                // checked={console.log(packageDetails)}
                                                 className={`${styles['packageBriefRadio']}`}
                                             />
                                         </div>

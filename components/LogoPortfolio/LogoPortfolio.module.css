@@ -129,6 +129,22 @@
   .overlay:hover {
     opacity: 1;
   }
+  .overlay:hover img.overlayBorder {
+    margin-left: auto !important;
+    animation: rightBorderAnim 2s linear;
+  }
+  
+  @keyframes rightBorderAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+  }
   
   .testimonial .slick-slide .slick-track {
     height: 334px !important;
@@ -145,7 +161,7 @@
     max-width: 100%;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
 
     .testimonial {
       pointer-events: none;

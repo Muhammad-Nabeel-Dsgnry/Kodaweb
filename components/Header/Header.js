@@ -10,6 +10,7 @@ import { useRouter } from 'next/router';
 import LogoHeader from '../../public/Assets/Assets/For-web/LogoHeader.png';
 import GetAQuote from '../GetAQuote/GetAQuote';
 import { useState } from 'react';
+import CloseButton from 'react-bootstrap/CloseButton';
 
 const menuLinks = [
   {
@@ -43,7 +44,13 @@ const Header = () => {
   const route = useRouter()
 
   const handleToggle = () => {
-    setIsToggle(!isToggle)
+    setIsToggle(true)
+    setIsActive(false)
+  }
+
+  const handleClose = () => {
+    setIsToggle(false)
+    setIsActive(true)
   }
 
   const hadnleActive = () => {
@@ -68,7 +75,14 @@ const Header = () => {
           </Link>
           {/* Logo */}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
+        {isToggle ? 
+        <div className={`${styles['mobileCrossButton']} pe-3`}>
+          <CloseButton variant="white" onClick={handleClose}/>
+        </div>
+        :
+        null
+        }
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} className={isToggle ? 'hideToggleButton' : ''} />
         <Navbar.Collapse id="basic-navbar-nav" className={`${isActive ? 'hideCollapse' : null}`}>
           <Nav className="ms-auto">
             {menuLinks.map(({ title, path }, index) => {
@@ -85,28 +99,28 @@ const Header = () => {
           <>
             <div className={`${styles['mobileSocialIconsWrapper']} mt-5`}>
             <Image
-              className="me-5 my-4"
+              className="me-5 my-3"
               src='/Assets/Assets/For-web/facebook.svg'
               alt="banner social media icon"
               width='30'
               height='30'
             />
             <Image
-              className="me-5 my-4"
+              className="me-5 my-3"
               src='/Assets/Assets/For-web/Dribble.svg'
               alt="banner social media icon"
               width='30'
               height='30'
             />
             <Image
-              className="me-5 my-4"
+              className="me-5 my-3"
               src='/Assets/Assets/For-web/Twitter.svg'
               alt="banner social media icon"
               width='30'
               height='30'
             />
             <Image
-              className="me-5 my-4"
+              className="me-5 my-3"
               src='/Assets/Assets/For-web/Linked In.svg'
               alt="banner social media icon"
               width='30'
@@ -116,7 +130,7 @@ const Header = () => {
             <div className='text-white'>
               <h2 className={`${styles['mobileTitle']}`}>KODAWEB STUDIO</h2>
               <Link href='https://goo.gl/maps/eHVx2XFuBZu1Lk57A' target='_blank' className="d-flex align-items-start">
-              <span className={`w-100 text-white fs-5`}>#15–7015 Avenue of Americas New York, NY L5S 1T7</span>
+              <span className={`w-100 text-white fs-6`}>#15–7015 Avenue of Americas New York, NY L5S 1T7</span>
               </Link>
             </div>
           </>

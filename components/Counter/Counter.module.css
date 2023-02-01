@@ -35,7 +35,7 @@
 
   /* Reponsive Start */
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 767px) {
     .counter_Section__cardTitle div {
       height: 50px !important;
     }

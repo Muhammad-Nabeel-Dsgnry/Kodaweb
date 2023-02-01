@@ -54,29 +54,37 @@ a.navMenu:hover {
     line-height: 39px;
     letter-spacing: 1px;
 }
+.mobileCrossButton {
 
-@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 767px) {
 
     .navMenu {
         font-size: 1.8rem;
-        line-height: 22px;
-        margin: 0px 0px 45px 0px;
+        line-height: 30px;
+        /* margin: 0px 0px 40px 0px; */
+        margin-left: 0px;
         width: fit-content;
         color: var(--text-white) !important;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 2px;
+    }
+    .navMenu:not(:last-child) {
+        margin-bottom: 40px;
     }
     .navMenu:nth-child(1) {
         margin-top: 80px;
     }
     .navButton {
-        margin-left: 0px;
+        /* margin-left: 0px;
         font-size: 1rem;
         line-height: 17px;
         padding: 16px 30px;
         background-color: var(--text-white);
         color: var(--text-blue);
-        font-weight: 700;
+        font-weight: 700; */
+        display: none;
     }
       
 }
@@ -84,7 +92,7 @@ a.navMenu:hover {
 @media (min-width: 768px) and (max-width: 1024px) {
     .navMenu {
         font-size: 1.8rem;
-        line-height: 22px;
+        line-height: 30px;
         margin: 0px 0px 60px 0px;
         width: fit-content;
         color: var(--text-white) !important;

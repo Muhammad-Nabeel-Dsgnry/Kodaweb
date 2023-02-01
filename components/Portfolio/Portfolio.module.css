@@ -134,6 +134,22 @@
   opacity: 1;
   /* transform: scale(1); */
 }
+.overlay:hover img.overlayBorder {
+  margin-left: auto !important;
+  animation: rightBorderAnim 2s linear;
+}
+
+@keyframes rightBorderAnim {
+0% {
+  opacity: 0;
+}
+50% {
+  opacity: .5;
+}
+100% {
+  opacity: 1;
+}
+}
 
 .testimonial img:first-child {
   transform: rotate(45deg);
@@ -159,7 +175,7 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
   .portfolio_section {
     padding: 34px 0px 43px 0px;
