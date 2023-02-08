@@ -8,7 +8,7 @@ import OrderTotal from './orderTotal'
 import moneyBack from '../../../public/Assets/Assets/For-web/moneyBack.png'
 import GuaranteeIcon from '../../../public/Assets/Assets/For-web/tick.svg'
 import Link from 'next/link';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const step3 = (props) => {
@@ -21,6 +21,10 @@ const step3 = (props) => {
     console.log('secondFormData', props)
 
     const dataClearHandler = () => localStorage.clear()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <>

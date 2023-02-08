@@ -506,6 +506,7 @@ const StepOneForm = () => {
                                                 label={`${packageDetails?.name} (${packageDetails?.title})`}
                                                 id={`${packageDetails?.id}`}
                                                 // checked={console.log(packageDetails)}
+                                                // onChange={() => alert('Package section clicked.')}
                                                 className={`${styles['packageBriefRadio']}`}
                                             />
                                         </div>
@@ -600,7 +601,7 @@ const StepOneForm = () => {
                                                                     type='radio'
                                                                     name='time duration'
                                                                     label={`${item.time}`}
-                                                                    id={`${item.time}`}
+                                                                    id={`${item.id}`}
                                                                     checked={timeDuration === `${item.price}`}
                                                                     onChange={handleChange}
                                                                     // onDoubleClick={handleChange}
@@ -609,7 +610,7 @@ const StepOneForm = () => {
                                                                 />
                                                             </div>
                                                             <div className={`${styles['timeDurationPrice']} ${styles['timeDurationContent']}`}>
-                                                                <label htmlFor={item.time}>
+                                                                <label htmlFor={item.id}>
                                                                     {
                                                                         item.price === 0 ? 'free' : `$${item.price}`
                                                                     }

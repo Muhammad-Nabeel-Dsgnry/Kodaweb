@@ -1,21 +1,21 @@
 export const Logo_Design_Duration = [
     {
-        'id': '1',
+        'id': '5',
         'time': 'Standard 7 Days',
         'price': 0,
     },
     {
-        'id': '2',
+        'id': '6',
         'time': '3 Days',
         'price': 30,
     },
     {
-        'id': '3',
+        'id': '7',
         'time': '2 Days',
         'price': 59,
     },
     {
-        'id': '4',
+        'id': '8',
         'time': '24 Hours',
         'price': 79,
     },

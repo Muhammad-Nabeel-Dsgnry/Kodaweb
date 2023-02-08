@@ -2,7 +2,7 @@ import { Container, Row, Col, Form, ButtonGroup } from 'react-bootstrap'
 // import styles from '../Forms.module.css'
 import styles from '../../../styles/projectDetail.module.css'
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PhoneInput from 'react-phone-number-input'
 import GuaranteeIcon from '../../../public/Assets/Assets/For-web/tick.svg'
 import Image from 'next/image';
@@ -99,6 +99,10 @@ const StepTwoForm = (props) => {
 
 
     // const { stepSubTitle, stepMainTitle, stepPara, isImage, colorText } = props
+
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>

@@ -18,8 +18,6 @@ const Optional = ({item}) => {
     const [localStorageData_Name, setLocalStorageData_Name] = useState(getLocalStorageData.name)
     const [localStorageData_Price, setLocalStorageData_Price] = useState(getLocalStorageData.price)
     const handleOptionalPkg = () => {
-        // setOptPkg([item])
-        // localStorage.setItem('Package-Data', JSON.stringify({item}))
         console.log('Handle Optional Package Console : ', optPkg)
         console.log('get local-storage data Id : ', localStorageData_Id)
         console.log('get local-storage data Name : ', localStorageData_Name)
