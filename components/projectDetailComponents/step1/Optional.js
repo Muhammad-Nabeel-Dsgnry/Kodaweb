@@ -50,6 +50,7 @@ const Optional = ({item}) => {
                                     <i className={`${'me-3'}`}>
                                         <Image
                                             src={mostPopularIcon}
+                                            alt='package icon'
                                             width={19}
                                             height={18}
                                         />
