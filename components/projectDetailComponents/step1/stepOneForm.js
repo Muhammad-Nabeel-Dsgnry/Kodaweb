@@ -504,7 +504,7 @@ const StepOneForm = () => {
                                                 type='radio'
                                                 name='package details'
                                                 label={`${packageDetails?.name} (${packageDetails?.title})`}
-                                                id='1'
+                                                id={`${packageDetails?.id}`}
                                                 // checked={console.log(packageDetails)}
                                                 className={`${styles['packageBriefRadio']}`}
                                             />

@@ -1,6 +1,7 @@
 export const LogoDesignDataOpt = [
     {
         'id': '1',
+        'name': 'Logo Design',
         'title': 'Logo & Brand Identity Pack',
         'content': 'Get everything you need to kick off your Business.',
         'badgetitle': 'Most Popular',

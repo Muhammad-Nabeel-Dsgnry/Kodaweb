@@ -1,6 +1,7 @@
 export const BrandingIdentityDataOpt = [
     {
         'id': '1',
+        'name': 'Branding & Identity',
         'title': 'Branding & Identity Pack',
         'content': 'Get everything you need to kick off your brand.',
         'badgetitle': 'Recommended',

@@ -7,7 +7,26 @@ import Image from 'next/image'
 
 const Optional = ({item}) => {
 
-  
+    console.log('Optional package item console : ', item?.title)
+
+    const getLocalStorageData = JSON.parse(localStorage.getItem('Package-Data'));
+    const timeDuration = getLocalStorageData.timeDuration
+    const timeDurationPrice = getLocalStorageData.timeDurationPrice
+
+    const [optPkg, setOptPkg] = useState(item);
+    const [localStorageData_Id, setLocalStorageData_Id] = useState(getLocalStorageData.id)
+    const [localStorageData_Name, setLocalStorageData_Name] = useState(getLocalStorageData.name)
+    const [localStorageData_Price, setLocalStorageData_Price] = useState(getLocalStorageData.price)
+    const handleOptionalPkg = () => {
+        // setOptPkg([item])
+        // localStorage.setItem('Package-Data', JSON.stringify({item}))
+        console.log('Handle Optional Package Console : ', optPkg)
+        console.log('get local-storage data Id : ', localStorageData_Id)
+        console.log('get local-storage data Name : ', localStorageData_Name)
+        console.log('get local-storage data Price : ', localStorageData_Price)
+        localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: timeDuration, timeDurationPrice: timeDurationPrice, id: item.id, name: item.name, title: item.title, price: item.price }))
+    }
+
   // console.log('logo optional maped items : ', item.content)
   // const [optionalPackage, setOptionalPackage] = useState({})
   // useEffect(() => {
@@ -25,7 +44,8 @@ const Optional = ({item}) => {
                                     type='radio'
                                     name='package details'
                                     label={`${item?.title}`}
-                                    id='1'
+                                    id={`${item?.title}`}
+                                    onChange={handleOptionalPkg}
                                     className={`${styles['packageBriefRadio']}`}
                                 />
                                 <span className={`${'text-white rounded-pill py-2 px-3 text-nowrap ms-3'} ${styles['popularIconWrapper']}`}>
