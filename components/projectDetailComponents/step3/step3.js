@@ -11,7 +11,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react'
 
 
-const step3 = (props) => {
+const Step3 = (props) => {
 
     // const [isStepperThree, setIsStepperThree] = useState(true)
     // const [isStep3, setIsStep3] = useState(true)
@@ -122,4 +122,4 @@ const step3 = (props) => {
     )
 }
 
-export default step3
+export default Step3
