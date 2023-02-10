@@ -6,10 +6,11 @@ import Link from 'next/link';
 
 const PackagesCard = ({ item }) => {
     
-    let data = {id: item.id, name: item.name, title: item.title, price:item.price, options: item.options}
+    let data = {id: item.id, name: item.name, title: item.title, price:item.price, options: item.options, pricing_group: item.pricing_group}
 
     const onDataSave = () => {
-        const pkgData = localStorage.setItem('Package-Data', JSON.stringify(item))
+        // const pkgData = localStorage.setItem('Package-Data', JSON.stringify(item))
+        const pkgData = localStorage.setItem('Package-Data', JSON.stringify(data))
     }
 
     return (

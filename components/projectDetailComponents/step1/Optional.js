@@ -7,29 +7,36 @@ import Image from 'next/image'
 
 const Optional = ({item}) => {
 
-    console.log('Optional package item console : ', item?.title)
+    const [optionalPackage, setOptionalPackage] = useState({})
+    console.log('Optional package item console : ', optionalPackage)
 
     const getLocalStorageData = JSON.parse(localStorage.getItem('Package-Data'));
     const timeDuration = getLocalStorageData.timeDuration
     const timeDurationPrice = getLocalStorageData.timeDurationPrice
+    
+    // console.log('Optional component Time Duration : ', prevData)
 
     const [optPkg, setOptPkg] = useState(item);
     const [localStorageData_Id, setLocalStorageData_Id] = useState(getLocalStorageData.id)
     const [localStorageData_Name, setLocalStorageData_Name] = useState(getLocalStorageData.name)
     const [localStorageData_Price, setLocalStorageData_Price] = useState(getLocalStorageData.price)
+    const [localStorageData_PricingGroup, setLocalStorageData_PricingGroup] = useState(getLocalStorageData.pricing_group)
     const handleOptionalPkg = () => {
         console.log('Handle Optional Package Console : ', optPkg)
         console.log('get local-storage data Id : ', localStorageData_Id)
         console.log('get local-storage data Name : ', localStorageData_Name)
         console.log('get local-storage data Price : ', localStorageData_Price)
-        localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: timeDuration, timeDurationPrice: timeDurationPrice, id: item.id, name: item.name, title: item.title, price: item.price }))
+        console.log('get local-storage data Pricing group : ', localStorageData_PricingGroup)
+        localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: timeDuration, timeDurationPrice: timeDurationPrice, id: item.id, name: item.name, title: item.title, price: item.price, pricing_group: localStorageData_PricingGroup }))
+        // localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: timeDuration, timeDurationPrice: timeDurationPrice, ...optionalPackage }))
     }
 
+
+
   // console.log('logo optional maped items : ', item.content)
-  // const [optionalPackage, setOptionalPackage] = useState({})
-  // useEffect(() => {
-  //   setOptionalPackage(JSON.parse(localStorage.getItem('Package-Data')))
-  // }, [])
+  useEffect(() => {
+    setOptionalPackage(JSON.parse(localStorage.getItem('Package-Data')))
+  }, [])
 
   return (
     <>

@@ -61,8 +61,8 @@ const StepOneForm = () => {
     const [packageDetails, setPackageDetails] = useState({})
     const [isPackageLogo, setIsPackageLogo] = useState({})
     const [isPackageWeb, setIsPackageWeb] = useState({})
-    console.log("Get Logo Package : ", isPackageWeb.name)
-    const [timeDurationPrice, setTimeDurationPrice] = useState('')
+    console.log("Get Logo Package : ", isPackageWeb?.name)
+    const [timeDurationPrice, setTimeDurationPrice] = useState('') 
     const [timeDuration, setTimeDuration] = useState('')
     // const [selectedPackage, setSelectedPackage] = useState({...packageDetails})
     // console.log('selectedPackage : ', selectedPackage)
@@ -77,10 +77,21 @@ const StepOneForm = () => {
 
         console.log('after data : ', durationPrice)
     }
+    // const getLocalStorageData = packageDetails
+    // const [localStorageData_Id, setLocalStorageData_Id] = useState(getLocalStorageData.id)
+    // const [localStorageData_Name, setLocalStorageData_Name] = useState(getLocalStorageData.name)
+    // const [localStorageData_Price, setLocalStorageData_Price] = useState(getLocalStorageData.price)
+    // const [localStorageData_PricingGroup, setLocalStorageData_PricingGroup] = useState(getLocalStorageData.pricing_group)
+
     const handleChange = (e) => {
         setTimeDuration(e.target.value)
         getDurationPrice(e.target.value)
+        const getLocalStorageData = JSON.parse(localStorage.getItem('Package-Data'))
+        // console.log('getLocalStorageData from Step One Form : ', getLocalStorageData)
+        console.log('package details group name : ', getLocalStorageData.pricing_group)
         localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: e.target.value, timeDurationPrice: durationPrice, ...packageDetails }))
+        // localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: e.target.value, timeDurationPrice: durationPrice, ...packageDetails }))
+        // localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: e.target.value, timeDurationPrice: durationPrice, id: localStorageData_Id, name: localStorageData_Name, price: localStorageData_Price, pricing_group: localStorageData_PricingGroup }))
     }
     console.log('Time Duration Price : ', timeDurationPrice)
 
@@ -195,9 +206,12 @@ const StepOneForm = () => {
         setAscendColor('#0066FF')
     }
 
-    // const handlePackageDetails = () => {
-    //     console.log(selectedPackage)
-    // }
+    const handlePackageDetails = () => {
+        const getLocalStorageData = JSON.parse(localStorage.getItem('Package-Data'));
+        const time_Duration = getLocalStorageData.timeDuration
+        const timeDuration_Price = getLocalStorageData.timeDurationPrice
+        localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: time_Duration, timeDurationPrice: timeDuration_Price, ...packageDetails }))
+    }
 
     return (
         <>
@@ -317,7 +331,7 @@ const StepOneForm = () => {
                                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupLogoType'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please select the logo type?</Form.Label>
-                                            <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'}`} value={logoType} onChange={(e) => setLogoType(e.target.value)} disabled={ isPackageWeb.pricing_group === 'Logo' ? false : true} >
+                                            <Form.Select size='lg' className={`${styles['formControl']} ${'mb-2'}`} value={logoType} onChange={(e) => setLogoType(e.target.value)} disabled={ isPackageWeb?.pricing_group === 'Logo' ? false : true} >
                                                 <option value='null'>Select Logo type</option>
                                                 <option value='One' selected>One</option>
                                                 <option value='Two'>Two</option>
@@ -381,7 +395,7 @@ const StepOneForm = () => {
                                     <Col lg={5} xs={12} md={6} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
                                         <Form.Group className={`${'mb-3'}`} controlId='formGroupWebsitePages'>
                                             <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Please list down the content pages you will have on your website pages?</Form.Label>
-                                            <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} value={contentPages} onChange={(e) => setContentPages(e.target.value)} disabled={ isPackageWeb.pricing_group === 'Website' ? false : true } />
+                                            <Form.Control required size='lg' className={`${styles['formControl']} ${'mb-2'}`} as='textarea' rows={4} value={contentPages} onChange={(e) => setContentPages(e.target.value)} disabled={ isPackageWeb?.pricing_group === 'Website' ? false : true } />
                                             <p className={`${styles['formExampleText']}`}>E.g. About Us, privacy Policy, Home,Contact Us, Product Page, Product Detail,Sign In etc....</p>
                                             {/* {
                                                 contentPages?.trim().length <= 0 ?
@@ -506,7 +520,7 @@ const StepOneForm = () => {
                                                 label={`${packageDetails?.name} (${packageDetails?.title})`}
                                                 id={`${packageDetails?.id}`}
                                                 // checked={console.log(packageDetails)}
-                                                // onChange={() => alert('Package section clicked.')}
+                                                onChange={handlePackageDetails}
                                                 className={`${styles['packageBriefRadio']}`}
                                             />
                                         </div>
@@ -525,7 +539,7 @@ const StepOneForm = () => {
                                         <div className={`${styles['detailsFooterCol']} ${'d-flex justify-content-start align-items-center flex-wrap'}`}>
                                             {/* <p>{packageDetails?.options}</p> */}
                                             {
-                                                packageDetails.options?.map((i, index) => {
+                                                packageDetails?.options?.map((i, index) => {
                                                     return (
                                                         <div key={index} className={`${styles['detailsFooterOptionsWrapper']} ${'me-3'}`}>
                                                             <span className={`${styles['packageOptionsBox']} ${'d-flex justify-content-center align-items-center'}`}>
@@ -551,25 +565,25 @@ const StepOneForm = () => {
                         {/* OPTIONAL PACKAGE START */}
                         <section className={`${'mt-5'}`}>
                             {
-                                packageDetails.pricing_group == 'Logo' ?
+                                packageDetails?.pricing_group == 'Logo' ?
                                     <LogoOptional />
                                     :
                                     null
                             }
                             {
-                                packageDetails.pricing_group == 'Branding' ?
+                                packageDetails?.pricing_group == 'Branding' ?
                                     <BrandingOptional />
                                     :
                                     null
                             }
                             {
-                                packageDetails.pricing_group == 'Website' ?
+                                packageDetails?.pricing_group == 'Website' ?
                                     <WebsiteOptional />
                                     :
                                     null
                             }
                             {
-                                packageDetails.pricing_group == 'Marketing' ?
+                                packageDetails?.pricing_group == 'Marketing' ?
                                     <MarketingOptional />
                                     :
                                     null
