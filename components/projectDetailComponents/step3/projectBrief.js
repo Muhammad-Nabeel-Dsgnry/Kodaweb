@@ -5,9 +5,9 @@ import BriefStyle from "./projectBrief.module.css";
 import Link from "next/link";
 import { formData } from "../../context/Context";
 
-const projectBrief = () => {
+const ProjectBrief = () => {
   const { stepOneData, personalInfo, t_duration } = useContext(formData);
-  
+
   return (
     <>
       <section className={`${BriefStyle["mainSection"]}`}>
@@ -182,4 +182,4 @@ const projectBrief = () => {
   );
 };
 
-export default projectBrief;
+export default ProjectBrief;

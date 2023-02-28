@@ -4,7 +4,7 @@ import { Container, Row, Col, ButtonGroup } from 'react-bootstrap'
 import { formData } from '../../context/Context'
 
 
-const stepper = (props) => {
+const Stepper = (props) => {
     const { isStepOneActive, isStepTwoActive, isStepThreeActive } = useContext(formData)
     console.log('step three from stepper : ', isStepTwoActive)
 
@@ -43,4 +43,4 @@ const stepper = (props) => {
   )
 }
 
-export default stepper
+export default Stepper
