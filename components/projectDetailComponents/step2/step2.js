@@ -66,7 +66,7 @@ const Step2 = (props) => {
         </Row> */}
 
         <Row>
-          <StepTwoForm businessName={businessName}  industry={industry} logoType={logoType} primaryColor={primaryColor} secondaryColor={secondaryColor} ascendColor={ascendColor} timeDuration={timeDuration} />
+          <StepTwoForm />
         </Row>
         {/* <Row className={`${'mt-5'}`}>
           <SectionContent

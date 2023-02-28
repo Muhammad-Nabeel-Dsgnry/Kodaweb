@@ -1,41 +1,47 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import styles from '../../../styles/projectDetail.module.css'
 // import checkIcon from '../../../public/Assets/Assets/For-web/pkg-details.svg'
 import mostPopularIcon from '../../../public/Assets/Assets/For-web/star.png'
 import Image from 'next/image'
+import { formData } from '../../context/Context'
 
 const Optional = ({item}) => {
 
-    const [optionalPackage, setOptionalPackage] = useState({})
+    const { setOptionalPackage } = useContext(formData)
+
+    const [optionalPackage, setOptionalPackages] = useState({})
     console.log('Optional package item console : ', optionalPackage)
 
     const getLocalStorageData = JSON.parse(localStorage.getItem('Package-Data'));
     const timeDuration = getLocalStorageData.timeDuration
     const timeDurationPrice = getLocalStorageData.timeDurationPrice
     
-    // console.log('Optional component Time Duration : ', prevData)
+    console.log('Optional component Time Duration : ', timeDurationPrice)
 
     const [optPkg, setOptPkg] = useState(item);
     const [localStorageData_Id, setLocalStorageData_Id] = useState(getLocalStorageData.id)
     const [localStorageData_Name, setLocalStorageData_Name] = useState(getLocalStorageData.name)
     const [localStorageData_Price, setLocalStorageData_Price] = useState(getLocalStorageData.price)
     const [localStorageData_PricingGroup, setLocalStorageData_PricingGroup] = useState(getLocalStorageData.pricing_group)
+
     const handleOptionalPkg = () => {
-        console.log('Handle Optional Package Console : ', optPkg)
-        console.log('get local-storage data Id : ', localStorageData_Id)
-        console.log('get local-storage data Name : ', localStorageData_Name)
-        console.log('get local-storage data Price : ', localStorageData_Price)
-        console.log('get local-storage data Pricing group : ', localStorageData_PricingGroup)
+        // console.log('Handle Optional Package Console : ', optPkg)
+        // console.log('get local-storage data Id : ', localStorageData_Id)
+        // console.log('get local-storage data Name : ', localStorageData_Name)
+        // console.log('get local-storage data Price : ', localStorageData_Price)
+        // console.log('get local-storage data Pricing group : ', localStorageData_PricingGroup)
         localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: timeDuration, timeDurationPrice: timeDurationPrice, id: item.id, name: item.name, title: item.title, price: item.price, pricing_group: localStorageData_PricingGroup }))
         // localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: timeDuration, timeDurationPrice: timeDurationPrice, ...optionalPackage }))
+        
+        // setOptionalPackage(item)
     }
 
 
 
   // console.log('logo optional maped items : ', item.content)
   useEffect(() => {
-    setOptionalPackage(JSON.parse(localStorage.getItem('Package-Data')))
+    setOptionalPackages(JSON.parse(localStorage.getItem('Package-Data')))
   }, [])
 
   return (

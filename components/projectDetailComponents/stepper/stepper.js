@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './stepper.module.css'
 import { Container, Row, Col, ButtonGroup } from 'react-bootstrap'
+import { formData } from '../../context/Context'
 
 
 const stepper = (props) => {
+    const { isStepOneActive, isStepTwoActive, isStepThreeActive } = useContext(formData)
+    console.log('step three from stepper : ', isStepTwoActive)
+
     const {isStepperTrue, isStepperOneTrue, isStepperTwoTrue, isStepperThreeTrue} = props
     console.log('isStepperTrue : ', isStepperTrue)
   return (
@@ -19,17 +23,17 @@ const stepper = (props) => {
                     <Col lg='auto' md='auto' xs='auto'>
                         <span className={`${styles['counterDivider']}`}></span>
                         <div className={`${styles['counterNumberWrapper']} ${styles['counterNumberWrapperOne']}`}>
-                            <span className={`${isStepperOneTrue === 'true' || isStepperTwoTrue === 'true' ? styles['active'] : null}`}>01</span>
+                            <span className={`${isStepOneActive === true ? styles['active'] : null}`}>01</span>
                         </div>
                     </Col>
                     <Col lg='auto' md='auto' xs='auto'>
                         <div className={`${styles['counterNumberWrapper']} ${styles['counterNumberWrapperTwo']}`}>
-                            <span className={`${isStepperTwoTrue === 'true' ? styles['active'] : null}`}>02</span>
+                            <span className={`${isStepTwoActive === true ? styles['active'] : null}`}>02</span>
                         </div>
                     </Col>
                     <Col lg='auto' md='auto' xs='auto'>
                         <div className={`${styles['counterNumberWrapper']} ${styles['counterNumberWrapperThree']}`}>
-                            <span className={`${isStepperThreeTrue === 'true' ? styles['active'] : null}`}>03</span>
+                            <span className={`${isStepThreeActive === true ? styles['active'] : null}`}>03</span>
                         </div>
                     </Col>
                 </Row>

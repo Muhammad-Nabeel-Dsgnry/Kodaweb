@@ -6,10 +6,10 @@ import Link from "next/link";
 const Banner = ({ h1Text, h2Text, paraText, classses, bannerContentClass, children }) => {
   return <div className={`${styles['banner']} ${classses ? classses : ''}`}>
     <div className={`${styles['banner-content']} ${bannerContentClass ? bannerContentClass : ''}`}>
-      {h1Text && <h1 data-aos="zoom-in" data-aos-duration="2000">{h1Text}</h1>}
+      {h1Text && <h1 data-aos="fade-up" data-aos-duration="2000">{h1Text}</h1>}
       {h2Text && <h2>{h2Text}</h2>}
-      {paraText && <p className="my-5" data-aos="fade-down" data-aos-duration="2500">{paraText}</p>}
-      <Link href='/work' className={`${styles['banner-btn']} ${'text-white'}`} data-aos="zoom-in" data-aos-duration="3000">
+      {paraText && <p className="my-5" data-aos="fade-up" data-aos-duration="2500">{paraText}</p>}
+      <Link href='/work' className={`${styles['banner-btn']} ${'text-white'}`} data-aos="fade-up" data-aos-duration="3000">
         Discover More
       </Link>
       {children}

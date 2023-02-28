@@ -8,17 +8,19 @@ import OrderTotal from './orderTotal'
 import moneyBack from '../../../public/Assets/Assets/For-web/moneyBack.png'
 import GuaranteeIcon from '../../../public/Assets/Assets/For-web/tick.svg'
 import Link from 'next/link';
-import { useState, useEffect } from 'react'
-
+import { useState, useEffect, useContext } from 'react'
+import { formData } from '../../context/Context'
 
 const Step3 = (props) => {
 
+    const { setIsStepThreeActive } = useContext(formData)
+    setIsStepThreeActive(true)
     // const [isStepperThree, setIsStepperThree] = useState(true)
     // const [isStep3, setIsStep3] = useState(true)
 
-    const {name, email, phoneNumber, message, paymentMethod, businessName, industry, logoType, colors, duration, stepperThree} = props
+    const {stepperThree} = props
 
-    console.log('secondFormData', props)
+    // console.log('secondFormData', props)
 
     const dataClearHandler = () => localStorage.clear()
 
@@ -62,7 +64,7 @@ const Step3 = (props) => {
             <Row className={`${style['projectDetailsWrapper']} ${'align-items-start'}`}>
             {/* <Stack direction="horizontal" gap={4} className={`${style['projectDetailsWrapper']} ${'align-items-start'}`}> */}
                 <Col lg={7} md={12} xs={12} className={`${style['projectDetailsBox']} ${style['briefBox']} ${'mb-4'}`}>
-                    <ProjectBrief name={name} email={email} phoneNumber={phoneNumber} message={message} paymentMethod={paymentMethod} businessName={businessName} industry={industry} logoType={logoType} colors={colors} duration={duration} />
+                    <ProjectBrief />
                 </Col>
                 <Col lg={1}></Col>
                 <Col lg={4} md={12} xs={12} className={`${style['projectDetailsBox']} ${style['totalBox']}`}>

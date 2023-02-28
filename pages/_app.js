@@ -8,6 +8,7 @@ import Head from "next/head";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React,{useEffect} from "react";
+import Context from '../components/context/Context';
 
 function MyApp({ Component, pageProps }) {
 
@@ -16,13 +17,15 @@ function MyApp({ Component, pageProps }) {
     }, [])
 
   return (
-    <SSRProvider>
-      <Layout>
-        {/* <Header /> */}
-      <Component {...pageProps} />
-        <Footer />
-      </Layout>
-    </SSRProvider>
+    <Context>
+      <SSRProvider>
+        <Layout>
+          {/* <Header /> */}
+        <Component {...pageProps} />
+          <Footer />
+        </Layout>
+      </SSRProvider>
+    </Context>
   );
 }
 

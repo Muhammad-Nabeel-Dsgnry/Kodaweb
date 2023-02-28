@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Button from 'react-bootstrap/Button';
 import styles from './PackagesCard.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
+import { formData } from '../context/Context';
 
 const PackagesCard = ({ item }) => {
+
+    const { setOptionalPackage } = useContext(formData)
     
     let data = {id: item.id, name: item.name, title: item.title, price:item.price, options: item.options, pricing_group: item.pricing_group}
 
     const onDataSave = () => {
         // const pkgData = localStorage.setItem('Package-Data', JSON.stringify(item))
         const pkgData = localStorage.setItem('Package-Data', JSON.stringify(data))
+        setOptionalPackage(item)
     }
 
     return (
