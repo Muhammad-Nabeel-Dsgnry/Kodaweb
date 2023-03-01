@@ -670,7 +670,7 @@ const LogoPortfolio = () => {
                                     />
                                 </div>
                             </div>
-                            <div className={`${styles['testimonial']}`}>
+                            {/* <div className={`${styles['testimonial']}`}>
                                 <div className={`${styles['box']}`}>
                                     <div className={`${styles.overlay}`}>
                                         <div style={{position: 'relative', padding: '10px'}}>
@@ -712,7 +712,7 @@ const LogoPortfolio = () => {
                                         height='334'
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                             <div className={`${styles['testimonial']}`}>
                                 <div className={`${styles['box']}`}>
                                     <div className={`${styles.overlay}`}>
@@ -799,9 +799,6 @@ const LogoPortfolio = () => {
                                     />
                                 </div>
                             </div>
-                        </Stack>
-
-                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
                             <div className={`${styles['testimonial']}`}>
                                 <div className={`${styles['box']}`}>
                                     <div className={`${styles.overlay}`}>
@@ -845,6 +842,9 @@ const LogoPortfolio = () => {
                                     />
                                 </div>
                             </div>
+                        </Stack>
+
+                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
                             <div className={`${styles['testimonial']}`}>
                                 <div className={`${styles['box']}`}>
                                     <div className={`${styles.overlay}`}>
@@ -1060,9 +1060,6 @@ const LogoPortfolio = () => {
                                     />
                                 </div>
                             </div>
-                        </Stack>
-
-                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
                             <div className={`${styles['testimonial']}`}>
                                 <div className={`${styles['box']}`}>
                                     <div className={`${styles.overlay}`}>
@@ -1106,6 +1103,9 @@ const LogoPortfolio = () => {
                                     />
                                 </div>
                             </div>
+                        </Stack>
+
+                        <Stack direction="horizontal" gap={0} className={`${'justify-content-between w-100'} ${styles['ourWorkImageRow']}`} data-aos="fade-down" data-aos-duration="1500">
                             <div className={`${styles['testimonial']}`}>
                                 <div className={`${styles['box']}`}>
                                     <div className={`${styles.overlay}`}>
@@ -1279,6 +1279,49 @@ const LogoPortfolio = () => {
                                 </div>
                             </div>
                             <div className={`${styles['testimonial']}`}>
+                                <div className={`${styles['box']}`}>
+                                    <div className={`${styles.overlay}`}>
+                                        <div style={{position: 'relative', padding: '10px'}}>
+                                            <Image
+                                                src={overlayRightImage}
+                                                alt='overlay right border'
+                                                width={100}
+                                                height={100}
+                                                className={`${styles['overlayBorder']} ${styles['overlayBorder']}`}
+                                                style={{marginLeft: 'auto', display: 'block', transform: 'rotate(0deg)'}}
+                                            />
+                                        </div>
+                                        <div style={{ display: 'flex', justifyContent: 'center', color: '#fff', alignItems: 'center', height: '100%', position: 'absolute', top: '0', left: '0', right: '0', bottom: '0' }}>
+                                            <Image
+                                                alt='logo portfolio'
+                                                src='/Assets/Assets/For-web/cross.svg'
+                                                width='20'
+                                                height='20'
+                                                data-fancybox="gallery"
+                                                data-src='/Assets/Assets/For-web/Group 5.jpg'
+                                            />
+                                        </div>
+                                        <div style={{ position: 'absolute', bottom: '0', padding: '10px' }}>
+                                            <Image
+                                                src={overlayLeftImage}
+                                                alt='overlay right border'
+                                                width={100}
+                                                height={100}
+                                                className={`${styles['overlayBorder']} ${styles['overlayBorder']}`}
+                                                style={{ marginRight: 'auto', display: 'block', transform: 'rotate(0deg)', position: 'relative' }}
+                                            />
+                                        </div>
+                                    </div>
+                                    <Image
+                                        className={`${styles['portfolioImage']}`}
+                                        src='/Assets/Assets/For-web/Group 5.jpg'
+                                        alt='portfolio1'
+                                        width='383'
+                                        height='334'
+                                    />
+                                </div>
+                            </div>
+                            <div className={`${styles['testimonial']}`} style={{visibility: 'hidden'}}>
                                 <div className={`${styles['box']}`}>
                                     <div className={`${styles.overlay}`}>
                                         <div style={{position: 'relative', padding: '10px'}}>

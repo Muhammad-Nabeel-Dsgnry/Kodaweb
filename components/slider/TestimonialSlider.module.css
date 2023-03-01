@@ -10,16 +10,15 @@
 .testimonialsBoxInfo p {
     font-family: 'Inter';
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.188rem;
     color: #969696;
 }
 
 .testimonialsBoxInfo h3 {
     font-family: 'Inter';
     font-weight: 600;
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 1.625rem;
     color: #000000;
 }
 
@@ -51,8 +50,8 @@
     margin-bottom: 30px;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 19px;
-    line-height: 32px;
+    font-size: 1.188rem;
+    line-height: 2rem;
     color: #000;
 }
 

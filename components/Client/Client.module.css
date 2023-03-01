@@ -6,8 +6,8 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.563rem;
-    line-height: 36px;
+    font-size: 1rem;
+    line-height: 1.625rem;
 }
 
 .lineTitle::before {
@@ -22,11 +22,11 @@
 }
 
 .mainTitle {
-    font-family: 'Montserrat';
+    font-family: 'Inter';
     font-style: normal;
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 67px;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 4rem;
     color: #000;
     margin-top: 25px;
 }

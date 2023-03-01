@@ -230,7 +230,7 @@ const Portfolio = () => {
         </Container>
         <Container fluid='true' className='pt-5 p-0'>
           <Slider {...settings}>
-            <div className={`${styles['testimonial']}`}>
+            {/* <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                   <div className={`${styles['topLineOne']}`}></div>
                 <div className={`${styles.overlay}`}>
@@ -303,7 +303,7 @@ const Portfolio = () => {
                 />
               </div>
               <div className={`${styles['topLineTwo']}`}></div>
-            </div>
+            </div> */}
             <div className={`${styles['testimonial']}`}>
               <div className={`${styles['box']}`}>
                 <div className={`${styles.overlay}`}>

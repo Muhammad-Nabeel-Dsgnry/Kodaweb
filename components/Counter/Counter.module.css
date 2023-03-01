@@ -11,19 +11,17 @@
   
   .counter_Section__cardTitle {
     margin-top: 24px;
-    font-family: 'Montserrat';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 3.125rem;
   }
   
   .counter_Section__cardText {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 1.625rem;
     white-space: nowrap;
   }
   

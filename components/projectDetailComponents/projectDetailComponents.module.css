@@ -2,8 +2,8 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.563rem;
-  line-height: 36px;
+  font-size: 1rem;
+  line-height: 1.625rem;
 }
 .lineTitle::before {
   background-color: #2C35CD;
@@ -16,13 +16,13 @@
   margin-right: 38px;
 }
 .mainTitle {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 3.438rem;
-  line-height: 67px;
-  color: var(--text-black);
-  margin-top: 25px;
+  font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    color: var(--text-black);
+    margin-top: 25px;
 }
 .Para {
   font-family: 'Inter';

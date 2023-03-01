@@ -22,36 +22,36 @@
 }
 
 .banner-content h1 {
-    font-family: 'Montserrat';
+    font-family: 'Inter';
     font-style: normal;
-    font-weight: 800;
-    font-size: 70px;
-    line-height: 85px;
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 5.313rem;
 }
 
 .banner-content p {
     font-family: 'Inter';
     font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
     width: 60%;
 }
 
 .banner-btn {
     border-radius: 50px;
-    padding: 18px;
+    padding: 15px 18px;
     margin-top: 50px;
-    border: 1px solid #fff;
-    width: 240px;
+    border: 2px solid #fff;
+    width: 200px;
     text-align: center;
     font-family: 'Inter';
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 30px;
+    font-weight: 600;
+    font-size: 1rem;
 }
 .banner-btn:hover {
     color: #2C35CD !important;
     background-color: var(--bg-white);
+    transition: 0.8s !important;
 }
 
 .homeBannerScrollBtn {

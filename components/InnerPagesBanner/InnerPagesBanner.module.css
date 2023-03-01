@@ -46,17 +46,17 @@
 } */
 
 .innerBannerMainWrapper h2 {
-    font-family: 'Montserrat';
-    font-weight: 800;
-    font-size: 45px;
-    line-height: 55px;
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 2.813rem;
+    line-height: 3.313rem;
 }
 
 .innerBannerMainWrapper p {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 1.375rem;
-    line-height: 35px;
+    line-height: 1.875rem;
     margin-top: 43px;
     color: var(--banner-color);
 }

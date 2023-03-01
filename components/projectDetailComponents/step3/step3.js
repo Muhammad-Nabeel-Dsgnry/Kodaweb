@@ -111,9 +111,9 @@ const Step3 = (props) => {
                   <Link href='/pricing' className={`${style['blueButton']} ${'me-4'}`} onClick={dataClearHandler}>
                     Cancel
                   </Link>
-                    <button href='#' className={`${style['blueButton']}`}>
+                    <Link href='#' className={`${style['blueButton']}`}>
                       Pay Now
-                    </button>
+                    </Link>
               </ButtonGroup>
               </Col>
         </Row>

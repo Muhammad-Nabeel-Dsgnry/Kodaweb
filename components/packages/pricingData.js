@@ -1,7 +1,7 @@
 export const logoDesignPackages = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Logo Design',
         'price': 39,
         'pricing_group': 'Logo',
@@ -104,7 +104,7 @@ export const logoDesignPackages = [
 export const Branding_IdentityPackages = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Branding Identity',
         'price': 19,
         'pricing_group': 'Branding',
@@ -207,7 +207,7 @@ export const Branding_IdentityPackages = [
 export const WebsitePackages = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Website',
         'price': 5,
         'pricing_group': 'Website',
@@ -310,7 +310,7 @@ export const WebsitePackages = [
 export const App_DevPackages = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'App Development',
         'price': 50,
         'pricing_group': 'Website',
@@ -413,7 +413,7 @@ export const App_DevPackages = [
 export const Logo_Branding_Identity = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Logo + Branding & Identity',
         'price': 5,
         'pricing_group': 'Logo',
@@ -516,7 +516,7 @@ export const Logo_Branding_Identity = [
 export const Logo_Branding_Identity_Website = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Logo + Branding & Identity + Website',
         'price': 5000,
         'pricing_group': 'Logo',
@@ -619,7 +619,7 @@ export const Logo_Branding_Identity_Website = [
 export const MockupsPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Mockups',
         'price': 15,
         'pricing_group': 'Branding',
@@ -722,7 +722,7 @@ export const MockupsPackage = [
 export const BusinessCardPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Business Card',
         'price': 19,
         'pricing_group': 'Branding',
@@ -825,7 +825,7 @@ export const BusinessCardPackage = [
 export const LetterheadStationeryPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Letterhead & Stationery',
         'price': 22,
         'pricing_group': 'Branding',
@@ -928,7 +928,7 @@ export const LetterheadStationeryPackage = [
 export const PackagingPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Packaging',
         'price': 26,
         'pricing_group': 'Branding',
@@ -1031,7 +1031,7 @@ export const PackagingPackage = [
 export const HtmlPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'HTML',
         'price': 31,
         'pricing_group': 'Website',
@@ -1134,7 +1134,7 @@ export const HtmlPackage = [
 export const CmsPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'CMS',
         'price': 35,
         'pricing_group': 'Website',
@@ -1237,7 +1237,7 @@ export const CmsPackage = [
 export const E_CommercePackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'E-Commerce',
         'price': 39,
         'pricing_group': 'Website',
@@ -1340,7 +1340,7 @@ export const E_CommercePackage = [
 export const PortalPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Web App',
         'price': 43,
         'pricing_group': 'Website',
@@ -1443,7 +1443,7 @@ export const PortalPackage = [
 export const SeoPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'SEO',
         'price': 47,
         'pricing_group': 'Marketing',
@@ -1546,7 +1546,7 @@ export const SeoPackage = [
 export const GoogleAdWordsPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Google AdWords',
         'price': 51,
         'pricing_group': 'Marketing',
@@ -1649,7 +1649,7 @@ export const GoogleAdWordsPackage = [
 export const RetargetingPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Retargeting',
         'price': 55,
         'pricing_group': 'Marketing',
@@ -1752,7 +1752,7 @@ export const RetargetingPackage = [
 export const FacebookAdvertsPackage = [
     {
         'id': '1',
-        'title': 'Essentials',
+        'title': 'Essential',
         'name': 'Facebook Adverts',
         'price': 59,
         'pricing_group': 'Marketing',

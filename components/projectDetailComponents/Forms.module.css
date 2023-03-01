@@ -2,7 +2,7 @@
     font-family: 'Inter';
     font-weight: 500;
     font-size: 1.25rem;
-    line-height: 24px;
+    line-height: 1.5rem;
     color: var(--bg-dark);
 }
 
@@ -10,7 +10,7 @@
     font-family: 'Inter';
     font-weight: 400;
     font-size: 0.813rem;
-    line-height: 17px;
+    line-height: 1.063rem;
     color: #969696;
     white-space: nowrap;
 }
