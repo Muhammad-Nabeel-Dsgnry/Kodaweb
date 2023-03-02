@@ -30,10 +30,12 @@ import WebsiteOptional from "./websiteOptional";
 import MarketingOptional from "./marketingOptional";
 import Stepper from "../stepper/stepper";
 import { formData } from "../../context/Context";
+import { industryData } from "./industryData";
+import { logoTypes } from "./logoTypes";
 
 const StepOneForm = () => {
   const { setStepOneData, setT_Duration, setT_DurationPrice, setIsStepTwoActive,
-    setIsStepThreeActive } = useContext(formData);
+    setIsStepThreeActive, setOptionalPackage, optionalPackage } = useContext(formData);
     setIsStepTwoActive(false)
     setIsStepThreeActive(false)
 
@@ -75,7 +77,8 @@ const StepOneForm = () => {
   const [ascendColorErr, setAscendColorErr] = useState("");
   const [ascendpallet, setAscendpallet] = useState(false);
 
-  const [packageDetails, setPackageDetails] = useState({});
+  // const [packageDetails, setPackageDetails] = useState({});
+  const [packageDetails, setPackageDetails] = useState(optionalPackage);
   const [isPackageLogo, setIsPackageLogo] = useState({});
   const [isPackageWeb, setIsPackageWeb] = useState({});
   console.log("Get Logo Package : ", isPackageWeb?.name);
@@ -154,7 +157,7 @@ const StepOneForm = () => {
   //     console.log('isDisabled', isDisabled)
 
   useEffect(() => {
-    setPackageDetails(JSON.parse(localStorage.getItem("Package-Data")));
+    // setPackageDetails(JSON.parse(localStorage.getItem("Package-Data")));
     setIsPackageLogo(JSON.parse(localStorage.getItem("Package-Data")));
     setIsPackageWeb(JSON.parse(localStorage.getItem("Package-Data")));
     // console.log('package details', packageDetails.name)
@@ -248,20 +251,22 @@ const StepOneForm = () => {
   };
 
   const handlePackageDetails = () => {
-    const getLocalStorageData = JSON.parse(
-      localStorage.getItem("Package-Data")
-    );
-    const time_Duration = getLocalStorageData.timeDuration;
-    const timeDuration_Price = getLocalStorageData.timeDurationPrice;
-    localStorage.setItem(
-      "Package-Data",
-      JSON.stringify({
-        timeDuration: time_Duration,
-        timeDurationPrice: timeDuration_Price,
-        ...packageDetails,
-      })
-    );
+    // const getLocalStorageData = JSON.parse(
+    //   localStorage.getItem("Package-Data")
+    // );
+    // const time_Duration = getLocalStorageData.timeDuration;
+    // const timeDuration_Price = getLocalStorageData.timeDurationPrice;
+    // localStorage.setItem(
+    //   "Package-Data",
+    //   JSON.stringify({
+    //     timeDuration: time_Duration,
+    //     timeDurationPrice: timeDuration_Price,
+    //     ...packageDetails,
+    //   })
+    // );
+    setOptionalPackage(packageDetails)
   };
+  // console.log('Console from Step One Component for Context API data', optionalPackage)
 
   return (
     <>
@@ -425,16 +430,24 @@ const StepOneForm = () => {
                     <Form.Select
                       as="select"
                       size="lg"
-                      className={`${styles["formControl"]} ${"mb-2"} ${
+                      className={`${styles["formControl"]} ${'form_select'} ${"mb-2"} ${
                         !industryErr ? null : "error"
                       }`}
                       value={industry}
                       onChange={(e) => setIndustry(e.target.value)}
                     >
-                      <option defaultValue="One">Select Industry</option>
+                      <option defaultValue={'null'}>Select Industry</option>
+                      {industryData.map((item, index) => {
+                        return (
+                          <>
+                          <option className={`${styles['industry_options']}`} value={item.value}>{item.option}</option>
+                          </>
+                        )
+                      })}
+                      {/* <option defaultValue="One">Select Industry</option>
                       <option value="One">One</option>
                       <option value="Two">Two</option>
-                      <option value="Three">Three</option>
+                      <option value="Three">Three</option> */}
                     </Form.Select>
                     {!industryErr ? (
                       <p className={`${styles["formExampleText"]}`}>eg. One</p>
@@ -469,12 +482,20 @@ const StepOneForm = () => {
                         isPackageWeb?.pricing_group === "Logo" ? false : true
                       }
                     >
-                      <option value="null">Select Logo type</option>
+                      <option defaultValue={'null'}>Select logo type</option>
+                      {logoTypes.map((item, index) => {
+                        return (
+                          <>
+                          <option key={index} value={item.value}>{item.option}</option>
+                          </>
+                        )
+                      })}
+                      {/* <option value="null">Select Logo type</option>
                       <option value="One" selected>
                         One
                       </option>
                       <option value="Two">Two</option>
-                      <option value="Three">Three</option>
+                      <option value="Three">Three</option> */}
                     </Form.Select>
                     <Form.Text className={`${styles["formExampleText"]}`}>
                       E.g. Mascot, illustration,Typography etc...

@@ -7,8 +7,9 @@ import { formData } from '../context/Context';
 
 const PackagesCard = ({ item }) => {
 
-    const { setOptionalPackage } = useContext(formData)
-    
+    const { optionalPackage, setOptionalPackage } = useContext(formData)
+    // setOptionalPackage({...item})
+
     let data = {id: item.id, name: item.name, title: item.title, price:item.price, options: item.options, pricing_group: item.pricing_group}
 
     const onDataSave = () => {
