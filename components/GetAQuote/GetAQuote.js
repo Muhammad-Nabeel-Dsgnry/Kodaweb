@@ -111,9 +111,9 @@ const GetAQuote = (props) => {
                                     <Form.Select size='lg' className={`${modalStyles['modalInputFields']} ${styles['formControl']} ${'mb-2'}`} onChange={(e) => setIndustry(e.target.value)} >
                                         <option defaultValue={'null'}>Select Industry</option>
                                         {
-                                            industryData.map((item, index) => {
+                                            industryData.map((item) => {
                                                 return (
-                                                    <option value={item.value}>{item.option}</option>
+                                                    <option key={item.value} value={item.value}>{item.option}</option>
                                                 )
                                             })
                                         }
