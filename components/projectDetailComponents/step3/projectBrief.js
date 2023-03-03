@@ -53,7 +53,7 @@ const ProjectBrief = () => {
                 </Form.Label>
                 <Form.Control
                   size="lg"
-                  className={`${BriefStyle["readOnlyText"]} ${"mb-2"}`}
+                  className={`${BriefStyle["readOnlyText"]} ${BriefStyle["ProjectBrief_LogoType"]} ${"mb-2"}`}
                   type="text"
                   readOnly
                   plaintext

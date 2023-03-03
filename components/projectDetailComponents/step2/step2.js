@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import styles from '../projectDetailComponents.module.css'
-import Stepper from '../stepper/stepper'
+// import Stepper from '../stepper/stepper'
 import Image from 'next/image'
 import StepTwoForm from './stepTwoForm'
 // import SectionContent from '../sectionContent'
@@ -12,7 +12,7 @@ import StepTwoForm from './stepTwoForm'
 
 const Step2 = (props) => {
 
-  const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor, timeDuration} = props
+  // const {businessName, industry, logoType, primaryColor, secondaryColor, ascendColor, timeDuration} = props
 
   // const [isSelectStripe, setIsSelectStripe] = useState(true)
   // const [isSelectCard, setIsSelectCard] = useState(false)

@@ -35,7 +35,7 @@ const Pricing = (props) => {
   const [Branding, setBranding] = useState(false)
   const [Web, setWeb] = useState(false)
   const [App, setApp] = useState(false)
-  const [Logo_BrandingIdentity, setLogo_BrandingIdentity] = useState(false)
+  const [Logo_BrandingIdentity, setLogo_BrandingIdentity] = useState(true)
   const [Logo_BrandingIdentityWeb, setLogo_BrandingIdentityWeb] = useState(false)
   const [_Mockups, set_Mockups] = useState(true)
   const [_BusinessCard, set_BusinessCard] = useState(false)
@@ -485,9 +485,9 @@ const Pricing = (props) => {
               pricingMainTitle == 'Logo Design' ?
               <Row className={`${styles.logoRow}`}>
                 <div className='d-flex' style={{gap: '25px'}}>
-                  <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${logoDesign ? 'btnActive' : null}`} onClick={LogoDesignHandler}>
+                  {/* <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${logoDesign ? 'btnActive' : null}`} onClick={LogoDesignHandler}>
                     {logoDesign ? 'Logo Design' : 'Logo Design'}
-                  </Button>
+                  </Button> */}
                   <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${Logo_BrandingIdentity ? 'btnActive' : null}`} onClick={Logo_Branding_IdentityHandler}>
                     {Logo_BrandingIdentity ? 'Logo + Branding & Identity' : 'Logo + Branding & Identity'}
                   </Button>
@@ -497,7 +497,7 @@ const Pricing = (props) => {
                 </div>
                 <div className={styles.pricingContentWrapper}>
                   <div>
-                    {logoDesign && <LogoDesign />}
+                    {/* {logoDesign && <LogoDesign />} */}
                     {Logo_BrandingIdentity && <LogoBrandingIdentity />}
                     {Logo_BrandingIdentityWeb && <LogoBrandingIdentityWebsite />}
                   </div>
@@ -514,11 +514,14 @@ const Pricing = (props) => {
             pricingMainTitle == 'Branding & Identity' || isInnerPageLogoDesign == 'false' ?
             <Row className={`${styles.logoRow}`}>
               <div className='d-flex' style={{gap: '25px'}}>
-              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Mockups ? 'btnActive' : null}`} onClick={_MockupsHandler}>
-                {_Mockups ? 'Mockups' : 'Mockups'}
+              <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${logoDesign ? 'btnActive' : null}`} onClick={LogoDesignHandler}>
+                {logoDesign ? 'Logo Design' : 'Logo Design'}
               </Button>
+              {/* <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Mockups ? 'btnActive' : null}`} onClick={_MockupsHandler}>
+                {_Mockups ? 'Mockups' : 'Mockups'}
+              </Button> */}
               <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_BusinessCard ? 'btnActive' : null}`} onClick={_BusinessCardHandler}>
-                {_BusinessCard ? 'Business card' : 'Business card'}
+                {_BusinessCard ? 'Business Card' : 'Business Card'}
               </Button>
               <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_LetterheadStationery ? 'btnActive' : null}`} onClick={_LetterheadStationeryHandler}>
                 {_LetterheadStationery ? 'Letterhead & Stationery' : 'Letterhead & Stationery'}
@@ -529,7 +532,8 @@ const Pricing = (props) => {
             </div>
             <div className={styles.pricingContentWrapper}>
               <div>
-                {_Mockups && <Mockups />}
+                {logoDesign && <LogoDesign />}
+                {/* {_Mockups && <Mockups />} */}
                 {_BusinessCard && <BusinessCard />}
                 {_LetterheadStationery && <LetterheadStationery />}
                 {_Packaging && <Packaging />}
@@ -551,7 +555,7 @@ const Pricing = (props) => {
                     {_Html ? 'HTML' : 'HTML'}
                   </Button>
                   <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Cms ? 'btnActive' : null}`} onClick={set_CmsHandler}>
-                    {_Cms ? 'CMS' : 'CMS'}
+                    {_Cms ? 'WordPress' : 'WordPress'}
                   </Button>
                   <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Ecommerce ? 'btnActive' : null}`} onClick={set_EcommerceHandler}>
                     {_Ecommerce ? 'E-commerce' : 'E-commerce'}
@@ -611,7 +615,7 @@ const Pricing = (props) => {
             isButton == 'false' ?
               null :
               <Link href='/pricing' className={`${styles['blueButton']} ${'mb-3'} ${styles['morePriceBtn']}`}>
-                View More Prices
+                View More Packages
               </Link>
           }
         </Container>

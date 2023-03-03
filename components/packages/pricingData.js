@@ -4,7 +4,7 @@ export const logoDesignPackages = [
         'title': 'Essential',
         'name': 'Logo Design',
         'price': 39,
-        'pricing_group': 'Logo',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '2 Logo Design Concepts',
             'By 1 Experienced Designer',
@@ -29,7 +29,7 @@ export const logoDesignPackages = [
         'title': 'Economical',
         'name': 'Logo Design',
         'price': 99,
-        'pricing_group': 'Logo',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '4 Logo Design Concepts',
             'By 3 Experienced Designer',
@@ -54,7 +54,7 @@ export const logoDesignPackages = [
         'title': 'Pro',
         'name': 'Logo Design',
         'price': 149,
-        'pricing_group': 'Logo',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '6 Logo Design Concepts',
             'By 5 Experienced Designer',
@@ -79,7 +79,7 @@ export const logoDesignPackages = [
         'title': 'Premium',
         'name': 'Logo Design',
         'price': 199,
-        'pricing_group': 'Logo',
+        'pricing_group': 'Branding',
         'packageDetails': [
             '8 Logo Design Concepts',
             'By 7 Experienced Designer',
@@ -1135,7 +1135,7 @@ export const CmsPackage = [
     {
         'id': '1',
         'title': 'Essential',
-        'name': 'CMS',
+        'name': 'WordPress',
         'price': 35,
         'pricing_group': 'Website',
         'packageDetails': [
@@ -1160,7 +1160,7 @@ export const CmsPackage = [
     {
         'id': '2',
         'title': 'Economical',
-        'name': 'CMS',
+        'name': 'WordPress',
         'price': 36,
         'pricing_group': 'Website',
         'packageDetails': [
@@ -1185,7 +1185,7 @@ export const CmsPackage = [
     {
         'id': '3',
         'title': 'Pro',
-        'name': 'CMS',
+        'name': 'WordPress',
         'price': 37,
         'pricing_group': 'Website',
         'packageDetails': [
@@ -1210,7 +1210,7 @@ export const CmsPackage = [
     {
         'id': '4',
         'title': 'Premium',
-        'name': 'CMS',
+        'name': 'WordPress',
         'price': 38,
         'pricing_group': 'Website',
         'packageDetails': [

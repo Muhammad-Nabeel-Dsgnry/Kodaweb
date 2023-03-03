@@ -92,7 +92,7 @@ const Header = () => {
             })}
           </Nav>
           <Link href='#' className={`${styles['blueButton']} ${styles['navButton']}`} onClick={() => setIsOpen(true)}>
-            Get A Quote
+            Get Started
           </Link>
           <GetAQuote show={isOpen} onHide={() => setIsOpen(false)} />
           {isToggle ?
@@ -128,7 +128,7 @@ const Header = () => {
             />
             </div>
             <div className='text-white'>
-              <h2 className={`${styles['mobileTitle']}`}>KODAWEB STUDIO</h2>
+              <h2 className={`${styles['mobileTitle']}`}>Kodaweb Studio</h2>
               <Link href='https://goo.gl/maps/eHVx2XFuBZu1Lk57A' target='_blank' className="d-flex align-items-start">
               <span className={`w-100 text-white fs-6`}>#15–7015 Avenue of Americas New York, NY L5S 1T7</span>
               </Link>

@@ -1,170 +1,170 @@
 export const industryData = [
     {
         'option': 'Accounting & Financial',
-        'value': 'accounting',
+        'value': 'Accounting & Financial',
     },
     {
         'option': 'Agriculture',
-        'value': 'agriculture',
+        'value': 'Agriculture',
     },
     {
         'option': 'Animal & Pet',
-        'value': 'animals',
+        'value': 'Animal & Pet',
     },
     {
         'option': 'Architectural',
-        'value': 'architectural',
+        'value': 'Architectural',
     },
     {
         'option': 'Art & Design',
-        'value': 'art',
+        'value': 'Art & Design',
     },
     {
         'option': 'Attorney & Law',
-        'value': 'attorney',
+        'value': 'Attorney & Law',
     },
     {
         'option': 'Automotive',
-        'value': 'automotive',
+        'value': 'Automotive',
     },
     {
         'option': 'Bar & Nightclub',
-        'value': 'bar',
+        'value': 'Bar & Nightclub',
     },
     {
         'option': 'Business & Consulting',
-        'value': 'business',
+        'value': 'Business & Consulting',
     },
     {
         'option': 'Childcare',
-        'value': 'children',
+        'value': 'Childcare',
     },
     {
         'option': 'Cleaning & Maintenance',
-        'value': 'cleaning',
+        'value': 'Cleaning & Maintenance',
     },
     {
         'option': 'Communications',
-        'value': 'communications',
+        'value': 'Communications',
     },
     {
         'option': 'Community & Non-Profit',
-        'value': 'community',
+        'value': 'Community & Non-Profit',
     },
     {
         'option': 'Computer',
-        'value': 'computer',
+        'value': 'Computer',
     },
     {
         'option': 'Construction',
-        'value': 'construction',
+        'value': 'Construction',
     },
     {
         'option': 'Cosmetics & Beauty',
-        'value': 'cosmetics',
+        'value': 'Cosmetics & Beauty',
     },
     {
         'option': 'Dating',
-        'value': 'dating',
+        'value': 'Dating',
     },
     {
         'option': 'Education',
-        'value': 'education',
+        'value': 'Education',
     },
     {
         'option': 'Entertainment & The Arts',
-        'value': 'entertainment',
+        'value': 'Entertainment & The Arts',
     },
     {
         'option': 'Environmental',
-        'value': 'environment',
+        'value': 'Environmental',
     },
     {
         'option': 'Fashion',
-        'value': 'fashion',
+        'value': 'Fashion',
     },
     {
         'option': 'Floral',
-        'value': 'floral',
+        'value': 'Floral',
     },
     {
         'option': 'Food & Drink',
-        'value': 'food',
+        'value': 'Food & Drink',
     },
     {
         'option': 'Games & Recreational',
-        'value': 'games',
+        'value': 'Games & Recreational',
     },
     {
         'option': 'Home Furnishing',
-        'value': 'home',
+        'value': 'Home Furnishing',
     },
     {
         'option': 'Industrial',
-        'value': 'industrial',
+        'value': 'Industrial',
     },
     {
         'option': 'Internet',
-        'value': 'internet',
+        'value': 'Internet',
     },
     {
         'option': 'Landscaping',
-        'value': 'landscaping',
+        'value': 'Landscaping',
     },
     {
         'option': 'Medical & Pharmaceutical',
-        'value': 'medical',
+        'value': 'Medical & Pharmaceutical',
     },
     {
         'option': 'Photography',
-        'value': 'photography',
+        'value': 'Photography',
     },
     {
         'option': 'Physical Fitness',
-        'value': 'physical',
+        'value': 'Physical Fitness',
     },
     {
         'option': 'Political',
-        'value': 'politics',
+        'value': 'Political',
     },
     {
         'option': 'Real Estate & Mortgage',
-        'value': 'realestate',
+        'value': 'Real Estate & Mortgage',
     },
     {
         'option': 'Religious',
-        'value': 'religious',
+        'value': 'Religious',
     },
     {
         'option': 'Restaurant',
-        'value': 'restaurant',
+        'value': 'Restaurant',
     },
     {
         'option': 'Retail',
-        'value': 'retail',
+        'value': 'Retail',
     },
     {
         'option': 'Security',
-        'value': 'security',
+        'value': 'Security',
     },
     {
         'option': 'Spa & Esthetics',
-        'value': 'spa',
+        'value': 'Spa & Esthetics',
     },
     {
         'option': 'Sport',
-        'value': 'sports',
+        'value': 'Sport',
     },
     {
         'option': 'Technology',
-        'value': 'technology',
+        'value': 'Technology',
     },
     {
         'option': 'Travel & Hotel',
-        'value': 'travel',
+        'value': 'Travel & Hotel',
     },
     {
         'option': 'Wedding Service',
-        'value': 'wedding',
+        'value': 'Wedding Service',
     }
 ]

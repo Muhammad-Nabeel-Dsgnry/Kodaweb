@@ -100,7 +100,7 @@ const Footer = () => {
                 height='104'
               />
             </Link>
-            <p className={styles.footerPara}>KODAWEB STUDIO is the world’s largest & most secure creative digital service providing agency.</p>
+            <p className={styles.footerPara}>Kodaweb is the world’s largest & most secure creative digital service providing agency.</p>
           </Col>
           <Col lg={2} className={styles.footerlinksMainCol}>
             <h5 className="mb-4">Links</h5>
@@ -216,10 +216,10 @@ const Footer = () => {
       <Container>
         <Row className='py-4'>
           <Col lg={8} style={{display: 'flex', alignItems: 'center'}}>
-            <p className={`${styles['copyrightsSectionPara']}`}>Copyright @2023 KODAWEB STUDIO</p>
+            <p className={`${styles['copyrightsSectionPara']}`}>Copyright @2023 Kodaweb Studio</p>
           </Col>
           <Col lg={4}>
-            <p className={`${styles['copyrightsSectionSubTitle']}`}>EASY AND SECURE PAYMENT</p>
+            <p className={`${styles['copyrightsSectionSubTitle']}`}>Easy And Secure Payment</p>
             <div className={styles.paymentImages}>
               <Image
                 className="me-2 mt-2"

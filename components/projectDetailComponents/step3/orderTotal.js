@@ -6,7 +6,7 @@ import { formData } from '../../context/Context'
 const OrderTotal = () => {
 
   const { optionalPackage, t_duration, t_durationPrice } = useContext(formData)
-  console.log('console from order total component : ', optionalPackage)
+  // console.log('console from order total component : ', optionalPackage)
   // const [summaryData, setSummaryData] = useState({})
   // useEffect(() => {
   //   setSummaryData(JSON.parse(localStorage.getItem('Package-Data')))

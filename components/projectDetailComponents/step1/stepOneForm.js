@@ -79,9 +79,9 @@ const StepOneForm = () => {
 
   // const [packageDetails, setPackageDetails] = useState({});
   const [packageDetails, setPackageDetails] = useState(optionalPackage);
-  const [isPackageLogo, setIsPackageLogo] = useState({});
-  const [isPackageWeb, setIsPackageWeb] = useState({});
-  console.log("Get Logo Package : ", isPackageWeb?.name);
+  // const [isPackageLogo, setIsPackageLogo] = useState({});
+  // const [isPackageWeb, setIsPackageWeb] = useState({});
+  // console.log("Get Logo Package from context api : ", optionalPackage?.pricing_group);
   const [timeDurationPrice, setTimeDurationPrice] = useState("");
   const [timeDuration, setTimeDuration] = useState("");
   // const [selectedPackage, setSelectedPackage] = useState({...packageDetails})
@@ -94,7 +94,7 @@ const StepOneForm = () => {
       return durationPrice;
     });
 
-    console.log("after data : ", durationPrice);
+    // console.log("after data : ", durationPrice);
   };
   // const getLocalStorageData = packageDetails
   // const [localStorageData_Id, setLocalStorageData_Id] = useState(getLocalStorageData.id)
@@ -105,25 +105,25 @@ const StepOneForm = () => {
   const handleChange = (e) => {
     setTimeDuration(e.target.value);
     getDurationPrice(e.target.value);
-    const getLocalStorageData = JSON.parse(
-      localStorage.getItem("Package-Data")
-    );
+    // const getLocalStorageData = JSON.parse(
+    //   localStorage.getItem("Package-Data")
+    // );
     // console.log('getLocalStorageData from Step One Form : ', getLocalStorageData)
     // console.log('package details group name : ', getLocalStorageData.pricing_group)
-    localStorage.setItem(
-      "Package-Data",
-      JSON.stringify({
-        timeDuration: e.target.value,
-        timeDurationPrice: durationPrice,
-        ...packageDetails,
-      })
-    );
+    // localStorage.setItem(
+    //   "Package-Data",
+    //   JSON.stringify({
+    //     timeDuration: e.target.value,
+    //     timeDurationPrice: durationPrice,
+    //     ...packageDetails,
+    //   })
+    // );
     // localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: e.target.value, timeDurationPrice: durationPrice, ...packageDetails }))
     // localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: e.target.value, timeDurationPrice: durationPrice, id: localStorageData_Id, name: localStorageData_Name, price: localStorageData_Price, pricing_group: localStorageData_PricingGroup }))
     setT_Duration(e.target.value);
     setT_DurationPrice(durationPrice);
   };
-  console.log("Time Duration Price : ", timeDurationPrice);
+  // console.log("Time Duration Price : ", timeDurationPrice);
 
   let stepOneFormData = {
     businessName,
@@ -156,12 +156,12 @@ const StepOneForm = () => {
   //     console.log('Logo Package', logoPackage.name)
   //     console.log('isDisabled', isDisabled)
 
-  useEffect(() => {
-    // setPackageDetails(JSON.parse(localStorage.getItem("Package-Data")));
-    setIsPackageLogo(JSON.parse(localStorage.getItem("Package-Data")));
-    setIsPackageWeb(JSON.parse(localStorage.getItem("Package-Data")));
-    // console.log('package details', packageDetails.name)
-  }, []);
+  // useEffect(() => {
+  //   setPackageDetails(JSON.parse(localStorage.getItem("Package-Data")));
+  //   setIsPackageLogo(JSON.parse(localStorage.getItem("Package-Data")));
+  //   setIsPackageWeb(JSON.parse(localStorage.getItem("Package-Data")));
+  //   console.log('package details', packageDetails.name)
+  // }, []);
 
   // const [isValid, setIsValid] = useState(false);
 
@@ -272,7 +272,7 @@ const StepOneForm = () => {
     <>
       {isStepOne ? (
         <section>
-          {isStepper ? <Stepper isStepperOneTrue="true" /> : null}
+          {isStepper && <Stepper />}
           <div>
             {/* COLOR PICKER STYLE START */}
             <style jsx>
@@ -353,7 +353,7 @@ const StepOneForm = () => {
                     controlId="formGroupBusinessName"
                   >
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
-                      Whats your business name?
+                      Whats your business name? <small>*</small>
                     </Form.Label>
                     <Form.Control
                       required
@@ -387,7 +387,7 @@ const StepOneForm = () => {
                     controlId="formGroupSlogan"
                   >
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
-                      Do you have a business slogan?
+                      Do you have a business slogan? <small>*</small>
                     </Form.Label>
                     <Form.Control
                       required
@@ -425,7 +425,7 @@ const StepOneForm = () => {
                     controlId="formGroupindustry"
                   >
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
-                      Select your industry
+                      Select your industry <small>*</small>
                     </Form.Label>
                     <Form.Select
                       as="select"
@@ -479,7 +479,7 @@ const StepOneForm = () => {
                       value={logoType}
                       onChange={(e) => setLogoType(e.target.value)}
                       disabled={
-                        isPackageWeb?.pricing_group === "Logo" ? false : true
+                        optionalPackage?.pricing_group === "Logo" ? false : true
                       }
                     >
                       <option defaultValue={'null'}>Select logo type</option>
@@ -516,7 +516,7 @@ const StepOneForm = () => {
                   >
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
                       Describe what your organisation or product does and its
-                      target audience
+                      target audience <small>*</small>
                     </Form.Label>
                     <Form.Control
                       required
@@ -625,7 +625,7 @@ const StepOneForm = () => {
                       value={contentPages}
                       onChange={(e) => setContentPages(e.target.value)}
                       disabled={
-                        isPackageWeb?.pricing_group === "Website" ? false : true
+                        optionalPackage?.pricing_group === "Website" ? false : true
                       }
                     />
                     <p className={`${styles["formExampleText"]}`}>
@@ -647,7 +647,7 @@ const StepOneForm = () => {
                     controlId="formGroupPrimaryColor"
                   >
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
-                      Primary Color
+                      Primary Color <small>*</small>
                     </Form.Label>
                     <div className={`${styles["colorPickerWrapper"]}`}>
                       <div
@@ -699,7 +699,7 @@ const StepOneForm = () => {
                     controlId="formGroupPrimaryColor"
                   >
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
-                      Secondary Color
+                      Secondary Color <small>*</small>
                     </Form.Label>
                     <div className={`${styles["colorPickerWrapper"]}`}>
                       <div
@@ -751,7 +751,7 @@ const StepOneForm = () => {
                     controlId="formGroupPrimaryColor"
                   >
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
-                      Ascend Color
+                      Ascend Color <small>*</small>
                     </Form.Label>
                     <div className={`${styles["colorPickerWrapper"]}`}>
                       <div
@@ -1044,13 +1044,13 @@ const StepOneForm = () => {
         </section>
       ) : (
         <Step2
-          businessName={businessName}
-          industry={industry}
-          logoType={logoType}
-          primaryColor={primaryColor}
-          secondaryColor={secondaryColor}
-          ascendColor={ascendColor}
-          timeDuration={timeDuration}
+          // businessName={businessName}
+          // industry={industry}
+          // logoType={logoType}
+          // primaryColor={primaryColor}
+          // secondaryColor={secondaryColor}
+          // ascendColor={ascendColor}
+          // timeDuration={timeDuration}
         />
       )}
     </>

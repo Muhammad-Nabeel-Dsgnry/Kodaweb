@@ -13,7 +13,7 @@ const Cta = () => {
                 <Row>
                     <Col md={3}></Col>
                     <Col md={6}>
-                        <h2>Ready to discuss your project<span className={styles.dot}>?</span></h2>
+                        <h2>Ready to discuss your project<span className={`${styles['dot']} ${styles['dot__blink']}`}>?</span></h2>
                         <Link href='/contact' className={styles.ctaButton}>
                             Contact Us
                         </Link>

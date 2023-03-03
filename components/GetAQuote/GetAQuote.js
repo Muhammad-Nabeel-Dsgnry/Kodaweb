@@ -9,6 +9,14 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Stack from 'react-bootstrap/Stack';
+import { industryData } from '../projectDetailComponents/step1/industryData';
+
+// Phone Field Focus Style
+const phoneFocus = {
+    ':focus': {
+        border: '1px solid #2c35cd'
+    }
+}
 
 const GetAQuote = (props) => {
 
@@ -32,7 +40,7 @@ const GetAQuote = (props) => {
                 centered
             >
                 <Modal.Header closeButton>
-                    <h2>Get A Quote</h2>
+                    <h2 className={`${styles['modalTitle']}`}>Get A Quote</h2>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
@@ -78,7 +86,7 @@ const GetAQuote = (props) => {
                             {/* <Stack direction="horizontal" gap={5} className={`${'justify-content-between'}`}> */}
                                 {/* <div className='w-50 mt-4'> */}
                             <Col lg={6} xs={12} md={12} className={`${styles['formFieldsCol']} ${'mt-4'}`}>
-                                <Form.Group className={`${'mb-3'} ${styles['phoneNumberInput']}`} controlId='formGroupNumber'>
+                                <Form.Group className={`${'mb-3'} ${styles['phoneNumberInput']}`} controlId='formGroupNumber' >
                                     <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Phone Number</Form.Label>
                                     <PhoneInput
                                         placeholder="0000000"
@@ -89,6 +97,7 @@ const GetAQuote = (props) => {
                                         defaultCountry='US'
                                         onChange={setPhoneNumber}
                                         className={`${styles['formControl']} ${'mb-2'} ${styles['modalInputFields']} ${styles['modalPhoneInputFields']}`}
+                                        style={phoneFocus}
                                     />
                                     {/* <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setPhoneNumber(e.target.value)} /> */}
                                     <Form.Text className={`${styles['formExampleText']}`}>Well hold your data according to our <Link href=''>Privacy Policy</Link></Form.Text>
@@ -100,10 +109,14 @@ const GetAQuote = (props) => {
                                 <Form.Group className={`${'mb-3'}`} controlId='formGroupindustry'>
                                     <Form.Label className={`${styles['formLabel']} ${'mb-3'}`}>Select your industry</Form.Label>
                                     <Form.Select size='lg' className={`${modalStyles['modalInputFields']} ${styles['formControl']} ${'mb-2'}`} onChange={(e) => setIndustry(e.target.value)} >
-                                        <option>Select Industry</option>
-                                        <option value='One'>One</option>
-                                        <option value='Two'>Two</option>
-                                        <option value='Three'>Three</option>
+                                        <option defaultValue={'null'}>Select Industry</option>
+                                        {
+                                            industryData.map((item, index) => {
+                                                return (
+                                                    <option value={item.value}>{item.option}</option>
+                                                )
+                                            })
+                                        }
                                     </Form.Select>
                                     <Form.Text className={`${styles['formExampleText']}`}>Tip: Leave blank if you dont want one incorporated.</Form.Text>
                                 </Form.Group>

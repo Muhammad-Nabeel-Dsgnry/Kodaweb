@@ -65,6 +65,9 @@
     /* margin-top: 2%; */
     /* margin-top: 2%; */
     margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
 .WhoWeAreCounterBoxContent {
@@ -87,13 +90,13 @@
     margin-bottom: 0px;
 }
 
-.WhoWeAreCounterBoxContent p::before {
+/* .WhoWeAreCounterBoxContent p::before {
     content: '|';
     display: inline-block;
     font-weight: 900;
     margin-right: 11px;
     color: var(--text-blue);
-}
+} */
 
 .WhoWeAreCounterBox {
 
@@ -102,7 +105,7 @@
 .WhoWeAreCounterBoxDivider, .WhoWeAreCounterBoxDivider2 {
     background-color: #000;
     width: 3px;
-    height: 73%;
+    height: 53%;
     position: absolute;
     right: 0px;
     top: 26px;
@@ -110,11 +113,13 @@
 }
 
 .WhoWeAreCounterBoxDivider {
-    left: 33%;
+    /* left: 33%; */
+    left: 35%;
 }
 
 .WhoWeAreCounterBoxDivider2 {
-    left: 62%;
+    /* left: 62%; */
+    left: 68.5%;
 }
 
 

@@ -1,4 +1,4 @@
-import { Container, Row, Col, Stack, ButtonGroup } from 'react-bootstrap'
+import { Container, Row, Col, Stack, ButtonGroup, Button } from 'react-bootstrap'
 import styles from '../projectDetailComponents.module.css'
 import style from './step3.module.css'
 import Image from 'next/image'
@@ -22,7 +22,7 @@ const Step3 = (props) => {
 
     // console.log('secondFormData', props)
 
-    const dataClearHandler = () => localStorage.clear()
+    // const dataClearHandler = () => localStorage.clear()
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -107,14 +107,14 @@ const Step3 = (props) => {
             
             </Col>  */}
               <Col lg={6} md='auto' xs='auto' className={`${'mb-4 d-flex justify-content-end p-0'}`}>
-              <ButtonGroup>
-                  <Link href='/pricing' className={`${style['blueButton']} ${'me-4'}`} onClick={dataClearHandler}>
+              {/* <ButtonGroup> */}
+                  <Link href='/pricing' className={`${style['blueButton']} ${'me-4'}`}>
                     Cancel
                   </Link>
-                    <Link href='#' className={`${style['blueButton']}`}>
+                    <button href='#' className={`${style['blueButton']}`}>
                       Pay Now
-                    </Link>
-              </ButtonGroup>
+                    </button>
+              {/* </ButtonGroup> */}
               </Col>
         </Row>
         </Container>

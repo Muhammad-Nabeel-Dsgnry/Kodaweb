@@ -32,7 +32,7 @@
     margin-bottom: 0px;
   }
   .blueButton {
-    /* padding: 15px 18px; */
+    padding: 15px 18px;
     border: 2px solid #2C35CD;
     color: var(--text-white);
     border-radius: 100px;
@@ -41,6 +41,7 @@
     font-size: 1rem;
     display: block;
     width: 160px;
+    height: fit-content;
     text-align: center;
     background-color: #2C35CD;
   }

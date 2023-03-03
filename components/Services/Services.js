@@ -66,11 +66,11 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="2000">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For-web/Web-App-blue-2.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For-web/App-Dev-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
                     {/* <Image src={WebApplicationIcon} width='60' height='60' alt='Kodaweb Web Application' className={styles.serviceCardImage} /> */}
                   </div>
                   <Card.Body className={styles.cardBody}>
-                    <Card.Title className={styles.cardTitle}>Web Application</Card.Title>
+                    <Card.Title className={styles.cardTitle}>App Development</Card.Title>
                     <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
@@ -80,11 +80,11 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-down" data-aos-duration="2500">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For-web/Graphic-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For-web/UX-UI-blue-2.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
                     {/* <Image src={GraphicIcon} width='60' height='60' alt='Kodaweb Graphic Designing' className={styles.serviceCardImage} /> */}
                   </div>
                   <Card.Body className={styles.cardBody}>
-                    <Card.Title className={styles.cardTitle}>Video Production</Card.Title>
+                    <Card.Title className={styles.cardTitle}>UI/UX Designing</Card.Title>
                     <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
@@ -100,11 +100,11 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For-web/UX-UI-blue-2.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For-web/Graphic-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
                     {/* <Image src={UiUxIcon} width='60' height='60' alt='Kodaweb UI/UX Designing' className={styles.serviceCardImage} /> */}
                   </div>
                   <Card.Body className={styles.cardBody}>
-                    <Card.Title className={styles.cardTitle}>UI/UX Designing</Card.Title>
+                    <Card.Title className={styles.cardTitle}>Video Production</Card.Title>
                     <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
@@ -142,11 +142,11 @@ const Services = (props) => {
               <Col className={`${styles.cardCol}`}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="2500">
                   <div className={styles.imageBoxWrapper}>
-                    <Card.Img variant="top" src="/Assets/Assets/For-web/App-Dev-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
+                    <Card.Img variant="top" src="/Assets/Assets/For-web/Web-App-blue-2.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
                     {/* <Image src={AppDevelopmentIcon} width='60' height='60' alt='Kodaweb App Development' className={styles.serviceCardImage} /> */}
                   </div>
                   <Card.Body className={styles.cardBody}>
-                    <Card.Title className={styles.cardTitle}>App Development</Card.Title>
+                    <Card.Title className={styles.cardTitle}>Animation</Card.Title>
                     <Card.Text className={styles.cardText}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                     </Card.Text>
@@ -205,25 +205,11 @@ const Services = (props) => {
                 <Col className={`${styles.cardCol}`}>
                   <Card className={styles.cardWrapper} >
                     <div className={styles.imageBoxWrapper}>
-                      <Card.Img variant="top" src="/Assets/Assets/For-web/Web-App-blue-2.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
+                      <Card.Img variant="top" src="/Assets/Assets/For-web/App-Dev-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
                       {/* <Image src={WebApplicationIcon} width='60' height='60' alt='Kodaweb Web Application' className={styles.serviceCardImage} /> */}
                     </div>
                     <Card.Body className={styles.cardBody}>
-                      <Card.Title className={styles.cardTitle}>Web Application</Card.Title>
-                      <Card.Text className={styles.cardText}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col className={`${styles.cardCol}`}>
-                  <Card className={styles.cardWrapper} >
-                    <div className={styles.imageBoxWrapper}>
-                      <Card.Img variant="top" src="/Assets/Assets/For-web/Graphic-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
-                      {/* <Image src={GraphicIcon} width='60' height='60' alt='Kodaweb Graphic Designing' className={styles.serviceCardImage} /> */}
-                    </div>
-                    <Card.Body className={styles.cardBody}>
-                      <Card.Title className={styles.cardTitle}>Video Production</Card.Title>
+                      <Card.Title className={styles.cardTitle}>App Development</Card.Title>
                       <Card.Text className={styles.cardText}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                       </Card.Text>
@@ -234,10 +220,24 @@ const Services = (props) => {
                   <Card className={styles.cardWrapper} >
                     <div className={styles.imageBoxWrapper}>
                       <Card.Img variant="top" src="/Assets/Assets/For-web/UX-UI-blue-2.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
-                      {/* <Image src={UiUxIcon} width='60' height='60' alt='Kodaweb UI/UX Designing' className={styles.serviceCardImage} /> */}
+                      {/* <Image src={GraphicIcon} width='60' height='60' alt='Kodaweb Graphic Designing' className={styles.serviceCardImage} /> */}
                     </div>
                     <Card.Body className={styles.cardBody}>
                       <Card.Title className={styles.cardTitle}>UI/UX Designing</Card.Title>
+                      <Card.Text className={styles.cardText}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className={`${styles.cardCol}`}>
+                  <Card className={styles.cardWrapper} >
+                    <div className={styles.imageBoxWrapper}>
+                      <Card.Img variant="top" src="/Assets/Assets/For-web/Graphic-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
+                      {/* <Image src={UiUxIcon} width='60' height='60' alt='Kodaweb UI/UX Designing' className={styles.serviceCardImage} /> */}
+                    </div>
+                    <Card.Body className={styles.cardBody}>
+                      <Card.Title className={styles.cardTitle}>Video Production</Card.Title>
                       <Card.Text className={styles.cardText}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                       </Card.Text>
@@ -279,7 +279,7 @@ const Services = (props) => {
                       {/* <Image src={AppDevelopmentIcon} width='60' height='60' alt='Kodaweb App Development' className={styles.serviceCardImage} /> */}
                     </div>
                     <Card.Body className={styles.cardBody}>
-                      <Card.Title className={styles.cardTitle}>App Development</Card.Title>
+                      <Card.Title className={styles.cardTitle}>Animation</Card.Title>
                       <Card.Text className={styles.cardText}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing.Lorem ipsum dolor sit amet,
                       </Card.Text>

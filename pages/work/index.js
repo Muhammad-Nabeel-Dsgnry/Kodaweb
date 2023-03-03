@@ -49,7 +49,7 @@ const Work = () => {
   return (
     <>
       <InnerPagesBanner
-        innerBannerTitle='A Treasure Trove Of Selcted project'
+        innerBannerTitle='A Treasure Trove Of Our Achievement'
         innerBannerpara='Spotlighting work that shows different facets of our capabilities, design imagination, coding skills, and branding magic.'
         innerBannerBgImage=''
         innerBannerSideImage=''
@@ -81,7 +81,7 @@ const Work = () => {
                 onClick={branding_Handler}
                 btn='Branding btn'
                 >
-                {_BrandingIdentityPortfolio ? 'branding & Identity' : 'branding & Identity'}
+                {_BrandingIdentityPortfolio ? 'Branding & Identity' : 'Branding & Identity'}
               </Button>
               <Button
                 className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_WebsitePortfolio ? 'btnActive' : null}`}

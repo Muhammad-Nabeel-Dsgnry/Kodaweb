@@ -7,6 +7,7 @@
     background-color: transparent;
     color: var(--text-white);
     text-align: center;
+    border: none
   }
   
   .counter_Section__cardTitle {

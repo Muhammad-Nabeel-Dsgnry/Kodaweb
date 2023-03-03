@@ -2,13 +2,13 @@ import React from 'react'
 import Step1 from '../../components/projectDetailComponents/step1/step1'
 import { Container, Row, Col, ButtonGroup } from 'react-bootstrap'
 import styles from '../../styles/projectDetail.module.css'
-import Image from 'next/image';
-import Link from 'next/link';
-import GuaranteeIcon from '../../public/Assets/Assets/For-web/tick.svg'
+// import Image from 'next/image';
+// import Link from 'next/link';
+// import GuaranteeIcon from '../../public/Assets/Assets/For-web/tick.svg'
 import Step2 from '../../components/projectDetailComponents/step2/step2';
 import Step3 from '../../components/projectDetailComponents/step3/step3';
 import { useState } from 'react';
-import Stepper from '../../components/projectDetailComponents/stepper/stepper';
+// import Stepper from '../../components/projectDetailComponents/stepper/stepper';
 
 const Index = () => {
 
@@ -16,24 +16,24 @@ const Index = () => {
   const [stepTwo, setStepTwo] = useState(false)
   const [stepThree, setStepThree] = useState(false)
 
-  const [isHide, setIsHide] = useState(false)
+  // const [isHide, setIsHide] = useState(false)
 
-  const stepOneHandler = () => {
-    setStepOne(false)
-    setStepTwo(true)
-  }
-  const stepTwoHandler = () => {
-    setStepThree(true)
-    setStepTwo(false)
-  }
-  const backHandler = () => {
-    setStepOne(true)
-    setStepTwo(false)
-  }
-  const backHandlerTwo = () => {
-    setStepThree(false)
-    setStepTwo(true)
-  }
+  // const stepOneHandler = () => {
+  //   setStepOne(false)
+  //   setStepTwo(true)
+  // }
+  // const stepTwoHandler = () => {
+  //   setStepThree(true)
+  //   setStepTwo(false)
+  // }
+  // const backHandler = () => {
+  //   setStepOne(true)
+  //   setStepTwo(false)
+  // }
+  // const backHandlerTwo = () => {
+  //   setStepThree(false)
+  //   setStepTwo(true)
+  // }
 
   return (
     <>

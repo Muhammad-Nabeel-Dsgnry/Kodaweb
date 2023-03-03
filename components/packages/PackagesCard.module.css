@@ -17,9 +17,9 @@
     max-height: 440px;
     overflow: hidden;
 }
-.PackagesCardBoxBody:hover {
+/* .PackagesCardBoxBody:hover {
     overflow-y: scroll;
-}
+} */
 
 .packagesTitle {
     font-family: 'Inter';
@@ -71,45 +71,47 @@
 .PackagesCardBoxBody p {
     font-family: 'Inter';
     font-weight: 500;
-    font-size: 16px;
-    line-height: 37px;
+    font-size: 1rem;
+    line-height: 16px;
     color: #000000;
     margin-bottom: 0px;
 }
 
 .blueButton {
     padding: 16px 50px;
-    background: #2C35CD;
+    background: transparent;
     border-radius: 100px;
     font-family: 'Inter';
     font-weight: 600;
     font-size: 1rem;
     /* line-height: 28px; */
-    margin-top: 80px;
+    margin-top: 50px;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    color: var(--text-white);
+    color: var(--text-blue);
     text-align: center;
     border: 2px solid var(--bg-blue);
   }
   .pricingBoxBtn {
-    padding: 16px 50px !important;
-    width: fit-content;
+    padding: 16px 18px !important;
+    width: 210px;
+    /* padding: 16px 50px !important;
+    width: fit-content; */
   }
   .pricingBoxBtn:hover {
     border: 2px solid var(--bg-blue);
-    background-color: var(--bg-white);
-    color: #2C35CD !important;
+    background-color: #2C35CD;
+    color: var(--text-white) !important;
     transition: 0.8s;
   }
   
   .blueButton:hover {
-    /* background: transparent;
-    color: #2C35CD; */
+    /* background: transparent; */
+    /* color: #2C35CD; */
     border: 2px solid #2C35CD;
     color: #ffffff;
-    box-shadow: 0px 4px 5px rgb(0 0 0 / 30%);
+    /* box-shadow: 0px 4px 5px rgb(0 0 0 / 30%); */
     transition: 0.8s;
   }
 

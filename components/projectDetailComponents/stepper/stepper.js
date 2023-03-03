@@ -4,12 +4,12 @@ import { Container, Row, Col, ButtonGroup } from 'react-bootstrap'
 import { formData } from '../../context/Context'
 
 
-const Stepper = (props) => {
+const Stepper = () => {
     const { isStepOneActive, isStepTwoActive, isStepThreeActive } = useContext(formData)
-    console.log('step three from stepper : ', isStepTwoActive)
+    // console.log('step three from stepper : ', isStepTwoActive)
 
-    const {isStepperTrue, isStepperOneTrue, isStepperTwoTrue, isStepperThreeTrue} = props
-    console.log('isStepperTrue : ', isStepperTrue)
+    // const {isStepperTrue, isStepperOneTrue, isStepperTwoTrue, isStepperThreeTrue} = props
+    // console.log('isStepperTrue : ', isStepperTrue)
   return (
     <>
         <section className={`${styles['stepperWrapper']}`}>

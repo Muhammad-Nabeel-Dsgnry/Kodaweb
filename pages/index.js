@@ -23,7 +23,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.homeBannerWrapper}>
           <Banner
-            h1Text='CREATIVE DIGITAL AGENCY'
+            h1Text='Creative Digital Agency'
             paraText='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque viverra erat, eu egestas nisl mattis in. Vivamus semper accumsan massa, ut pulvinar augue aliquet non.'
             classses={styles['home-banner']}
           />

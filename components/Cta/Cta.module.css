@@ -40,6 +40,21 @@
     transition: 0.8s;
   }
 
+    .dot__blink{
+    animation: blink-animation 2s steps(8, start) infinite;
+    -webkit-animation: blink-animation 2s steps(8, start) infinite;
+    }
+    @keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+    }
+    @-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+    }
+
   @media only screen and (max-width: 767px) {
 
     .CtaMainWrapper {

@@ -27,53 +27,53 @@ const Skills = () => {
                 <div className={styles.skillsContainer}>
                     <div className={`${styles['skillsSection']}`}>
                       <Row>
-                        <Col md={4} xs={12}>
-                        <span className={styles.skillName}>UX UI Designing</span>
+                        <Col md={3} xs={12}>
+                        <span className={styles.skillName}>Branding & Strategy</span>
                         </Col>
-                        <Col md={7} xs={10} className={styles.ProgressBarCol}>
-                         <ProgressBar now={82}  className={styles['skillsProgress']} /> 
+                        <Col md={8} xs={10} className={styles.ProgressBarCol}>
+                         <ProgressBar now={92}  className={styles['skillsProgress']} /> 
                         </Col>
                         <Col md={1} xs={2}>
-                        <span className={styles.skillNumber}>82%</span>
+                        <span className={styles.skillNumber}>92%</span>
                         </Col>
                       </Row>
                     </div>
                     <div className={`${styles['skillsSection']}`}>
                       <Row>
-                        <Col md={4} xs={12}>
+                        <Col md={3} xs={12}>
                         <span className={styles.skillName}>Web Development</span>
                         </Col>
-                        <Col md={7} xs={10} className={styles.ProgressBarCol}>
-                         <ProgressBar now={78}  className={styles['skillsProgress']} /> 
+                        <Col md={8} xs={10} className={styles.ProgressBarCol}>
+                         <ProgressBar now={95}  className={styles['skillsProgress']} /> 
                         </Col>
                         <Col md={1} xs={2}>
-                        <span className={styles.skillNumber}>78%</span>
+                        <span className={styles.skillNumber}>95%</span>
                         </Col>
                       </Row>
                     </div>
                     <div className={`${styles['skillsSection']}`}>
                       <Row>
-                        <Col md={4} xs={12}>
-                        <span className={styles.skillName}>Product Development</span>
+                        <Col md={3} xs={12}>
+                        <span className={styles.skillName}>App Development</span>
                         </Col>
-                        <Col md={7} xs={10} className={styles.ProgressBarCol}>
-                         <ProgressBar now={80}  className={styles['skillsProgress']} /> 
+                        <Col md={8} xs={10} className={styles.ProgressBarCol}>
+                         <ProgressBar now={90}  className={styles['skillsProgress']} /> 
                         </Col>
                         <Col md={1} xs={2}>
-                        <span className={styles.skillNumber}>80%</span>
+                        <span className={styles.skillNumber}>90%</span>
                         </Col>
                       </Row>
                     </div>
                     <div className={`${styles['skillsSection']}`}>
                       <Row>
-                        <Col md={4} xs={12}>
-                        <span className={styles.skillName}>Software Development</span>
+                        <Col md={3} xs={12}>
+                        <span className={styles.skillName}>Digital Marketing</span>
                         </Col>
-                        <Col md={7} xs={10} className={styles.ProgressBarCol}>
-                         <ProgressBar now={65}  className={styles['skillsProgress']} /> 
+                        <Col md={8} xs={10} className={styles.ProgressBarCol}>
+                         <ProgressBar now={96}  className={styles['skillsProgress']} /> 
                         </Col>
                         <Col md={1} xs={2}>
-                        <span className={styles.skillNumber}>65%</span>
+                        <span className={styles.skillNumber}>96%</span>
                         </Col>
                       </Row>
                     </div>

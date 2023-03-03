@@ -22,8 +22,8 @@ const StepTwoForm = () => {
 
   const [isStepOne, setIsStepOne] = useState(true);
   const [isStepTwo, setIsStepTwo] = useState(false);
-  const [formOne, setFormOne] = useState(false);
-  const [state, setState] = useState("");
+  // const [formOne, setFormOne] = useState(false);
+  // const [state, setState] = useState("");
   const [isStepperTwo, setIsStepperTwo] = useState(true);
 
   // const [BusinessName, setbusinessName] = useState(businessName);
@@ -124,7 +124,7 @@ const StepTwoForm = () => {
 
   return (
     <>
-      {isStepperTwo ? <Stepper isStepperTwoTrue="true" /> : null}
+      {isStepperTwo && <Stepper />}
 
       {isStepOne ? (
         <div>
@@ -155,7 +155,7 @@ const StepTwoForm = () => {
                 >
                   <Form.Group className={`${"mb-3"}`} controlId="formGroupName">
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
-                      Name
+                      Name <small>*</small>
                     </Form.Label>
                     <Form.Control
                       size="lg"
@@ -197,7 +197,7 @@ const StepTwoForm = () => {
                     controlId="formGroupEmail"
                   >
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
-                      Email
+                      Email <small>*</small>
                     </Form.Label>
                     <Form.Control
                       size="lg"
@@ -241,7 +241,7 @@ const StepTwoForm = () => {
                     controlId="formGroupNumber"
                   >
                     <Form.Label className={`${styles["formLabel"]} ${"mb-3"}`}>
-                      Phone Number
+                      Phone Number <small>*</small>
                     </Form.Label>
                     <PhoneInput
                       placeholder="0000000"
@@ -251,7 +251,7 @@ const StepTwoForm = () => {
                       value={phoneNumber}
                       defaultCountry="US"
                       onChange={setPhoneNumber}
-                      className={`${styles["formControl"]} ${"mb-2"} ${
+                      className={`${styles["formControl"]} ${styles['personalInfoPhone']} ${"mb-2"} ${
                         !phoneNumberErr ? null : "error"
                       }`}
                     />
