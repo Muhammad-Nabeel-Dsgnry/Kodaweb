@@ -12,7 +12,7 @@ import styles from "../../../styles/projectDetail.module.css";
 import Image from "next/image";
 import uploadIcon from "../../../public/Assets/Assets/For-web/upload.png";
 import { SketchPicker } from "react-color";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext, useRef } from "react";
 import SectionContent from "../sectionContent";
 import {
   Logo_Design_Duration,
@@ -62,11 +62,12 @@ const StepOneForm = () => {
 
   const [communicate, setCommunicate] = useState("");
 
-  const [contentPages, setContentPages] = useState("Reference link");
+  const [contentPages, setContentPages] = useState("");
 
   const [primaryColor, setPrimaryColor] = useState("#FF0000");
   const [primaryColorErr, setPrimaryColorErr] = useState("");
   const [primarypallet, setPrimarypallet] = useState(false);
+  const primaryColorPalletRef = useRef()
   // console.log('primaryColor', primaryColor)
 
   const [secondaryColor, setSecondaryColor] = useState("#57C070");
@@ -265,9 +266,18 @@ const StepOneForm = () => {
     //   })
     // );
     setOptionalPackage(packageDetails)
+    
   };
   // console.log('Console from Step One Component for Context API data', optionalPackage)
 
+  // Color Box Close
+  useEffect(() => {
+    const closeColorPallet = () => {
+    }
+    document.body.addEventListener('click', closeColorPallet)
+    return () => document.body.removeEventListener('click', closeColorPallet)
+  }, [primarypallet])
+ 
   return (
     <>
       {isStepOne ? (
@@ -479,7 +489,7 @@ const StepOneForm = () => {
                       value={logoType}
                       onChange={(e) => setLogoType(e.target.value)}
                       disabled={
-                        optionalPackage?.pricing_group === "Logo" ? false : true
+                        optionalPackage?.pricing_group === "Marketing" ? true : false
                       }
                     >
                       <option defaultValue={'null'}>Select logo type</option>
@@ -625,7 +635,7 @@ const StepOneForm = () => {
                       value={contentPages}
                       onChange={(e) => setContentPages(e.target.value)}
                       disabled={
-                        optionalPackage?.pricing_group === "Website" ? false : true
+                        optionalPackage?.pricing_group === "Marketing" ? true : false
                       }
                     />
                     <p className={`${styles["formExampleText"]}`}>
@@ -651,6 +661,7 @@ const StepOneForm = () => {
                     </Form.Label>
                     <div className={`${styles["colorPickerWrapper"]}`}>
                       <div
+                        ref={primaryColorPalletRef}
                         className={`${"primaryColorSelectionBox"} ${
                           styles["colorBoxDiv"]
                         } ${!primaryColorErr ? null : "error"}`}

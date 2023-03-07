@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState} from 'react'
 import styles from './Contact.module.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,6 +11,24 @@ import InnerPagesBanner from '../InnerPagesBanner/InnerPagesBanner';
 import Link from 'next/link';
 
 const Contact = () => {
+  const [inputs, setInputs] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+  const handleChange = (e) => {
+    setInputs(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }))
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(inputs)
+  }
+
   return (
     <>
       <section className={styles.formSection}>
@@ -18,7 +36,7 @@ const Contact = () => {
           <Row>
             <Col lg={7}>
               <div className='w-100'>
-                <h3 className={styles.lineTitle} >Lets Talk</h3>
+                <h3 className={styles.lineTitle} >Let's Talk</h3>
                 <h2 className={styles.mainTitle} >Looking For Fresh Ideas?</h2>
                 <p className={`${styles['Para']} ${styles['contactSectionPara']}`} >Just say hello. We would love to learn about your goals and brainstorm ideas together.</p>
               </div>
@@ -87,6 +105,7 @@ const Contact = () => {
               </Row>
             </Col>
             <Col lg={5} className={`${styles['formCol']}`}>
+              <form onSubmit={handleSubmit}>
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
                 <InputGroup.Text id="inputGroup-sizing-lg" className={`${styles['inputFieldIcon']} ${'align-self-center border-0 bg-transparent'}`}>
                   <Image
@@ -98,6 +117,9 @@ const Contact = () => {
                 </InputGroup.Text>
                 <Form.Control
                   className={`${styles['inputTextField']} ${'border-0'}`}
+                  value={inputs.name}
+                  name={'name'}
+                  onChange={handleChange}
                   placeholder='Name'
                   aria-label="Large"
                   aria-describedby="inputGroup-sizing-sm"
@@ -114,6 +136,9 @@ const Contact = () => {
                 </InputGroup.Text>
                 <Form.Control
                   className={`${styles['inputTextField']} ${'border-0'}`}
+                  value={inputs.email}
+                  name={'email'}
+                  onChange={handleChange}
                   placeholder='Email'
                   aria-label="Large"
                   aria-describedby="inputGroup-sizing-sm"
@@ -130,13 +155,17 @@ const Contact = () => {
                 </InputGroup.Text>
                 <Form.Control
                   className={`${styles['inputTextField']} ${'border-0'}`}
+                  value={inputs.message}
+                  name={'message'}
+                  onChange={handleChange}
                   placeholder='Message'
                   aria-label="Large"
                   aria-describedby="inputGroup-sizing-sm"
-                  as="textarea" rows={9}
+                  as="textarea" rows={7}
                 />
               </InputGroup>
-              <Button className={` ${styles['blueButton']} ${styles['formSubmitBtn']}`}>Send Message</Button>
+              <Button type='submit' className={` ${styles['blueButton']} ${styles['formSubmitBtn']}`}>Send Message</Button>
+              </form>
             </Col>
           </Row>
         </Container>

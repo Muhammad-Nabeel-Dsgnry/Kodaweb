@@ -12,6 +12,7 @@
     "@fancyapps/ui": "^4.0.31",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
+    "mongodb": "^5.1.0",
     "next": "13.0.4",
     "react": "18.2.0",
     "react-bootstrap": "^2.6.0",

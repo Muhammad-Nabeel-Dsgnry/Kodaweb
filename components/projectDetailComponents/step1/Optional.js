@@ -8,7 +8,7 @@ import { formData } from "../../context/Context";
 
 const Optional = ({ item }) => {
   const { optionalPackage, setOptionalPackage } = useContext(formData);
-//   console.log('Console from Optional Component for Context API data', optionalPackage)
+  console.log('Console from Optional Component for Context API data', optionalPackage)
 
 //   const [optionalPackage, setOptionalPackages] = useState({});
 //   console.log("Optional package item console : ", optionalPackage);
@@ -46,6 +46,7 @@ const Optional = ({ item }) => {
     // );
     // localStorage.setItem('Package-Data', JSON.stringify({ timeDuration: timeDuration, timeDurationPrice: timeDurationPrice, ...optionalPackage }))
 
+    // const newPackage = localStorage?.setItem('Package-Data', JSON.stringify(item))
     setOptionalPackage(item)
   };
 

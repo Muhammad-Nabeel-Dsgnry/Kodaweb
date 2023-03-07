@@ -31,7 +31,7 @@ const Skills = () => {
                         <span className={styles.skillName}>Branding & Strategy</span>
                         </Col>
                         <Col md={8} xs={10} className={styles.ProgressBarCol}>
-                         <ProgressBar now={92}  className={styles['skillsProgress']} /> 
+                         <ProgressBar now={92}  className={styles['skillsProgress']}/> 
                         </Col>
                         <Col md={1} xs={2}>
                         <span className={styles.skillNumber}>92%</span>

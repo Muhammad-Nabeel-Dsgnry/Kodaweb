@@ -558,7 +558,7 @@ const Pricing = (props) => {
                     {_Cms ? 'WordPress' : 'WordPress'}
                   </Button>
                   <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_Ecommerce ? 'btnActive' : null}`} onClick={set_EcommerceHandler}>
-                    {_Ecommerce ? 'E-commerce' : 'E-commerce'}
+                    {_Ecommerce ? 'E-Commerce' : 'E-Commerce'}
                   </Button>
                   <Button className={`${styles['pricingTabsBtn']} ${styles['blueButton']} ${_WebApp ? 'btnActive' : null}`} onClick={set_WebAppHandler}>
                     {_WebApp ? 'Web App' : 'Web App'}

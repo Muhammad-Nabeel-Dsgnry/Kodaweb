@@ -97,7 +97,7 @@ const Services = (props) => {
               null
               :
             <Row className={`${styles.cardRow} ${'mt-5 pt-4 mb-5'} ${styles['desktopScreenServicesSection']}`}>
-              <Col className={`${styles.cardCol}`}>
+              <Col className={`${styles.cardCol}`} style={{maxWidth: '25%'}}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For-web/Graphic-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
@@ -111,7 +111,7 @@ const Services = (props) => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col className={`${styles.cardCol}`}>
+              <Col className={`${styles.cardCol}`} style={{maxWidth: '25%'}}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="1500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For-web/Digital-marketing-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
@@ -125,11 +125,10 @@ const Services = (props) => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col className={`${styles.cardCol}`}>
+              {/* <Col className={`${styles.cardCol}`} style={{maxWidth: '25%'}}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="2000">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For-web/SEO-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
-                    {/* <Image src={Seo_ContentWritingIcon} width='60' height='60' alt='Kodaweb SEO & Content Writing' className={styles.serviceCardImage} /> */}
                   </div>
                   <Card.Body className={styles.cardBody}>
                     <Card.Title className={styles.cardTitle}>SEO & Content Writing</Card.Title>
@@ -138,8 +137,8 @@ const Services = (props) => {
                     </Card.Text>
                   </Card.Body>
                 </Card>
-              </Col>
-              <Col className={`${styles.cardCol}`}>
+              </Col> */}
+              <Col className={`${styles.cardCol}`} style={{maxWidth: '25%'}}>
                 <Card className={styles.cardWrapper} data-aos="fade-up" data-aos-duration="2500">
                   <div className={styles.imageBoxWrapper}>
                     <Card.Img variant="top" src="/Assets/Assets/For-web/Web-App-blue-2.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
@@ -258,11 +257,10 @@ const Services = (props) => {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col className={`${styles.cardCol}`}>
+                {/* <Col className={`${styles.cardCol}`}>
                   <Card className={styles.cardWrapper} >
                     <div className={styles.imageBoxWrapper}>
                       <Card.Img variant="top" src="/Assets/Assets/For-web/SEO-blue.svg" width='60' height='60' alt='Kodaweb Branding & Identity' className={styles.serviceCardImage} />
-                      {/* <Image src={Seo_ContentWritingIcon} width='60' height='60' alt='Kodaweb SEO & Content Writing' className={styles.serviceCardImage} /> */}
                     </div>
                     <Card.Body className={styles.cardBody}>
                       <Card.Title className={styles.cardTitle}>SEO & Content Writing</Card.Title>
@@ -271,7 +269,7 @@ const Services = (props) => {
                       </Card.Text>
                     </Card.Body>
                   </Card>
-                </Col>
+                </Col> */}
                 <Col className={`${styles.cardCol}`}>
                   <Card className={styles.cardWrapper} >
                     <div className={styles.imageBoxWrapper}>
