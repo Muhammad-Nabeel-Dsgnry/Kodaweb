@@ -1,7 +1,9 @@
 import mongo, {MongoClient} from 'mongodb'
+import { config } from 'dotenv'
 
 async function handler(req, res) {
-    const client = MongoClient.connect('mongodb+srv://kodaweb:kodaweb1234@cluster0.tfhba9o.mongodb.net/?retryWrites=true&w=majority')
+    const uri = process.env.CONNECTION_STRING
+    const client = MongoClient.connect(`${uri}`)
     const db = (await client).db('kodaweb')
 
     if(req.method === 'POST') {
@@ -15,9 +17,9 @@ async function handler(req, res) {
             email,
             phoneNumber,
             industry,
-            message
+            message,
+            dateTime: new Date().toLocaleString(undefined, {year: 'numeric', month: '2-digit', day: '2-digit', weekday:"long", hour: '2-digit', hour12: true, minute:'2-digit', second:'2-digit'})
         }
-
         let Quote
         try {
             Quote = await db.collection('quote').insertOne(newQuote)

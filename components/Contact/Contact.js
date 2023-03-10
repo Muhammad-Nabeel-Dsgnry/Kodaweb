@@ -9,6 +9,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import InnerPagesBanner from '../InnerPagesBanner/InnerPagesBanner';
 import Link from 'next/link';
+import { contactApiHandelr } from '../../pages/api-helpers/api-helpers';
 
 const Contact = () => {
   const [inputs, setInputs] = useState({
@@ -16,6 +17,9 @@ const Contact = () => {
     email: '',
     message: '',
   })
+  const [nameError, setNameError] = useState('')
+  const [emailError, setEmailError] = useState('')
+  const [messageError, setMessageError] = useState('')
 
   const handleChange = (e) => {
     setInputs(prev => ({
@@ -24,9 +28,27 @@ const Contact = () => {
     }))
   }
 
+  const sendRequest = () => {
+    { inputs.name.trim() === '' ? setNameError('Name is required') : setNameError('') }
+    { inputs.email.trim() === '' ? setEmailError('Email is required') : setEmailError('') }
+    { inputs.message.trim() === '' ? setMessageError('Message is required') : setMessageError('') }
+    { inputs.name && inputs.email && inputs.message &&
+      contactApiHandelr({...inputs})
+      .then(res => console.log(res))
+      .catch(error => console.log(error))
+    }
+    
+  }
+  
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    sendRequest()
     console.log(inputs)
+    setInputs({
+      name: '',
+      email: '',
+      message: ''
+    })
   }
 
   return (
@@ -125,6 +147,9 @@ const Contact = () => {
                   aria-describedby="inputGroup-sizing-sm"
                 />
               </InputGroup>
+                {
+                  !nameError ? null : <p style={{color: 'red', margin: '0'}}>{nameError}</p> 
+                }
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
                 <InputGroup.Text id="inputGroup-sizing-lg" className={`${styles['inputFieldIcon']} ${'align-self-center border-0 bg-transparent'}`}>
                   <Image
@@ -144,6 +169,9 @@ const Contact = () => {
                   aria-describedby="inputGroup-sizing-sm"
                 />
               </InputGroup>
+                {
+                  !emailError ? null : <p style={{color: 'red', margin: '0'}}>{emailError}</p> 
+                }
               <InputGroup size="lg" className={styles.formSectionInputGroup}>
                 <InputGroup.Text id="inputGroup-sizing-lg" className={`${styles['inputFieldIcon']} ${'align-self-start border-0 bg-transparent pt-3'}`}>
                   <Image
@@ -164,6 +192,9 @@ const Contact = () => {
                   as="textarea" rows={7}
                 />
               </InputGroup>
+                {
+                  !messageError ? null : <p style={{color: 'red', margin: '0'}}>{messageError}</p> 
+                }
               <Button type='submit' className={` ${styles['blueButton']} ${styles['formSubmitBtn']}`}>Send Message</Button>
               </form>
             </Col>

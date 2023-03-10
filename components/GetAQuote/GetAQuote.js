@@ -2,7 +2,7 @@ import modalStyles from "./GetAQuote.module.css";
 import Link from "next/link";
 import PhoneInput from "react-phone-number-input";
 import styles from "../../components/projectDetailComponents/Forms.module.css";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
@@ -10,6 +10,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import { industryData } from "../projectDetailComponents/step1/industryData";
+import { quoteApiHelper } from "../../pages/api-helpers/api-helpers";
 
 // Phone Field Focus Style
 const phoneFocus = {
@@ -21,29 +22,55 @@ const phoneFocus = {
 const GetAQuote = (props) => {
 //   const [name, setName] = useState("");
 //   const [email, setEmail] = useState("");
-  const [phone_Number, setPhoneNumber] = useState("");
+//   const [phoneNumber, setPhoneNumber] = useState('');
 //   const [message, setMessage] = useState("");
 //   const [industry, setIndustry] = useState("");
+const [phoneNumber, setPhoneNumber] = useState('')
 
+  const [nameError, setNameError] = useState('')
+  const [emailError, setEmailError] = useState('')
+  const [industryError, setIndustryError] = useState('')
+  const [messageError, setMessageError] = useState('')
+  const [phoneNumberError, setPhoneNumberError] = useState('')
+  
   const [inputs, setInputs] = useState({
     name: '',
     email: '',
     message: '',
-    industry: '',
+    industry: ''
   });
 
   const handleChange = (e) => {
     setInputs(prev => ({
         ...prev,
-        [e.target.name]: e.target.value,
-        phoneNumber: phone_Number
-    }))
+        [e.target.name]: e.target.value
+      }))
   }
 
+  const sendRequest = () => {
+    {inputs?.name.trim() === '' ? setNameError('Name is required') : setNameError('')}
+    {inputs?.email.trim() === '' ? setEmailError('Email is required') : setEmailError('')}
+    {phoneNumber?.length <=1 ? setPhoneNumberError('Phone number is required') : setPhoneNumberError('')}
+    {
+      inputs.name && inputs.email && phoneNumber &&
+      quoteApiHelper({...inputs}, phoneNumber)
+      .then(res => console.log(res))
+      .catch(error => console.log(error))
+    }
+  }
+  
+
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    sendRequest()
     console.log(inputs)
-    console.log(phone_Number)
+    setInputs({
+      name: '',
+      email: '',
+      message: '',
+      industry: ''
+    })
+    setPhoneNumber('')
   }
 
   // const useRef = useRef
@@ -88,7 +115,9 @@ const GetAQuote = (props) => {
                     onChange={handleChange}
                   />
                   <Form.Text className={`${styles["formExampleText"]}`}>
-                    E.g. Ibhrahim
+                    {
+                      !nameError ? 'E.g. Ibhrahim' : <p style={{color: 'red', margin: '0'}}>{nameError}</p>
+                    }
                   </Form.Text>
                 </Form.Group>
               </Col>
@@ -115,8 +144,9 @@ const GetAQuote = (props) => {
                     onChange={handleChange}
                   />
                   <Form.Text className={`${styles["formExampleText"]}`}>
-                    Well hold your data according to our{" "}
-                    <Link href="#">Privacy Policy</Link>.
+                    {
+                      !emailError ? `Well hold your data according to our Privacy Policy.` : <p style={{color: 'red', margin: '0'}}>{emailError}</p> 
+                    }
                   </Form.Text>
                 </Form.Group>
               </Col>
@@ -157,13 +187,13 @@ const GetAQuote = (props) => {
                   </Form.Label>
                   <PhoneInput
                     name='phoneNumber'
+                    value={phoneNumber}
+                    onChange={setPhoneNumber}
                     placeholder="0000000"
                     international
                     focusInputOnCountrySelection={false}
                     countryCallingCodeEditable={false}
-                    value={phone_Number}
                     defaultCountry="US"
-                    onChange={setPhoneNumber}
                     className={`${styles["formControl"]} ${"mb-2"} ${
                       styles["modalInputFields"]
                     } ${styles["modalPhoneInputFields"]}`}
@@ -171,8 +201,9 @@ const GetAQuote = (props) => {
                   />
                   {/* <Form.Control size='lg' className={`${styles['formControl']} ${'mb-2'}`} type='text' onChange={(e) => setPhoneNumber(e.target.value)} /> */}
                   <Form.Text className={`${styles["formExampleText"]}`}>
-                    Well hold your data according to our{" "}
-                    <Link href="">Privacy Policy</Link>
+                    {
+                      !phoneNumberError ? `Well hold your data according to our Privacy Policy.` : <p style={{color: 'red', margin: '0'}}>{phoneNumberError}</p> 
+                    }
                   </Form.Text>
                 </Form.Group>
               </Col>
