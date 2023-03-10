@@ -58,7 +58,7 @@ const Contact = () => {
           <Row>
             <Col lg={7}>
               <div className='w-100'>
-                <h3 className={styles.lineTitle} >Let's Talk</h3>
+                <h3 className={styles.lineTitle} >Lets Talk</h3>
                 <h2 className={styles.mainTitle} >Looking For Fresh Ideas?</h2>
                 <p className={`${styles['Para']} ${styles['contactSectionPara']}`} >Just say hello. We would love to learn about your goals and brainstorm ideas together.</p>
               </div>
