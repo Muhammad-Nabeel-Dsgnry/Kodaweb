@@ -9,7 +9,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import InnerPagesBanner from '../InnerPagesBanner/InnerPagesBanner';
 import Link from 'next/link';
-import { contactApiHandelr } from '../../pages/api-helpers/api-helpers';
+import { contactApiHandelr } from '../../api-helpers/api-helpers';
 
 const Contact = () => {
   const [inputs, setInputs] = useState({

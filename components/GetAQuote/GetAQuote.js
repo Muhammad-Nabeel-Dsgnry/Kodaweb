@@ -10,7 +10,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import { industryData } from "../projectDetailComponents/step1/industryData";
-import { quoteApiHelper } from "../../pages/api-helpers/api-helpers";
+import { quoteApiHelper } from "../../api-helpers/api-helpers";
 
 // Phone Field Focus Style
 const phoneFocus = {
